@@ -8,7 +8,7 @@
 ||| Blue Bottle Bold |
 || 3/20.5g | Intelligentsia Black Cat Expresso |
 | 4/10.7g || Stumptown Hair Bender |
-| 4/10.1g || Zoka Tuscan |
+| 4/9.8g- || Zoka Tuscan |
 ||| Zoka Tatoosh |
 
 ## No!
