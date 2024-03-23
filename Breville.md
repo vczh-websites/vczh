@@ -1,15 +1,18 @@
 # Breville and Coffee Beans
 
+## To do
+
+- Blue Bottle Bold
+- Zoka Tatoosh
+
 ## Yes!
 
 | Single Shot | Double Shot | Brand |
 |--|--|--|
 | 3/10.6g || Blue Bottle Espresso |
-||| Blue Bottle Bold |
 || 3/20.5g | Intelligentsia Black Cat Expresso |
-| 4/10.7g || Stumptown Hair Bender |
+| 3/10.7g | 4/21.0g | Stumptown Hair Bender |
 | 4/10.1g || Zoka Tuscan |
-||| Zoka Tatoosh |
 
 ## No!
 
