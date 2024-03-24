@@ -11,7 +11,7 @@
 |--|--|--|
 | 3/10.6g || Blue Bottle Espresso |
 || 3/20.5g | Intelligentsia Black Cat Expresso |
-| 3/10.7g | 4/21.0g | Stumptown Hair Bender |
+| 3/10.7g | 4/21.3g+ | Stumptown Hair Bender |
 | 4/9.8g- || Zoka Tuscan |
 
 ## No!
