@@ -2,8 +2,10 @@
 
 ## To do
 
-- Blue Bottle Bold
 - Zoka Tatoosh
+- Kahawa Safari Blend
+- Blue Bottle Bold
+- Kona Coffee Blend Medium Roast
 
 ## Buy Again
 
