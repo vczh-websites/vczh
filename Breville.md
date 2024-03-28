@@ -5,13 +5,18 @@
 - Blue Bottle Bold
 - Zoka Tatoosh
 
+## Buy Again
+
+| Single Shot | Double Shot | Brand |
+|--|--|--|
+|| 3/20.8g+ | Intelligentsia Black Cat Expresso |
+| 3/10.7g | 4/21.3g+ | Stumptown Hair Bender |
+
 ## Yes!
 
 | Single Shot | Double Shot | Brand |
 |--|--|--|
 | 3/10.6g || Blue Bottle Espresso |
-|| 3/20.8g+ | Intelligentsia Black Cat Expresso |
-| 3/10.7g | 4/21.3g+ | Stumptown Hair Bender |
 | 4/9.8g- || Zoka Tuscan |
 
 ## No!
