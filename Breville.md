@@ -19,7 +19,7 @@
 | Single Shot | Double Shot | Brand |
 |--|--|--|
 | 3/10.6g || Blue Bottle Espresso |
-| 4/9.8g- || Zoka Tuscan |
+| 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 
 ## No!
 
