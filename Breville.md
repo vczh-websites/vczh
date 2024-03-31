@@ -20,6 +20,7 @@
 |--|--|--|
 | 3/10.6g || Blue Bottle Espresso |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
+|| 3/22.5g+ ? | Campfire Summer Camp |
 
 ## No!
 
