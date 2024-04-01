@@ -6,6 +6,8 @@
 - Kahawa Safari Blend
 - Blue Bottle Bold
 - Kona Coffee Blend Medium Roast
+- TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
+- TraderJoes Organic FairTrade Five Country Blend Dark Roast
 
 ## Buy Again
 
@@ -20,13 +22,17 @@
 |--|--|--|
 | 3/10.6g || Blue Bottle Espresso |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
-|| 3/22.5g+ ? | Campfire Summer Camp |
+|| 3/20.5g ? | Campfire Summer Camp Medium Dark Roast |
 
 ## No!
 
 | Single Shot | Double Shot | Brand |
 |--|--|--|
 | 2/10.5g | 3/20.5g | Madcap Bolt (Deep Chocolate Syrupy) |
+
+## Note
+
+- Knodos basket could be 2.5g more than breville 54mm, needs precise experiment.
 
 ## Milk Frothing (Breville 876)
 
