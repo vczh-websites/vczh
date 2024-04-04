@@ -2,7 +2,6 @@
 
 ## To do
 
-- Zoka Tatoosh
 - Kahawa Safari Blend
 - Blue Bottle Bold
 - Kona Coffee Blend Medium Roast
@@ -22,6 +21,7 @@
 |--|--|--|
 | 3/10.6g || Blue Bottle Espresso |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
+|| 5/18.5g+ | Zoka Tatoosh |
 || 4/20.5g- | Campfire Summer Camp Medium Dark Roast |
 
 ## No!
