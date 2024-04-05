@@ -21,7 +21,7 @@
 |--|--|--|
 | 3/10.6g || Blue Bottle Espresso |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
-|| 5/18.5g+ | Zoka Tatoosh |
+|| 5/18.5g+ 6/20.0g? | Zoka Tatoosh |
 || 4/20.5g- | Campfire Summer Camp Medium Dark Roast |
 
 ## No!
@@ -48,4 +48,4 @@
 - 需要测量咖啡液重量，2 shots 通常在35-40g左右
 - 融合要干净，不能太多，融合速度不能过快
   - 融合足够干净的前提下，融合的太少会导致花纹边缘模糊
-- 奶泡厚度是次要的
+- 奶泡厚度是次要的，但是不能太饱，认准脂肪含量
