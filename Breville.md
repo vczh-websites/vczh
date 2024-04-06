@@ -23,7 +23,6 @@
 | 3/10.6g || Blue Bottle Espresso |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 5/18.5g+ 6/20.0g? | Zoka Tatoosh |
-|| 4/20.5g- | Campfire Summer Camp Medium Dark Roast |
 || 5/20.5g- | Ladro Fremont Medium Roast **FRESH** |
 
 ## No!
@@ -31,6 +30,7 @@
 | Single Shot | Double Shot | Brand |
 |--|--|--|
 | 2/10.5g | 3/20.5g | Madcap Bolt (Deep Chocolate Syrupy) |
+|| 4/20.5g- | Campfire Summer Camp Medium Dark Roast |
 
 ## Note
 
