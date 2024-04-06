@@ -68,7 +68,11 @@
 <p>
     For example, when the compiler see a statement like <b>a&lt;b&gt;c;</b>,
     it would create an AST containing all possible interpretation of the code: binary expression or variable definition.
-    So I created another project to generate a parser in C++ from a syntax that allow almost any possible kind of ambiguity:
+    The core feature is to limit the ambiguity in the deepest possible AST node,
+    the outcome is that, you only get one AST for the file, but when you navigate to this statement, you will see it has two interpretations.
+</p>
+<p>
+    I created another project to generate a parser in C++ from a syntax that allow almost any possible kind of ambiguity:
     <b><a target="_blank" href="https://github.com/vczh-libraries/VlppParser2">vczh-libraries/VlppParser2</a></b>.
 </p>
 <p>
