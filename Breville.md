@@ -2,6 +2,7 @@
 
 ## To do
 
+- Intelligentsia House
 - Kahawa Safari Blend
 - Blue Bottle Bold
 - Kona Coffee Blend Medium Roast
@@ -23,6 +24,7 @@
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 5/18.5g+ 6/20.0g? | Zoka Tatoosh |
 || 4/20.5g- | Campfire Summer Camp Medium Dark Roast |
+|| 5/20.5g- | Ladro Fremont Medium Roast **FRESH** |
 
 ## No!
 
