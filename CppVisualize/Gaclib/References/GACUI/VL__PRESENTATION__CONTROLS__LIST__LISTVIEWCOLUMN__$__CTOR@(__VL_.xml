@@ -1,0 +1,5 @@
+<Document symbolId="vl::presentation::controls::list::ListViewColumn::$__ctor@(::vl::WString const &amp;, ::vl::vint)" accessor="public" category="Function" name="$__ctor" declFile="GuiListViewControls.h" declId="FB$vl::presentation::controls::list::ListViewColumn::$__ctor@(::vl::WString const &amp;, ::vl::vint)[decl0]"><summary>Create a column with the specified text and size.</summary><param name="_text">The specified text.</param><param name="_size">The specified size.</param><signature><![CDATA[ ListViewColumn(
+    WString const & _text /* optional */,
+    vint _size /* optional */
+);
+]]></signature><seealsos><symbol name="WString" docId="vl::WString" declFile="String.h" declId="NI$vl::WString"/><symbol name="vint" docId="vl::vint" declFile="Basic.h" declId="NI$vl::vint"/></seealsos></Document>

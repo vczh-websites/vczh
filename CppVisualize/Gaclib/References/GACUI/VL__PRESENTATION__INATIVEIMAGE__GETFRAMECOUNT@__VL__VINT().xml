@@ -1,0 +1,5 @@
+<Document symbolId="vl::presentation::INativeImage::GetFrameCount@::vl::vint()" accessor="public" category="Function" name="GetFrameCount" declFile="GuiNativeWindow.h" declId="FB$vl::presentation::INativeImage::GetFrameCount@::vl::vint()[decl0]"><summary>
+ Get the number of frames in this image.
+ </summary><returns>The number of frames in this image.</returns><signature><![CDATA[vint GetFrameCount(
+);
+]]></signature><seealsos><symbol name="vint" docId="vl::vint" declFile="Basic.h" declId="NI$vl::vint"/></seealsos></Document>

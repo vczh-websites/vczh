@@ -1,0 +1,5 @@
+<Document symbolId="vl::presentation::elements::GuiDocumentElement::GetCaretEnd@::vl::presentation::TextPos()" accessor="public" category="Function" name="GetCaretEnd" declFile="GuiGraphicsDocumentElement.h" declId="FB$vl::presentation::elements::GuiDocumentElement::GetCaretEnd@::vl::presentation::TextPos()[decl0]"><summary>
+ Get the end position of the selection area.
+ </summary><returns>The end position of the selection area.</returns><signature><![CDATA[TextPos GetCaretEnd(
+);
+]]></signature><seealsos><symbol name="TextPos" docId="vl::presentation::TextPos" declFile="GuiTypes.h" declId="NI$vl::presentation::TextPos"/></seealsos></Document>

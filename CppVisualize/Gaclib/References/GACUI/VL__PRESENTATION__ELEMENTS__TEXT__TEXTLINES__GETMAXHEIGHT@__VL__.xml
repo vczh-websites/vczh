@@ -1,0 +1,5 @@
+<Document symbolId="vl::presentation::elements::text::TextLines::GetMaxHeight@::vl::vint()" accessor="public" category="Function" name="GetMaxHeight" declFile="GuiGraphicsTextElement.h" declId="FB$vl::presentation::elements::text::TextLines::GetMaxHeight@::vl::vint()[decl0]"><summary>
+ Returns the total height of the text lines.
+ </summary><returns>The height of the text lines, in pixel.</returns><signature><![CDATA[vint GetMaxHeight(
+);
+]]></signature><seealsos><symbol name="vint" docId="vl::vint" declFile="Basic.h" declId="NI$vl::vint"/></seealsos></Document>
