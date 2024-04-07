@@ -57,3 +57,5 @@
 ### Demo
 
 ![Latte Art Demo](./LatteArtDemo.jpg)
+  - 认准脂肪含量至少8g/240
+  - 打发时间需要观察液面高度，跟脂肪含量不成单调关系
