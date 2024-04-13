@@ -17,114 +17,26 @@
         width: 800px;
     }
 
-    div.FigureContainer {
-        width: 70%;
-    }
-
-    div.FigureContainer img {
-        width: 100%;
-    }
-
-    figcaption {
-        color: gray;
-        text-align: center;
+    a img {
+        width: 50%;
     }
 </style>
 </head>
 <body>
 <div class="Outer"><div class="Inner">
 <h1>Welcome to <strong>vczh.net</strong>!</h1>
-<h2>C++ code indexing and visualization</h2>
-<p>
-    The project has the ability to handle overloading resolutions and partially do template instantiation.
-</p>
-<p>
-    Demos:
-    <ul>
-        <li><a target="_blank" href="./CppVisualize/Calculator/FileIndex.html">Calculator</a></li>
-        <li><a target="_blank" href="./CppVisualize/TypePrinter/FileIndex.html">TypePrinter</a></li>
-        <li><a target="_blank" href="./CppVisualize/STL/FileIndex.html">STL</a></li>
-        <li><a target="_blank" href="./CppVisualize/Gaclib/FileIndex.html">Gaclib</a></li>
-    </ul>
-</p>
-<p>
-    Source code is in <a target="_blank" href="https://github.com/vczh-libraries/Document/tree/release-1.0">release-1.0 branch of vczh-libraries/Document</a>
-</p>
-<div class="FigureContainer">
-    <figure>
-        <img src="./CV01.jpg"/>
-        <figcaption>Overloading Resolution</figcaption>
-    </figure>
-    <figure>
-        <img src="./CV03.jpg"/>
-        <figcaption>Instantiation</figcaption>
-    </figure>
-    <figure>
-        <img src="./CV02.jpg"/>
-        <figcaption>Click and Jump</figcaption>
-    </figure>
-    <figure>
+<a href="./CppVisualize.html">
+    <p>
+        <h2>C++ code indexing and visualization</h2>
         <img src="./CV04.jpg"/>
-        <figcaption>Jump with Type Inferencing</figcaption>
-    </figure>
-</div>
-<h2>C++ parser (2.0)</h2>
-<p>
-    GLR parser generator
-    <a target="_blank" href="https://github.com/vczh-libraries/VlppParser2">vczh-libraries/VlppParser2</a>
-    and completed a demo of C++ parser (handling most of C++20 syntax)
-    <ul>
-        <li><a target="_blank" href="https://github.com/vczh-libraries/VlppParser2/tree/master/Test/Source/BuiltIn-Cpp/Syntax/Syntax">Syntax of C++</a></li>
-        <li><a target="_blank" href="https://github.com/vczh-libraries/VlppParser2/tree/master/Test/Source/BuiltIn-Cpp/Generated">Source code of the generated parser</a></li>
-        <li><a target="_blank" href="https://github.com/vczh-libraries/VlppParser2/tree/master/Test/Source/BuiltIn-Cpp/Input">Test cases</a></li>
-        <li><a target="_blank" href="https://github.com/vczh-libraries/VlppParser2/blob/master/Test/UnitTest/BuiltInTest_Cpp/TestTraced.cpp">Test cases that generates checked-in log files</a></li>
-        <li><a target="_blank" href="https://github.com/vczh-libraries/VlppParser2/tree/master/Test/ParserLog/BuiltIn-Cpp">Log files mentioned above</a></li>
-    </ul>
-</p>
-<h2>Story of the project</h2>
-<p>
-    <b><a target="_blank" href="https://github.com/vczh-libraries/Document/tree/release-1.0">The first version of vczh-libraries/Document</a></b> was created
-    to parse, analyse and index the <b><a target="_blank" href="https://gaclib.net/doc/ver1/gacui/ref.html">source code of GacUI</a></b>,
-    as well as rendering <b><a target="_blank" href="https://gaclib.net/doc/ver1/vlppregex/ref/VL__REGEX__REGEX.html">comments as document</a></b>.
-</p>
-<p>
-    Unfortunately after upgrading the project to use Visual Studio 2022,
-    I found that the new C++ compiler has a problem dealing with <b>decltype</b> of captured symbols inside nested lambda expressions,
-    which makes my whole unit test unable to compile.
-    Bugs has been submitted to the VC++ team but not all of them are fixed at the moment.
-</p>
-<p>
-    I realized that the way I do the project is too fancy,
-    so in the next version, I decided to rewrite the whole project in a completely different approach,
-    which is parsing the C++ source code first, and then resolve symbols.
-</p>
-<p>
-    We know that a typical C++ compiler needs to resolve symbols during parsing in order to handle ambiguities,
-    but my project is for indexing code and rendering documents,
-    I don't have to resolve symbols 100% precisely, if I see something too complex to handle I could link the symbol to multiple candidates.
-</p>
-<p>
-    So I decided to allow ambiguity during parsing,
-    if some interpretations are proven to be incorrect,
-    they can be deleted later.
-    More importantly, when parsing source code of a template,
-    decisions are not always possible to be made before instantiating it.
-    Ambiguity is unavoidable.
-</p>
-<p>
-    For example, when the compiler see a statement like <b>a&lt;b&gt;c;</b>,
-    it would create an AST containing all possible interpretation of the code: binary expression or variable definition.
-    The core feature is to limit the ambiguity in the deepest possible AST node,
-    the outcome is that, you only get one AST for the file, but when you navigate to this statement, you will see it has two interpretations.
-</p>
-<p>
-    I created another project to generate a parser in C++ from a syntax that allow almost any possible kind of ambiguity:
-    <b><a target="_blank" href="https://github.com/vczh-libraries/VlppParser2">vczh-libraries/VlppParser2</a></b>.
-</p>
-<p>
-    <h1>Espresso!</h1>
-    <a href="./Breville">Breville and Coffee Beans</a>
-</p>
+    </p>
+</a>
+<a href="./Breville">
+    <p>
+        <h2>Espresso!</h2>
+        <img src="./LatteArtThumb.jpg"/>
+    </p>
+</a>
 </div></div>
 </body>
 </head>
