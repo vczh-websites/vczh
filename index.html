@@ -2,9 +2,37 @@
 <html>
 <head>
 <title>vczh.net</title>
+<style>
+    body {
+        font-family: Segoe UI;
+    }
 
+    div.Outer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    div.Inner {
+        width: 800px;
+    }
+
+    div.FigureContainer {
+        width: 70%;
+    }
+
+    div.FigureContainer img {
+        width: 100%;
+    }
+
+    figcaption {
+        color: gray;
+        text-align: center;
+    }
+</style>
 </head>
 <body>
+<div class="Outer"><div class="Inner">
 <h1>Welcome to <strong>vczh.net</strong>!</h1>
 <h2>C++ code indexing and visualization</h2>
 <p>
@@ -22,6 +50,24 @@
 <p>
     Source code is in <a target="_blank" href="https://github.com/vczh-libraries/Document/tree/release-1.0">release-1.0 branch of vczh-libraries/Document</a>
 </p>
+<div class="FigureContainer">
+    <figure>
+        <img src="./CV01.jpg"/>
+        <figcaption>Overloading Resolution</figcaption>
+    </figure>
+    <figure>
+        <img src="./CV03.jpg"/>
+        <figcaption>Instantiation</figcaption>
+    </figure>
+    <figure>
+        <img src="./CV02.jpg"/>
+        <figcaption>Click and Jump</figcaption>
+    </figure>
+    <figure>
+        <img src="./CV04.jpg"/>
+        <figcaption>Jump with Type Inferencing</figcaption>
+    </figure>
+</div>
 <h2>C++ parser (2.0)</h2>
 <p>
     GLR parser generator
@@ -79,5 +125,6 @@
     <h1>Espresso!</h1>
     <a href="./Breville">Breville and Coffee Beans</a>
 </p>
+</div></div>
 </body>
 </head>
