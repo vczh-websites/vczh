@@ -16,7 +16,7 @@
 || 3/20.8g+ | Intelligentsia Black Cat Expresso |
 | 3/10.7g | 4/21.3g+ | Stumptown Hair Bender |
 || 5/20.5g- | Ladro Fremont Medium Roast **FRESH** |
-|| 5/17.5g (try 18.g) | Fonte Uptown Espresso **FRESH** |
+|| 5/18.0g | Fonte Uptown Espresso **FRESH** |
 
 ## hmmm
 
@@ -45,9 +45,11 @@
 - 咔哒声8个一组（约5秒），数10组以上，取决于液面升高的情况
   - 薄打：保持奶缸角度不变，延长时间则只能稍微加厚
   - 厚打：让喷气口一直处于不断升高的液面表面，延长时间显著加厚
-    - Horizon 倒缸厚打10组，尝试9组
+    - Horizon 倒缸厚打10组
+    - Alexandre 倒缸厚打9组有点厚
 - 如果有20oz大奶缸打后换缸，可以打得更厚
 - 然后放斜开始旋转，数10组以上，取决于杯壁温度
+- 开机后第一杯总是过薄，可能是温度问题
 
 ## Latte Art
 
