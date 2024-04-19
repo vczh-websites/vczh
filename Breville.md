@@ -9,6 +9,8 @@
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
 - TraderJoes Organic FairTrade Five Country Blend Dark Roast
 
+**(P)** means using breville's pressurized bucket
+
 ## Yes!
 
 | Single Shot | Double Shot | Brand |
