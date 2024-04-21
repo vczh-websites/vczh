@@ -2,7 +2,6 @@
 
 ## To do
 
-- Intelligentsia House
 - Kahawa Safari Blend
 - Blue Bottle Bold
 - Kona Coffee Blend Medium Roast
@@ -27,6 +26,7 @@
 | 3/10.6g || Blue Bottle Espresso |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 5/18.5g+ 6/20.0g? | Zoka Tatoosh |
+|| 2/23.5g? 3/23.5g+? | Intelligentsia House |
 
 ## No!
 
@@ -38,6 +38,16 @@
 ## Note
 
 - Knodos basket could be 2.5g more than breville 54mm, needs precise experiment.
+
+## Dial In
+
+- 从性质接近的豆的参数开始，先得到一个大概正确的粉量
+  - 在压力升上去之前就大量出水说明要粉量太少
+  - 也可能是channeling但是在大力tamp的情况下概率较低
+- 根据味道和咖啡液重量调整粗细
+  - dark roast的可能需要粗一点
+  - 多/酸：粗了
+  - 少/苦：细了
 
 ## Milk Frothing (Breville 876)
 
@@ -59,6 +69,7 @@
 - 需要测量咖啡液重量，2 shots 通常在35-45g左右
 - 融合要干净，不能太多，融合速度不能过快
   - 融合足够干净的前提下，融合的太少会导致花纹边缘模糊
+  - 脂肪末不够的情况下，打相对薄并多融合
 - 奶泡厚度是次要的，但是不能太薄，太厚可以倒缸
   - 认准牛奶脂肪含量至少8g/240ml
   - 打发时间需要观察液面高度，跟脂肪含量不成单调关系
