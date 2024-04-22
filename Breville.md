@@ -45,9 +45,9 @@
   - 在压力升上去之前就大量出水说明要粉量太少
   - 也可能是channeling但是在大力tamp的情况下概率较低
 - 根据味道和咖啡液重量调整粗细
-  - dark roast的可能需要粗一点
   - 多/酸：粗了
   - 少/苦：细了
+- dark roast 偏粗偏少
 
 ## Milk Frothing (Breville 876)
 
