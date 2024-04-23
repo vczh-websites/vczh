@@ -26,7 +26,7 @@
 | 3/10.6g || Blue Bottle Espresso |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 5/18.5g+ 6/20.0g? | Zoka Tatoosh |
-|| 2/23.5g? 3/23.5g+? | Intelligentsia House |
+|| 2/23.5g-? 3/23.7g | Intelligentsia House |
 
 ## No!
 
@@ -48,6 +48,7 @@
   - 多/酸：粗了
   - 少/苦：细了
 - dark roast 偏粗偏少
+- 开机后应该放2 shots水+20秒蒸汽预热
 
 ## Milk Frothing (Breville 876)
 
@@ -61,7 +62,7 @@
     - Alexandre A2 倒缸厚打6组
 - 如果有20oz大奶缸打后换缸，可以打得更厚
 - 然后放斜开始旋转，数10组以上，取决于杯壁温度
-- 开机后第一杯总是过薄，可能是温度问题
+- light roast 奶泡不能太多温度不能太高，容易盖过风味
 
 ## Latte Art
 
