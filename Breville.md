@@ -78,3 +78,4 @@
 ### Demo
 
 ![Latte Art Demo](./LatteArtDemo.jpg)
+![Latte Art Demo 2](./LatteArtDemo2.jpg)
