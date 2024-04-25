@@ -8,13 +8,19 @@
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
 - TraderJoes Organic FairTrade Five Country Blend Dark Roast
 
-**(P)** means using breville's pressurized bucket
+- Shot column
+  - **(P)**: using breville's pressurized bucket
+  - **(K)**: means using knodos' bucket
+- Brand column
+  - **(tn)**: means with thinner frothing
+  - **FRESH**: means the bean was roasted just a few days ago when purchased, this could affect numbers
 
 ## Yes!
 
 | Single Shot | Double Shot | Brand |
 |--|--|--|
 || 3/20.8g+ | Intelligentsia Black Cat Expresso |
+|| 3/23.6g | Intelligentsia House **(tn)** |
 | 3/10.7g | 4/21.3g+ | Stumptown Hair Bender |
 || 5/20.5g- | Ladro Fremont Medium Roast **FRESH** |
 || 5/18.0g | Fonte Uptown Espresso **FRESH** |
@@ -26,7 +32,6 @@
 | 3/10.6g || Blue Bottle Espresso |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 5/18.5g+ 6/20.0g? | Zoka Tatoosh |
-|| 2/23.5g-? 3/23.7g | Intelligentsia House |
 
 ## No!
 
