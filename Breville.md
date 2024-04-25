@@ -8,6 +8,8 @@
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
 - TraderJoes Organic FairTrade Five Country Blend Dark Roast
 
+## Numbers
+
 - Shot column
   - **(P)**: using breville's pressurized bucket
   - **(K)**: means using knodos' bucket
@@ -15,7 +17,7 @@
   - **(tn)**: means with thinner frothing
   - **FRESH**: means the bean was roasted just a few days ago when purchased, this could affect numbers
 
-## Yes!
+### Yes!
 
 | Single Shot | Double Shot | Brand |
 |--|--|--|
@@ -25,7 +27,7 @@
 || 5/20.5g- | Ladro Fremont Medium Roast **FRESH** |
 || 5/18.0g | Fonte Uptown Espresso **FRESH** |
 
-## hmmm
+### hmmm
 
 | Single Shot | Double Shot | Brand |
 |--|--|--|
@@ -33,14 +35,14 @@
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 5/18.5g+ 6/20.0g? | Zoka Tatoosh |
 
-## No!
+### No!
 
 | Single Shot | Double Shot | Brand |
 |--|--|--|
 | 2/10.5g | 3/20.5g | Madcap Bolt (Deep Chocolate Syrupy) |
 || 4/20.5g- | Campfire Summer Camp Medium Dark Roast |
 
-## Note
+### Note
 
 - Knodos basket could be 2.5g more than breville 54mm, needs precise experiment.
 
