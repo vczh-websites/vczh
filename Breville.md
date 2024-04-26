@@ -16,6 +16,7 @@
 - Brand column
   - **(tn)**: means with thinner frothing
   - **FRESH**: means the bean was roasted just a few days ago when purchased, this could affect numbers
+- The internal setting of the Breville grinder is **6**.
 
 ### Yes!
 
@@ -33,7 +34,7 @@
 |--|--|--|
 | 3/10.6g || Blue Bottle Espresso |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
-|| 5/18.5g+ 6/20.0g? | Zoka Tatoosh |
+|| 6/18.5g- | Zoka Tatoosh |
 
 ### No!
 
@@ -44,7 +45,8 @@
 
 ### Note
 
-- Knodos basket could be 2.5g more than breville 54mm, needs precise experiment.
+Knodos basket produces much less pressure.
+For Zoka Tatoosh 6/18.0g extracts significantly more than 2/20.0g **(K)**.
 
 ## Dial In
 
@@ -67,6 +69,7 @@
   - 厚打：让喷气口一直处于不断升高的液面表面，延长时间显著加厚
     - Horizon 倒缸厚打7组
     - Alexandre A2 倒缸厚打6组
+  - 角度调整并一直保持在正好把大泡泡吸进去的话，打完余下的大泡泡会显著更少
 - 如果有20oz大奶缸打后换缸，可以打得更厚
 - 然后放斜开始旋转，数10组以上，取决于杯壁温度
 - light roast 奶泡不能太多温度不能太高，容易盖过风味
