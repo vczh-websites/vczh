@@ -2,7 +2,6 @@
 
 ## To do
 
-- Kahawa Safari Blend
 - Blue Bottle Bold
 - Kona Coffee Blend Medium Roast
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
@@ -35,6 +34,7 @@
 | 3/10.6g || Blue Bottle Espresso |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 6/18.5g- | Zoka Tatoosh |
+|| 6/19.5g 5/20.0g+? | Kahawa Safari Blend |
 
 ### No!
 
