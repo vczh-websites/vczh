@@ -34,7 +34,7 @@
 | 3/10.6g || Blue Bottle Espresso |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 6/18.5g- | Zoka Tatoosh |
-|| 6/19.5g 5/20.0g+? **(tn)**? | Kahawa Safari Blend |
+|| 6/19.5g 5/19.5g? **(tn)**? | Kahawa Safari Blend |
 
 ### No!
 
