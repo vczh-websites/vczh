@@ -2,6 +2,8 @@
 
 ## To do
 
+- Ladro Ladro Medium Roast **FRESH**
+- Ladro Diablo Dark Roast **FRESH**
 - Blue Bottle Bold
 - Kona Coffee Blend Medium Roast
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
