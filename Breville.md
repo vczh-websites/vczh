@@ -90,5 +90,4 @@ For Zoka Tatoosh 6/18.0g extracts significantly more than 2/20.0g **(K)**.
 
 ### Demo
 
-![Latte Art Demo](./LatteArtDemo.jpg)
-![Latte Art Demo 2](./LatteArtDemo2.jpg)
+[Latte Art Demos](./LatteArt)
