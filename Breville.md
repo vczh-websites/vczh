@@ -2,7 +2,6 @@
 
 ## To do
 
-- Ladro Ladro Medium Roast **FRESH**
 - Ladro Diablo Dark Roast **FRESH**
 - Blue Bottle Bold
 - Kona Coffee Blend Medium Roast
@@ -37,6 +36,7 @@
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 6/18.5g- | Zoka Tatoosh |
 || 6/19.5g 5/19.5g? **(tn)**? | Kahawa Safari Blend |
+||| Ladro Ladro Medium Roast **FRESH** |
 
 ### No!
 
