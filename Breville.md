@@ -27,6 +27,7 @@
 | 3/10.7g | 4/21.3g+ | Stumptown Hair Bender |
 || 5/20.5g- | Ladro Fremont Medium Roast **FRESH** |
 || 5/18.0g | Fonte Uptown Espresso **FRESH** |
+|| 6/20.0g+ | Ladro Ladro Medium Roast **FRESH** **(tn)** |
 
 ### hmmm
 
@@ -36,7 +37,6 @@
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 6/18.5g- | Zoka Tatoosh |
 || 6/19.5g | Kahawa Safari Blend **(tn)** |
-|| 6/20.5g 6/20.0g? | Ladro Ladro Medium Roast **FRESH** **(tn)** |
 
 ### No!
 
