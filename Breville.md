@@ -2,7 +2,6 @@
 
 ## To do
 
-- Ladro Diablo Dark Roast **FRESH**
 - Blue Bottle Bold
 - Kona Coffee Blend Medium Roast
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
@@ -37,6 +36,7 @@
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 6/18.5g- | Zoka Tatoosh |
 || 6/19.5g | Kahawa Safari Blend **(tn)** |
+|| 3/19.1g 4/19.6g 3.5/19.3g? | Ladro Diablo Dark Roast **FRESH** **(tn)** |
 
 ### No!
 
