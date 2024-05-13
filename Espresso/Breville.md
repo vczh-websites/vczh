@@ -59,7 +59,7 @@ For Zoka Tatoosh 6/18.0g extracts significantly more than 2/20.0g **(K)**.
   - 多/酸：粗了
   - 少/苦：细了
 - dark roast 偏粗偏少
-- 开机后应该放2 shots水+20秒蒸汽预热
+- 开机后应该放2 shots水+20秒蒸汽预热，每杯之前放1 shot水和几秒钟蒸汽，basket需要被冲或者泡杯里
 
 ## Milk Frothing (Breville 876)
 
