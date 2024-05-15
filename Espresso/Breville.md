@@ -36,7 +36,7 @@
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 6/18.5g- | Zoka Tatoosh |
 || 6/19.5g | Kahawa Safari Blend **(tn)** |
-|| 3.5/19.3g 4/19.6g */-0.3g? | Ladro Diablo Dark Roast **FRESH** **(tn)** |
+|| 4/19.3g | Ladro Diablo Dark Roast **FRESH** **(tn)** |
 
 ### No!
 
