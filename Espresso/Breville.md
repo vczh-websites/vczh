@@ -24,9 +24,10 @@
 || 3/20.8g+ | Intelligentsia Black Cat Expresso |
 || 3/23.6g | Intelligentsia House **(tn)** |
 | 3/10.7g | 4/21.3g+ | Stumptown Hair Bender |
-|| 5/20.5g- | Ladro Fremont Medium Roast **FRESH** |
 || 5/18.0g | Fonte Uptown Espresso **FRESH** |
+|| 5/20.5g- | Ladro Fremont Medium Roast **FRESH** |
 || 6/20.0g+ | Ladro Ladro Medium Roast **FRESH** **(tn)** |
+|| 4/19.4g+ | Ladro Diablo Dark Roast **FRESH** |
 
 ### hmmm
 
@@ -36,7 +37,6 @@
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 6/18.5g- | Zoka Tatoosh |
 || 6/19.5g | Kahawa Safari Blend **(tn)** |
-|| 4/19.4g+ | Ladro Diablo Dark Roast **FRESH** **(tn)** |
 
 ### No!
 
@@ -48,7 +48,7 @@
 ### Note
 
 Knodos basket produces much less pressure.
-For Zoka Tatoosh 6/18.0g extracts significantly more than 2/20.0g **(K)**.
+For Zoka Tatoosh 6/18.0g extracts significantly more over than 2/20.0g **(K)**.
 
 ## Dial In
 
