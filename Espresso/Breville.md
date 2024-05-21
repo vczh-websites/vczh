@@ -3,9 +3,11 @@
 ## To do
 
 - Blue Bottle Bold
+- Death Wish Dark Roast Hints of Chocolate and Cherry
 - Kona Coffee Blend Medium Roast
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
 - TraderJoes Organic FairTrade Five Country Blend Dark Roast
+- Cutters Point Discovery Espresso Viennese Roast
 
 ## Numbers
 
