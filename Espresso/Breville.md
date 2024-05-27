@@ -2,7 +2,6 @@
 
 ## To do
 
-- Blue Bottle Bold
 - Death Wish Dark Roast Hints of Chocolate and Cherry
 - Kona Coffee Blend Medium Roast
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
@@ -36,6 +35,7 @@
 | Single Shot | Double Shot | Brand |
 |--|--|--|
 | 3/10.6g || Blue Bottle Espresso |
+|| 2/20.5g- 2/20.2g? | Blue Bottle Bold |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 6/18.5g- | Zoka Tatoosh |
 || 6/19.5g | Kahawa Safari Blend **(tn)** |
