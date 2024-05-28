@@ -36,7 +36,6 @@
 | Single Shot | Double Shot | Brand |
 |--|--|--|
 | 3/10.6g || Blue Bottle Espresso |
-|| 2/20.5g, low preasure | Blue Bottle Bold **NOT FLESH** |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 6/18.5g- | Zoka Tatoosh |
 || 6/19.5g | Kahawa Safari Blend **(tn)** |
@@ -47,6 +46,7 @@
 |--|--|--|
 | 2/10.5g | 3/20.5g | Madcap Bolt (Deep Chocolate Syrupy) |
 || 4/20.5g- | Campfire Summer Camp Medium Dark Roast |
+|| 1/20.5g, low preasure | Blue Bottle Bold **NOT FLESH** |
 
 ### Note
 
