@@ -16,7 +16,8 @@
 - Brand column
   - **(tn)**: means with thinner frothing
   - **FRESH**: means the bean was roasted just a few days ago when purchased, this could affect numbers
-- The internal setting of the Breville grinder is **6**.
+    - **NOT FLESH**: it has been quite a few months from roasted
+- The internal setting of the Breville grinder is **6**
 
 ### Yes!
 
@@ -35,7 +36,7 @@
 | Single Shot | Double Shot | Brand |
 |--|--|--|
 | 3/10.6g || Blue Bottle Espresso |
-|| 2/20.5g- 2/20.2g? | Blue Bottle Bold |
+|| 2/20.5g, low preasure | Blue Bottle Bold **NOT FLESH** |
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 6/18.5g- | Zoka Tatoosh |
 || 6/19.5g | Kahawa Safari Blend **(tn)** |
