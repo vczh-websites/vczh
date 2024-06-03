@@ -29,6 +29,7 @@
 || 5/20.5g- | Ladro Fremont Medium Roast **FRESH** |
 || 6/20.0g+ | Ladro Ladro Medium Roast **FRESH** **(tn)** |
 || 4/19.4g+ | Ladro Diablo Dark Roast **FRESH** |
+|| 1.5/17.5～18.0g | Death Wish Dark Roast Hints of Chocolate and Cherry |
 
 ### hmmm
 
@@ -38,7 +39,6 @@
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 6/18.5g- | Zoka Tatoosh |
 || 6/19.5g | Kahawa Safari Blend **(tn)** |
-|| 1.5/18.0g-? | Death Wish Dark Roast Hints of Chocolate and Cherry |
 
 ### No!
 
