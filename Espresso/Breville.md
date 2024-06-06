@@ -55,7 +55,7 @@ For Zoka Tatoosh 6/18.0g extracts significantly more over than 2/20.0g **(K)**.
 
 ## Dial In
 
-[浓缩咖啡新手必看](./GettingStarted.md)
+[浓缩咖啡新手必看](./GettingStarted)
 
 ## Milk Frothing (Breville 876)
 
