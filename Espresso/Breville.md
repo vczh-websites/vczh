@@ -5,7 +5,6 @@
 - Kona Coffee Blend Medium Roast
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
 - TraderJoes Organic FairTrade Five Country Blend Dark Roast
-- Cutters Point Discovery Espresso Viennese Roast
 
 ## Numbers
 
@@ -39,6 +38,7 @@
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 6/18.5g- | Zoka Tatoosh |
 || 6/19.5g | Kahawa Safari Blend **(tn)** |
+||| Cutters Point Discovery Espresso Viennese Roast |
 
 ### No!
 
