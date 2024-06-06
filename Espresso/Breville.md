@@ -55,16 +55,7 @@ For Zoka Tatoosh 6/18.0g extracts significantly more over than 2/20.0g **(K)**.
 
 ## Dial In
 
-- 从性质接近的豆的参数开始，先得到一个大概正确的粉量
-  - 第一杯建议使用刮片
-  - 在压力升上去之前就大量出水说明要粉量太少
-  - 也可能是channeling但是在大力tamp的情况下概率较低
-- 根据味道和咖啡液重量调整粗细
-  - 多/酸：粗了
-  - 少/苦：细了
-- dark roast 偏粗偏少
-- 开机后放20秒蒸汽预热，每杯之前挂空粉碗和空杯放1-2 shot水和几秒钟蒸汽
-- 新鲜豆放久了之后会释放掉二氧化碳，此时需要适当增加一点点粉（<0.5g），恢复压力
+[浓缩咖啡新手必看](./GettingStarted.md)
 
 ## Milk Frothing (Breville 876)
 
