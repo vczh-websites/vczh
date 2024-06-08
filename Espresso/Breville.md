@@ -38,7 +38,7 @@
 | 4/9.8g- | 5/18.7g- | Zoka Tuscan |
 || 6/18.5g- | Zoka Tatoosh |
 || 6/19.5g | Kahawa Safari Blend **(tn)** |
-|| 3.5/19.0g try little lighter | Cutters Point Discovery Espresso Viennese Roast |
+|| 3.5/19.5g- | Cutters Point Discovery Espresso Viennese Roast |
 
 ### No!
 
