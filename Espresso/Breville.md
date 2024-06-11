@@ -7,52 +7,46 @@
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
 - TraderJoes Organic FairTrade Five Country Blend Dark Roast
 
-## Numbers
+## Settings
 
-- Shot column
-  - **(P)**: using breville's pressurized bucket
-  - **(K)**: means using knodos' bucket
-- Brand column
-  - **(tn)**: means with thinner frothing
-  - **FRESH**: means the bean was roasted just a few days ago when purchased, this could affect numbers
-    - **NOT FLESH**: it has been quite a few months from roasted
-- The internal setting of the Breville grinder is **6**
+### Dialing In
+
+#### Breville Dose Control (double shot)
+
+- Kahawa Safari Blend 6/19.5g+ **(tn)**
+- Zoka Tuscan 5/18.7g-
+- Zoka Tatoosh 6/18.5g-
+- Blue Bottle Espresso
 
 ### Yes!
 
-| Single Shot | Double Shot | Brand |
-|--|--|--|
-|| 3/20.8g+ | Intelligentsia Black Cat Expresso |
-|| 3/23.6g | Intelligentsia House **(tn)** |
-| 3/10.7g | 4/21.3g+ | Stumptown Hair Bender |
-|| 5/18.0g | Fonte Uptown Espresso **FRESH** |
-|| 5/20.5g- | Ladro Fremont Medium Roast **FRESH** |
-|| 6/20.0g+ | Ladro Ladro Medium Roast **FRESH** **(tn)** |
-|| 4/19.4g+ | Ladro Diablo Dark Roast **FRESH** |
-|| 1.5/17.5～18.0g | Death Wish Dark Roast Hints of Chocolate and Cherry |
-|| 3.5/19.5g+ | Cutters Point Discovery Espresso Viennese Roast **(tn)** |
+#### Breville Dose Control (double shot)
 
-### hmmm
-
-| Single Shot | Double Shot | Brand |
-|--|--|--|
-| 3/10.6g || Blue Bottle Espresso |
-| 4/9.8g- | 5/18.7g- | Zoka Tuscan |
-|| 6/18.5g- | Zoka Tatoosh |
-|| 6/19.5g | Kahawa Safari Blend **(tn)** |
+| Settings | **(tn)** | **FRESH** | Brand |
+|--|--|--|--|
+| 3/20.8g+ ||| Intelligentsia Black Cat Expresso |
+| 3/23.6g | :o: || Intelligentsia House |
+| 4/21.3g+ ||| Stumptown Hair Bender |
+| 5/18.0g || :o: | Fonte Uptown Espresso |
+| 5/20.5g- || :o: | Ladro Fremont Medium Roast |
+| 6/20.0g+ | :o: | :o: | Ladro Ladro Medium Roast |
+| 4/19.4g+ || :o: | Ladro Diablo Dark Roast |
+| 1.5/17.5～18.0g ||| Death Wish Dark Roast Hints of Chocolate and Cherry |
+| 3.5/19.5g+ | :o: || Cutters Point Discovery Espresso Viennese Roast |
 
 ### No!
 
-| Single Shot | Double Shot | Brand |
-|--|--|--|
-| 2/10.5g | 3/20.5g | Madcap Bolt (Deep Chocolate Syrupy) |
-|| 4/20.5g- | Campfire Summer Camp Medium Dark Roast |
-|| 1/20.5g, low preasure | Blue Bottle Bold **NOT FLESH** |
+- Madcap Bolt (Deep Chocolate Syrupy) |
+- Campfire Summer Camp Medium Dark Roast |
+- Blue Bottle Bold **NOT FLESH** (low preasure)
 
 ### Note
 
-Knodos basket produces much less pressure.
-For Zoka Tatoosh 6/18.0g extracts significantly more over than 2/20.0g **(K)**.
+- **(tn)**: means with thinner frothing
+- **FRESH**: means the bean was roasted just a few days ago when purchased, this could affect numbers
+- **NOT FLESH**: it has been quite a few months from roasted
+- The internal setting of the Breville grinder is **6**
+- Knodos basket produces much less pressure. For Zoka Tatoosh 6/18.0g in breville original extracts significantly more over than 2/20.0g in Knodos.
 
 ## Dial In
 
