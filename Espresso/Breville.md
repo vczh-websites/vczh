@@ -2,7 +2,6 @@
 
 ## To do
 
-- Temple Espresso Dharma Dark Roast
 - Kona Coffee Blend Medium Roast
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
 - TraderJoes Organic FairTrade Five Country Blend Dark Roast
@@ -13,6 +12,10 @@
 
 #### Breville Dose Control (double shot)
 
+- Temple Espresso Dharma Dark Roast **FLESH**
+  - was 6/20.0g but laters 4/20.0g
+  - try tomorrow with both profile again
+  - **(tn)**
 - Kahawa Safari Blend 6/19.5g+ **(tn)**
 - Zoka Tuscan 5/18.7g-
 - Zoka Tatoosh 6/18.5g-
