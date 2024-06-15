@@ -17,7 +17,7 @@
   - 4.5/20.2g -> 32g
   - 5.5/20.3g -> 36g/40g still a little bit bitter
   - 6/20.8g -> 31g
-  - 6/20.5g -> 42g not bitter
+  - 6/20.5g -> 42g not bitter, also not sweet
   - try 6/20.2g
   - **(tn)**
 - Kahawa Safari Blend 6/19.5g+ **(tn)**
