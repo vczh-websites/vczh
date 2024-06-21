@@ -12,16 +12,7 @@
 
 #### Breville Dose Control (double shot)
 
-- Temple Espresso Dharma Dark Roast **FLESH**
-  - 4/19.7g -> 40g
-  - 4.5/20.2g -> 32g
-  - 5.5/20.3g -> 36g/38g/40g still a little bit bitter
-  - 5.5/20.2g -> 38g
-  - **5.5/20.1g** -> 38g/40g unnoticeable bitter, fruit
-  - 6/20.8g -> 31g
-  - 6/20.5g -> 42g not bitter, also not sweet
-  - try 6/20.2g
-  - **(tn)**
+- Temple Espresso Dharma Dark Roast 5.5/20.2g **FLESH** **(tn)**
 - Kahawa Safari Blend 6/19.5g+ **(tn)**
 - Zoka Tuscan 5/18.7g-
 - Zoka Tatoosh 6/18.5g-
