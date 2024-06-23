@@ -2,6 +2,7 @@
 
 ## To do
 
+- Stumptown Holler Mtn
 - Kona Coffee Blend Medium Roast
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
 - TraderJoes Organic FairTrade Five Country Blend Dark Roast
@@ -12,10 +13,7 @@
 
 #### Breville Dose Control (double shot)
 
-- Temple Espresso Dharma Dark Roast 5.5/20.2g **FLESH** **(tn)**
-- Kahawa Safari Blend 6/19.5g+ **(tn)**
-- Zoka Tuscan 5/18.7g-
-- Zoka Tatoosh 6/18.5g-
+- Umbria Bizzarra Blend Medium Dark Roast
 - Blue Bottle Espresso
 
 ### Yes!
@@ -36,9 +34,13 @@
 
 ### No!
 
-- Madcap Bolt (Deep Chocolate Syrupy) |
-- Campfire Summer Camp Medium Dark Roast |
+- Madcap Bolt (Deep Chocolate Syrupy)
+- Campfire Summer Camp Medium Dark Roast
 - Blue Bottle Bold **NOT FLESH** (low preasure)
+- Temple Espresso Dharma Dark Roast 5.5/20.2g **FLESH** **(tn)**
+- Kahawa Safari Blend 6/19.5g+ **(tn)**
+- Zoka Tuscan 5/18.7g-
+- Zoka Tatoosh 6/18.5g-
 
 ### Note
 
