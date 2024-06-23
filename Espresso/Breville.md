@@ -21,7 +21,7 @@
   - 5/19.3g -> 43.5 no big difference
   - 5/19.4g 37g -> 9/28s flavor, tolerable bitter, no obvious aftertaste
     - need to stop before 1.5g
-    - try 6/19.5g -> 36g (stop at 34.5g)
+    - try (6 even 7)/19.5g -> 36g (stop at 34.5g)
 - Blue Bottle Espresso
 
 ### Yes!
