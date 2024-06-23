@@ -14,6 +14,9 @@
 #### Breville Dose Control (double shot)
 
 - Umbria Bizzarra Blend Medium Dark Roast
+  - 5/18.1g -> 56g no pressure
+  - 3.5/18.3g -> 52g low pressure but very bitter
+  - 3.5/19.4g -> 37g more than tolerable bitter, no sign od channeling
 - Blue Bottle Espresso
 
 ### Yes!
