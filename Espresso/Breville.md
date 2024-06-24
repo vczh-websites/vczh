@@ -22,8 +22,10 @@
   - 5/19.4g 37g -> 9/28s flavor, tolerable bitter, no obvious aftertaste
     - need to stop before 1.5g
     - try (6 even 7)/19.5g -> 36g (stop at 34.5g)
-  - **6/19.5g 36g** -> 10/26s flavor, less bitter, very little sweet aftertaste
+  - 6/19.5g 36g -> 10/26s flavor, less bitter, very little sweet aftertaste
   - 7/19.5g 36g -> 9/24s under extraction
+  - **6/19.5g 38g** -> 9/27s flavor, very little bitter remains in mouth, no obvious aftertaste
+    - time begins when hear pump
 - Blue Bottle Espresso
 
 ### Yes!
