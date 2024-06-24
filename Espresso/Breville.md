@@ -61,6 +61,7 @@
 - **NOT FLESH**: it has been quite a few months from roasted
 - The internal setting of the Breville grinder is **6**
 - Knodos basket produces much less pressure. For Zoka Tatoosh 6/18.0g in breville original extracts significantly more over than 2/20.0g in Knodos.
+- a/bs: press and hold `2cup`, time when hear the pump, release at a seconds, press again to stop at b-1.5 seconds. You and the machine needs time to respond.
 
 ## Dial In
 
