@@ -26,7 +26,8 @@
   - 7/19.5g 36g -> 9/24s under extraction
   - 6/19.5g 38g -> 9/27s flavor, very little bitter remains in mouth, no obvious aftertaste
     - time begins when hear pump
-  - **6/20.0g 38g** -> 9/31s **(tn)** aromatic, strong flavor, not bitter at all, unnoticable sweet aftertaste.
+  - **6/20.0g 38g** -> 9/30s 9/31s **(tn)** aromatic, strong flavor, not bitter at all, unnoticable sweet aftertaste.
+    - 37g -> 9/28s
 - Blue Bottle Espresso
 
 ### Yes!
