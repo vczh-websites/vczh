@@ -10,7 +10,7 @@
 
 ### Dialing In
 
-#### IMS-NT Basket / Niche Duo
+#### IMS B62.52TH24NT / Niche Duo
 
 - Stumptown Holler Mtn
   - 15.5
