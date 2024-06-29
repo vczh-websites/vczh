@@ -13,9 +13,15 @@
 #### IMS-NT Basket / Niche Duo
 
 - Stumptown Holler Mtn
-  - 15.5/21.8g -> 8/30s 41g need to reduce bitness
-    - try less output
-  - 16.5/22.0g -> 8/27s 41.5g no bitness but flavor jot strong enough
+  - 15.5
+    - 21.8g -> 8/30s 41g need to reduce bitter
+    - 21.9g -> 8/24s 37.4g aromatic, flavor not strong rnough, no bitter, puck seems a little bit large
+  - 16.5
+    - 22.0g -> 8/27s 41.5g no bitter but flavor not strong enough
+    - 21.0g -> 8/22s 42.6g less creama, flaver a little strong, try stronger
+  - 16
+    - **21.1g -> 8/23s 43.1g** less creama, less aromatic, flavor fine, very little bitter
+    - try 21.5g -> 8/?s 40g
 
 #### Breville Dose Control (double shot)
 
