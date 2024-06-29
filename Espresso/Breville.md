@@ -14,6 +14,8 @@
 
 - Stumptown Holler Mtn
   - 15.5/21.8g -> 8/30s 41g need to reduce bitness
+    - try less output
+  - 16.5/22.0g -> 8/27s 41.5g no bitness but flavor jot strong enough
 
 #### Breville Dose Control (double shot)
 
