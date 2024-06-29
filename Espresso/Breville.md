@@ -13,7 +13,7 @@
 #### IMS-NT Basket / Niche Duo
 
 - Stumptown Holler Mtn
-  - 15.5/22g -> 8/30s 41g need to reduce bitness
+  - 15.5/21.8g -> 8/30s 41g need to reduce bitness
 
 #### Breville Dose Control (double shot)
 
