@@ -2,6 +2,7 @@
 
 ## To do
 
+- Stumptown Founder's
 - Kona Coffee Blend Medium Roast
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
 - TraderJoes Organic FairTrade Five Country Blend Dark Roast
