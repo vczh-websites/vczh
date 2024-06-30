@@ -22,7 +22,7 @@
     - 21.0g -> 8/22s 42.6g less creama, flaver a little strong, try stronger
   - 16
     - **21.1g -> 8/23s 43.1g** less creama, less aromatic, flavor fine, very little bitter
-    - try 21.5g -> 8/?s 40g
+    - try 21.5g -> 8/?s 40g-42g
 
 #### Breville Dose Control (double shot)
 
