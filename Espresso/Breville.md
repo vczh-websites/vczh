@@ -24,7 +24,9 @@
     - 21.1g -> 8/23s 43.1g less creama, less aromatic, flavor fine, very little bitter
     - 21.6g -> 8/26s 41.8g good creama, strong flavor, less aromatic, tolerable bitter, little sweet aftertaste
     - 21.6g -> 8/21s 39.7g good creama, less aromatic, stronger aromatic and less bitter than 42g, no obvious aftertaste
-      - time could due to a worse puck prep, try again
+      - brew times shorter than expected, could be bad puck prep
+    - **21.6g -> 8/21s 37.3** good creama, aromatic, strong flavor, sweet
+      - repeat a few more times
 
 #### Breville Dose Control (double shot)
 
