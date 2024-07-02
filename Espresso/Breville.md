@@ -21,6 +21,7 @@
   - 16.5
     - 22.0g -> 8/27s 41.5g no bitter but flavor not strong enough
     - 21.0g -> 8/22s 42.6g less creama, flaver a little strong, try stronger
+    - 21.6g 38-39g ?
   - 16
     - 21.1g -> 8/23s 43.1g less creama, less aromatic, flavor fine, very little bitter
     - 21.6g -> 8/26s 41.8g good creama, strong flavor, less aromatic, tolerable bitter, little sweet aftertaste
@@ -30,6 +31,7 @@
       - 21.5g -> 8/22s 38.7g good creama, less aromatic, strong flavor, less sweet
       - 21.6g -> 8/21s 37.8 good creama, less aromatic, strong flavor, sweet
       - yielding is fast, need to stop 2.5g ahead of time
+      - try 16.5
 
 #### Breville Dose Control (double shot)
 
