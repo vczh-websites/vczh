@@ -38,6 +38,8 @@
     - 7/3 strange
       - 22.0g -> (8/22s 41g, 8/23s 41.9g) too fast and bitter, channeling?
       - 21.6g -> 8/22s 37.5g flavor much less stronger than the same recipe two days ago, and bitter.
+      - 22.0g -> 8/24s 40g getting towards yesterday but more bitter.
+      - 22.0g -> 8/23s 40g even less flavor.
       
 
 #### Breville Dose Control (double shot)
