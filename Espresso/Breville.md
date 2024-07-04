@@ -40,6 +40,7 @@
       - 21.6g -> 8/22s 37.5g flavor much less stronger than the same recipe two days ago, and bitter.
       - 22.0g -> 8/24s 40g getting towards yesterday but more bitter.
       - 22.0g -> 8/23s 40g even less flavor.
+      - 15.5 22.0g -> 24s 38.7g eventually good, I guess bean may changed since not that fresh.
       
 
 #### Breville Dose Control (double shot)
