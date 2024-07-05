@@ -24,13 +24,13 @@
 
 #### IMS B62.52TH24NT / Niche Duo (double shot)
 
-| Grind | Extraction | **FRESH** | Brand |
+| Ground | Extraction | **FRESH** | Brand |
 |--|--|--|--|
 | 16/21.6g | 39g || Stumptown Holler Mtn |
 
 #### Breville Dose Control (double shot)
 
-| Settings | **(tn)** | **FRESH** | Brand |
+| Ground | **(tn)** | **FRESH** | Brand |
 |--|--|--|--|
 | 5/18.0g || :o: | Fonte Uptown Espresso |
 | 5/20.5g- || :o: | Ladro Fremont Medium Roast |
