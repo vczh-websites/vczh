@@ -19,6 +19,7 @@
     - except 12/20g all extractions have a slower flow in the first 10s after pre-infusion
     - try 37-38g yield
     - try 21.5-22.0g ground
+    - try 13 grind setting to see if it stables flow
 
 ### Yes!
 
