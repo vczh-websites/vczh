@@ -2,7 +2,6 @@
 
 ## To do
 
-- Stumptown Founder's
 - Kona Coffee Blend Medium Roast
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
 - TraderJoes Organic FairTrade Five Country Blend Dark Roast
@@ -10,6 +9,16 @@
 ## Settings
 
 ### Dialing In (IMS B62.52TH24NT / Niche Duo)
+
+- Stumptown Founder's
+  - 12/20.1g -> 8/29s 40.8g, ok creama, somewhat weak flavor, totally not bitter
+  - 11/20.0g -> 8/37s 39.9g, good creama, enough flavor, a little bit bitter aftertaste
+  - 11.5/20.0g -> 8/35s 40.6g, same
+  - 11.5/20.0g -> 12/40s 37.6g, same but a little bit weaker flavor
+  - 12/21.0g -> 10/39s 40.3g, somewhat aromatic in espresso, good creama, strong flavor, less sweet, no bitter aftertaste
+    - except 12/20g all extractions have a slower flow in the first 10s after pre-infusion
+    - try 37-38g yield
+    - try 21.5-22.0g ground
 
 ### Yes!
 
