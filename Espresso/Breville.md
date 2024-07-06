@@ -17,9 +17,11 @@
   - 11.5/20.0g -> 12/40s 37.6g, same but a little bit weaker flavor
   - 12/21.0g -> 10/39s 40.3g, somewhat aromatic in espresso, good creama, strong flavor, less sweet, no bitter aftertaste
     - except 12/20g all extractions have a slower flow in the first 10s after pre-infusion
-    - try 37-38g yield
     - try 21.5-22.0g ground
     - try 13 grind setting to see if it stables flow
+  - 12/21.0g -> 10/34s 37.9g, good creama, strong flavor, a little bitter in foam but no bitter aftertaste
+    - sweet aftertaste comes acter my mouth regenerate saliva
+    - try to repro by a few sour to trigger saliva after drinking the bitter foam
 
 ### Yes!
 
