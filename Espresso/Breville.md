@@ -22,6 +22,8 @@
     - try to repro by a few sour to trigger saliva after drinking the bitter foam
   - 12/22.0g -> 11/40s 39.5g, aromatic in espresso, but disappears very fast, bitter than above, could due to slow and dark extraction at the beginning, no sweet aftertaste
   - 13/21.0g -> 10/30s 39.8g, weaker than 12->37.9g, no aftertaste
+  - 12/21.0g -> 10/33s 37.7g, looks a little bit uneven, stable repro, less sweet aftertaste comes later, foam less bitter
+    - Milk changed from OrganicValley to HorizonOrganic but didn't feel difference in latte
 
 ### Yes!
 
