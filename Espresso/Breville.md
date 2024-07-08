@@ -27,7 +27,7 @@
   - 12.5/21.0g -> 10/29s 38.1g, good creama, little weak but more obvious flavor, foam little bitter, somewhat sweet aftertaste
   - 12.5/22.0g -> 10/34s 37.5g, stronger flavor but less characteristic, late and weak sweet aftertaste
   - 12.5/21.5g -> 10/32s 37.6g, aromatic, perfect creama, somewhat bitter but no bitter or sweet aftertaste
-  - 12.5/22.0g -> 10/35s 37.5g, aromatic, dark texture in creama, less bitter, no obvious after taste
+  - 12.5/22.0g -> 10/35s 37.5g, aromatic, dark texture in creama, less bitter, late and very weak sweet aftertaste
     - try yield 40g to reproduce strong and characteristic flavor like 21g -> 38.1g
 
 ### Yes!
