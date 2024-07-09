@@ -42,6 +42,7 @@
   - 10/21.0g 8/33s -> 37.7g, strong flavor, a little bitter but not in aftertaste
     - slower thab expected, the first 21.0g extraction could still mix a few 12 ground
     - try 10.5
+  - 10.5/21.0 8/29s -> 40.1g, good
 
 ### Yes!
 
