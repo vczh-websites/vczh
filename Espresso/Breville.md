@@ -32,6 +32,16 @@
   - 12.5/22.0g -> 10/38s 40.0g, very aromatic, perfect creama, repro 21g -> 38.1g successfully, no improvement, slightly less bitter in foam and less sweet in aftertaste
   - 12.5/21.5g -> 10/33s 40.0g, very aromatic, perfect creama, no change
     - a little bit faster, but doesn't taste like channeling
+- Candy Tiger Peru Decaf
+  - 12/20.0g flow too fast
+  - 10/21.0g 8/33s -> 41.6g, ok creama, sweet, bitter aftertaste
+  - 10/22.0g 8/46s -> 39.5g, bitter
+  - 10/21.5g 8/37s -> 38.1g, better creama, strong flavor, a little bitter but not in aftertaste
+  - 10/21.3g 8/34s -> 36.0g, very little aromatic on creama, strong flavor but bitter aftertaste
+    - dose could be too much even watery on top
+  - 10/21.0g 8/33s -> 37.7g, strong flavor, a little bitter but not in aftertaste
+    - slower thab expected, the first 21.0g extraction could still mix a few 12 ground
+    - try 10.5
 
 ### Yes!
 
