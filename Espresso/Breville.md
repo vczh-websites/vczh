@@ -6,54 +6,21 @@
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
 - TraderJoes Organic FairTrade Five Country Blend Dark Roast
 
-## Settings
+## Dial In
 
-### Dialing In (IMS B62.52TH24NT / Niche Duo)
+[浓缩咖啡新手必看](./GettingStarted)
+[Espresso 调参进阶](./ImproveDialingIn)
 
-- Stumptown Founder's
-  - 12/20.1g -> 8/29s 40.8g, ok creama, somewhat weak flavor, totally not bitter
-  - 11/20.0g -> 8/37s 39.9g, good creama, enough flavor, a little bit bitter aftertaste
-  - 11.5/20.0g -> 8/35s 40.6g, same
-  - 11.5/20.0g -> 12/40s 37.6g, same but a little bit weaker flavor
-  - 12/21.0g -> 10/39s 40.3g, somewhat aromatic in espresso, good creama, strong flavor, less sweet, no bitter aftertaste
-    - except 12/20g all extractions have a slower flow in the first 10s after pre-infusion
-  - 12/21.0g -> 10/34s 37.9g, good creama, strong flavor, a little bitter in foam but no bitter aftertaste
-    - sweet aftertaste comes acter my mouth regenerate saliva
-    - try to repro by a few sour to trigger saliva after drinking the bitter foam
-  - 12/22.0g -> 11/40s 39.5g, aromatic in espresso, but disappears very fast, bitter than above, could due to slow and dark extraction at the beginning, no sweet aftertaste
-  - 13/21.0g -> 10/30s 39.8g, weaker than 12->37.9g, no aftertaste
-  - 12/21.0g -> 10/33s 37.7g, looks a little bit uneven, stable repro, less sweet aftertaste comes later, foam less bitter
-    - Milk changed from OrganicValley to HorizonOrganic but didn't feel difference in latte
-  - 12.5/21.0g -> 10/29s 38.1g, good creama, little weak but more obvious flavor, foam little bitter, somewhat sweet aftertaste
-  - 12.5/22.0g -> 10/34s 37.5g, stronger flavor but less characteristic, late and weak sweet aftertaste
-  - 12.5/21.5g -> 10/32s 37.6g, aromatic, perfect creama, somewhat bitter but no bitter or sweet aftertaste
-  - 12.5/22.0g -> 10/35s 37.5g, aromatic, dark texture in creama, less bitter, late and very weak sweet aftertaste
-    - try yield 40g to reproduce strong and characteristic flavor like 21g -> 38.1g
-  - 12.5/22.0g -> 10/38s 40.0g, very aromatic, perfect creama, repro 21g -> 38.1g successfully, no improvement, slightly less bitter in foam and less sweet in aftertaste
-  - 12.5/21.5g -> 10/33s 40.0g, very aromatic, perfect creama, no change
-    - a little bit faster, but doesn't taste like channeling
-- Candy Tiger Peru Decaf
-  - 12/20.0g flow too fast
-  - 10/21.0g 8/33s -> 41.6g, ok creama, sweet, bitter aftertaste
-  - 10/22.0g 8/46s -> 39.5g, bitter
-  - 10/21.5g 8/37s -> 38.1g, better creama, strong flavor, a little bitter but not in aftertaste
-  - 10/21.3g 8/34s -> 36.0g, very little aromatic on creama, strong flavor but bitter aftertaste
-    - dose could be too much even watery on top
-  - 10/21.0g 8/33s -> 37.7g, strong flavor, a little bitter but not in aftertaste
-    - slower thab expected, the first 21.0g extraction could still mix a few 12 ground
-    - try 10.5
-  - 10.5/21.0 8/29s -> 40.1g, good
-    - last dose 18.0g -> 41.0g actually feel sweet aftertaste
+## Yes!
 
-### Yes!
-
-#### IMS B62.52TH24NT / Niche Duo (double shot)
+### IMS B62.52TH24NT / Niche Duo (double shot)
 
 | Ground | Extraction | **FRESH** | Brand |
 |--|--|--|--|
 | 16/21.6g | 39g || Stumptown Holler Mtn |
+|  10.5/21.0 | 40g || Candy Tiger Peru Decaf |
 
-#### Breville Dose Control (double shot)
+### Breville Dose Control (double shot)
 
 | Ground | **(tn)** | **FRESH** | Brand |
 |--|--|--|--|
@@ -67,7 +34,7 @@
 | 1.5/17.5～18.0g ||| Death Wish Dark Roast Hints of Chocolate and Cherry |
 | 3.5/19.5g+ | :o: || Cutters Point Discovery Espresso Viennese Roast |
 
-### No!
+## No!
 
 - Madcap Bolt (Deep Chocolate Syrupy)
 - Campfire Summer Camp Medium Dark Roast
@@ -77,7 +44,7 @@
 - Zoka Tuscan 5/18.7g-
 - Zoka Tatoosh 6/18.5g-
 
-### Note
+## Note
 
 - **(tn)**: means with thinner frothing
 - **FRESH**: means the bean was roasted just a few days ago when purchased, this could affect numbers
@@ -86,9 +53,18 @@
 - Knodos basket produces much less pressure. For Zoka Tatoosh 6/18.0g in breville original extracts significantly more over than 2/20.0g in Knodos.
 - a/bs: press and hold `2cup`, time when hear the pump, release at a seconds, press again to stop at b-1.5 seconds. You and the machine needs time to respond.
 
-## Dial In
+## Logs
 
-[浓缩咖啡新手必看](./GettingStarted)
+### IMS B62.52TH24NT / Niche Duo (double shot)
+
+[Stumptown Founder's](./DialingInLog/2024-7-4-Stumptown-Founders)
+[Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf)
+[Stumptown Holler Mtn](./DialingInLog/2024-6-28-Stumptown-Holler-Mtn)
+
+### Breville Dose Control (double shot)
+ 
+[Umbria Bizzarra Blend Medium Dark Roast](./DialingInLog/2024-6-23-Umbria-Bizzarra-Blend)
+[Temple Espresso Dharma Dark Roast](./DialingInLog/2024-6-11-Temple-Espresso-Dharma)
 
 ## Milk Frothing (Breville 876)
 
