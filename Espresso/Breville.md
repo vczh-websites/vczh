@@ -58,14 +58,14 @@
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
-[Stumptown Founder's](./DialingInLog/2024-7-4-Stumptown-Founders)
-[Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf)
-[Stumptown Holler Mtn](./DialingInLog/2024-6-28-Stumptown-Holler-Mtn)
+- [Stumptown Founder's](./DialingInLog/2024-7-4-Stumptown-Founders)
+- [Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf)
+- [Stumptown Holler Mtn](./DialingInLog/2024-6-28-Stumptown-Holler-Mtn)
 
 ### Breville Dose Control (double shot)
  
-[Umbria Bizzarra Blend Medium Dark Roast](./DialingInLog/2024-6-23-Umbria-Bizzarra-Blend)
-[Temple Espresso Dharma Dark Roast](./DialingInLog/2024-6-11-Temple-Espresso-Dharma)
+- [Umbria Bizzarra Blend Medium Dark Roast](./DialingInLog/2024-6-23-Umbria-Bizzarra-Blend)
+- [Temple Espresso Dharma Dark Roast](./DialingInLog/2024-6-11-Temple-Espresso-Dharma)
 
 ## Milk Frothing (Breville 876)
 
