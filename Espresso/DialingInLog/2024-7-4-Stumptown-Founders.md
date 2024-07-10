@@ -26,3 +26,4 @@
 - 12.5/21.5g -> 10/32s 40.3g, aromatic, perfect creama, a little weak flavor, a little bitter aftertaste
 - 12.5/21.5g -> 10/30s 37.5g, very aromatic, perfect creama, strong flavor, a little bitter but no bitter aftertaste
 - 13/21.5g -> 10/29s 37.5g, same, no bitter aftertaste
+  - try less dose, like 20.0g
