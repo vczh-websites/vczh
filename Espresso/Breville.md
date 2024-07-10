@@ -9,6 +9,7 @@
 ## Dial In
 
 [浓缩咖啡新手必看](./GettingStarted)
+
 [Espresso 调参进阶](./ImproveDialingIn)
 
 ## Yes!
