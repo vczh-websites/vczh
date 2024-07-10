@@ -43,6 +43,7 @@
     - slower thab expected, the first 21.0g extraction could still mix a few 12 ground
     - try 10.5
   - 10.5/21.0 8/29s -> 40.1g, good
+    - last dose 18.0g -> 41.0g actually feel sweet aftertaste
 
 ### Yes!
 
