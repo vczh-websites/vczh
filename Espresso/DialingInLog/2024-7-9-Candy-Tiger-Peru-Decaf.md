@@ -1,5 +1,7 @@
 # Candy Tiger Peru Decaf
 
+## IMS B62.52TH24NT / Niche Duo
+
 - 12/20.0g flow too fast
 - 10/21.0g 8/33s -> 41.6g, ok creama, sweet, bitter aftertaste
 - 10/22.0g 8/46s -> 39.5g, bitter
