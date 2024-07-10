@@ -23,3 +23,6 @@
 - 12.5/22.0g -> 10/38s 40.0g, very aromatic, perfect creama, repro 21g -> 38.1g successfully, no improvement, slightly less bitter in foam and less sweet in aftertaste
 - 12.5/21.5g -> 10/33s 40.0g, very aromatic, perfect creama, no change
   - a little bit faster, but doesn't taste like channeling
+- 12.5/21.5g -> 10/32s 40.3g, aromatic, perfect creama, a little weak flavor, a little bitter aftertaste
+- 12.5/21.5g -> 10/30s 37.5g, very aromatic, perfect creama, strong flavor, a little bitter but no bitter aftertaste
+- 13/21.5g -> 10/29s 37.5g, same, no bitter aftertaste
