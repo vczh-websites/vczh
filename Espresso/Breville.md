@@ -12,6 +12,12 @@
 
 [Espresso 调参进阶](./ImproveDialingIn)
 
+More dose doesn't necessary reduce bitter.
+Bitter could also come from more material get extracted.
+The real over-extraction sign may be the wood taste feeling.
+If reducing dose leads to balance than it is the case,
+which could easier bring sweet aftertaste.
+
 ## Yes!
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
