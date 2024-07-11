@@ -30,3 +30,4 @@
   - try less dose, like 20.0g
 - 13/20.5g -> 10/25s 41.1g, very aromatic, perfect creama, very sweet, less stronger flavor, wood aftertaste
 - **13/20.8g -> 10/26s 40.1g**, perfect aromatic, perfect creama, sweet, a very little more bitter from foam, stronger flavor, no obvious aftertaste but comfortable (could be tiny sweet)
+  - sweet aftertaste comes in later
