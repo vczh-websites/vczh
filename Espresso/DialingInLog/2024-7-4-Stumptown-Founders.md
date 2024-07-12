@@ -31,3 +31,5 @@
 - 13/20.5g -> 10/25s 41.1g, very aromatic, perfect creama, very sweet, less stronger flavor, wood aftertaste
 - **13/20.8g -> 10/26s 40.1g**, perfect aromatic, perfect creama, sweet, a very little more bitter from foam, stronger flavor, no obvious aftertaste but comfortable (could be tiny sweet)
   - sweet aftertaste comes in later
+  -> 10/26s 40.6g, repros but a little weaker, slightly bitter but no wood taste at all
+  -> 10/27s 41.7g, repros, foam not bitter
