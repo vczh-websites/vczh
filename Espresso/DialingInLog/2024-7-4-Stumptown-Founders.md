@@ -33,3 +33,5 @@
   - sweet aftertaste comes in later
   - -> 10/26s 40.6g, repros but a little weaker, slightly bitter but no wood taste at all
   - -> 10/27s 41.7g, repros, foam not bitter
+  - -> 10/26s 43.5g, weaker, bean could be sitting too long (roasted on Jun 7th, today Jul 12nd)
+- 12.5/20.8g -> 10/27s 41.7g, hypothesis proven, very aromatic, repos
