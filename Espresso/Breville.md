@@ -29,6 +29,7 @@ just ground half level finer (Niche Duo) and it should be fine again.
 | Ground | Extraction | **FRESH** | Brand |
 |--|--|--|--|
 | 16/21.6g | 39g || Stumptown Holler Mtn |
+| 13/20.8g | 41g | :o: | Stumptown Founder's |
 |  10.5/21.0 | 40g || Candy Tiger Peru Decaf |
 
 ### Breville Dose Control (double shot)
