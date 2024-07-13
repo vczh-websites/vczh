@@ -20,7 +20,7 @@ which could easier bring sweet aftertaste.
 
 If ground suddenly lose pressure for no reason,
 it could be CO2 is leaking too much since beans are not consumed in time,
-just ground half level finer (Niche Duo) and it should be fine again.
+just grind half level finer (Niche Duo) and it should be fine again.
 
 ## Yes!
 
