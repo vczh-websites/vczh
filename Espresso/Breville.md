@@ -72,6 +72,7 @@ just grind half level finer (Niche Duo) and it should be fine again.
 - [Stumptown Founder's](./DialingInLog/2024-7-4-Stumptown-Founders)
 - [Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf)
 - [Stumptown Holler Mtn](./DialingInLog/2024-6-28-Stumptown-Holler-Mtn)
+- [WonderTaste Star Valley Decaf](./DialingInLog/2024-7-11-Wondertaste-Star-Valley-Decaf)
 
 ### Breville Dose Control (double shot)
  
