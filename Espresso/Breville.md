@@ -18,6 +18,10 @@ The real over-extraction sign may be the wood taste feeling.
 If reducing dose leads to balance than it is the case,
 which could easier bring sweet aftertaste.
 
+If ground suddenly lose pressure for no reason,
+it could be CO2 is leaking too much since beans are not consumed in time,
+just ground half level finer (Niche Duo) and it should be fine again.
+
 ## Yes!
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
