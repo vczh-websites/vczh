@@ -35,3 +35,5 @@
   - -> 10/27s 41.7g, repros, foam not bitter
   - -> 10/26s 43.5g, weaker, bean could be sitting too long (roasted on Jun 7th, today Jul 12nd)
 - 12.5/20.8g -> 10/27s 41.7g, hypothesis proven, very aromatic, repos
+  - -> 10/27s 41.8g, a little bit more bitter, but more sweet aftertaste
+  - -> 10/27s 42.1g, same
