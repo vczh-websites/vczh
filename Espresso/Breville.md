@@ -2,7 +2,6 @@
 
 ## To do
 
-- Kona Coffee Blend Medium Roast
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
 - TraderJoes Organic FairTrade Five Country Blend Dark Roast
 
@@ -73,6 +72,7 @@ just grind half level finer (Niche Duo) and it should be fine again.
 - [Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf)
 - [Stumptown Holler Mtn](./DialingInLog/2024-6-28-Stumptown-Holler-Mtn)
 - [WonderTaste Star Valley Decaf](./DialingInLog/2024-7-11-Wondertaste-Star-Valley-Decaf)
+- [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7-14-Kona-Coffee-Blend)
 
 ### Breville Dose Control (double shot)
  
