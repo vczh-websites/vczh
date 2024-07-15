@@ -70,8 +70,8 @@ just grind half level finer (Niche Duo) and it should be fine again.
 
 - [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7-14-Kona-Coffee-Blend)
 - [WonderTaste Star Valley Decaf](./DialingInLog/2024-7-11-Wondertaste-Star-Valley-Decaf)
-- [Stumptown Founder's](./DialingInLog/2024-7-4-Stumptown-Founders)
 - [Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf)
+- [Stumptown Founder's](./DialingInLog/2024-7-4-Stumptown-Founders)
 - [Stumptown Holler Mtn](./DialingInLog/2024-6-28-Stumptown-Holler-Mtn)
 
 ### Breville Dose Control (double shot)
