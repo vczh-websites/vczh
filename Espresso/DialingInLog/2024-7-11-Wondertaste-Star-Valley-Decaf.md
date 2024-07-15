@@ -8,3 +8,5 @@
   - -> 8/? 42.0g, very aromatic, very little bitter
   - -> 8/24s 41.3g repros
 - 12.5/20.0g -> 8/26s 41.3g, a little bit more sweet and strong flavor
+  - -> 8/25s 40.8g, repros, a little sweet aftertaste
+  - -> 8/27s 41.2g
