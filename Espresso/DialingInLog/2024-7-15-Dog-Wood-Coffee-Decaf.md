@@ -7,5 +7,6 @@
 - 12/20.5g -> 8/25s 41.5g
 - 11.5/20.5g -> 8/28s 40.3g, creama not enough, weak flavor, could be slightly under extraction
 - 11.5/21.0g -> 8/30s 43.2g, ok creama, obvious acidity flavor, a little sweet aftertaste
-- 11/21.0g -> 9/33s 42.3g, some aromatic, good flavor, strong fruity flavor, strong caramel aftertaste
+- 11/21.0g -> 9/33s 42.3g, some aromatic, good creama, strong fruity flavor, strong caramel aftertaste
   - yes!
+  - try 20.5g
