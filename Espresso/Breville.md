@@ -21,9 +21,9 @@ If ground suddenly lose pressure for no reason,
 it could be CO2 is leaking too much since beans are not consumed in time,
 just grind half level finer (Niche Duo) and it should be fine again.
 
-For beans that is not fresh,
+For beans that are not fresh (e.g. longer than 2-3 months from being roasted),
 you only get the "coffee flavor" which is controlled mostly by dose,
-and then use grind setting to adjust the extraction yield%,
+and then use grind setting to adjust the extraction yield%.
 all specified flavors are gone, no need to chase it.
 
 ## Yes!
