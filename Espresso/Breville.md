@@ -11,19 +11,19 @@
 
 [Espresso 调参进阶](./ImproveDialingIn)
 
-More dose doesn't necessary reduce bitter.
-Bitter could also come from more material get extracted.
+More dose doesn't necessarily reduce bitterness.
+Bitterness could also come from more material get extracted.
 The real over-extraction sign may be the wood taste feeling.
-If reducing dose leads to balance than it is the case,
+If reducing dose leads to balance then this is the case,
 which could easier bring sweet aftertaste.
 
 If ground suddenly lose pressure for no reason,
-it could be CO2 is leaking too much since beans are not consumed in time,
+it is probably because CO2 is leaking too much since beans are not consumed in time,
 just grind half level finer (Niche Duo) and it should be fine again.
 
 For beans that are not fresh (e.g. longer than 2-3 months from being roasted),
 you only get the "coffee flavor" which is controlled mostly by dose,
-and then use grind setting to adjust the extraction yield%.
+grind setting only adjusts the extraction yield%.
 all specified flavors are gone, no need to chase it.
 
 ## Yes!
