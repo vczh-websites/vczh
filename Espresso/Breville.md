@@ -73,6 +73,7 @@ all specified flavors are gone, no need to chase it.
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
+- [Dog Wood Coffee Decaf](./DialingInLog/2024-7-15-Dog-Wood-Coffee-Decaf)
 - [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7-14-Kona-Coffee-Blend)
 - [WonderTaste Star Valley Decaf](./DialingInLog/2024-7-11-Wondertaste-Star-Valley-Decaf)
 - [Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf)
