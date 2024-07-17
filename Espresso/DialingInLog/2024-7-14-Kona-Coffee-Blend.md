@@ -12,3 +12,5 @@
 - 14/18.5g -> 8/25s 40.1g, aroma closer to ground, ok creama, bitter but no aftertaste
 - 14.5/19.0g -> 8/24s 40.5g, less aromatic, less creama, weak flavor, but a little bit sweet aftertaste
 - 14.5/19.5g -> 8/30s 40.3g, good creama, flavor strong enough to last long, very little sweet aftertaste comes later
+  - -> 8/27s 40.0g, less creama, a little more bitter
+- 14.5/20.0g -> 9/31s 40.4g, less aromatic, good creama, a little weaker flavor, no aftertaste
