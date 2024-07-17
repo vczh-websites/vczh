@@ -2,7 +2,7 @@
 
 ## To do
 
-- TraderJoes Organic FairTrade Five Country Blend Dark Roast
+- TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
 
 ## Dial In
 
@@ -72,7 +72,7 @@ all specified flavors are gone, no need to chase it.
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
-- [TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast](./DialingInLog/2024-7-17-TraderJoes-Fairtrade-Five-Country-Blend)
+- [TraderJoes Organic FairTrade Five Country Blend Dark Roast](./DialingInLog/2024-7-17-TraderJoes-Fairtrade-Five-Country-Blend)
 - [Dog Wood Coffee Decaf](./DialingInLog/2024-7-15-Dog-Wood-Coffee-Decaf)
 - [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7-14-Kona-Coffee-Blend)
 - [WonderTaste Star Valley Decaf](./DialingInLog/2024-7-11-Wondertaste-Star-Valley-Decaf)
