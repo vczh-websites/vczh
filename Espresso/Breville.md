@@ -53,17 +53,18 @@ all specified flavors are gone, no need to chase it.
 
 - Madcap Bolt (Deep Chocolate Syrupy)
 - Campfire Summer Camp Medium Dark Roast
-- Blue Bottle Bold **NOT FLESH** (low preasure)
-- Temple Espresso Dharma Dark Roast 5.5/20.2g **FLESH** **(tn)**
+- Blue Bottle Bold **NOT FRESH** (low preasure)
+- Temple Espresso Dharma Dark Roast 5.5/20.2g **FRESH** **(tn)**
 - Kahawa Safari Blend 6/19.5g+ **(tn)**
 - Zoka Tuscan 5/18.7g-
 - Zoka Tatoosh 6/18.5g-
+- Kona Coffee Blend Medium Roast **NOT FRESH** (bitter)
 
 ## Note
 
 - **(tn)**: means with thinner frothing
 - **FRESH**: means the bean was roasted just a few days ago when purchased, this could affect numbers
-- **NOT FLESH**: it has been quite a few months from roasted
+- **NOT FRESH**: it has been quite a few months from roasted
 - The internal setting of the Breville grinder is **6**
 - Knodos basket produces much less pressure. For Zoka Tatoosh 6/18.0g in breville original extracts significantly more over than 2/20.0g in Knodos.
 - a/bs: press and hold `2cup`, time when hear the pump, release at a seconds, press again to stop at b-1.5 seconds. You and the machine needs time to respond.
