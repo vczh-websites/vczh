@@ -4,4 +4,8 @@
 
 **NOT FRESH**
 
--
+- 13/19.0g -> 8/20s 42.3g
+- 11/19.0g -> 8/21s 39.6g
+- 9.5/19.5g -> 8/26s 40.0g, less aromatic, good creama, enough flavor, obvious sweet aftertaste
+- 9.5/20.0g -> 9/27s 39.8g, stronger flavor, but weaker and later sweet aftertaste
+  - try 19.5g dose with 40g yield once again
