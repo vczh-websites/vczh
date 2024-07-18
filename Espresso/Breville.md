@@ -33,6 +33,8 @@ all specified flavors are gone, no need to chase it.
 |--|--|--|--|
 | 16/21.6g | 39g || Stumptown Holler Mtn |
 | 13/20.8g | 41g | :o: | Stumptown Founder's |
+
+| Ground | Extraction | **FRESH** | Brand |
 |--|--|--|--|
 | 10.5/21.0 | 40g || Candy Tiger Peru Decaf |
 | 13~12.5/20.0g | 41g | :o: | Wondertaste Star Valley Decaf |
