@@ -40,7 +40,7 @@ all specified flavors are gone, no need to chase it.
 |--|--|--|--|
 | 10.5/21.0 | 40g || Candy Tiger Peru Decaf |
 | 13~12.5/20.0g | 41g | :o: | Wondertaste Star Valley Decaf |
-| 11/21.0g | 42g || Dog Wood Coffee Decaffeinated Single Origin |
+| 11~10.5/21.0g | 42g || Dog Wood Coffee Decaffeinated Single Origin |
 
 ### Breville Dose Control (double shot)
 
