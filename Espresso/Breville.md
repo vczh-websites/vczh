@@ -3,7 +3,6 @@
 ## To do
 
 - TraderJoes Organic FairTrade Shade Grown Ethiopian Medium Dark Roast
-- Stumptown Hundred Mile
 - Tony Upland
 
 ## Dial In
@@ -80,14 +79,14 @@ all specified flavors are gone, no need to chase it.
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
-- [Stumptown Hundred Mile](./DialingInLog/2024-7-20-Stumptown-Hundred-Mile)
-- [TraderJoes Organic FairTrade Five Country Blend Dark Roast](./DialingInLog/2024-7-17-TraderJoes-Fairtrade-Five-Country-Blend)
-- [Dog Wood Coffee Decaf](./DialingInLog/2024-7-15-Dog-Wood-Coffee-Decaf)
-- [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7-14-Kona-Coffee-Blend)
-- [WonderTaste Star Valley Decaf](./DialingInLog/2024-7-11-Wondertaste-Star-Valley-Decaf)
-- [Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf)
-- [Stumptown Founder's](./DialingInLog/2024-7-4-Stumptown-Founders)
-- [Stumptown Holler Mtn](./DialingInLog/2024-6-28-Stumptown-Holler-Mtn)
+- [Stumptown Hundred Mile](./DialingInLog/2024-7-20-Stumptown-Hundred-Mile) (Target)
+- [TraderJoes Organic FairTrade Five Country Blend Dark Roast](./DialingInLog/2024-7-17-Fairtrade-Five-Country) (TraderJoes)
+- [Dog Wood Coffee Decaf](./DialingInLog/2024-7-15-Dog-Wood-Coffee-Decaf) (Seattle Coffee Gears)
+- [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7-14-Kona-Coffee-Blend) (Safeway)
+- [WonderTaste Star Valley Decaf](./DialingInLog/2024-7-11-Wondertaste-Star-Valley-Decaf) (Beanz)
+- [Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf) (Amazon)
+- [Stumptown Founder's](./DialingInLog/2024-7-4-Stumptown-Founders) (Target)
+- [Stumptown Holler Mtn](./DialingInLog/2024-6-28-Stumptown-Holler-Mtn) (Target)
 
 ### Breville Dose Control (double shot)
  
