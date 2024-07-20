@@ -13,3 +13,6 @@
 - 9/19.5g -> 8/25s 40.1g, puck watery, ok creama, weak, little sweet aftertaste
 - 8.5/20.0g -> 9/30s 40.5g, puck watery, flavor fine but still feel weak, no obvious aftertaste
   - try yield 42g
+- 8.5/20.0g -> 9/28s 41.9, weak, losing pressure too fast, but still a little sweet aftertaste
+- 8/21.0g -> 9/39s 42.1g, a little bit bitter, but feeling empty after swallowed
+  - try grind 20.5g
