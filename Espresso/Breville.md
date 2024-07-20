@@ -80,6 +80,7 @@ all specified flavors are gone, no need to chase it.
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
+- [Stumptown Hundred Mile](./DialingInLog/2024-7-20-Stumptown-Hundred-Mile)
 - [TraderJoes Organic FairTrade Five Country Blend Dark Roast](./DialingInLog/2024-7-17-TraderJoes-Fairtrade-Five-Country-Blend)
 - [Dog Wood Coffee Decaf](./DialingInLog/2024-7-15-Dog-Wood-Coffee-Decaf)
 - [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7-14-Kona-Coffee-Blend)
