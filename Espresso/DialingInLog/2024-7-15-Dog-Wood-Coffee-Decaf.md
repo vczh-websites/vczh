@@ -15,4 +15,5 @@
 - 11/21.0g -> 9/36s 42.9g, repros, slightly less fruity, less caramel aftertaste
   - -> 9/36s 41.0g, grind setting 11.25 and espresso becomes weaker
   - -> 9/36s 41.8g, a little bit more under extraction than before
-  - try grind 20.5g
+- 11/20.5g -> 9/27s 41.4g, reproa but a little weaker, a little sweet aftertaste comes later
+- 10.5/20.5g -> 9/32s 41.7g, aromatic, good fruity flavor, some sweet aftertaste growing
