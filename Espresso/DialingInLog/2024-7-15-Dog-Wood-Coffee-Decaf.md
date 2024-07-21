@@ -2,6 +2,8 @@
 
 ## IMS B62.52TH24NT / Niche Duo
 
+**sweet aftertaste**
+
 - 14/19.0g -> 8/20s 41.9g, too many water on puck
 - 13/20.0g -> 8/23s 41.2g, somewhat not enough dose
 - 12/20.5g -> 8/25s 41.5g
