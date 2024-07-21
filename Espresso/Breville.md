@@ -30,6 +30,9 @@ you only get the "coffee flavor" which is controlled mostly by dose,
 grind setting only adjusts the extraction yield%.
 all specified flavors are gone, no need to chase it.
 
+Bean with sweet aftertaste becomes obvious when it is extracted deep but not over.
+Bean without sweet aftertaste does not have it regardless of the dialing.
+
 ## Yes!
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
