@@ -9,3 +9,7 @@
 - 10.5/20.0g -> 8/27s 40.5g, aromatic, good creama, puck a little watery, good flavor, disappearing in a few seconds, noticible but weak sweet aftertaste stays long
 - 10/20.0g -> 8/34s 40.4g, stronger flavors, sweet aftertaste grows fast
   - yes!
+  - use lucerne instead of organic valley
+    - 8/32s -> 41.5g
+    - could be channeling at the very end but doesn't matter
+    - repros, milk also doesn't matter
