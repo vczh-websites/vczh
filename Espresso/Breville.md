@@ -41,7 +41,7 @@ Bean without sweet aftertaste does not have it regardless of the dialing.
 |--|--|--|--|
 | 16/21.6g | 39g || Stumptown Holler Mtn |
 | 13/20.8g | 41g | :o: | Stumptown Founder's |
-| 10/20.0g | 41g || Stumptown Hundred Mile (sweet) |
+| 10/20.0g~9.5/20.5g | 41g || Stumptown Hundred Mile (sweet) |
 
 | Ground | Extraction | **FRESH** | Brand |
 |--|--|--|--|
