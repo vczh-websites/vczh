@@ -18,3 +18,6 @@
   - need deeper extraction
 - 9.5/20.5g -> 8/34s 41.2g
   - yes!
+  - -> 8/35s 41.2g
+  - 20.7g -> 8/37s 43.5g
+  - 8/36s 42.4g, repros, may need to extract deeper the next time as the bean seems losing pressure very slowly
