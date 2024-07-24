@@ -14,3 +14,6 @@
   - -> 8/24s 41.7g
 - 12/20.0g -> 8/26s 42.2g
   - repros
+  - -> 8/27s 41.3g
+- 11.5/20.0g -> 8/28s 41.2g, slightly more bitter but significantly sweet aftertaste
+  - stick to the previous recipe
