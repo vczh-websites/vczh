@@ -23,3 +23,5 @@
   - 8/36s 42.4g, repros, may need to extract deeper the next time as the bean seems losing pressure very slowly
   - 8/34s 42.3g
 - 9/20.5g -> 8/37s 41.6g, aromatic, perfect creama, strong flavor, just a little bit bitter, significantly more sweet aftertaste
+  - 8/37s 41.0g
+  - 8/37s 41.9g, still sweet aftertaste but not as many as yesterday
