@@ -17,3 +17,7 @@
   - -> 8/27s 41.3g
 - 11.5/20.0g -> 8/28s 41.2g, slightly more bitter but significantly sweet aftertaste
   - stick to the previous recipe
+- 12/20.0g -> 8/26s 42.3g
+  - -> 8/25s 42.3g
+- 11/20.0g -> 8/30s 42.4g
+  - 11.5 grind next try
