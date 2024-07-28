@@ -87,6 +87,7 @@ Bean without sweet aftertaste does not have it regardless of the dialing.
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
+- [Tony Upland](./DialingInLog/2024-7-27-Tony-Upland) (Target)
 - [Stumptown Hundred Mile](./DialingInLog/2024-7-20-Stumptown-Hundred-Mile) (Target)
 - [TraderJoes Organic FairTrade Five Country Blend Dark Roast](./DialingInLog/2024-7-17-Fairtrade-Five-Country) (TraderJoes)
 - [Dog Wood Coffee Decaf](./DialingInLog/2024-7-15-Dog-Wood-Coffee-Decaf) (Seattle Coffee Gears)
