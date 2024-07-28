@@ -3,7 +3,6 @@
 ## To do
 
 - TraderJoes Organic FairTrade Shade Grown Ethiopian (TraderJoes)
-- Tony Upland (Target)
 
 ## Dial In
 
