@@ -32,6 +32,9 @@ all specified flavors are gone, no need to chase it.
 Bean with sweet aftertaste becomes obvious when it is extracted deep but not over.
 Bean without sweet aftertaste does not have it regardless of the dialing.
 
+It is imoortant to discard some ground right after changing the grind settings,
+otherwise different sizes of ground will mix together and make channeling happen more easily.
+
 ## Yes!
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
