@@ -48,7 +48,8 @@ otherwise different sizes of ground will mix together and make channeling happen
 | Ground | Extraction | **FRESH** | Brand |
 |--|--|--|--|
 | 10.5/21.0 | 40g || Candy Tiger Peru Decaf |
-| 13~12.5/20.0g | 41g | :o: | Wondertaste Star Valley Decaf |
+| 13~11.5/20.0g | 41g | :o: | Wondertaste Star Valley Decaf |
+| 10/20.0g | 31g | ^ | ^ |
 | 11~10.5/21.0g | 42g || Dog Wood Coffee Decaffeinated Single Origin (sweet) |
 
 ### Breville Dose Control (double shot)
