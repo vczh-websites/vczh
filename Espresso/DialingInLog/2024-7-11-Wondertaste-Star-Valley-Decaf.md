@@ -21,3 +21,6 @@
   - -> 8/25s 42.3g
 - 11/20.0g -> 8/30s 42.4g
   - 11.5 grind next try
+- 11.5/20.0g -> 8/32s 40.3g, new opened higher pressure
+- 12/20.0g -> 8/26s 41.6g, weaker flavor
+  - try 10 grind yield 30g
