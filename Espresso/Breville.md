@@ -20,7 +20,7 @@ If ground suddenly lose pressure for no reason,
 it is probably because CO2 is leaking too much since beans are not consumed in time,
 just grind half level finer (Niche Duo) and it should be fine again.
 
-If an unexpected pressure change happened and disappeared very quickyly (usually one day),
+If unexpected pressure changing happened and disappeared very quickyly (usually one day),
 earlier log should be read when continue using the bean in the future.
 It helps a lot prevent you from dialing in in a wrong direction.
 
@@ -29,11 +29,15 @@ you only get the "coffee flavor" which is controlled mostly by dose,
 grind setting only adjusts the extraction yield%.
 all specified flavors are gone, no need to chase it.
 
-Bean with sweet aftertaste becomes obvious when it is extracted deep but not over.
-Bean without sweet aftertaste does not have it regardless of the dialing.
+~~Bean with sweet aftertaste becomes obvious when it is extracted deep but not over.
+Bean without sweet aftertaste does not have it regardless of the dialing.~~
 
-It is imoortant to discard some ground right after changing the grind settings,
+It is important to discard some ground right after changing the grind settings,
 otherwise different sizes of ground will mix together and make channeling happen more easily.
+
+Over-weighted dose could also lead to uneven extraction
+because the puck expand all the way to the group head,
+leaving no room to spread water evenly.
 
 ## Yes!
 
