@@ -22,5 +22,7 @@
 - 11/20.0g -> 8/30s 42.4g
   - 11.5 grind next try
 - 11.5/20.0g -> 8/32s 40.3g, new opened higher pressure
-- 12/20.0g -> 8/26s 41.6g, weaker flavor
+- 12/20.0g -> 8/26s 41.6g, weaker creama and flavor
   - try 10 grind yield 30g
+- 10/20.0g -> 10/30s 31.1g, good creama, strong flavor, obvious sweet aftertaste
+  - yes!
