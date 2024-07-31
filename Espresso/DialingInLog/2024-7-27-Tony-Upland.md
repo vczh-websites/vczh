@@ -9,6 +9,9 @@
 - 12.5/20.0g -> 8/29s 40.3g, balanced, a little sweet aftertaste
   - yes!
 - 11.5/20.0g -> 9/31s 31.3g, a little bit bitter, sweet actertaste comes later
-- 11.5/21.0g -> 10/41s 33.2g, taste like unevenly extraction
+- 11.5/21.0g -> 10/41s 33.2g, taste like unevenly extraction, taste like burned
   - puck color not even, could be too much ground
-  - try 20.5g grind
+- 11.5/20.5g -> 10/33s 31.6g, balanced, no obvious sweet aftertaste
+  - yes!
+  - try original recipe
+  - try 12 grind
