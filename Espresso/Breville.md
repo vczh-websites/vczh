@@ -3,8 +3,6 @@
 ## To do
 
 - TraderJoes Organic FairTrade Shade Grown Ethiopian (TraderJoes)
-- TraderJoes Organic FairTrade French Roast Decaf (TraderJoes)
-- Heirloom Coffee Decaf Divine
 
 ## Dial In
 
@@ -96,6 +94,8 @@ leaving no room to spread water evenly.
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
+- [Heirloom Coffee Decaf Divine](./DialingInLog/2024-7-31-Heirloom-Coffee-Decaf-Divine) (QFC)
+- [TraderJoes Organic FairTrade French Roast Decaf](./DialingInLog/2024-7-31-FairTrade-French-Roast-Decaf) (TraderJoes)
 - [Tony Upland](./DialingInLog/2024-7-27-Tony-Upland) (Target)
 - [Stumptown Hundred Mile](./DialingInLog/2024-7-20-Stumptown-Hundred-Mile) (Target)
 - [TraderJoes Organic FairTrade Five Country Blend Dark Roast](./DialingInLog/2024-7-17-Fairtrade-Five-Country) (TraderJoes)
