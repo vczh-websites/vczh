@@ -3,6 +3,8 @@
 ## To do
 
 - TraderJoes Organic FairTrade Shade Grown Ethiopian (TraderJoes)
+- TraderJoes Organic FairTrade French Roast Decaf (TraderJoes)
+- Heirloom Coffee Decaf Divine
 
 ## Dial In
 
