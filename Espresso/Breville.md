@@ -3,6 +3,7 @@
 ## To do
 
 - TraderJoes Organic FairTrade Shade Grown Ethiopian (TraderJoes)
+- Doma Bella Luna Decaf **FRESH** (Beanz)
 
 ## Dial In
 
