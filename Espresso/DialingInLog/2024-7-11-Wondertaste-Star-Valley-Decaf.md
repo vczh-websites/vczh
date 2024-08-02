@@ -26,3 +26,4 @@
   - try 10 grind yield 30g
 - 10/20.0g -> 10/30s 31.1g, good creama, strong flavor, obvious sweet aftertaste
   - yes!
+  - -> 10/29s 30.9g
