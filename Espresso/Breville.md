@@ -42,13 +42,14 @@ leaving no room for spreading water evenly.
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
-- Stumptown Holler Mtn
-- Stumptown Founder's
-- Stumptown Hundred Mile (sweet)
-
-- Candy Tiger Peru Decaf
-- Wondertaste Star Valley Decaf
-- Dog Wood Coffee Decaffeinated Single Origin (sweet)
+- Normal
+  - Stumptown Holler Mtn
+  - Stumptown Founder's
+  - Stumptown Hundred Mile (sweet)
+- Decaf
+  - Candy Tiger Peru Decaf
+  - Wondertaste Star Valley Decaf
+  - Dog Wood Coffee Decaffeinated Single Origin (sweet)
 
 ### Breville Dose Control (double shot)
 
