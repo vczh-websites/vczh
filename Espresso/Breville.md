@@ -12,9 +12,8 @@
 
 More dose doesn't necessarily reduce bitterness.
 Bitterness could also come from more material get extracted.
-The real over-extraction sign may be the wood taste feeling.
-If reducing dose leads to balance then this is the case,
-which could easier bring sweet aftertaste.
+The real over-extraction signal may be the wood taste feeling.
+If reducing dose leads to balance then this is the case.
 
 If ground suddenly lose pressure for no reason,
 it is probably because CO2 is leaking too much since beans are not consumed in time,
@@ -36,25 +35,20 @@ It is important to discard some ground right after changing the grind settings,
 otherwise different sizes of ground will mix together and make channeling happen more easily.
 
 Over-weighted dose could also lead to uneven extraction
-because the puck expand all the way to the group head,
-leaving no room to spread water evenly.
+because the puck expands all the way to the group head,
+leaving no room for spreading water evenly.
 
 ## Yes!
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
-| Ground | Extraction | **FRESH** | Brand |
-|--|--|--|--|
-| 16/21.6g | 39g || Stumptown Holler Mtn |
-| 13/20.8g | 41g | :o: | Stumptown Founder's |
-| 10/20.0g~9.5/20.5g | 41g || Stumptown Hundred Mile (sweet) |
+- Stumptown Holler Mtn
+- Stumptown Founder's
+- Stumptown Hundred Mile (sweet)
 
-| Ground | Extraction | **FRESH** | Brand |
-|--|--|--|--|
-| 10.5/21.0 | 40g || Candy Tiger Peru Decaf |
-| 13~11.5/20.0g | 41g | :o: | Wondertaste Star Valley Decaf |
-| 10/20.0g | 31g | ^ | ^ |
-| 11~10.5/21.0g | 42g || Dog Wood Coffee Decaffeinated Single Origin (sweet) |
+- Candy Tiger Peru Decaf
+- Wondertaste Star Valley Decaf
+- Dog Wood Coffee Decaffeinated Single Origin (sweet)
 
 ### Breville Dose Control (double shot)
 
@@ -80,6 +74,11 @@ leaving no room to spread water evenly.
 - Zoka Tuscan 5/18.7g-
 - Zoka Tatoosh 6/18.5g-
 - Kona Coffee Blend Medium Roast **NOT FRESH** (bitter)
+
+## No! (candidate)
+
+- TraderJoes Organic FairTrade Shade Grown Ethiopian (bitter)
+- TraderJoes Organic FairTrade French Roast Decaf (bitter)
 
 ## Note
 
@@ -115,19 +114,14 @@ leaving no room to spread water evenly.
 ## Milk Frothing (Breville 876)
 
 - 奶倒进16oz奶缸到8oz，或者12oz奶缸到6oz
-- 橡胶拉环拉向自己抬高到最高，杯嘴顶住橡胶（为了一致性）
-  - 这个时候放斜会让奶泡稍微变薄，马上旋转减少粗泡
-- 迅速调整到喷嘴出现强力气流后开始读秒
-- 咔哒声8个一组（约5秒），数10组以上，取决于液面升高的情况
+- 橡胶拉环拉向自己抬高到最高，迅速调整到喷嘴出现强力气流后开始读秒
+- 咔哒声8个一组（约5秒），数6组以上，取决于液面升高的情况
   - 6oz就6个为一组
   - 薄打：保持奶缸角度不变，延长时间则只能稍微加厚
   - 厚打：让喷气口一直处于不断升高的液面表面，延长时间显著加厚
-    - Horizon 倒缸厚打7组
-    - Alexandre A2 倒缸厚打6组
   - 角度调整并一直保持在正好把大泡泡吸进去的话，打完余下的大泡泡会显著更少
-- 如果有20oz大奶缸打后换缸，可以打得更厚
 - 然后放斜开始旋转，数10组以上，取决于杯壁温度
-- light roast 奶泡不能太多温度不能太高，容易盖过风味
+- 如果有20oz大奶缸打后换缸，可以打得更厚
 
 ## Latte Art
 
