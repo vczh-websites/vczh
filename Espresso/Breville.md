@@ -2,7 +2,6 @@
 
 ## To do
 
-- TraderJoes Organic FairTrade Shade Grown Ethiopian (TraderJoes)
 - Doma Bella Luna Decaf **FRESH** (Beanz)
 
 ## Dial In
@@ -95,6 +94,7 @@ leaving no room to spread water evenly.
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
+- [TraderJoes Organic FairTrade Shade Grown Ethiopian](./DialingInLog/2024-8-1-FairTrade-Shade-Grown-Ethiopian.md) (TraderJoes)
 - [Heirloom Coffee Decaf Divine](./DialingInLog/2024-7-31-Heirloom-Coffee-Decaf-Divine) (QFC)
 - [TraderJoes Organic FairTrade French Roast Decaf](./DialingInLog/2024-7-31-FairTrade-French-Roast-Decaf) (TraderJoes)
 - [Tony Upland](./DialingInLog/2024-7-27-Tony-Upland) (Target)
