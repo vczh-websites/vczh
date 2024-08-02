@@ -14,4 +14,5 @@
 - 11.5/20.5g -> 10/33s 31.6g, balanced, no obvious sweet aftertaste
   - yes!
   - try original recipe
-  - try 12 grind
+- 12/20.5g -> 10/32s 31.0g, bitter
+- 13/20.5g -> 10/29s 30.6g, bitter but also weak, no channeling signal
