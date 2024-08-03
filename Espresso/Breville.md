@@ -2,8 +2,6 @@
 
 ## To do
 
-- Doma Bella Luna Decaf **FRESH** (Beanz)
-
 ## Dial In
 
 [浓缩咖啡新手必看](./GettingStarted)
@@ -94,6 +92,7 @@ leaving no room for spreading water evenly.
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
+- [Doma Bella Luna Decaf](./DialingInLog/2024-8-2-Doma-Bella-Luna-Decaf] (Beanz)
 - [TraderJoes Organic FairTrade Shade Grown Ethiopian](./DialingInLog/2024-8-1-FairTrade-Shade-Grown-Ethiopian.md) (TraderJoes)
 - [Heirloom Coffee Decaf Divine](./DialingInLog/2024-7-31-Heirloom-Coffee-Decaf-Divine) (QFC)
 - [TraderJoes Organic FairTrade French Roast Decaf](./DialingInLog/2024-7-31-FairTrade-French-Roast-Decaf) (TraderJoes)
