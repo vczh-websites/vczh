@@ -73,10 +73,10 @@ leaving no room for spreading water evenly.
 - Zoka Tuscan 5/18.7g-
 - Zoka Tatoosh 6/18.5g-
 - Kona Coffee Blend Medium Roast **NOT FRESH** (bitter)
+- TraderJoes Organic FairTrade Shade Grown Ethiopian (bitter)
 
 ## No! (candidate)
 
-- TraderJoes Organic FairTrade Shade Grown Ethiopian (bitter)
 - TraderJoes Organic FairTrade French Roast Decaf (bitter)
 
 ## Note
