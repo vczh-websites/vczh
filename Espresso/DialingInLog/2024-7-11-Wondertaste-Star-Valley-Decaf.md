@@ -27,3 +27,4 @@
 - 10/20.0g -> 10/30s 31.1g, good creama, strong flavor, obvious sweet aftertaste
   - yes!
   - -> 10/29s 30.9g
+  - -> 10/27s 32.0g
