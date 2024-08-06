@@ -19,3 +19,5 @@
 - 12.5/20.0g -> 10/28s 40.3g, balanced with tolerable bitter
 - 12.5/20.0g -> 8/26s 41.6g, less bitter and weaker flavor, but more obvious sweet aftertaste
   - still the best recipe so far
+- 12/20.0g -> 8/27s 40.4g
+- 12.5/20.1g -> 8/27s 40.3g
