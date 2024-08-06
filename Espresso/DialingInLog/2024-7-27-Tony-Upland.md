@@ -16,3 +16,6 @@
   - try original recipe
 - 12/20.5g -> 10/32s 31.0g, bitter
 - 13/20.5g -> 10/29s 30.6g, bitter but also weak, no channeling signal
+- 12.5/20.0g -> 10/28s 40.3g, balanced with tolerable bitter
+- 12.5/20.0g -> 8/26s 41.6g, less bitter and weaker flavor, but more obvious sweet aftertaste
+  - still the best recipe so far
