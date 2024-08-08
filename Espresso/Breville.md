@@ -4,9 +4,9 @@
 
 ## Dial In
 
-[浓缩咖啡新手必看](./GettingStarted)
+[浓缩咖啡新手必看](./GettingStarted.md)
 
-[Espresso 调参进阶](./ImproveDialingIn)
+[Espresso 调参进阶](./ImproveDialingIn.md)
 
 More dose doesn't necessarily reduce bitterness.
 Bitterness could also come from more material get extracted.
@@ -109,8 +109,8 @@ leaving no room for spreading water evenly.
 
 ### Breville Dose Control (double shot)
  
-- [Umbria Bizzarra Blend Medium Dark Roast](./DialingInLog/2024-6-23-Umbria-Bizzarra-Blend)
-- [Temple Espresso Dharma Dark Roast](./DialingInLog/2024-6-11-Temple-Espresso-Dharma)
+- [Umbria Bizzarra Blend Medium Dark Roast](./DialingInLog/2024-6-23-Umbria-Bizzarra-Blend.md)
+- [Temple Espresso Dharma Dark Roast](./DialingInLog/2024-6-11-Temple-Espresso-Dharma.md)
 
 ## Milk Frothing (Breville 876)
 
@@ -137,4 +137,4 @@ leaving no room for spreading water evenly.
 
 ### Demo
 
-[Latte Art Demos](./LatteArt)
+[Latte Art Demos](./LatteArt.md)
