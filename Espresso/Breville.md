@@ -44,6 +44,8 @@ leaving no room for spreading water evenly.
   - Stumptown Holler Mtn
   - Stumptown Founder's
   - Stumptown Hundred Mile (sweet)
+  - Candidates
+    - Stumptown Indonesia Single Origin (sweet)
 - Decaf
   - Candy Tiger Peru Decaf
   - Wondertaste Star Valley Decaf
