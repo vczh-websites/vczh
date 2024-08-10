@@ -2,6 +2,8 @@
 
 ## IMS B62.52TH24NT / Niche Duo
 
+**sweet**
+
 - 12/20.0g -> 9/23s 42.3g, under extraction
 - 10.5/20.0g -> 9/25s 42.6g, under extraction
 - 9.5/21.0g -> 9/29s 39.8g, good creama, balanced, flavor in aftertaste
