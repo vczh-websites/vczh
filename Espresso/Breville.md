@@ -26,15 +26,16 @@ you only get the "coffee flavor" which is controlled mostly by dose,
 grind setting only adjusts the extraction yield%.
 all specified flavors are gone, no need to chase it.
 
-~~Bean with sweet aftertaste becomes obvious when it is extracted deep but not over.
-Bean without sweet aftertaste does not have it regardless of the dialing.~~
-
 It is important to discard some ground right after changing the grind settings,
 otherwise different sizes of ground will mix together and make channeling happen more easily.
 
 Over-weighted dose could also lead to uneven extraction
 because the puck expands all the way to the group head,
 leaving no room for spreading water evenly.
+
+Sweetness is an attribute of a certain bean.
+But it may need longer extraction to make sweeiness obvious.
+Longer without deeper extraction is the key.
 
 ## Yes!
 
