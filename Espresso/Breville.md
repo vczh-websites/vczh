@@ -2,6 +2,10 @@
 
 ## To do
 
+- Intelligentsia Black Cat Expresso
+- Intelligentsia Frequency
+- Intelligentsia House
+
 ## Dial In
 
 [浓缩咖啡新手必看](./GettingStarted.md)
