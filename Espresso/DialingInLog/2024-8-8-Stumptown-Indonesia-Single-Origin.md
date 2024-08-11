@@ -12,6 +12,10 @@
   - yes!
 - 8.5/21.0 -> 9/33s 36.6g, aromatic, balanced, sweetness not obvious change
 - 8/21.0g -> 10/35s 36.0g, strong flavor, no bitter if avoid drinking creama
-- 8/21.0g -> 10/35s 30.0g, no obvious difference
-  - try 30g yield again, brew time not consistant, sweetness disappears
-  - try original recipe
+- 8/21.0g -> 10/35s 30.0g, no obvious difference, sweetness disappears
+  - brew time not consistant
+- 8/21.0g -> 10/31s 31.8g, no obvious difference
+  - brew time reasonable
+- 9/21.0g -> 9/32s 40.1g, still better balanced, bitter in aftertaste
+- 9/21.0g -> 9/26s 31.6g, slightly weaker creama, slightly weaker flavor, no bitter aftertaste
+  - yes!
