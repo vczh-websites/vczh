@@ -99,7 +99,7 @@ Longer without deeper extraction is the key.
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
-- [WonderState Heartstrings](./DialingInLog/2024-8-12-Wonderstate-Heartstrings.md)
+- [WonderState Heartstrings](./DialingInLog/2024-8-12-Wonderstate-Heartstrings.md) (Beanz)
 - [Stumptown Indonesia Single Origin](./DialingInLog/2024-8-8-Stumptown-Indonesia-Single-Origin.md) (Safeway)
 - [Doma Bella Luna Decaf](./DialingInLog/2024-8-2-Doma-Bella-Luna-Decaf.md) (Beanz)
 - [TraderJoes Organic FairTrade Shade Grown Ethiopian](./DialingInLog/2024-8-1-FairTrade-Shade-Grown-Ethiopian.md) (TraderJoes)
