@@ -1,4 +1,4 @@
-# Wondertaste Star Valley Decaf
+# WonderState Star Valley Decaf
 
 ## IMS B62.52TH24NT / Niche Duo
 
