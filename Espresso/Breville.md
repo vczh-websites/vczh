@@ -99,6 +99,7 @@ Longer without deeper extraction is the key.
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
+- [WonderState Heartstrings](./DialingInLog/2024-8-12-Wonderstate-Heartstrings.md]
 - [Stumptown Indonesia Single Origin](./DialingInLog/2024-8-8-Stumptown-Indonesia-Single-Origin.md) (Safeway)
 - [Doma Bella Luna Decaf](./DialingInLog/2024-8-2-Doma-Bella-Luna-Decaf.md) (Beanz)
 - [TraderJoes Organic FairTrade Shade Grown Ethiopian](./DialingInLog/2024-8-1-FairTrade-Shade-Grown-Ethiopian.md) (TraderJoes)
@@ -109,7 +110,7 @@ Longer without deeper extraction is the key.
 - [TraderJoes Organic FairTrade Five Country Blend Dark Roast](./DialingInLog/2024-7-17-Fairtrade-Five-Country.md) (TraderJoes)
 - [Dog Wood Coffee Decaf](./DialingInLog/2024-7-15-Dog-Wood-Coffee-Decaf.md) (Seattle Coffee Gears)
 - [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7-14-Kona-Coffee-Blend.md) (Safeway)
-- [WonderTaste Star Valley Decaf](./DialingInLog/2024-7-11-Wondertaste-Star-Valley-Decaf.md) (Beanz)
+- [WonderState Star Valley Decaf](./DialingInLog/2024-7-11-Wondertaste-Star-Valley-Decaf.md) (Beanz)
 - [Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf.md) (Amazon)
 - [Stumptown Founder's](./DialingInLog/2024-7-4-Stumptown-Founders.md) (Target)
 - [Stumptown Holler Mtn](./DialingInLog/2024-6-28-Stumptown-Holler-Mtn.md) (Target)
