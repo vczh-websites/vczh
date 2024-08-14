@@ -110,7 +110,7 @@ Longer without deeper extraction is the key.
 - [TraderJoes Organic FairTrade Five Country Blend Dark Roast](./DialingInLog/2024-7-17-Fairtrade-Five-Country.md) (TraderJoes)
 - [Dog Wood Coffee Decaf](./DialingInLog/2024-7-15-Dog-Wood-Coffee-Decaf.md) (Seattle Coffee Gears)
 - [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7-14-Kona-Coffee-Blend.md) (Safeway)
-- [WonderState Star Valley Decaf](./DialingInLog/2024-7-11-Wondertaste-Star-Valley-Decaf.md) (Beanz)
+- [WonderState Star Valley Decaf](./DialingInLog/2024-7-11-Wonderstate-Star-Valley-Decaf.md) (Beanz)
 - [Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf.md) (Amazon)
 - [Stumptown Founder's](./DialingInLog/2024-7-4-Stumptown-Founders.md) (Target)
 - [Stumptown Holler Mtn](./DialingInLog/2024-6-28-Stumptown-Holler-Mtn.md) (Target)
