@@ -28,3 +28,5 @@
   - yes!
   - -> 10/29s 30.9g
   - -> 10/27s 32.0g
+  - -> 10/27s 31.1g, 5 weeks since roasted, weaker creama, weaker sweet aftertaste
+    - 9.5 grind next try
