@@ -55,6 +55,7 @@ Longer without deeper extraction is the key.
   - Candy Tiger Peru Decaf
   - Wondertaste Star Valley Decaf
   - Dog Wood Coffee Decaffeinated Single Origin (sweet)
+  - Doma Bella Luna Decaf (less sweet + good acidity)
 
 ### Breville Dose Control (double shot)
 
