@@ -11,3 +11,6 @@
 - 13.5/20.0g -> 10/28s 40.0g, more characteristic
   - try 14-15 grind
 - 14.5/20.0g ->10/24s 41.1g, more characteristic
+  - 10/23s 41.0g, strong flavor, no bitter at all
+- 14.5/20.5g -> 10/25s 40.7g, better creama, strong flavor
+  - yes!
