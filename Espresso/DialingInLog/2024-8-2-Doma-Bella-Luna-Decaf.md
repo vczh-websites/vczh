@@ -14,3 +14,5 @@
   - 10/23s 41.0g, strong flavor, no bitter at all
 - 14.5/20.5g -> 10/25s 40.7g, better creama, strong flavor
   - yes!
+  - 10/24s 42.3g
+  - 10/26s 41.6
