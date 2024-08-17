@@ -2,7 +2,7 @@
 
 ## IMS B62.52TH24NT / Niche Duo
 
-weak flavor
+don't drinking creama
 
 - 12/20.0g -> 9/26s 41.4g, weak
 - 10/20.0g -> 9/37s 40.5g, bitter and weak
@@ -14,3 +14,5 @@ weak flavor
   - yes!
   - 10/26s 31.3g, slightly faster but taste is good
   - 10/29s 30.6g
+  - 10/27s 30.6g
+  - 10/29s 31.5g
