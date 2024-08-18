@@ -8,3 +8,4 @@
 - 15/20.0g -> 8/28s 40.2g, good creama, balanced
 - 14/19.0 -> 8/23s 31.5g, good creama, balanced but a little bit weaker
   - try 14.5 grind
+  - 8/20s 31.8g
