@@ -20,3 +20,5 @@
 - 9/21.0g -> 9/26s 31.6g, slightly weaker creama, slightly weaker flavor, no bitter aftertaste
   - yes!
   - 9/28s -> 30.3g
+- 10/21.0g -> 9/22s 31.6g, with ice, still a little bitter but begin to release flavor
+- 10.5/22.0g -> 9/24s 31.4g, with ice, slightly less bitter, flavor becomes obvious
