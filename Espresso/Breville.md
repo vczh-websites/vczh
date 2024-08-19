@@ -41,6 +41,10 @@ Sweetness is an attribute of a certain bean.
 But it may need longer extraction to make sweeiness obvious.
 Longer without deeper extraction is the key.
 
+When doing espresso with ice and fresh milk without frothing,
+bitter will become obvious,
+extraction needs to be lower while keeping high concentration.
+
 ## Yes!
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
