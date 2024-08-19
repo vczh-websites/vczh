@@ -19,3 +19,4 @@
 - 9/21.0g -> 9/32s 40.1g, still better balanced, bitter in aftertaste
 - 9/21.0g -> 9/26s 31.6g, slightly weaker creama, slightly weaker flavor, no bitter aftertaste
   - yes!
+  - 9/28s -> 30.3g
