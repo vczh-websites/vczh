@@ -52,8 +52,8 @@ extraction needs to be lower while keeping high concentration.
   - Stumptown Holler Mtn
   - Stumptown Founder's
   - Stumptown Hundred Mile (sweet)
-  - Candidates
-    - Stumptown Indonesia Single Origin (sweet)
+  - Stumptown Indonesia Single Origin (flavory with ice)
+  - Intelligentsia Frequency (sweet, fruity)
 - Decaf
   - Candy Tiger Peru Decaf
   - Wondertaste Star Valley Decaf
