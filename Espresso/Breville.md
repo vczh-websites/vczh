@@ -3,7 +3,6 @@
 ## To do
 
 - Intelligentsia Black Cat Expresso
-- Intelligentsia Frequency
 - Intelligentsia House
 
 ## Dial In
@@ -104,6 +103,7 @@ extraction needs to be lower while keeping high concentration.
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
+- [Intelligentsia Frequency](./DialingInLog/2024-8-20-Intelligentsia-Frequency.md) (Target)
 - [WonderState Heartstrings](./DialingInLog/2024-8-12-Wonderstate-Heartstrings.md) (Beanz)
 - [Stumptown Indonesia Single Origin](./DialingInLog/2024-8-8-Stumptown-Indonesia-Single-Origin.md) (Safeway)
 - [Doma Bella Luna Decaf](./DialingInLog/2024-8-2-Doma-Bella-Luna-Decaf.md) (Beanz)
