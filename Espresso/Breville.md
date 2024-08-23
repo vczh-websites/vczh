@@ -49,16 +49,16 @@ extraction needs to be lower while keeping high concentration.
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
 - Normal
-  - Stumptown Holler Mtn
-  - Stumptown Founder's
-  - Stumptown Hundred Mile (sweet)
-  - Stumptown Indonesia Single Origin (flavory with ice)
-  - Intelligentsia Frequency (sweet, fruity)
+  - [Stumptown Holler Mtn](./DialingInLog/2024-6-28-Stumptown-Holler-Mtn.md) (Target)
+  - [Stumptown Founder's](./DialingInLog/2024-7-4-Stumptown-Founders.md) (Target)
+  - [Stumptown Hundred Mile](./DialingInLog/2024-7-20-Stumptown-Hundred-Mile.md) (Target) (sweet)
+  - [Stumptown Indonesia Single Origin](./DialingInLog/2024-8-8-Stumptown-Indonesia-Single-Origin.md) (Safeway) (flavory with ice)
+  - [Intelligentsia Frequency](./DialingInLog/2024-8-20-Intelligentsia-Frequency.md) (Target) (sweet, fruity)
 - Decaf
-  - Candy Tiger Peru Decaf
-  - Wondertaste Star Valley Decaf
-  - Dog Wood Coffee Decaffeinated Single Origin (sweet)
-  - Doma Bella Luna Decaf (less sweet + good acidity)
+  - [Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf.md) (Amazon)
+  - [WonderState Star Valley Decaf](./DialingInLog/2024-7-11-Wonderstate-Star-Valley-Decaf.md) (Beanz)
+  - [Dog Wood Coffee Decaf Single Origin](./DialingInLog/2024-7-15-Dog-Wood-Coffee-Decaf.md) (Seattle Coffee Gears) (sweet)
+  - [Doma Bella Luna Decaf](./DialingInLog/2024-8-2-Doma-Bella-Luna-Decaf.md) (Beanz) (less sweet + good acidity)
 
 ### Breville Dose Control (double shot)
 
@@ -79,12 +79,12 @@ extraction needs to be lower while keeping high concentration.
 - Madcap Bolt (Deep Chocolate Syrupy)
 - Campfire Summer Camp Medium Dark Roast
 - Blue Bottle Bold **NOT FRESH** (low preasure)
-- Temple Espresso Dharma Dark Roast 5.5/20.2g **FRESH** **(tn)**
+- [Temple Espresso Dharma Dark Roast](./DialingInLog/2024-6-11-Temple-Espresso-Dharma.md) **FRESH** **(tn)**
 - Kahawa Safari Blend 6/19.5g+ **(tn)**
 - Zoka Tuscan 5/18.7g-
 - Zoka Tatoosh 6/18.5g-
-- Kona Coffee Blend Medium Roast **NOT FRESH** (bitter)
-- TraderJoes Organic FairTrade Shade Grown Ethiopian (bitter)
+- [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7-14-Kona-Coffee-Blend.md) (Safeway) **NOT FRESH** (bitter)
+- [TraderJoes Organic FairTrade Shade Grown Ethiopian](./DialingInLog/2024-8-1-FairTrade-Shade-Grown-Ethiopian.md) (TraderJoes) (bitter)
 
 ## No! (candidate)
 
@@ -99,31 +99,20 @@ extraction needs to be lower while keeping high concentration.
 - Knodos basket produces much less pressure. For Zoka Tatoosh 6/18.0g in breville original extracts significantly more over than 2/20.0g in Knodos.
 - a/bs: press and hold `2cup`, time when hear the pump, release at a seconds, press again to stop at b-1.5 seconds. You and the machine needs time to respond.
 
-## Logs
+## Logs (Uncategorized)
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
-- [Intelligentsia Frequency](./DialingInLog/2024-8-20-Intelligentsia-Frequency.md) (Target)
 - [WonderState Heartstrings](./DialingInLog/2024-8-12-Wonderstate-Heartstrings.md) (Beanz)
-- [Stumptown Indonesia Single Origin](./DialingInLog/2024-8-8-Stumptown-Indonesia-Single-Origin.md) (Safeway)
-- [Doma Bella Luna Decaf](./DialingInLog/2024-8-2-Doma-Bella-Luna-Decaf.md) (Beanz)
-- [TraderJoes Organic FairTrade Shade Grown Ethiopian](./DialingInLog/2024-8-1-FairTrade-Shade-Grown-Ethiopian.md) (TraderJoes)
 - [Heirloom Coffee Decaf Divine](./DialingInLog/2024-7-31-Heirloom-Coffee-Decaf-Divine.md) (QFC)
 - [TraderJoes Organic FairTrade French Roast Decaf](./DialingInLog/2024-7-31-FairTrade-French-Roast-Decaf.md) (TraderJoes)
 - [Tony Upland](./DialingInLog/2024-7-27-Tony-Upland.md) (Target)
-- [Stumptown Hundred Mile](./DialingInLog/2024-7-20-Stumptown-Hundred-Mile.md) (Target)
 - [TraderJoes Organic FairTrade Five Country Blend Dark Roast](./DialingInLog/2024-7-17-Fairtrade-Five-Country.md) (TraderJoes)
-- [Dog Wood Coffee Decaf](./DialingInLog/2024-7-15-Dog-Wood-Coffee-Decaf.md) (Seattle Coffee Gears)
-- [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7-14-Kona-Coffee-Blend.md) (Safeway)
-- [WonderState Star Valley Decaf](./DialingInLog/2024-7-11-Wonderstate-Star-Valley-Decaf.md) (Beanz)
-- [Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf.md) (Amazon)
-- [Stumptown Founder's](./DialingInLog/2024-7-4-Stumptown-Founders.md) (Target)
-- [Stumptown Holler Mtn](./DialingInLog/2024-6-28-Stumptown-Holler-Mtn.md) (Target)
 
 ### Breville Dose Control (double shot)
  
 - [Umbria Bizzarra Blend Medium Dark Roast](./DialingInLog/2024-6-23-Umbria-Bizzarra-Blend.md)
-- [Temple Espresso Dharma Dark Roast](./DialingInLog/2024-6-11-Temple-Espresso-Dharma.md)
+- 
 
 ## Milk Frothing (Breville 876)
 
