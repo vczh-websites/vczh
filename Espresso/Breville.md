@@ -88,7 +88,7 @@ extraction needs to be lower while keeping high concentration.
 
 ## No! (candidate)
 
-- TraderJoes Organic FairTrade French Roast Decaf (bitter)
+- [TraderJoes Organic FairTrade French Roast Decaf](./DialingInLog/2024-7-31-FairTrade-French-Roast-Decaf.md) (TraderJoes) (bitter)
 
 ## Note
 
@@ -105,14 +105,12 @@ extraction needs to be lower while keeping high concentration.
 
 - [WonderState Heartstrings](./DialingInLog/2024-8-12-Wonderstate-Heartstrings.md) (Beanz)
 - [Heirloom Coffee Decaf Divine](./DialingInLog/2024-7-31-Heirloom-Coffee-Decaf-Divine.md) (QFC)
-- [TraderJoes Organic FairTrade French Roast Decaf](./DialingInLog/2024-7-31-FairTrade-French-Roast-Decaf.md) (TraderJoes)
 - [Tony Upland](./DialingInLog/2024-7-27-Tony-Upland.md) (Target)
 - [TraderJoes Organic FairTrade Five Country Blend Dark Roast](./DialingInLog/2024-7-17-Fairtrade-Five-Country.md) (TraderJoes)
 
 ### Breville Dose Control (double shot)
  
 - [Umbria Bizzarra Blend Medium Dark Roast](./DialingInLog/2024-6-23-Umbria-Bizzarra-Blend.md)
-- 
 
 ## Milk Frothing (Breville 876)
 
