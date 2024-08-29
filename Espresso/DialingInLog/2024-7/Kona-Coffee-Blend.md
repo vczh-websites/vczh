@@ -2,6 +2,8 @@
 
 ## IMS B62.52TH24NT / Niche Duo
 
+### 2024-7-14
+
 **NOT FRESH**
 
 - 13/20.0g -> 8/42s 40.1g

@@ -2,6 +2,8 @@
 
 ## IMS B62.52TH24NT / Niche Duo
 
+### 2024-8-20
+
 **sweet, fruity**
 
 - 9/20.0g -> 9/36s 40.1g, good creama, little bitter finishing, weak flavor, very little sweet aftertaste

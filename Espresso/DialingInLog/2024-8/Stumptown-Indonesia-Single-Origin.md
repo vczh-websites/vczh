@@ -1,8 +1,10 @@
 # Stumptown Indonesia Single Origin
 
+**sweet**
+
 ## IMS B62.52TH24NT / Niche Duo
 
-**sweet**
+### 2024-8-8
 
 - 12/20.0g -> 9/23s 42.3g, under extraction
 - 10.5/20.0g -> 9/25s 42.6g, under extraction

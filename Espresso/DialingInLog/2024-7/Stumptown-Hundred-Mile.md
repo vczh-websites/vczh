@@ -1,8 +1,10 @@
 # Stumptown Hundred Mile
 
+**sweet aftertaste**
+
 ## IMS B62.52TH24NT / Niche Duo
 
-**sweet aftertaste**
+### 2024-7-20
 
 - 13/20.0g -> 8/21s 40.6g, under extraction
 - 12/20.0g -> 8/23s 41.0g, under extraction, very weak sweet aftertaste

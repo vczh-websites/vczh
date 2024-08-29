@@ -1,5 +1,7 @@
 # Breville and Coffee Beans
 
+[Breville 876 Quick Guide](./BrevilleOps.md)
+
 ## To do
 
 - Intelligentsia Black Cat Expresso
@@ -49,16 +51,16 @@ extraction needs to be lower while keeping high concentration.
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
 - Normal
-  - [Stumptown Holler Mtn](./DialingInLog/2024-6-28-Stumptown-Holler-Mtn.md) (Target)
-  - [Stumptown Founder's](./DialingInLog/2024-7-4-Stumptown-Founders.md) (Target)
-  - [Stumptown Hundred Mile](./DialingInLog/2024-7-20-Stumptown-Hundred-Mile.md) (Target) (sweet)
-  - [Stumptown Indonesia Single Origin](./DialingInLog/2024-8-8-Stumptown-Indonesia-Single-Origin.md) (Safeway) (flavory with ice)
-  - [Intelligentsia Frequency](./DialingInLog/2024-8-20-Intelligentsia-Frequency.md) (Target) (sweet, fruity)
+  - [Stumptown Holler Mtn](./DialingInLog/2024-6/Stumptown-Holler-Mtn.md) (Target)
+  - [Stumptown Founder's](./DialingInLog/2024-7/Stumptown-Founders.md) (Target)
+  - [Stumptown Hundred Mile](./DialingInLog/2024-7/Stumptown-Hundred-Mile.md) (Target) (sweet)
+  - [Stumptown Indonesia Single Origin](./DialingInLog/2024-8/Stumptown-Indonesia-Single-Origin.md) (Safeway) (flavory with ice)
+  - [Intelligentsia Frequency](./DialingInLog/2024-8/Intelligentsia-Frequency.md) (Target) (sweet, fruity)
 - Decaf
-  - [Candy Tiger Peru Decaf](./DialingInLog/2024-7-9-Candy-Tiger-Peru-Decaf.md) (Amazon)
-  - [WonderState Star Valley Decaf](./DialingInLog/2024-7-11-Wonderstate-Star-Valley-Decaf.md) (Beanz)
-  - [Dog Wood Coffee Decaf Single Origin](./DialingInLog/2024-7-15-Dog-Wood-Coffee-Decaf.md) (Seattle Coffee Gears) (sweet)
-  - [Doma Bella Luna Decaf](./DialingInLog/2024-8-2-Doma-Bella-Luna-Decaf.md) (Beanz) (less sweet + good acidity)
+  - [Candy Tiger Peru Decaf](./DialingInLog/2024-7/Candy-Tiger-Peru-Decaf.md) (Amazon)
+  - [WonderState Star Valley Decaf](./DialingInLog/2024-7/Wonderstate-Star-Valley-Decaf.md) (Beanz)
+  - [Dog Wood Coffee Decaf Single Origin](./DialingInLog/2024-7/Dog-Wood-Coffee-Decaf.md) (Seattle Coffee Gears) (sweet)
+  - [Doma Bella Luna Decaf](./DialingInLog/2024-8/Doma-Bella-Luna-Decaf.md) (Beanz) (less sweet + good acidity)
 
 ### Breville Dose Control (double shot)
 
@@ -79,12 +81,12 @@ extraction needs to be lower while keeping high concentration.
 - Madcap Bolt (Deep Chocolate Syrupy)
 - Campfire Summer Camp Medium Dark Roast
 - Blue Bottle Bold **NOT FRESH** (low preasure)
-- [Temple Espresso Dharma Dark Roast](./DialingInLog/2024-6-11-Temple-Espresso-Dharma.md) **FRESH** **(tn)**
+- [Temple Espresso Dharma Dark Roast](./DialingInLog/2024-6/Temple-Espresso-Dharma.md) **FRESH** **(tn)**
 - Kahawa Safari Blend 6/19.5g+ **(tn)**
 - Zoka Tuscan 5/18.7g-
 - Zoka Tatoosh 6/18.5g-
-- [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7-14-Kona-Coffee-Blend.md) (Safeway) **NOT FRESH** (bitter)
-- [TraderJoes Organic FairTrade Shade Grown Ethiopian](./DialingInLog/2024-8-1-FairTrade-Shade-Grown-Ethiopian.md) (TraderJoes) (bitter)
+- [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7/Kona-Coffee-Blend.md) (Safeway) **NOT FRESH** (bitter)
+- [TraderJoes Organic FairTrade Shade Grown Ethiopian](./DialingInLog/2024-8/FairTrade-Shade-Grown-Ethiopian.md) (TraderJoes) (bitter)
 
 ## No! (candidate)
 
@@ -103,14 +105,14 @@ extraction needs to be lower while keeping high concentration.
 
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
-- [WonderState Heartstrings](./DialingInLog/2024-8-12-Wonderstate-Heartstrings.md) (Beanz)
-- [Heirloom Coffee Decaf Divine](./DialingInLog/2024-7-31-Heirloom-Coffee-Decaf-Divine.md) (QFC)
-- [Tony Upland](./DialingInLog/2024-7-27-Tony-Upland.md) (Target)
-- [TraderJoes Organic FairTrade Five Country Blend Dark Roast](./DialingInLog/2024-7-17-Fairtrade-Five-Country.md) (TraderJoes)
+- [WonderState Heartstrings](./DialingInLog/2024-8/Wonderstate-Heartstrings.md) (Beanz)
+- [Heirloom Coffee Decaf Divine](./DialingInLog/2024-7/Heirloom-Coffee-Decaf-Divine.md) (QFC)
+- [Tony Upland](./DialingInLog/2024-7/Tony-Upland.md) (Target)
+- [TraderJoes Organic FairTrade Five Country Blend Dark Roast](./DialingInLog/2024-7/Fairtrade-Five-Country.md) (TraderJoes)
 
 ### Breville Dose Control (double shot)
  
-- [Umbria Bizzarra Blend Medium Dark Roast](./DialingInLog/2024-6-23-Umbria-Bizzarra-Blend.md)
+- [Umbria Bizzarra Blend Medium Dark Roast](./DialingInLog/2024-6/Umbria-Bizzarra-Blend.md)
 
 ## Milk Frothing (Breville 876)
 

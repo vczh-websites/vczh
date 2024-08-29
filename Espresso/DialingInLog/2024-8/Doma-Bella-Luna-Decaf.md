@@ -2,6 +2,8 @@
 
 ## IMS B62.52TH24NT / Niche Duo
 
+### 2024-8-2
+
 **FRESH**
 
 - 13/20.0g -> 9/26s 41.4g, good creams, little bit weak flavor

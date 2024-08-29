@@ -1,8 +1,10 @@
 # WonderState Heartstrings
 
+don't drinking creama
+
 ## IMS B62.52TH24NT / Niche Duo
 
-don't drinking creama
+### 2024-8-12
 
 - 12/20.0g -> 9/26s 41.4g, weak
 - 10/20.0g -> 9/37s 40.5g, bitter and weak

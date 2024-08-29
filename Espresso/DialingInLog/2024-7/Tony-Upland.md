@@ -2,6 +2,8 @@
 
 ## IMS B62.52TH24NT / Niche Duo
 
+### 2024-7-27
+
 **NOT FRESH**
 
 - 11/20.0g -> 8/37s 40.9g, perfect creama, bitter

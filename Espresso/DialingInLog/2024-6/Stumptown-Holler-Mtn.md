@@ -2,6 +2,8 @@
 
 ## IMS B62.52TH24NT / Niche Duo
 
+### 2024-6-28
+
 - 15.5
   - 21.8g -> 8/30s 41g need to reduce bitter
   - 21.9g -> 8/24s 37.4g aromatic, flavor not strong rnough, no bitter, puck seems a little bit large

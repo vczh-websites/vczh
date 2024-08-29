@@ -2,6 +2,8 @@
 
 ## IMS B62.52TH24NT / Niche Duo
 
+### 2024-7-4
+
 - 12/20.1g -> 8/29s 40.8g, ok creama, somewhat weak flavor, totally not bitter
 - 11/20.0g -> 8/37s 39.9g, good creama, enough flavor, a little bit bitter aftertaste
 - 11.5/20.0g -> 8/35s 40.6g, same
