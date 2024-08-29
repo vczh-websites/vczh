@@ -1,5 +1,7 @@
 # Iconik Iconoclast Blend
 
+**very sweet, fruity**
+
 ## IMS B62.52TH24NT / Niche Duo
 
 ### 2024-8-28
