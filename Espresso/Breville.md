@@ -87,10 +87,7 @@ extraction needs to be lower while keeping high concentration.
 - Zoka Tatoosh 6/18.5g-
 - [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7/Kona-Coffee-Blend.md) (Safeway) **NOT FRESH** (bitter)
 - [TraderJoes Organic FairTrade Shade Grown Ethiopian](./DialingInLog/2024-8/FairTrade-Shade-Grown-Ethiopian.md) (TraderJoes) (bitter)
-
-## No! (candidate)
-
-- [TraderJoes Organic FairTrade French Roast Decaf](./DialingInLog/2024-7-31-FairTrade-French-Roast-Decaf.md) (TraderJoes) (bitter)
+- [TraderJoes Organic FairTrade French Roast Decaf](./DialingInLog/2024-7/FairTrade-French-Roast-Decaf.md) (TraderJoes) (bitter)
 
 ## Note
 
@@ -123,7 +120,7 @@ extraction needs to be lower while keeping high concentration.
   - 薄打：保持奶缸角度不变，延长时间则只能稍微加厚
   - 厚打：让喷气口一直处于不断升高的液面表面，延长时间显著加厚
   - 角度调整并一直保持在正好把大泡泡吸进去的话，打完余下的大泡泡会显著更少
-- 然后放斜开始旋转，数10组以上，取决于杯壁温度
+- 然后放斜开始旋转，旋转越快越好，数10组以上，取决于杯壁温度
 - 如果有20oz大奶缸打后换缸，可以打得更厚
 
 ## Latte Art
@@ -131,7 +128,7 @@ extraction needs to be lower while keeping high concentration.
 - 咖啡的脂肪末很重要，粗泡会随着时间迅速消失，杯子冷也会导致泡沫消失变快
 - 融合要干净，不能太多，融合速度不能过快
   - 融合足够干净的前提下，融合的太少会导致花纹边缘模糊
-  - 脂肪末不够的情况下，打相对薄并多融合
+  - 脂肪末不够的情况下，打相对厚并多融合
   - 脂末足够的情况下，打相对薄并稍微多融合，大大加强流动性
 - 奶泡厚度是次要的，但是不能太薄，太厚可以倒缸
   - 认准牛奶脂肪含量至少8g/240ml
