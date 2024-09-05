@@ -13,3 +13,9 @@
 - 9.5/20.0g -> 10/33s 38.0g, repros
 - 10/20.0g -> 10/31s 40.8g, more obvious flavor, fruity, less bitter
   - yes!
+
+- iced americano attempts
+  - 10/20.0g -> 10/30s 40.5g, can't tell
+  - 10/21.5g -> 15/39s 35g, obvious acidity and stronger sweet aftertaste
+    - the best of three
+  - 9/20.0g -> 12/44s 40.6g, obvious bitter, no sweet aftertaste
