@@ -51,7 +51,7 @@ extraction needs to be lower while keeping high concentration.
 ### IMS B62.52TH24NT / Niche Duo (double shot)
 
 - Highly Recommended
-  - [Philocoffea 152 Ethiopia Konga Natural](./DialingInLog/2024-9/Philocoffea-152.md) (milk tea, fruity)
+  - [Philocoffea 152 Ethiopia Konga Natural](./DialingInLog/2024-9/Philocoffea-152.md) (拉花交流) (milk tea, fruity)
   - [Iconik Iconoclast Blend](./DialingInLog/2024-8/Iconik-Iconoclast-Blend.md) (Beanz) (very sweet, fruity)
 - Normal
   - [Stumptown Holler Mtn](./DialingInLog/2024-6/Stumptown-Holler-Mtn.md) (Target)
