@@ -1,6 +1,6 @@
 # Philocoffea 152 Ethiopia Konga Natural
 
-**(milk tea, fruity)**
+**milk tea, fruity**
 
 ## IMS B62.52TH24NT / Niche Duo
 
