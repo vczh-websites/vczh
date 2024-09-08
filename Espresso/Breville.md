@@ -1,13 +1,18 @@
-# Breville and Coffee Beans
+# Espresso
 
 [Breville 876 Quick Guide](./BrevilleOps.md)
 
-## To do
+## Logs
 
-- Intelligentsia Black Cat Expresso
-- Intelligentsia House
+- With [Breville 876 + Niche](./Breville-Niche/README.md)
+- With [Breville 876 + Dose Control](./Breville-DoseControl/README.md)
 
-## Dial In
+## Highly Recommended
+
+- Philocoffea 152 Ethiopia Konga Natural
+- Iconik Iconoclast Blend
+
+## Dialing In
 
 [浓缩咖啡新手必看](./GettingStarted.md)
 
@@ -15,21 +20,12 @@
 
 More dose doesn't necessarily reduce bitterness.
 Bitterness could also come from more material get extracted.
-The real over-extraction signal may be the wood taste feeling.
+The real over-extraction signal is bitter in long lasting aftertaste.
 If reducing dose leads to balance then this is the case.
 
 If ground suddenly lose pressure for no reason,
 it is probably because CO2 is leaking too much since beans are not consumed in time,
 just grind half level finer (Niche Duo) and it should be fine again.
-
-If unexpected pressure changing happened and disappeared very quickyly (usually one day),
-earlier log should be read when continue using the bean in the future.
-It helps a lot prevent you from dialing in in a wrong direction.
-
-For beans that are not fresh (e.g. longer than 2-3 months from being roasted),
-you only get the "coffee flavor" which is controlled mostly by dose,
-grind setting only adjusts the extraction yield%.
-all specified flavors are gone, no need to chase it.
 
 It is important to discard some ground right after changing the grind settings,
 otherwise different sizes of ground will mix together and make channeling happen more easily.
@@ -46,73 +42,19 @@ When doing espresso with ice and fresh milk without frothing,
 bitter will become obvious,
 extraction needs to be lower while keeping high concentration.
 
-## Yes!
+### Breville 876
 
-### IMS B62.52TH24NT / Niche Duo (double shot)
+If unexpected pressure changing happened and disappeared very quickyly (usually one day),
+it usually because the espresso machine is not stable enough.
+Earlier log should be read when continue using the bean in the future.
+It helps a lot prevent you from dialing in in a wrong direction.
 
-- Highly Recommended
-  - [Philocoffea 152 Ethiopia Konga Natural](./DialingInLog/2024-9/Philocoffea-152.md) (拉花交流) (milk tea, fruity)
-  - [Iconik Iconoclast Blend](./DialingInLog/2024-8/Iconik-Iconoclast-Blend.md) (Beanz) (very sweet, fruity)
-- Normal
-  - [Stumptown Holler Mtn](./DialingInLog/2024-6/Stumptown-Holler-Mtn.md) (Target)
-  - [Stumptown Founder's](./DialingInLog/2024-7/Stumptown-Founders.md) (Target)
-  - [Stumptown Hundred Mile](./DialingInLog/2024-7/Stumptown-Hundred-Mile.md) (Target) (sweet)
-  - [Stumptown Indonesia Single Origin](./DialingInLog/2024-8/Stumptown-Indonesia-Single-Origin.md) (Safeway) (flavory with ice)
-  - [Intelligentsia Frequency](./DialingInLog/2024-8/Intelligentsia-Frequency.md) (Target) (sweet, fruity)
-- Decaf
-  - [Candy Tiger Peru Decaf](./DialingInLog/2024-7/Candy-Tiger-Peru-Decaf.md) (Amazon)
-  - [WonderState Star Valley Decaf](./DialingInLog/2024-7/Wonderstate-Star-Valley-Decaf.md) (Beanz)
-  - [Dog Wood Coffee Decaf Single Origin](./DialingInLog/2024-7/Dog-Wood-Coffee-Decaf.md) (Seattle Coffee Gears) (sweet)
-  - [Doma Bella Luna Decaf](./DialingInLog/2024-8/Doma-Bella-Luna-Decaf.md) (Beanz) (less sweet + good acidity)
+### Unfresh Beans
 
-### Breville Dose Control (double shot)
-
-| Ground | **(tn)** | **FRESH** | Brand |
-|--|--|--|--|
-| 5/18.0g || :o: | Fonte Uptown Espresso |
-| 5/20.5g- || :o: | Ladro Fremont Medium Roast |
-| 6/20.0g+ | :o: | :o: | Ladro Ladro Medium Roast |
-| 4/19.4g+ || :o: | Ladro Diablo Dark Roast |
-| 3/20.8g+ ||| Intelligentsia Black Cat Expresso |
-| 3/23.6g | :o: || Intelligentsia House |
-| 4/21.3g+ ||| Stumptown Hair Bender |
-| 1.5/17.5～18.0g ||| Death Wish Dark Roast Hints of Chocolate and Cherry |
-| 3.5/19.5g+ | :o: || Cutters Point Discovery Espresso Viennese Roast |
-
-## No!
-
-- Madcap Bolt (Deep Chocolate Syrupy)
-- Campfire Summer Camp Medium Dark Roast
-- Blue Bottle Bold **NOT FRESH** (low preasure)
-- [Temple Espresso Dharma Dark Roast](./DialingInLog/2024-6/Temple-Espresso-Dharma.md) **FRESH** **(tn)**
-- Kahawa Safari Blend 6/19.5g+ **(tn)**
-- Zoka Tuscan 5/18.7g-
-- Zoka Tatoosh 6/18.5g-
-- [Kona Coffee Blend Medium Roast](./DialingInLog/2024-7/Kona-Coffee-Blend.md) (Safeway) **NOT FRESH** (bitter)
-- [TraderJoes Organic FairTrade Shade Grown Ethiopian](./DialingInLog/2024-8/FairTrade-Shade-Grown-Ethiopian.md) (TraderJoes) (bitter)
-- [TraderJoes Organic FairTrade French Roast Decaf](./DialingInLog/2024-7/FairTrade-French-Roast-Decaf.md) (TraderJoes) (bitter)
-
-## Note
-
-- **(tn)**: means with thinner frothing
-- **FRESH**: means the bean was roasted just a few days ago when purchased, this could affect numbers
-- **NOT FRESH**: it has been quite a few months from roasted
-- The internal setting of the Breville grinder is **6**
-- Knodos basket produces much less pressure. For Zoka Tatoosh 6/18.0g in breville original extracts significantly more over than 2/20.0g in Knodos.
-- a/bs: press and hold `2cup`, time when hear the pump, release at a seconds, press again to stop at b-1.5 seconds. You and the machine needs time to respond.
-
-## Logs (Uncategorized)
-
-### IMS B62.52TH24NT / Niche Duo (double shot)
-
-- [WonderState Heartstrings](./DialingInLog/2024-8/Wonderstate-Heartstrings.md) (Beanz)
-- [Heirloom Coffee Decaf Divine](./DialingInLog/2024-7/Heirloom-Coffee-Decaf-Divine.md) (QFC)
-- [Tony Upland](./DialingInLog/2024-7/Tony-Upland.md) (Target)
-- [TraderJoes Organic FairTrade Five Country Blend Dark Roast](./DialingInLog/2024-7/Fairtrade-Five-Country.md) (TraderJoes)
-
-### Breville Dose Control (double shot)
- 
-- [Umbria Bizzarra Blend Medium Dark Roast](./DialingInLog/2024-6/Umbria-Bizzarra-Blend.md)
+For beans that are not fresh (e.g. longer than 2-3 months from being roasted),
+you only get the "coffee flavor" which is controlled mostly by dose,
+grind setting only adjusts the extraction yield%.
+all specified flavors are gone, no need to chase it.
 
 ## Milk Frothing (Breville 876)
 
