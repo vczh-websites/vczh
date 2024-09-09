@@ -9,3 +9,8 @@
   - try 30g yield
 - 13/20.5g -> 10/26s 31.1g
   - yes!
+  - -> 10/25s 32.1g
+- 13/21.0g -> 12/28s 30.6g
+- 13/20.5g -> 10/26s 30.9g
+  - less flavor than last time
+  - could try 13.5/21.0g
