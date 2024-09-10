@@ -4,6 +4,7 @@
 
 ## Logs
 
+- With [Decent Pro 1.45 + Niche](./Decent-Niche/README.md)
 - With [Breville 876 + Niche](./Breville-Niche/README.md)
 - With [Breville 876 + Dose Control](./Breville-DoseControl/README.md)
 
