@@ -13,4 +13,8 @@
 - 13/21.0g -> 12/28s 30.6g
 - 13/20.5g -> 10/26s 30.9g
   - less flavor than last time
-  - could try 13.5/21.0g
+  - breville seems bot stable enough today
+- 13.5/21.0g -> 10/27s 30.0g, bitter
+- 13.5/20.5g -> 10/25s 30.8g
+- 14.5/20.5g -> 10/23s 30.6g
+  - yes!
