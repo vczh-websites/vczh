@@ -9,4 +9,5 @@
   - 9/20.0g -> 9/20s 33.0g, fine
   - 8/20.0g -> 8/24s 30.9g, slightly bitter
   - 8.5/20.0g -> 8/23s 30.8g, weaker flavor
-  - 8.5/21.0g -> 
+  - 8.0/21.0g -> 8/29s 28.3g, sweet, weaker flavor at the beginning but turns good later
+    - try 20.5g ground
