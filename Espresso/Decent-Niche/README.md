@@ -7,4 +7,4 @@ using
 
 ## Uncategorized
 
-- [WonderState Heartstrings](./2024-9/Wonderstate-Heartstrings.md) (Beanz)
+- [WonderState Heartstrings](./2024-9/WonderState-Heartstrings.md) (Beanz)
