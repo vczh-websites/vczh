@@ -1,47 +1,12 @@
-# Espresso
+# Breville 876
 
 [Breville 876 Quick Guide](./BrevilleOps.md)
-
-## Logs
-
-- With [Decent Pro 1.45 + Niche](./Decent-Niche/README.md)
-- With [Breville 876 + Niche](./Breville-Niche/README.md)
-- With [Breville 876 + Dose Control](./Breville-DoseControl/README.md)
-
-## Highly Recommended
-
-- Philocoffea 152 Ethiopia Konga Natural
-- Iconik Iconoclast Blend
 
 ## Dialing In
 
 [浓缩咖啡新手必看](./GettingStarted.md)
 
 [Espresso 调参进阶](./ImproveDialingIn.md)
-
-More dose doesn't necessarily reduce bitterness.
-Bitterness could also come from more material get extracted.
-The real over-extraction signal is bitter in long lasting aftertaste.
-If reducing dose leads to balance then this is the case.
-
-If ground suddenly lose pressure for no reason,
-it is probably because CO2 is leaking too much since beans are not consumed in time,
-just grind half level finer (Niche Duo) and it should be fine again.
-
-It is important to discard some ground right after changing the grind settings,
-otherwise different sizes of ground will mix together and make channeling happen more easily.
-
-Over-weighted dose could also lead to uneven extraction
-because the puck expands all the way to the group head,
-leaving no room for spreading water evenly.
-
-Sweetness is an attribute of a certain bean.
-But it may need longer extraction to make sweeiness obvious.
-Longer without deeper extraction is the key.
-
-When doing espresso with ice and fresh milk without frothing,
-bitter will become obvious,
-extraction needs to be lower while keeping high concentration.
 
 ### Breville 876
 
@@ -79,7 +44,3 @@ all specified flavors are gone, no need to chase it.
 - 奶泡厚度是次要的，但是不能太薄，太厚可以倒缸
   - 认准牛奶脂肪含量至少8g/240ml
   - 打发时间需要观察液面高度，跟脂肪含量不成单调关系
-
-### Demo
-
-[Latte Art Demos](./LatteArt.md)

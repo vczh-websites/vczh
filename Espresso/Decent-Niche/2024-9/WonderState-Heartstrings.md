@@ -4,7 +4,7 @@
 
 ## Decent Pro / Niche Duo
 
-### 10s, 9-6bar, 92C
+### 9-6bar, 92C
 
 - 11.5/20.5 -> 9/15s 32.0g
 - 9/20.0g -> 9/20s 33.0g, fine
@@ -13,6 +13,6 @@
 - 8.0/21.0g -> 8/29s 28.3g, sweet, weaker flavor at the beginning but turns good later
   - try 20.5g ground
 
-## 10s, 9bar, 94C
+## 9bar, 94C
 
 - 8.0/20.0g -> 8/24s 29.4g, sweet but slightly bitter
