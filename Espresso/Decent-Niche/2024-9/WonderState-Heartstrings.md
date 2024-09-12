@@ -27,4 +27,4 @@ acidity and flow rate is not significantly changed,
 it could because the ground is too coarse,
 try 8 grind and run through the experiment again.
 
-## 8/20.0g
+## 8/21.0g
