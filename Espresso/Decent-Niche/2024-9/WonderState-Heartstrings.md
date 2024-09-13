@@ -32,5 +32,6 @@ try 8 grind and run through the experiment again.
 - 9bar/88C -> 6/22s 30.5g, more acidity
 - 6bar/88C -> 7/23s 30.1g, bitter, no sweet at all
 - 6bar/94C -> 7/22s 29.5g, bitter, weaker flavor, sweet aftertaste
+  - on 20g basket -> 8/23s 30.2g, nothing changed
 
-## 7/20.0g
+## 6/20.0g
