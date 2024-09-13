@@ -27,4 +27,10 @@ acidity and flow rate is not significantly changed,
 it could because the ground is too coarse,
 try 8 grind and run through the experiment again.
 
-## 8/21.0g
+## 8/20.0g on 18g basket
+- 9bar/94C -> 6/21s 31.1g, obvious flavor, little bitter, little sweet aftertaste
+- 9bar/88C -> 6/22s 30.5g, more acidity
+- 6bar/88C -> 7/23s 30.1g, bitter, no sweet at all
+- 6bar/94C -> 7/22s 29.5g, bitter, weaker flavor, sweet aftertaste
+
+## 7/20.0g
