@@ -35,3 +35,5 @@ try 8 grind and run through the experiment again.
   - on 20g basket -> 8/23s 30.2g, nothing changed
 
 ## 6/20.0g
+- 9bar/94C -> 8/38s 30.5g, flavor not obvious, strong mouthfeel, sweet
+- 6bar/94C -> 7/36s 30.5g, bitter, weaker flavor, some sweet aftertaste
