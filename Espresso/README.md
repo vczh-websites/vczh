@@ -28,8 +28,12 @@ because the puck expands all the way to the group head,
 leaving no room for spreading water evenly.
 
 Sweetness is an attribute of a certain bean.
-But it may need longer extraction to make sweeiness obvious.
-Longer without deeper extraction is the key.
+But it may need higher temperature.
+
+To having more acidity:
+- Increasing pressure could prevent from having risk of weaker flavor.
+- Increasing dose could decrease flow rate, having a risk of over extraction.
+- Coarser grinding could lead to risk of weaker flavor.
 
 When doing espresso with ice and fresh milk without frothing,
 bitter will become obvious,
