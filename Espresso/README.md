@@ -39,6 +39,19 @@ When doing espresso with ice and fresh milk without frothing,
 bitter will become obvious,
 extraction needs to be lower while keeping high concentration.
 
+## To Try
+
+- Changing pressure during extraction.
+- Changing temperature during extraction (tap the thermometer to set declining temperature).
+
+https://www.youtube.com/watch?v=4dRYw8yl_dg
+- Denser puck (or slower flow) increases body, decreases the risk of channeling.
+  - Increase the flow rate of pre-infusion.
+  - Increase puck weight
+  - Decrease the space between the puck and the shower screen (by using smaller basket).
+- Looser puck increases characteristic.
+- Thicker puck increases body (by using taper basket).
+
 ## Latte Art
 
 [Latte Art Demos](./LatteArt.md)
