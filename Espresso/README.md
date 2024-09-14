@@ -52,6 +52,8 @@ https://www.youtube.com/watch?v=4dRYw8yl_dg
 - Looser puck increases characteristic.
 - Thicker puck increases body (by using taper basket).
 
+https://www.youtube.com/watch?v=1qyFDbkRrOA
+
 ## Latte Art
 
 [Latte Art Demos](./LatteArt.md)
