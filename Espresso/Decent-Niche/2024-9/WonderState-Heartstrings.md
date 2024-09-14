@@ -44,3 +44,4 @@ try 8 grind and run through the experiment again.
 - 8bar/94C -> 7/31s 30.5g, quite not noticible bitter
 
 - 7.5/20g 9bar/94C -> 8/27s 30.5g, yes!
+  - try 9~6bar
