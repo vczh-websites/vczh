@@ -41,7 +41,7 @@ extraction needs to be lower while keeping high concentration.
 
 ## To Try
 
-- Changing pressure during extraction.
+- Changing pressure during extraction, 9~6 or 9~0.
 - Changing temperature during extraction (tap the thermometer to set declining temperature).
 
 https://www.youtube.com/watch?v=4dRYw8yl_dg

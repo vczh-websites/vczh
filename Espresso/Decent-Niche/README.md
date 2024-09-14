@@ -11,5 +11,7 @@ using
 
 ## Milk Frothing
 
+https://www.youtube.com/watch?v=6_eyKzs_GU4
+
 The milk should just cover to hole to start,
 and then adjust the distance quickly.
