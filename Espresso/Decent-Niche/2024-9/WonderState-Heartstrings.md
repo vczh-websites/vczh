@@ -41,5 +41,6 @@ try 8 grind and run through the experiment again.
 ## 7/20.0g
 - 6bar/94C -> 8/29s 29.8g, quite balance
 - 9bar/94C -> 8/31s 30.0g, milk frothing too hot, but could feel more acidity
-- 8bar/94C -> 7/31s 30.5g, quite not noticible bitter 
-  - try 7.5/20g 9bar/94C
+- 8bar/94C -> 7/31s 30.5g, quite not noticible bitter
+
+- 7.5/20g 9bar/94C -> 8/27s 30.5g, yes!
