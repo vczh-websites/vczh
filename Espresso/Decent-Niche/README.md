@@ -5,6 +5,8 @@ using
 - Decent Pro 1.45
 - Niche Duo
 
+Decent needs to rest for 10 minutes after wakes up
+
 ## Uncategorized
 
 - [WonderState Heartstrings](./2024-9/WonderState-Heartstrings.md) (Beanz)
