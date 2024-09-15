@@ -46,3 +46,15 @@ try 8 grind and run through the experiment again.
 ## 7.5/20g
 - 9bar/94C -> 8/27s 30.5g, yes!
   - try 9~6bar
+  - 8/21s 30.5g, slightly but enjoyable bitter
+    - could be not pre-heating the basket (need verify)
+  - 7/24s 30.8g, repros
+  - 7/22s 30.8g
+- 9~9bar/94C
+  - 8/23s 30.6g, slightly bitter, could be normal mistake
+- 9~6bar/94C
+  - 9/28s 29.9g, slightly bitter but strong flavor and clarity, stable sweet aftertaste
+
+## 8.5/20g
+- 9~6bar/94C
+  - 10/20s 30.6g, less bitter, more acidity and clarify, more bitter and same sweet in aftertaste
