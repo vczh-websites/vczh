@@ -6,6 +6,12 @@
 
 2024-9-15
 
-### 10/20.0g
+### 9~9bar/92C
 
-- 9~9bar/92C ->
+- 10/20.0g -> 8/23s 30.8g, bitter
+- 10/21.0g -> 7/21s 30.5g, less bitter, more sweet
+
+### 9~7bar/94C
+
+- 10/21.0g -> 8/20s 30.6g, strong and clear flavor, sweet
+  - try 9 grind next time
