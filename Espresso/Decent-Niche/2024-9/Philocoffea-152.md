@@ -14,4 +14,10 @@
 ### 9~7bar/94C
 
 - 10/21.0g -> 8/20s 30.6g, strong and clear flavor, sweet
+  - yes!
   - try 9 grind next time
+
+### 9~9bar/94C
+
+- 10/21.0g -> 8/24s 40.0g, much more body
+  - still prefer 1:1.5 yield
