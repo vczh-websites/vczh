@@ -21,3 +21,15 @@
 
 - 10/21.0g -> 8/24s 40.0g, much more body
   - still prefer 1:1.5 yield
+
+### 9~7bar/94C
+
+- 10/20.0g -> 10/20s 31.7g, bitter and slightly sweet aftertaste
+- 10/22.0g -> 7/22s 31.2g, dose too big
+  - 22g does not fit in 20g basket
+
+### 9~9bar/94C
+
+- 10/21.0g -> 7/19s 30.2g, balanced, sweet
+  - yes!
+  - grind >> pressure > temperature
