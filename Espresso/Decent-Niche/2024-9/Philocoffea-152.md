@@ -36,3 +36,4 @@
 - 9/20.0g -> 7/21s 29.9g, bitter
 - 10/20.0g -> 7/17s 32.5g, milk tea, flavor enough, not clarity enough, not bitter at all, somewhat sweet aftertaste, sweetness comes later
   - better, need to improve characteristic without brining more body
+  - 1g less dose decreases body a lot, it might because of the higher flow rate, jumps from 2.5 to 3.5
