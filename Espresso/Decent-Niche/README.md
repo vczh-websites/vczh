@@ -20,8 +20,10 @@ Decent needs to rest for 10 minutes after wakes up
 
 https://www.youtube.com/watch?v=6_eyKzs_GU4
 
-The milk should just cover to hole to start,
-and then adjust the distance quickly.
+Tilt jar,
+ensure steam hole close to side,
+ensure milk just cover the hole,
+start and adjust the distance quickly.
 
 Swirl the milk somewhat but not too gentally.
 
