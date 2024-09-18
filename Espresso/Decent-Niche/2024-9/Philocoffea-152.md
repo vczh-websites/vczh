@@ -33,3 +33,6 @@
 - 10/21.0g -> 7/19s 30.2g, balanced, sweet
   - yes!
   - grind >> pressure > temperature
+- 9/20.0g -> 7/21s 29.9g, bitter
+- 10/20.0g -> 7/17s 32.5g, milk tea, flavor enough, not clarity enough, not bitter at all, somewhat sweet aftertaste
+  - better, need to improve characteristic without brining more body
