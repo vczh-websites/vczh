@@ -15,6 +15,7 @@ Decent needs to rest for 10 minutes after wakes up
 ## Uncategorized
 
 - [WonderState Heartstrings](./2024-9/WonderState-Heartstrings.md) (Beanz)
+- [Doma Bella Luna Decaf](./2024-9/Doma-Bella-Luna-Decaf.md) (Beanz) (sweet)
 
 ## Milk Frothing
 

@@ -1,5 +1,7 @@
 # Philocoffea 152 Ethiopia Konga Natural
 
+**milk tea, fruity**
+
 [Previous](../../Breville-Niche/2024-9/Philocoffea-152.md)
 
 ## Decent Pro / Niche Duo
