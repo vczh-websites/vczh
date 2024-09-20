@@ -1,5 +1,7 @@
 # Proud Mary Pillow Fight Columbia Decaf
 
+**citric, chocolate**
+
 2024-9-19
 
 ## Decent Pro / Niche Duo
