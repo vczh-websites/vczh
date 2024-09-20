@@ -56,4 +56,4 @@ https://www.youtube.com/watch?v=1qyFDbkRrOA
 
 ## Latte Art
 
-[Latte Art Demos](./LatteArt.md)
+[Latte Art Demos](../Espresso/LatteArt.md)
