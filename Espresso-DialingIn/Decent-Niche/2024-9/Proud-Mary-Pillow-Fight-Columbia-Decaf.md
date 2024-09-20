@@ -22,3 +22,4 @@
 - 5.5/20.0g -> 8/27s 40.8g 1.6ml/s, repros
   - glass cup doesn't affect the taste
   - yes!
+  - try different temperature
