@@ -12,7 +12,7 @@
 
 ### 9~6bar/94C
 
-- 5.5/20.0g -> 9/27s 40.4g 9~8bar 1.5~2ml/s, body slightly too strong
+- 5.5/20.0g -> 9/27s 40.4g 9\~8bar 1.5\~2ml/s, body slightly too strong
   - I don't know if changing to a glass cup will affect the taste since it keeps latte warmer
 
 ### 9bar/94C
