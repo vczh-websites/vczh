@@ -16,7 +16,7 @@ Decent needs to rest for 10 minutes after wakes up
 
 - [WonderState Heartstrings](./2024-9/WonderState-Heartstrings.md) (Beanz)
 - [Doma Bella Luna Decaf](./2024-9/Doma-Bella-Luna-Decaf.md) (Beanz) (sweet)
-- [Pround Mary Pillow Fight Columbia Decaf](./2024-9/Proud-Mary-Pillow-Fight-Columbia-Decaf.md) (Beanz)
+- [Pround Mary Pillow Fight Columbia Decaf](./2024-9/Proud-Mary-Pillow-Fight-Columbia-Decaf.md) (Beanz) (citric, chocolate)
 
 ## Milk Frothing
 
