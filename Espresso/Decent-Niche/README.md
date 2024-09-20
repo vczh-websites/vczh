@@ -12,11 +12,18 @@ Decent needs to rest for 10 minutes after wakes up
 - [Philocoffea 152 Ethiopia Konga Natural](./2024-9/Philocoffea-152.md) (拉花交流) (milk tea, fruity)
 - Iconik Iconoclast Blend (Beanz) (very sweet, fruity)
 
+## Yes!
+
+## Yes! (decaf)
+
+- [Pround Mary Pillow Fight Columbia Decaf](./2024-9/Proud-Mary-Pillow-Fight-Columbia-Decaf.md) (Beanz) (citric, chocolate)
+
 ## Uncategorized
 
 - [WonderState Heartstrings](./2024-9/WonderState-Heartstrings.md) (Beanz)
 - [Doma Bella Luna Decaf](./2024-9/Doma-Bella-Luna-Decaf.md) (Beanz) (sweet)
-- [Pround Mary Pillow Fight Columbia Decaf](./2024-9/Proud-Mary-Pillow-Fight-Columbia-Decaf.md) (Beanz) (citric, chocolate)
+
+## No!
 
 ## Milk Frothing
 
