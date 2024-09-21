@@ -1,9 +1,11 @@
 # Iconik Iconoclast Blend
 
-2024-9-20
+[Previous](../../Breville-Niche/2024-8/Iconik-Iconoclast-Blend.md)
 
 ## Decent Pro / Niche Duo
 
+2024-9-20
+
 ### 9bar/92C
 
-- 8/20.0g -> 
+- 6/20.0g -> 
