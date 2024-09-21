@@ -31,9 +31,10 @@ Sweetness is an attribute of a certain bean.
 But it may need higher temperature.
 
 To having more acidity:
-- Increasing pressure could prevent from having risk of weaker flavor.
-- Increasing dose could decrease flow rate, having a risk of over extraction.
+- (?) Increasing pressure could prevent from having risk of weaker flavor.
+- (?) Increasing dose could decrease flow rate, having a risk of over extraction.
 - Coarser grinding could lead to risk of weaker flavor.
+- Decreasing temperature could lead to weaker body.
 
 When doing espresso with ice and fresh milk without frothing,
 bitter will become obvious,
