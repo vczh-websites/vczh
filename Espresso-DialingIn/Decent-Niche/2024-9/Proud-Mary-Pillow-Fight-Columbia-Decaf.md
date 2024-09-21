@@ -25,5 +25,8 @@
   - -> 8/31s 39.8g 1.3ml/s, something is wrong, could be not heating the basket
     - keep cool basket for the first cup of everydays and see
   - -> 7/25s 40.4g 1.6ml/s, repros
-  - 91C -> 7/23s 40.6g 1.7ml/s, stronger acidity
+
+### 9bar/91C
+
+- 5.5/20.0g -> 7/23s 40.6g 1.7ml/s, stronger acidity
     - better
