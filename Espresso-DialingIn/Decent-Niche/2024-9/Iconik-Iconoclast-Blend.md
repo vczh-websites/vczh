@@ -16,4 +16,6 @@
 
 ### 9bar/94C
 
-- 5.5/20.0g -> 7/36s 40.1g 0.7~1.7ml/s, 
+- 5.5/20.0g -> 7/36s 40.1g 0.7~1.7ml/s, balanced, sweet aftertaste
+  - try 6 grind
+  - try 7/9~6 bar
