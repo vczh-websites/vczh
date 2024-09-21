@@ -22,4 +22,8 @@
 - 5.5/20.0g -> 8/27s 40.8g 1.6ml/s, repros
   - glass cup doesn't affect the taste
   - yes!
-  - try different temperature
+  - -> 8/31s 39.8g 1.3ml/s, something is wrong, could be not heating the basket
+    - keep cool basket for the first cup of everydays and see
+  - -> 7/25s 40.4g 1.6ml/s, repros
+  - 91C -> 7/23s 40.6g 1.7ml/s, stronger acidity
+    - better
