@@ -33,6 +33,7 @@ Tilt jar,
 ensure steam hole close to side,
 ensure milk just cover the hole,
 start and adjust the distance quickly.
+At \~12s, raise the jar, stop at \~22s.
 
 Swirl the milk somewhat but not too gentally.
 
