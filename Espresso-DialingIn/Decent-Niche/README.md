@@ -10,7 +10,7 @@ Decent needs to rest for 10 minutes after wakes up
 ## Highly Recommended
 
 - [Philocoffea 152 Ethiopia Konga Natural](./2024-9/Philocoffea-152.md) (拉花交流) (milk tea, fruity)
-- Iconik Iconoclast Blend (Beanz) (very sweet, fruity)
+- [Iconik Iconoclast Blend](./2024-9/Iconik-Iconoclast-Blend.md) (Beanz) (very sweet, fruity)
 
 ## Yes!
 
