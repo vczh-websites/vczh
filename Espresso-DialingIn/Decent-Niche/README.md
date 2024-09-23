@@ -25,6 +25,19 @@ Decent needs to rest for 10 minutes after wakes up
 
 ## No!
 
+## Keep extraction stable
+
+- Wait longer than 5 minites after turning on the machine for the first cup.
+- Flush the basket before every extraction.
+
+## Dialing In
+
+- Decide a proper dose, usually 20g ground in 20g basket, so that after brewing the group head doesn't leave a imprint on the paper screen.
+- Start from `Classic Italian Espresso` with 8bar/90-92C.
+- Adjust to the best grind setting.
+- Adjust temperature and then pressure to make the espresso better.
+- Only doing temperature/pressure variety profile when fixed profile is not good enough.
+
 ## Milk Frothing
 
 https://www.youtube.com/watch?v=6_eyKzs_GU4
@@ -37,5 +50,5 @@ At \~12s, raise the jar, stop at \~22s.
 
 Swirl the milk somewhat but not too gentally.
 
-Don't froth too thick (find a repeatable measurable way),
+Don't froth too thick,
 pull foam from 12oz to 20oz jar before latte art.
