@@ -11,12 +11,20 @@
 
 ## Dialing In
 
-More dose doesn't necessarily reduce bitterness.
-Bitterness could also come from more material get extracted.
-The real over-extraction signal is bitter in long lasting aftertaste.
-If reducing dose leads to balance then this is the case.
+Keep a proper dose so that after pre-infusion the puck still has a small gap to the group head.
 
-If ground suddenly lose pressure for no reason,
+When dose and yield are fixed:
+- Grind finer: more extraction, more bitterness, less acidity. Higher risk of channeling.
+- Higher temperature: slightly more extraction, less emphasized acidity, more sweetness.
+- Higher pressure: more thickness, less acidity in aftertaste.
+
+The signal of over-extraction signal is
+bitterness in long lasting aftertaste.
+
+The signal of channeling is
+sudden/fast increasing flow rate or decreasing pressure.
+
+If puck suddenly loses pressure for no reason,
 it is probably because CO2 is leaking too much since beans are not consumed in time,
 just grind half level finer (Niche Duo) and it should be fine again.
 
@@ -27,23 +35,11 @@ Over-weighted dose could also lead to uneven extraction
 because the puck expands all the way to the group head,
 leaving no room for spreading water evenly.
 
-Sweetness is an attribute of a certain bean.
-But it may need higher temperature.
-
-To having more acidity:
-- (?) Increasing pressure could prevent from having risk of weaker flavor.
-- (?) Increasing dose could decrease flow rate, having a risk of over extraction.
-- Coarser grinding could lead to risk of weaker flavor.
-- Decreasing temperature could lead to weaker body.
-
 When doing espresso with ice and fresh milk without frothing,
 bitter will become obvious,
-extraction needs to be lower while keeping high concentration.
+adjust to emphasizing acidity.
 
 ## To Try
-
-- Changing pressure during extraction, 9\~6 or 9\~0.
-- Changing temperature during extraction (tap the thermometer to set declining temperature).
 
 https://www.youtube.com/watch?v=4dRYw8yl_dg
 - Denser puck (or slower flow) increases body, decreases the risk of channeling.
