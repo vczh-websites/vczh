@@ -41,6 +41,8 @@ adjust to emphasizing acidity.
 
 ## To Try
 
+Compare 20/18g and find out what other parameters change.
+
 https://www.youtube.com/watch?v=4dRYw8yl_dg
 - Denser puck (or slower flow) increases body, decreases the risk of channeling.
   - Increase the flow rate of pre-infusion.
