@@ -17,7 +17,6 @@
 ### 9bar/94C
 
 - 5.5/20.0g -> 7/36s 40.1g 0.7~1.7ml/s, balanced, sweet aftertaste
-  - try 7/9~6 bar
 - 6/20.0g -> 7/27s 40.8g 1.1~1.9ml/s, sweet and balanced
   - need to test temperature effect once more
 
@@ -34,4 +33,9 @@
 
 ### 6bar/94C
 
-- 6/20.0g -> 
+- 6/20.0g -> 7/27s 41.0g 1.1~2.2ml/s, still sweet, flavor emphasized but wired, acidity in aftertaste
+
+### 8bar/94C
+
+- 6/20.0g -> 7/30s 40.6g 0.9~1.9ml/s, flavor emphasized but no acidity in aftertaste
+  - repeat this next time
