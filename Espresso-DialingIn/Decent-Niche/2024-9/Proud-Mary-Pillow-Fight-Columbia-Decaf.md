@@ -29,4 +29,11 @@
 ### 9bar/91C
 
 - 5.5/20.0g -> 7/23s 40.6g 1.7ml/s, stronger acidity
-    - better
+  - better
+  - -> 7/26s 39.3g 1.5ml/s
+  - -> 7/26s 30.6g 1.6ml/s
+
+### 9bar/93C
+
+- 5.5/20.0g -> 7/28s 39.9g 1.4ml/s
+  - 94C next time
