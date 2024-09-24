@@ -39,3 +39,8 @@
 
 - 6/20.0g -> 7/30s 40.6g 0.9~1.9ml/s, flavor emphasized but no acidity in aftertaste
   - repeat this next time
+  - -> 7/26s 40.2g 1.2~2.1ml/s, less sweetness, slightly bitter
+    - first cup of the day, flow rate ia too fast
+  - -> 7/28s 40.3g 1.0~1.9ml/s, no bitter, pretty repros
+- 6/17.5g -> 7/22s 36.4g 1.5~2.2ml/s, less flavor, less sweetness, no bitter
+  - bean not enough, 17.5 ground put in 18g basket, turns out less dose requires finer ground
