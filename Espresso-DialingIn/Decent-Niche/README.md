@@ -52,3 +52,7 @@ Swirl the milk somewhat but not too gentally.
 
 Don't froth too thick,
 pull foam from 12oz to 20oz jar before latte art.
+
+When doing 7oz in deeper cup,
+stop at \~25s,
+integrate less and pour nearer.
