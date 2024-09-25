@@ -13,4 +13,8 @@
   - too fast, next day try waiting for 10 minutes before first cup
 - 6/20.0g -> 37.4g 7/42s, obvious bitter
   - "rinse and hold" state reaches maximum
-- 8/20.0g ->
+- 8/20.0g -> 7/24s 42.2g 1.7~2.1ml/s, less sweetness, flavor fine but could be more emphasized
+
+### 6bar/92C
+
+- 8/20.0g -> 
