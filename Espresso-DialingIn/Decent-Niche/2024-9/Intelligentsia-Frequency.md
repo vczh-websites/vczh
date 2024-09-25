@@ -21,5 +21,5 @@
 
 ### 6bar/94C
 
-- 8/20.0g -> 7/28s 40.3g 1.2~2.1ml/s, more sweet but less thickness
-  - try 7bar
+- 8/20.0g -> 7/28s 40.3g 1.2~2.1ml/s, more sweetness, less flavor, thickness might be not enough, a little bitter in aftertaste
+  - try 8.5/9 grind, and raise pressure
