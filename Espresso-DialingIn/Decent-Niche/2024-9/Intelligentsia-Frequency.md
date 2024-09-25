@@ -21,4 +21,5 @@
 
 ### 6bar/94C
 
-- 8/20.0g ->
+- 8/20.0g -> 7/28s 40.3g 1.2~2.1ml/s, more sweet but less thickness
+  - try 7bar
