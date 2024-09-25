@@ -21,22 +21,25 @@ Decent needs to rest for 10 minutes after wakes up
 ## Uncategorized
 
 - [WonderState Heartstrings](./2024-9/WonderState-Heartstrings.md) (Beanz)
+- [Intelligentsia Frequency](./2024-9/Intelligentsia-Frequency.md) (Target)
 - [Doma Bella Luna Decaf](./2024-9/Doma-Bella-Luna-Decaf.md) (Beanz) (sweet)
 
 ## No!
 
 ## Keep extraction stable
 
-- Wait longer than 5 minites after turning on the machine for the first cup.
-- Flush the basket before every extraction.
+- Wait longer than 5 (10?) minites after turning on the machine for the first cup.
+- Flush the basket before every extraction (hotter?).
 
 ## Dialing In
 
 - Decide a proper dose, usually 20g ground in 20g basket, so that after brewing the group head doesn't leave a imprint on the paper screen.
 - Start from `Classic Italian Espresso` with 8bar/90-92C.
+  - There is a time limit in the `Hold` state, since `Decline` is disabled, that is the maximum brewing time after pre-infusion.
+  - If the maximum of 1 minute is not enough, consider using the `Default` profile.
 - Adjust to the best grind setting.
 - Adjust temperature and then pressure to make the espresso better.
-- Only doing temperature/pressure variety profile when fixed profile is not good enough.
+- Only doing `Default` (temperature/pressure variety) profile when fixed profile is not good enough.
 
 ## Milk Frothing
 

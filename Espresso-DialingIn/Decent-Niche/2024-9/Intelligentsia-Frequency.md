@@ -1,5 +1,7 @@
 # Intelligentsia Frequency
 
+[Previous](../../Breville-Niche/2024-8/Intelligentsia-Frequency.md)
+
 ## Decent Pro / Niche Duo
 
 2024-9-24
