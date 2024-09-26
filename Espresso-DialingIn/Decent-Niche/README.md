@@ -28,8 +28,8 @@ Decent needs to rest for 10 minutes after wakes up
 
 ## Keep extraction stable
 
-- Wait longer than 5 (10?) minites after turning on the machine for the first cup.
-- Flush the basket before every extraction (hotter?).
+- Wait longer than 10 minites after turning on the machine for the first cup.
+- Flush the basket before every extraction (not important but better to do it).
 
 ## Dialing In
 
