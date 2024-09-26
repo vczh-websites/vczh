@@ -25,3 +25,12 @@
 
 - 8/20.0g -> 7/28s 40.3g 1.2~2.1ml/s, more sweetness, less flavor, thickness might be not enough, a little bitter in aftertaste
   - try 8.5/9 grind, and raise pressure
+- 8.5/20.0g -> 7/22s 40.9g 2.0\~2.3ml/s 94\~93\~94C, bitter, ~taste like channeling~
+  - frist cup of the day
+- 8.5/20.0g -> 7/21s 40.6g 2.2\~2.5ml/s 93.7\~93\~93.5C, more balanced, sweet
+  - waiting for 12 minutes before the first cup looks pretty stable in extraction
+
+### 9bar/94C
+
+- 8.5/20.0g -> 7/20s 40.7g 2.2\~2.4ml/s 93.7\~93\~93.5C, thicker body, just a little bit less emphasized flavor in the beginning but increased later, not bitterness at all
+- 8/20.0g -> 7/26s 40.4g 1.3\~1.9ml/s 93.5\~93\~93.7C, a little bit more sweet, thicker body, a little bit but comfortable bitterness in aftertaste, turning weak sweet later
