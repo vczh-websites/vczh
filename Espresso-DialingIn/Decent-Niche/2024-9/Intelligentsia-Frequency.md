@@ -27,6 +27,7 @@
   - try 8.5/9 grind, and raise pressure
 - 8.5/20.0g -> 7/22s 40.9g 2.0\~2.3ml/s 94\~93\~94C, bitter, ~taste like channeling~
   - frist cup of the day
+  - difference of the taste could due to food prior latte
 - 8.5/20.0g -> 7/21s 40.6g 2.2\~2.5ml/s 93.7\~93\~93.5C, more balanced, sweet
   - waiting for 12 minutes before the first cup looks pretty stable in extraction
 
