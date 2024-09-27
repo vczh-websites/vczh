@@ -13,5 +13,7 @@
 
 ### 8bar/94C
 
-- 5.5/20.0g -> 7/23s 40.7g 1.5\~2.3ml/s, sweet and some in aftertaste, exaggerative caramel disappears, obvious citrus, less thicknes but fine
-- 5.5/20.0g ->
+- 5.5/20.0g -> 7/23s 40.7g 1.5\~2.3ml/s, sweet and some in aftertaste, exaggerative caramel disappears, obvious citrus and long lasting, less thicknes but fine
+- 5.5/20.0g -> 7/26s 40.0g 1.3\~2.1ml/s, thickness increases a little bit, pretty repros
+  - time looks right
+  - try 9\~4bar
