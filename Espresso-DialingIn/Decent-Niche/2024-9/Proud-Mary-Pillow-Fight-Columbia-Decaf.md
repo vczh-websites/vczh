@@ -44,5 +44,5 @@
 
 ### 9~4bar/94C
 
-- 5.5/20.0g -> 7/28s 39.9g 1.5ml/s 9\~7.3bar, better
+- 5.5/20.0g -> 7/28s 39.9g 1.5ml/s 9\~7.3bar, better, flavor emphasized, sweet comes faster
   - use this recipe
