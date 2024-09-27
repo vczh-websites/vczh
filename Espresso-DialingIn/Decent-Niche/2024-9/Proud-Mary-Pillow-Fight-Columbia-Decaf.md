@@ -37,3 +37,12 @@
 
 - 5.5/20.0g -> 7/28s 39.9g 1.4ml/s
   - 94C next time
+
+### 9bar/94C
+
+- 5.5/20.0g -> 7/24s 40.0g 1.7ml/s, good
+
+### 9~4bar/94C
+
+- 5.5/20.0g -> 7/28s 39.9g 1.5ml/s 9\~7.3bar, better
+  - use this recipe
