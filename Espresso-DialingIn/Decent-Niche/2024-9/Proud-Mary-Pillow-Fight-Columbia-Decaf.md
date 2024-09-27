@@ -1,6 +1,6 @@
 # Proud Mary Pillow Fight Columbia Decaf
 
-**citric, chocolate**
+**citrus, chocolate**
 
 2024-9-19
 
