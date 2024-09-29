@@ -48,6 +48,8 @@
 
 - 10/20.0g -> 7/19s 41.4g 2.5\~3.5ml/s, obvious taste of fementation, clarity, milk tea, sweet in aftertaste, a little bit bitter long lasting
   - first cup of the day, data doesn't match record, try again
-- 10/20.0g -> 7/19s 40.7g 2.5\~2.8ml/s, sour, not bitterness, less sweet
+- 10/20.0g -> 7/19s 40.7g 2.5\~2.8ml/s, sour, not bitterness, less sweet, less milk tea
   - machine stable, previous cup proven channeling
-- 8/20.0g -> 
+- 8/20.0g -> 6/42s 40.4g 0.4\~1.5ml/s, over extraction
+- 9/20.0g -> 7/29s 39.8g 1.0\~2.0ml/s, much less but still bitter
+  - try 9.5 with 9/7/9\~4bar
