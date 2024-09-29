@@ -34,8 +34,20 @@
 
 - 10/21.0g -> 7/19s 30.2g, balanced, sweet
   - yes!
-  - grind >> pressure > temperature
+  - grind >> pressure = temperature
 - 9/20.0g -> 7/21s 29.9g, bitter
 - 10/20.0g -> 7/17s 32.5g, milk tea, flavor enough, not clarity enough, not bitter at all, somewhat sweet aftertaste, sweetness comes later
   - better, need to improve characteristic without brining more body
   - 1g less dose decreases body a lot, it might because of the higher flow rate, jumps from 2.5 to 3.5
+
+2024-9-28
+
+**FRESH**
+
+### 9bar/94C
+
+- 10/20.0g -> 7/19s 41.4g 2.5\~3.5ml/s, obvious taste of fementation, clarity, milk tea, sweet in aftertaste, a little bit bitter long lasting
+  - first cup of the day, data doesn't match record, try again
+- 10/20.0g -> 7/19s 40.7g 2.5\~2.8ml/s, sour, not bitterness, less sweet
+  - machine stable, previous cup proven channeling
+- 8/20.0g -> 
