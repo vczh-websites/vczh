@@ -61,9 +61,12 @@
 
 - 9.5/20.0g -> 7/24s 40.3g 1.6\~2.2ml/s 9\~7.8bar, less emphasized citrus flavor, milk tea, less sweet in aftertaste
   - a little bit taste of glass when getting cold
+  - flavor should have been emphasized by dropping the pressure, but here it may because of the dropping of density
 
 ### 9~4bar/92C
 
-- 9.5/20.0g -> 7/26s 40.5g 1.5\~2.1ml/s 9\~7.3bar, increased body and milk tea feeling
+- 9.5/20.0g -> 7/26s 40.5g 1.5\~2.1ml/s 9\~7.3bar, increased body (why?) and milk tea feeling, sweet aftertaste comes later but long lasting
   - decreasing temperature seems to affect to pressure as well
-  - try 9\~6bar next time
+  - the best temperature on sweet aftertaste seems to drop when pressure drops
+  - flavor emphasized when getting cold
+  - try 9 grind next time, to increase density, and hopefully bring the emphasized flavor back
