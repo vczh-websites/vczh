@@ -64,4 +64,6 @@
 
 ### 9~4bar/92C
 
-- 9.5/20.0g -> 
+- 9.5/20.0g -> 7/26s 40.5g 1.5\~2.1ml/s 9\~7.3bar, increased body and milk tea feeling
+  - decreasing temperature seems to affect to pressure as well
+  - try 9\~6bar next time
