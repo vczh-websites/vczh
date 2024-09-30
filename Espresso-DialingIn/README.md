@@ -41,12 +41,21 @@ adjust to emphasizing acidity.
 
 ## To Try
 
+### Temperature
+
 - Decreasing temperature seems to affect to pressure as well.
+- The best temperature on sweet aftertaste seems to drop when pressure drops.
+- Decreasing temperature could decrease the density and lead to the breaking of already balanced flavor and thickness.
+
+### Flow Rate
+
 - Flow rate and its rate of changing is the key to taste.
   - Higher pressure or coarser ground could lead to bigger flow rate changing with the same amount of brewing time.
     - Need more tests to compare between different rate of flow rate changing.
   - Need more tests to maintain the same flow rate from different parameter.
   - e.g. different grind/dose(20/18/15)/pressure.
+
+### Puck Prep
 
 https://www.youtube.com/watch?v=4dRYw8yl_dg
 - Denser puck (or slower flow) increases body, decreases the risk of channeling.
