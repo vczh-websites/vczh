@@ -46,6 +46,7 @@ adjust to emphasizing acidity.
 - Decreasing temperature seems to affect to pressure as well.
 - The best temperature on sweet aftertaste seems to drop when pressure drops.
 - Decreasing temperature could decrease the density and lead to the breaking of already balanced flavor and thickness.
+  - Or sometimes drops the flow rate and make flavor less emphasized.
 
 ### Flow Rate
 
