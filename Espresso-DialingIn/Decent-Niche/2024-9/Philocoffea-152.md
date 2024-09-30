@@ -54,3 +54,14 @@
 - 9/20.0g -> 7/29s 39.8g 1.0\~2.0ml/s, much less but still bitter
   - try 9.5 grind
   - try 10 grind with 7/9\~4bar
+- 9.5/20.0g -> 6/22s 40.5g 1.8\~2.2ml/s, flavor over emphasized, obvious sweet aftertaste
+  - first cup of the day
+
+### 9~4bar/94C
+
+- 9.5/20.0g -> 7/24s 40.3g 1.6\~2.2ml/s 9\~7.8bar, less emphasized citrus flavor, milk tea, less sweet in aftertaste
+  - a little bit taste of glass when getting cold
+
+### 9~4bar/92C
+
+- 9.5/20.0g -> 
