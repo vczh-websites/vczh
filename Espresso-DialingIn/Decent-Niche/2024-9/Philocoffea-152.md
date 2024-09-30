@@ -62,6 +62,7 @@
 - 9.5/20.0g -> 7/24s 40.3g 1.6\~2.2ml/s 9\~7.8bar, less emphasized citrus flavor, milk tea, less sweet in aftertaste
   - a little bit taste of glass when getting cold
   - flavor should have been emphasized by dropping the pressure, but here it may because of the dropping of density
+  - sometimes dropping pressure doesn't dramatically affect flownrate this much, this could also be the reason
 
 ### 9~4bar/92C
 
@@ -70,3 +71,4 @@
   - the best temperature on sweet aftertaste seems to drop when pressure drops
   - flavor emphasized when getting cold
   - try 9 grind next time, to increase density, and hopefully bring the emphasized flavor back
+  - try 10 grind if the reason is flow rate changing
