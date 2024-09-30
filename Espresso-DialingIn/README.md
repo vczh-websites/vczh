@@ -41,6 +41,7 @@ adjust to emphasizing acidity.
 
 ## To Try
 
+- Decreasing temperature seems to affect to pressure as well.
 - Flow rate and its rate of changing is the key to taste.
   - Higher pressure or coarser ground could lead to bigger flow rate changing with the same amount of brewing time.
     - Need more tests to compare between different rate of flow rate changing.
