@@ -70,6 +70,11 @@
   - decreasing temperature seems to affect to pressure as well
   - the best temperature on sweet aftertaste seems to drop when pressure drops
   - flavor emphasized when getting cold
-  - try 9/9.5/10 grind next timr
-    - try 9 grind to increase density, and hopefully bring the emphasized flavor back
-    - try 10 grind to increase flow rate
+- 9.5/20.0g ->
+  - first cup of the day
+- 9.5/20.0g ->
+  - ensure stability
+- 9/20.0g ->
+  - will increasing density bring the emphasized flavor or sweetness back?
+- 10/20.0g ->
+  - will increasing flow rate bring the emphasized flavor or sweetness back?
