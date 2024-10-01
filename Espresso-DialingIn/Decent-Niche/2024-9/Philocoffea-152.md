@@ -70,10 +70,13 @@
   - decreasing temperature seems to affect to pressure as well
   - the best temperature on sweet aftertaste seems to drop when pressure drops
   - flavor emphasized when getting cold
-- 9.5/20.0g ->
+- 9.5/20.0g -> 8/25s 40.2g 1.6\~2.1ml/s, much more sour
   - first cup of the day
-- 9.5/20.0g ->
-  - ensure stability
+  - use a wide cup, it seems to lower the temperature od the espresso too fast
+  - flow rate and time looks right, changing of the taste could due to the temperature drop
+- 9.5/20.0g -> 7/23s 40.8g 1.7\~2.2ml/s, sweet, good thickness, obvious critus flavor than yesterday and lasts in aftertaste
+  - back to the deep cup for consistency
+  - flow rate increases a little bit
 - 9/20.0g ->
   - will increasing density bring the emphasized flavor or sweetness back?
 - 10/20.0g ->
