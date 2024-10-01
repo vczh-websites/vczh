@@ -52,6 +52,8 @@ adjust to emphasizing acidity.
   - Higher pressure or coarser ground could lead to bigger flow rate changing with the same amount of brewing time.
     - Need more tests to compare between different rate of flow rate changing.
   - Need more tests to maintain the same flow rate from different parameter.
+    - Grind setting dramatically changes the flow rate.
+    - Both lower temperature and pressure affects the flow rate but with different side effect.
   - e.g. different grind/dose(20/18/15)/pressure.
 
 ### Puck Prep
