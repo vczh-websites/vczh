@@ -84,6 +84,7 @@
   - looks like 9.5 in 9~4bar/92C is still too sour but also the most appropriate grind setting
 - 9.5/20.0g ->
   - first cup of the day, as a baseline, and bring pressure and temperature back
+  - 1/2 step is obviously too large for this bean, it is necessary to try 1/4 step if 9.5 is not good enough
 
 ### 9bar/92C
 
