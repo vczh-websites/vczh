@@ -79,5 +79,16 @@
   - flow rate increases a little bit
 - 9/20.0g -> 8/31s 39.9g 0.9\~1.9ml/s, more sweet, significantly less flavor
   - will increasing density bring the emphasized flavor (no) or sweetness back (yes)? 
-- 10/20.0g ->
-  - will increasing flow rate bring the emphasized flavor or sweetness back?
+- 10/20.0g -> 8/21s 40.2g 2.2\~2.7ml/s, less sweet, significantly more flavor and even too much
+  - will increasing flow rate bring the emphasized flavor (yes) or sweetness back (no)?
+  - looks like 9.5 in 9~4bar/92C is still too sour but also the most appropriate grind setting
+- 9.5/20.0g ->
+  - first cup of the day, as a baseline, and bring pressure and temperature back
+
+### 9bar/92C
+
+- 9.5/20.0g ->
+
+### 9bar/94C
+
+- 9.5/20.0g ->
