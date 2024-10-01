@@ -77,7 +77,7 @@
 - 9.5/20.0g -> 7/23s 40.8g 1.7\~2.2ml/s, sweet, good thickness, obvious critus flavor than yesterday and lasts in aftertaste
   - back to the deep cup for consistency
   - flow rate increases a little bit
-- 9/20.0g ->
-  - will increasing density bring the emphasized flavor or sweetness back?
+- 9/20.0g -> 8/31s 39.9g 0.9\~1.9ml/s, more sweet, significantly less flavor
+  - will increasing density bring the emphasized flavor (no) or sweetness back (yes)? 
 - 10/20.0g ->
   - will increasing flow rate bring the emphasized flavor or sweetness back?
