@@ -46,3 +46,6 @@
 
 - 5.5/20.0g -> 7/28s 39.9g 1.5ml/s 9\~7.3bar, better, flavor emphasized, sweet comes faster
   - use this recipe
+- 5.5/20.0g -> 7/24s 40.6g 2.0\~1.5ml/s
+- 5.5/20.0g -> 8/25s 41.0g 2.0\~1.5ml/s
+  - bean released CO2, but still good
