@@ -10,6 +10,8 @@
 - 5/20g -> 8/26s 41.3g 1.2\~2.2ml/s, better balanced but flavor a little bit over emphasized
 - 4.5/20.0g -> 7/33s 40.7g 0.7\~1.9ml/s, flavor a little bit less emphasized, but body is good
   - try variety pressure
+  - try 4.75 grind
+- 4.75/20.0g ->
 
 ### 9~4bar/94C
 
