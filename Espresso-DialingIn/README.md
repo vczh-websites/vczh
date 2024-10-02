@@ -15,14 +15,15 @@ Keep a proper dose so that after pre-infusion the puck still has a small gap to 
 
 When dose and yield are fixed:
 - Grind finer: more extraction, more bitterness, less acidity. Higher risk of channeling.
+  - Flow rate usually gets smaller when grind finer.
+  - Flow rate usually gets bigger when grind coarser. But when it is too coarse, the flow rate changes insignificantly. The espresso usually tastes worse at such range.
 - Higher temperature: slightly more extraction, less emphasized acidity, more sweetness.
-- Higher pressure: more thickness, less acidity in aftertaste.
+- Higher pressure: slightly more extraction, less emphasized acidity.
+- (very lighly but under testing) Higher temperature and pressure desolves material quicker, it decreases the flow rate but usually insignificantly. But when the ground is coarse enough, it could increase the flow rate significantly enough, and the effect reverses.
 
-The signal of over-extraction signal is
-bitterness in long lasting aftertaste.
+The signal of over-extraction signal is bitterness in long lasting aftertaste.
 
-The signal of channeling is
-sudden/fast increasing flow rate or decreasing pressure.
+The signal of channeling is sudden/fast increasing flow rate or decreasing pressure.
 
 If puck suddenly loses pressure for no reason,
 it is probably because CO2 is leaking too much since beans are not consumed in time,
@@ -33,7 +34,7 @@ otherwise different sizes of ground will mix together and make channeling happen
 
 Over-weighted dose could also lead to uneven extraction
 because the puck expands all the way to the group head,
-leaving no room for spreading water evenly.
+leaving no room to distribute water evenly.
 
 When doing espresso with ice and fresh milk without frothing,
 bitter will become obvious,
