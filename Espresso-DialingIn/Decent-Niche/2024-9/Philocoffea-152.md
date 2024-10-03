@@ -95,4 +95,8 @@
 
 - 9.75/20.0g -> 8/21s 40.3g 2.4\~3.1ml/s, bitter, could be channeling
   - flow drops and raises too late
-- 9.75/20.0g -> 
+- 9.75/20.0g -> 8/23s 40.2g 1.8\~2.3ml/s, flavor a little bit over emphasized
+
+### 9~4bar/94C
+
+- 9.75/20.0g ->
