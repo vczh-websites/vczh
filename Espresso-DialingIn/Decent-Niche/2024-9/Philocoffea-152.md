@@ -82,14 +82,17 @@
 - 10/20.0g -> 8/21s 40.2g 2.2\~2.7ml/s, less sweet, significantly more flavor and even too much
   - will increasing flow rate bring the emphasized flavor (yes) or sweetness back (no)?
   - looks like 9.5 in 9~4bar/92C is still too sour but also the most appropriate grind setting
-- 9.5/20.0g ->
-  - first cup of the day, as a baseline, and bring pressure and temperature back
-  - 1/2 step is obviously too large for this bean, it is necessary to try 1/4 step if 9.5 is not good enough
 
-### 9bar/92C
+### 9~9bar/94C
 
-- 9.5/20.0g ->
+- 9.5/20.0g -> 7/25s 39.6g 1.3\~2.1ml/s, slightly bitter
+  - first cup of the day, flow rate a little but slower at the beginning
+  - 1/2 step is obviously too large for this bean, it is necessary to try 1/4 step
+- 9.75/19.9g -> 7/20s 39.6g 1.9\~2.3ml/s, flavor emphasized, little smoky, citrus long lasting
+  - flow rate looks right
 
-### 9bar/94C
+### 9~9bar/92C
 
-- 9.5/20.0g ->
+- 9.75/20.0g -> 8/21s 40.3g 2.4\~3.1ml/s, bitter, could be channeling
+  - flow drops and raises too late
+- 9.75/20.0g -> 
