@@ -25,3 +25,7 @@ Decent 的粉锤我觉得是不行的，它的粉锤比粉碗少了一圈，这�
 ## Default profile 使用体验
 
 ## 尾声
+
+推荐视频：
+- https://www.youtube.com/watch?v=Ac53ZjGynxU
+- https://www.youtube.com/watch?v=OsEe7drwCJI
