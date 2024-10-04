@@ -11,3 +11,8 @@
 ### 8bar/94C
 
 - 6/20.0g -> 8/28s 40.8g 1.0\~2.1ml/s, raisin emphasized, a little sour in aftertaste
+
+### 9~4bar/92C
+
+- 6/20.0g -> 8/31s 40.5g 0.8\~2.0ml/s, taste of wine less emphasized, balanced, no sour in aftertaste, sweet
+  - yes!
