@@ -41,6 +41,7 @@ Decent needs to rest for 10 minutes after wakes up
 - Adjust to the best grind setting.
 - Adjust temperature and then pressure to make the espresso better.
 - Only doing `Default` (temperature/pressure variety) profile when fixed profile is not good enough.
+  - If flow rate raises too fast, consider brewing with a higher temperature and a decreasing pressure profile.
 
 ## Milk Frothing
 
