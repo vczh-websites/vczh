@@ -99,4 +99,9 @@
 
 ### 9~4bar/94C
 
-- 9.75/20.0g ->
+- 9.75/20.0g -> 8/22s 40.1g 1.8\~2.3ml/s, flavor emphasized, little smoky, citrus, a little sweet in aftertaste
+
+### 9\~4bar/92C
+
+- 9.75/20.0g -> 9/24s 40.3g 1.7\~2.3ml/s, balanced, smoky, milk tea, citrus, sweet
+  - yes!
