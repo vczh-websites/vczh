@@ -105,3 +105,4 @@
 
 - 9.75/20.0g -> 9/24s 40.3g 1.7\~2.3ml/s, balanced, smoky, milk tea, citrus, sweet
   - yes!
+  - try 15.0g and finer ground to achieve a similar flow rate
