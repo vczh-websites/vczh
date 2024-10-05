@@ -114,9 +114,13 @@
   - it looks like lower dose needs lower flow rate to keep the same taste
   - part of the reason might be lower yield of espresso gets colder easier, which will eventually over emphasize the acidity
 
-### Scale calibrated
+### 9\~4bar/92C, Scale calibrated
 
 - re-evaluate the last recipe and apply to CGLE logs
+
+- 7/15.0g -> 6/14s 2.8\~3.4ml/s
+- 6/15.0g -> 6/19s 1.8\~2.0ml/s, citrus emphasized in a good way, milk tea, sweet in aftertaste
+- 5.5/20.0g -> 
 
 ### 9\~1bar/92C
 
