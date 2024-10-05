@@ -18,3 +18,4 @@
   - yes!
   - -> 8/28s 40.5g 1.1\~2.0ml/s
   - -> 8/27s 40.4g 1.2\~2.2ml/s
+    - Bean is releasing CO2 but today's flow rate comoletedly eliminated bitterness, which is good!
