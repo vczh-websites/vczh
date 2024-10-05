@@ -106,3 +106,13 @@
 - 9.75/20.0g -> 9/24s 40.3g 1.7\~2.3ml/s, balanced, smoky, milk tea, citrus, sweet
   - yes!
   - try 15.0g and finer ground to achieve a similar flow rate
+- 7.5/15.0g -> 6/22s 36.2g 1.6\~2.0ml/s, a little bitter
+  - scale does not put in a right position and failed to stopsnat 30g
+- 7.5/15.0g -> 6/21s 30.5g 1.4\~1.8ml/s, flavor a little bit over emphasized, thickness is good, a little sweet aftertaste comes later
+- 7/15.1g -> 6/22s 30.2g 1.2\~1.8ml/s, very similar to 9.75/20.0g
+  - try 9\~1bar and see how low the pressure goes
+  - it looks like lower dose needs lower flow rate to keep the same taste
+
+### 9\~1bar/92C
+
+- 7/15.0g ->
