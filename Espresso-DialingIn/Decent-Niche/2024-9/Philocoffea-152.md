@@ -112,6 +112,7 @@
 - 7/15.1g -> 6/22s 30.2g 1.2\~1.8ml/s, very similar to 9.75/20.0g
   - try 9\~1bar and see how low the pressure goes
   - it looks like lower dose needs lower flow rate to keep the same taste
+  - part of the reason might be lower yield of espresso gets colder easier, which will eventually over emphasize the acidity
 
 ### 9\~1bar/92C
 
