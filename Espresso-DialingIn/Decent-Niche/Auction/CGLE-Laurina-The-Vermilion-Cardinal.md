@@ -20,3 +20,7 @@
 - 4.75/20.0g ->
   - skip this cup if the previous one looks/taste right
 - 5/20.0g ->
+
+### Scale calibrated
+
+- re-evaluate using Philocoffea 152
