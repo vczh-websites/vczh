@@ -16,3 +16,5 @@
 
 - 6/20.0g -> 8/31s 40.5g 0.8\~2.0ml/s, taste of wine less emphasized, balanced, no sour in aftertaste, sweet
   - yes!
+  - -> 8/28s 40.5g 1.1\~2.0ml/s
+  - -> 8/27s 40.4g 1.2\~2.2ml/s
