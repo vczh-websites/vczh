@@ -119,8 +119,10 @@
 - re-evaluate the last recipe and apply to CGLE logs
 
 - 7/15.0g -> 6/14s 2.8\~3.4ml/s
-- 6/15.0g -> 6/19s 1.8\~2.0ml/s, citrus emphasized in a good way, milk tea, sweet in aftertaste
-- 5.5/20.0g -> 
+- 6/15.0g -> 6/19s 1.8\~2.0ml/s, citrus emphasized in a good way, milk tea, some sweet in aftertaste
+- 5.5/15.0g -> 6/23s 1.1\~1.8ml/s, sweet, a little smoky, citrus emphasized but comes later, some sweet in aftertaste
+  - this looks like 7/15.0g yesterday
+  - needs to compare using CGLE
 
 ### 9\~1bar/92C
 
