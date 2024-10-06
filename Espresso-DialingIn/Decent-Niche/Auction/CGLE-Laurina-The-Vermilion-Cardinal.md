@@ -16,11 +16,11 @@
 - 4.75/20.0g -> 8/32s 40.3g 0.8\~2.0ml/s, sweet, grape fruit and wine comes back
   - yes!
   - compare 4.75 and 5 grind next time
-- 4.75/20.0g ->
-- 4.75/20.0g ->
-  - skip this cup if the previous one looks/taste right
-- 5/20.0g ->
 
-### Scale calibrated
+### Scale calibrated (2024-10-5)
 
-- re-evaluate using Philocoffea 152
+- 4/20.0g -> 8/22s 40.5ml/s 1.8\~2.7ml/s
+- 3.5/20.0g -> 8/26s 40.3g 1.1\~2.2ml/s
+  - flow rate looks like 5/20.0g
+  - but Niche Duo only adjusts by 1 unit, could due to CO2 releasing
+- 3/20.0g ->
