@@ -10,7 +10,7 @@ Decent needs to rest for 10 minutes after wakes up
 ## Niche Duo Calibration
 
 - 2024-10-5, 6<-7 (Philocoffea 152)
-  - I don't think Niche Duo'ring is losen, it could due to bean residual that affects the sound.
+  - I don't think Niche Duo'ring was losen, it could due to bean residual affecting the sound.
   - But I adjusted it to be 1 smaller anyway.
   - Take this log so that if I get any chance to install a new burr I should zeroing it again and see if I need to adjust it 1 larger back.
 
