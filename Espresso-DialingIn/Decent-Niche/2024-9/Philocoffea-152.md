@@ -123,6 +123,8 @@
 - 5.5/15.0g -> 6/23s 1.1\~1.8ml/s, sweet, a little smoky, citrus emphasized but comes later, some sweet in aftertaste
   - this looks like 7/15.0g yesterday
   - needs to compare using CGLE
+- 6/15.0g -> 7/21s 30.1g, 1.4\~1.9ml/s, sweet, smoky, balanced
+  - this also looks like 7/15.0 yesterday, since Niche Duo zeroing only adjust by 1, this should be correct
 
 ### 9\~1bar/92C
 
