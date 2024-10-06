@@ -13,6 +13,7 @@ Decent needs to rest for 10 minutes after wakes up
   - I don't think Niche Duo'ring was losen, it could due to bean residual affecting the sound.
   - But I adjusted it to be 1 smaller anyway.
   - Take this log so that if I get any chance to install a new burr I should zeroing it again and see if I need to adjust it 1 larger back.
+  - Tasted Philocoffea 152 and CGLE vermilion cardinal, all needs to grind 1.5 unit finer, but Niche Duo only adjusts by 1 unit, could because bean is releasing CO2.
 
 ## Highly Recommended
 
