@@ -20,6 +20,6 @@
   - -> 8/27s 40.4g 1.2\~2.2ml/s
     - Bean is releasing CO2 but today's flow rate comoletedly eliminated bitterness, which is good!
 
-### Scale calibrated
+### Scale calibrated (2024-10-5)
 
-- re-evaluate using Philocoffea 152
+- 4.5/20.0g ->
