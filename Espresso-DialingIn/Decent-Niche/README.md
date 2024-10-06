@@ -7,6 +7,10 @@ using
 
 Decent needs to rest for 10 minutes after wakes up
 
+## Niche Duo Calibration
+
+- 2024-10-5, 5.5<-7 (Philocoffea 152)
+
 ## Highly Recommended
 
 - [Philocoffea 152 Ethiopia Konga Natural](./2024-9/Philocoffea-152.md) (拉花交流) (milk tea, fruity)
