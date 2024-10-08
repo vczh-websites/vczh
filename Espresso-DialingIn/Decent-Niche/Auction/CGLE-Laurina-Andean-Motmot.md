@@ -24,3 +24,10 @@
 
 - 4.5/20.0g -> 8/24s 40.7g 1.6\~2.2ml/s, body over emphasized, a little bit bitter in aftertaste
   - could be channeling, give another try
+- 4.75/20.0g -> 9/20s 40.3g 2.5\~2.9ml/s, under extraction
+- 4.0/20.0g -> 7/26s 40.3g 1.2\~2.1ml/s, sweet, balanced, but a little bit bitter in aftertaste
+
+### 9bar/94C
+
+- 4.5/20.0g -> 8/24s 40.1g 1.5\~2.4ml/s, much more sweet, floral
+  - yes! recipe for 1 week after roasted
