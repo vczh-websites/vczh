@@ -23,4 +23,6 @@
 - 3.5/20.0g -> 8/26s 40.3g 1.1\~2.2ml/s
   - flow rate looks like 5/20.0g
   - but Niche Duo only adjusts by 1 unit, could due to CO2 releasing
-- 3/20.0g ->
+- 3/20.0g -> 7/24s 40.3g 1.3\~2.2ml/s
+- 3.25/20.0g -> 8/24s 40.6g 2.5\~3.4ml/s, balanced, some sweet
+  - wine tasting comes back at this very narrow grind setting
