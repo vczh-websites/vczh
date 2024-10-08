@@ -22,4 +22,5 @@
 
 ### Scale calibrated (2024-10-5)
 
-- 4.5/20.0g ->
+- 4.5/20.0g -> 8/24s 40.7g 1.6\~2.2ml/s, body over emphasized, a little bit bitter in aftertaste
+  - could be channeling, give another try
