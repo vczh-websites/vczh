@@ -32,3 +32,5 @@
 - 4.5/20.0g -> 8/24s 40.1g 1.5\~2.4ml/s, much more sweet, floral
   - yes! recipe for 1 week after roasted
   - using a flat pressure for a consistant raising flow rate, it could extract less in the finishing and maximize the flavor
+- 4.5/20.0g -> 8.21s 39.9g 1.8\~2.2ml/s
+- 4.25/20.0g -> 8/25s 38.0g 1.2\~2.1ml/s
