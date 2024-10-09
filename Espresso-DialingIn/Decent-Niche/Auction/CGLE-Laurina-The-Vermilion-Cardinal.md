@@ -26,3 +26,4 @@
 - 3/20.0g -> 7/24s 40.3g 1.3\~2.2ml/s
 - 3.25/20.0g -> 8/24s 40.6g 2.5\~3.4ml/s, balanced, some sweet
   - wine tasting comes back at this very narrow grind setting
+- 3.25/20.0g -> 8/24s 40.4g 1.3\~2.2ml/s, very little bitter in aftertaste
