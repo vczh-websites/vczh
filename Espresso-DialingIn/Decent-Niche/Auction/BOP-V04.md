@@ -13,3 +13,7 @@
 
 - 1.75/15.0g -> 7/18s 30.5g 1.7\~2.2ml/s, slightly better, milk could be too much
 - 1.25/15.0g -> 7/20s 30.5g 1.3\~2.1ml/s, more flavor but clarity not enough
+
+### 9\~3bar/92C
+
+- 2/20.0g -> 8/37s 40.0g 0.6\~1.7ml/s, sweet, mich better thickness, clarity not rnough
