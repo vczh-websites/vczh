@@ -33,6 +33,11 @@
 
 - 3.25/20.0g -> 8/21s 36.7g 1.7\~2.3ml/s, acidity a little but over emphasized
   - yield 36g and 40g next time
+
+2024-10-11
+
+### 9~3bar/94C
+
 - 3.5/20.0g -> 7/28s 40.4g 1.1\~2.1ml/s, bitter
 
 ### 9bar/94C
