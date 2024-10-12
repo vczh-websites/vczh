@@ -33,3 +33,13 @@
 
 - 3.25/20.0g -> 8/21s 36.7g 1.7\~2.3ml/s, acidity a little but over emphasized
   - yield 36g and 40g next time
+- 3.5/20.0g -> 7/28s 40.4g 1.1\~2.1ml/s, bitter
+
+### 9bar/94C
+
+- 4.0/20.0g -> 7/22s 39.9g 1.6\~2.4ml/s, good thickness, needs more emphasizing flavor
+
+### 9~4bar/94C
+
+- 4.0/20.0g -> 7/24s 40.0g 1.4\~2.4ml/s, still need more emohasizing flavor
+  - try 91C
