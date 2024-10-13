@@ -5,7 +5,9 @@ using
 - Decent Pro 1.45
 - Niche Duo
 
-Decent needs to rest for 10 minutes after wakes up
+Decent needs to rest for 10 minutes after wakes up.
+
+Sometimes the tablet double clicks, don't press the left side of the OK button after changing brewing parameters, it overlaps with the power button, there is a low possibility that the machine will be turned off. 
 
 ## Niche Duo Calibration
 
