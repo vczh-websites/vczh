@@ -11,4 +11,5 @@
 
 ### 9\~1bar/94C
 
-- 3.25/20.0g ->
+- 3.5/20.0g -> 8/22s 40.8g 1.7\~2.5ml/s, less thickness, not sour, sweet, spicy
+  - try 3 grind
