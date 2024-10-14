@@ -128,4 +128,5 @@
 
 ### 9\~1bar/92C
 
-- Using the same grind/dose
+- 8.25/20.0g -> 8/19s 40.1g 2.6\~3.5ml/s, looks like channeling
+  - last dose of this patch
