@@ -13,3 +13,9 @@
 
 - 3.5/20.0g -> 8/22s 40.8g 1.7\~2.5ml/s, less thickness, not sour, sweet, spicy
   - try 3 grind
+- 3/20.0g -> 8/23s 39.6g 1.5\~2.3ml/s
+
+### 9\~4bar/92C
+
+- 3.25/20.0g -> 9/21s 36.7g 1.8\~2.6ml/s, flavor emphasized, thickness enoguh, sweet, grape
+  - yes!
