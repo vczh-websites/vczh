@@ -51,4 +51,4 @@
 ### 9~4bar/91C
 
 - 4/20.0g -> 9/24s 40.3g 1.7\~2.3ml/s, flavor emphasized
-  - try 92C
+  - try 93C
