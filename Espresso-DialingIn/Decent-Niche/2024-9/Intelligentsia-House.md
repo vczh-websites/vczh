@@ -18,6 +18,12 @@
   - time looks right
   - try 9\~4bar
 
-### 9~4bar/94C
+### 9~4bar/94C, Scale calibrated (2024-10-5)
 
-- 4.5/20.0g -> 
+- 4.5/20.0g -> 9/16s 41.0g 4.5ml/s, too fast
+- 3/20.0g -> 8/25s 40.4g 1.5\~2.1ml/s, caramel
+
+### 9bar/94C
+
+- 3/20.0 -> 8/26s 40.2g 1.2\~2.1ml/s, bitter
+  - try 3.25 or 3.5 grind
