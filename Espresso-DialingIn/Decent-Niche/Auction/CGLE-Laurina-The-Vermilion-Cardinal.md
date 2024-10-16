@@ -55,5 +55,5 @@
 ### 9~4bar/94C
 
 - 4/20.0g -> 7/24s 40.2g 1.3\~2.2ml/s, thickness not enough
-- 3.5/20.0g -> 8/25s 40.9g 1.3\~2.2ml/s
+- 3.5/20.0g -> 8/25s 40.9g 1.3\~2.2ml/s, obvious sweet aftertaste, wine, balanced
   - yes!
