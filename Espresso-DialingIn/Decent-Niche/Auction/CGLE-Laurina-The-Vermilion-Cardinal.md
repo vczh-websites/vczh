@@ -46,5 +46,9 @@
 
 ### 9~4bar/94C
 
-- 4.0/20.0g -> 7/24s 40.0g 1.4\~2.4ml/s, still need more emohasizing flavor
-  - try 91C
+- 4.0/20.0g -> 7/24s 40.0g 1.4\~2.4ml/s, still need more emphasizing flavor
+
+### 9~4bar/91C
+
+- 4/20.0g -> 9/24s 40.3g 1.7\~2.3ml/s, flavor emphasized
+  - try 92C
