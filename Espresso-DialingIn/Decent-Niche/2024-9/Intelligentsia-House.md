@@ -17,3 +17,7 @@
 - 5.5/20.0g -> 7/26s 40.0g 1.3\~2.1ml/s, thickness increases a little bit, pretty repros
   - time looks right
   - try 9\~4bar
+
+### 9~4bar/94C
+
+- 4.5/20.0g -> 
