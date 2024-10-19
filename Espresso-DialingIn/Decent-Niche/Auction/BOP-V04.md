@@ -30,6 +30,12 @@
 - 3/20.0g -> 8/22s 41.3g 1.7\~2.9ml/s, some floral, some sweet, thickness enough
   - flavor could be more emphasized
 
-##% 9bar/92C
+### 9bar/92C
 
-- 3.5/20.0g ->
+- 3.5/20.0g ->10/20s 40.5g 2.9\~4.0ml/s, inder extraction
+- 2.5/20.0g -> 8/23s 40.8g 1.4\~2.3ml/s, a little less thickness, sweet
+
+### 9~4bar/92C
+
+- 2/20.0g -> 8/26s 40.7g 1.1\~2.3ml/s, thickness enough
+  - try 2.25 grind and less milk
