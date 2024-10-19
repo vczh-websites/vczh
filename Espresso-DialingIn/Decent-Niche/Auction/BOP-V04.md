@@ -38,4 +38,5 @@
 ### 9~4bar/92C
 
 - 2/20.0g -> 8/26s 40.7g 1.1\~2.3ml/s, thickness enough
-  - try 2.25 grind and less milk
+  - try 2.25 grind with less milk
+  - try 1.5 grind yield 30g with less milk
