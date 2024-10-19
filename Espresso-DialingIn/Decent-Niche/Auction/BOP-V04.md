@@ -29,4 +29,7 @@
 
 - 3/20.0g -> 8/22s 41.3g 1.7\~2.9ml/s, some floral, some sweet, thickness enough
   - flavor could be more emphasized
-  - try 3.5 grind
+
+##% 9bar/92C
+
+- 3.5/20.0g ->
