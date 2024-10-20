@@ -12,4 +12,5 @@
 
 ### 8~1bar/89C
 
-- 7/20.0g -> 
+- 7/20.0g -> 9/16s 29.5 3.1\~2.8ml/s, cranberry emphasized, eliminated bitterness, a little sweet in aftertaste
+  - yes!
