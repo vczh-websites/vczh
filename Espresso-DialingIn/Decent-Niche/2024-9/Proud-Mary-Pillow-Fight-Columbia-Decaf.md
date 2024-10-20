@@ -2,9 +2,9 @@
 
 **citrus, chocolate**
 
-2024-9-19
-
 ## Decent Pro / Niche Duo
+
+2024-9-19
 
 ### 9bar/94C
 

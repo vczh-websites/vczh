@@ -1,5 +1,7 @@
 # Methodical Repose Decaf
 
+**cranberry, coconut in aftertaste**
+
 ## Decent Pro / Niche Duo
 
 2024-10-19
