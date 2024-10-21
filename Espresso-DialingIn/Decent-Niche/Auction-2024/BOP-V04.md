@@ -41,3 +41,18 @@
 - 1.5/20.0g -> 7/27s 29.5g 0.7\~1.8ml/s, slighter better, obvious sweet
   - a little sour but comfortable, consider 1 or 1.25 grind
   - need fewer milk
+
+### 4oz glass cup
+### 8~4bar/92C
+
+- 1.5/20.0g -> 7/26s 29.5g 0.7\~1.9ml/s, first time pour into 4 oz cup, very bitter
+- 2.5/20.0g -> 9/22s 29.8g 1.3\~2.2ml/s, still bitter
+
+### 8oz glass cup with 5oz frothy milk
+### 8bar/92C
+
+- 2.5/20.0g -> 8/21s 30.6g 1.4\~2.1ml/s, a little bitter, more sweet, flavor not emphasized, thickness just enough
+
+### 6~1bar/92C
+
+- 2.75/20.0g ->
