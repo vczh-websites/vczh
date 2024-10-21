@@ -46,13 +46,13 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Dialing In
 
-- Decide a proper dose, usually 20g ground in 20g basket, so that after brewing the group head doesn't leave a imprint on the paper screen.
-- Start from `Classic Italian Espresso` with 8bar/90-92C.
-  - There is a time limit in the `Hold` state, since `Decline` is disabled, that is the maximum brewing time after pre-infusion.
-  - If the maximum of 1 minute is not enough, consider using the `Default` profile.
+- Decide a proper dose, usually 20g ground in 20g basket, so that after brewing the group head doesn't leave a imprint on the paper screen. Having a little gap between the group head and the swelling puck will increase the evenness of extraction.
+- Start from `Default` with 8bar/90-92C.
 - Adjust to the best grind setting.
 - Adjust temperature and then pressure to make the espresso better.
-- Only doing `Default` (temperature/pressure variety) profile when fixed profile is not good enough.
+- Use `Default` (temperature/pressure variety) profile even when you don't need variation of pressure or temperature.
+  - `Classic Italian Espresso` has an extra stop condition of maximum brew time after pre-infusion, this is useless in most of the cases.
+  - Only do variation pressure or temperature when fixed profile is not good enough.
   - If flow rate raises too fast, consider brewing with a higher temperature and a decreasing pressure profile.
 
 ## Milk Frothing
