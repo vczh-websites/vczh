@@ -16,3 +16,11 @@
 
 - 7/20.0g -> 9/16s 29.5 3.1\~2.8ml/s, cranberry emphasized, eliminated bitterness, a little sweet in aftertaste
   - yes!
+  - pressure didn't drop, staying at 8 bar
+- 7/20.0g -> 8/16s 30.0g 3.2\~2.4ml/s, cranberry fully emphasized, a little sweet in aftertaste
+
+### 6~10bar/89C
+
+- 7.5/20.0g -> 9/16s 29.7g 3.4\~3.1ml/s, more coconut less cranberry
+  - pressure didn't raise, staying at 6 bar
+  - much better
