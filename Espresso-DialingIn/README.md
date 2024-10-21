@@ -22,6 +22,7 @@ When dose and yield are fixed:
 - (very lighly but under testing) Higher temperature and pressure desolves material quicker, it decreases the flow rate but usually insignificantly. But when the ground is coarse enough, it could increase the flow rate significantly enough, and the effect reverses.
 - When grind coarse enough, the variating pressure/temperature profile might not have enough time to implement the variation.
 - When the thickness is good but there is a little bitterness, if a flat pressure leads to a consistant raising flow rate, it could extract less in the finishing and maximize the flavor.
+- Different bean needs to mix with different amount of milk, to eliminate the rest of the bitterness, while maximized flavor and thickness.
 
 The signal of over-extraction signal is bitterness in long lasting aftertaste.
 
