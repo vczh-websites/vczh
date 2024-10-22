@@ -64,4 +64,9 @@
 
 ### 8bar/94C
 
-- 3/20.0g -> 
+- 3/20.0g -> 8/17s 30.9g 2.2\~2.7ml/s, slightly sour than 9 bar, which is expected
+  - 9 bar still better, 92C next time
+
+### 9bar/92C
+
+- 3.20.0g ->
