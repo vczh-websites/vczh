@@ -55,5 +55,13 @@
 
 ### 6~1bar/92C
 
-- 3/20.0g ->
-  - 5 and 4 oz frothy milk
+- 3/20.0g -> 9/19s 30.8g 2.2\~2.9ml/s, flavor emphasized a lot, very fruity and sweet, thickness is fine, a little bit sour
+
+### 9bar/94C
+
+- 3.20.0g -> 8/16s 30.9g 2.4\~2.9ml/s, balanced
+  - yes!
+
+### 8bar/94C
+
+- 3/20.0g -> 
