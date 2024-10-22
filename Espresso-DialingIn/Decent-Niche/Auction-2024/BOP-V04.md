@@ -70,3 +70,4 @@
 ### 9bar/92C
 
 - 3.20.0g ->
+  - if there is more than two cups, try 1:2 yield
