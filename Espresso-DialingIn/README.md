@@ -43,24 +43,11 @@ When doing espresso with ice and fresh milk without frothing,
 bitter will become obvious,
 adjust to emphasizing acidity.
 
-## To Try
+### Strong without Bitterness
 
-### Temperature
+To emphasize flavor and increase thickness, try fine grind / low pressure / medium temperature / 1:1.5 yield.
 
-- Decreasing temperature seems to affect to pressure as well.
-- The best temperature on sweet aftertaste seems to drop when pressure drops.
-
-### Flow Rate
-
-- Flow rate and its rate of changing is the key to taste.
-  - Higher pressure or coarser ground could lead to bigger flow rate changing with the same amount of brewing time.
-    - Need more tests to compare between different rate of flow rate changing.
-  - Need more tests to maintain the same flow rate from different parameter.
-    - Grind setting dramatically changes the flow rate.
-    - Both lower temperature and pressure affects the flow rate but with different side effect.
-  - e.g. different grind/dose(20/18/15)/pressure.
-
-### Puck Prep
+### Puck Prep (needs experiments)
 
 https://www.youtube.com/watch?v=4dRYw8yl_dg
 - Denser puck (or slower flow) increases body, decreases the risk of channeling.
