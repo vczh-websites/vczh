@@ -65,9 +65,13 @@
 ### 8bar/94C
 
 - 3/20.0g -> 8/17s 30.9g 2.2\~2.7ml/s, slightly sour than 9 bar, which is expected
-  - 9 bar still better, 92C next time
 
-### 9bar/92C
+### 6bar/92C
 
-- 3.20.0g ->
-  - if there is more than two cups, try 1:2 yield
+- 3.20.0g -> 8/18s 34.8g 2.2\~2.9ml/s, balanced, strong flavor and good thickness
+
+### 6bar/94C
+
+- 3/20.0g -> 7/20s 35.7g 1.7\~2.7ml/s, more obvious sweet
+- 3/20.0g -> 8/19s 30.8g 1.7\~2.6ml/s, slightly decreased thickness
+  - 1:1.75 yield is better
