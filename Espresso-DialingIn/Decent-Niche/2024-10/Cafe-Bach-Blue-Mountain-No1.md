@@ -15,3 +15,5 @@
 - 3/20.0g -> 8/21s 29.8g 1.7\~2.3ml/s, still spice and burnt
 - 4/20.0g -> 8/17s 29.9g 2.7\~3.1ml/s, feel like cran berry, unnoticeable sweet in aftertaste
   - try 94C if it increases sweetness
+  - try higher pressure
+  - try 2.5 grind
