@@ -23,4 +23,6 @@
   - channeling? wrong recording?
 - 3.5/20.0g -> 9/18s 30.0g 2.3\~2.7ml/s, less cran berry, more almond, some sweet
   - no taste of burnt, tolerable bitterness in aftertaste
-  - try 3.75 grind and see the flow rate
+  - try agaib and see the flow rate
+    - with more milk, like 7oz
+    - if still a little bit bitter, try 3.75 grind
