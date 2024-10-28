@@ -14,3 +14,14 @@
 
 - 7/20.0g -> 8/21s 40.0g 2.1\~3.1ml/s, thickness is fine, sweet
   - Didn't get the cherry taste from note
+
+### 9\~1bar/94C
+
+- 7/20.0g -> 8/19s 40.6g 2.5\~2.9ml/s, not much changed
+- 7.5/20.0g -> 8/17s 39.5g 3.8\~4.1ml/s, not much changed
+  - why so fast? why no change?
+
+### 6~1bar/92C
+
+- 7.5/20.0g -> 9/18s 39.1g 3.1\~3.4ml/s, rich flavor, balanced, sweet, cherry but not obvious
+  - yes!
