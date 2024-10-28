@@ -19,9 +19,11 @@
 
 - 7/20.0g -> 8/19s 40.6g 2.5\~2.9ml/s, not much changed
 - 7.5/20.0g -> 8/17s 39.5g 3.8\~4.1ml/s, not much changed
-  - why so fast? why no change?
+  - why so fast? 6\~1 barbresults in a slightly lower flow rate, which mean this one may be right, not because of channeling
+  - why no change?
 
 ### 6~1bar/92C
 
 - 7.5/20.0g -> 9/18s 39.1g 3.1\~3.4ml/s, rich flavor, balanced, sweet, cherry but not obvious
   - yes!
+  - try 6 bar flat, aftertaste is kind of too strong
