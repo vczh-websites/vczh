@@ -34,3 +34,7 @@
   - using a flat pressure for a consistant raising flow rate, it could extract less in the finishing and maximize the flavor
 - 4.5/20.0g -> 8.21s 39.9g 1.8\~2.2ml/s
 - 4.25/20.0g -> 8/25s 38.0g 1.2\~2.1ml/s
+- (2024-10-28)
+- 4.25/20.0g -> 11/18s 40.5g 4.7ml/s, degas too many
+- 2.5/20.0g -> 7/26s 40.2g 1.1\~2.0ml/s, a little bit bitter but not in aftertaste
+  - 3 grind
