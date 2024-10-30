@@ -6,3 +6,4 @@
 ![Demo 4](./LatteArtDemo4.jpg)
 ![Demo 5](./LatteArtDemo5.jpg)
 ![Demo 6](./LatteArtDemo6.jpg)
+![Demo 7](./LatteArtDemo7.jpg)

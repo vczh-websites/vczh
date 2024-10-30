@@ -24,12 +24,15 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Yes!
 
+- [Cafe Bach Blue Mountain No.1](./2024-10/Cafe-Bach-Blue-Mountain-No1.md) (拉花交流)
+
 ## Yes! (decaf)
 
 - [Pround Mary Pillow Fight Columbia Decaf](./2024-9/Proud-Mary-Pillow-Fight-Columbia-Decaf.md) (Beanz) (citrus, chocolate)
 
 ## Uncategorized
 
+- [Cafe Bach パナマ ドンパチ ティピカ](./2024-10/Cafe-Bach-Panama-Donpachi-Teppika.md) (拉花交流)
 - [WonderState Heartstrings](./2024-9/WonderState-Heartstrings.md) (Beanz)
 - [Intelligentsia Frequency](./2024-9/Intelligentsia-Frequency.md) (Target)
 - [Intelligentsia House](./2024-9/Intelligentsia-House.md) (Target)
