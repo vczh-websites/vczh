@@ -27,3 +27,10 @@
 - 7.5/20.0g -> 9/18s 39.1g 3.1\~3.4ml/s, rich flavor, balanced, sweet, cherry but not obvious
   - yes!
   - try 6 bar flat, aftertaste is kind of too strong
+
+### 6bar/92C
+
+- 7.5/20.0g -> 8/20s 38.9g 3.6ml/s, bitter
+  - suddenly lose pressure and flow rate jumps to 4.5ml/s, is it channeling?
+- 7.5/20.0g -> 8/17s 40.2g 3.5\~3.7ml/s, pulling 1.5oz less frothed milk, sweet but a little bit bitter
+- 7.5/20.0g (on 18oz basket) -> 
