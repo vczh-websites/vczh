@@ -28,6 +28,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Yes! (decaf)
 
+- [Methodical Repose Decaf](./2024-10/Methodical-Repose-Decaf.md) (Beanz) (cranberry, somewhat coconut, strong caramel, consume 2 weeks after roasted)
 - [Pround Mary Pillow Fight Columbia Decaf](./2024-9/Proud-Mary-Pillow-Fight-Columbia-Decaf.md) (Beanz) (citrus, chocolate)
 
 ## Uncategorized
@@ -37,7 +38,6 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 - [Intelligentsia Frequency](./2024-9/Intelligentsia-Frequency.md) (Target)
 - [Intelligentsia House](./2024-9/Intelligentsia-House.md) (Target)
 
-- [Methodical Repose Decaf](./2024-10/Methodical-Repose-Decaf.md) (Beanz) (cranberry, coconut in aftertaste)
 - [Doma Bella Luna Decaf](./2024-9/Doma-Bella-Luna-Decaf.md) (Beanz) (sweet)
 
 ## No!
