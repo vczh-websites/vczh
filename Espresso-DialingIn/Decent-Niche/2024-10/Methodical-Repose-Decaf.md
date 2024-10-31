@@ -27,5 +27,8 @@
 
 ### 6bar/89C
 
-
-- 7/20.0g -> 
+- (2024-10-31), degas observed by opening the container
+- 7/20.0g -> 13/17s 29.7g 4.3\~3.8ml/s, espresso very caramel, but almost no taste with frothy milk
+- 6/20.0g -> 8/16s 29.7g \~2.5ml/s, taste is so balanced, but could be more emphasized
+- 6/20.0g -> 8/21s 40.1g \~2.1ml/s, beautiful cranberry with thick caramel
+  - yes!
