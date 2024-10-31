@@ -12,7 +12,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 ## Niche Duo Calibration
 
 - 2024-10-5, 6<-7 (Philocoffea 152)
-  - I don't think Niche Duo'ring was losen, it could due to bean residual affecting the sound.
+  - I don't think Niche Duo'ring was loosen, it could due to bean residual affecting the sound.
   - But I adjusted it to be 1 smaller anyway.
   - Take this log so that if I get any chance to install a new burr I should zeroing it again and see if I need to adjust it 1 larger back.
   - Tasted Philocoffea 152 and CGLE vermilion cardinal, all needs to grind 1.5 unit finer, but Niche Duo only adjusts by 1 unit, could because bean is releasing CO2.
@@ -20,15 +20,15 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 ## Highly Recommended
 
 - [Philocoffea 152 Ethiopia Konga Natural](./2024-9/Philocoffea-152.md) (拉花交流) (milk tea, fruity)
-- [Iconik Iconoclast Blend](./2024-9/Iconik-Iconoclast-Blend.md) (Beanz) (very sweet, fruity)
+- [Methodical Repose Decaf](./2024-10/Methodical-Repose-Decaf.md) (Beanz) (cranberry, somewhat coconut, strong caramel, consume 2 weeks after roasted)
 
 ## Yes!
 
 - [Cafe Bach Blue Mountain No.1](./2024-10/Cafe-Bach-Blue-Mountain-No1.md) (拉花交流)
+- [Iconik Iconoclast Blend](./2024-9/Iconik-Iconoclast-Blend.md) (Beanz) (very sweet, fruity)
 
 ## Yes! (decaf)
 
-- [Methodical Repose Decaf](./2024-10/Methodical-Repose-Decaf.md) (Beanz) (cranberry, somewhat coconut, strong caramel, consume 2 weeks after roasted)
 - [Pround Mary Pillow Fight Columbia Decaf](./2024-9/Proud-Mary-Pillow-Fight-Columbia-Decaf.md) (Beanz) (citrus, chocolate)
 
 ## Uncategorized
