@@ -2,6 +2,8 @@
 
 **cranberry, somewhat coconut, strong caramel**
 
+**consume 2 weeks after roasted**
+
 ## Decent Pro / Niche Duo
 
 2024-10-19
