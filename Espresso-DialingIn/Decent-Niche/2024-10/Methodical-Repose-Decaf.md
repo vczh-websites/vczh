@@ -1,6 +1,6 @@
 # Methodical Repose Decaf
 
-**cranberry, coconut in aftertaste**
+**cranberry, somewhat coconut, strong caramel**
 
 ## Decent Pro / Niche Duo
 
