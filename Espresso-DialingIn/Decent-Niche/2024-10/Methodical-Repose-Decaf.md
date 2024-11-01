@@ -38,3 +38,10 @@
 
 - 6/20.0g -> 8/21s 39.7g \~2.1ml/s, cranberry emphasized, still very but a little bit less sweet, comfortable caramel in aftertaste
   - yes!
+- 6/20.0g -> 11/21s 39.7g \~2.4ml/s, repros
+- 6/20.0g -> 8/20s 40.0g \~2.2ml/s, repros
+
+### 6bar/89C
+
+- 6/20.0g -> 9/19s 39.8g \~2.4ml/s, repros (less cranberry more sweet)
+- 6/20.0g -> 9/20s 39.8g \~2.3ml/s, repros
