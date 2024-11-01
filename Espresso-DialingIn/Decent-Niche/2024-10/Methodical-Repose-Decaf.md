@@ -45,3 +45,8 @@
 
 - 6/20.0g -> 9/19s 39.8g \~2.4ml/s, repros (less cranberry more sweet)
 - 6/20.0g -> 9/20s 39.8g \~2.3ml/s, repros
+
+### 6bar/92C
+
+- 6/20.0g ->
+  - use 7oz frothy milk
