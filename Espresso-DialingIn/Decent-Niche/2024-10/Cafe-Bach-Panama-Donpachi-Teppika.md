@@ -34,9 +34,18 @@
   - suddenly lose pressure and flow rate jumps to 4.5ml/s, is it channeling?
 - 7.5/20.0g -> 8/17s 40.2g 3.5\~3.7ml/s, pulling 1.5oz less frothed milk, sweet but a little bit bitter
 
-### 6bar/92C on 18oz basket
+### 6bar/92C on 18g basket
 
 - 7.5/20.0g -> 7/17s 40.1g 3.2\~3.3ml/s, bitterness emphasized while flavor unchanged, expected
 - 7.5/20.0g -> 8/13s 30.6g 4ml/s, obvious sweet in actertaste but comes later, flavor emphasized but a little bit bitter, is it channeling?
   - why 4ml/s? repeat it tomorrow
   - repeat also with 20oz basket, 18oz might make channeling easier
+
+### 9bar/92C on 15g basket
+
+- 6/15.0g -> 7/12s 30.2g 5ml/s, smooth, sweet, flavor no clarity
+- 4.5/15.0g -> 6/15s 30.1g 2.5\~2.8ml/s, thickness increased a lot, flavor also emphasized, no bitterness
+
+### 6bar/92C
+
+- 4.5/15.5g ->
