@@ -40,6 +40,7 @@
 - 7.5/20.0g -> 8/13s 30.6g 4ml/s, obvious sweet in actertaste but comes later, flavor emphasized but a little bit bitter, is it channeling?
   - why 4ml/s? repeat it tomorrow
   - repeat also with 20oz basket, 18oz might make channeling easier
+  - repeat canceled, degas proven
 
 ### 9bar/92C on 15g basket
 
@@ -48,4 +49,5 @@
 
 ### 6bar/92C
 
-- 4.5/15.5g ->
+- 4.5/15.5g -> 6/17s 30.1g 2.1\~2.8ml/s, balanced, tea like, bitterness completedly removed while thicknrss kept
+  - yes!
