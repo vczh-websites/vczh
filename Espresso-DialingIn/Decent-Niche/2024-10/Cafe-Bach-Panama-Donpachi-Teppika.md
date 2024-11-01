@@ -49,5 +49,5 @@
 
 ### 6bar/92C
 
-- 4.5/15.5g -> 6/17s 30.1g 2.1\~2.8ml/s, balanced, tea like, bitterness completedly removed while thicknrss kept
+- 4.5/15.5g -> 6/17s 30.1g 2.1\~2.8ml/s, balanced, tea like, bitterness completedly removed while thickness kept
   - yes!
