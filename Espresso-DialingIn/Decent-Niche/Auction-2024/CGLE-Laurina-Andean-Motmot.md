@@ -36,5 +36,12 @@
 - 4.25/20.0g -> 8/25s 38.0g 1.2\~2.1ml/s
 - (2024-10-28)
 - 4.25/20.0g -> 11/18s 40.5g 4.7ml/s, degas too many
+- (2024-10-28)
 - 2.5/20.0g -> 7/26s 40.2g 1.1\~2.0ml/s, a little bit bitter but not in aftertaste
   - 3 grind
+- (2024-11-2)
+- 3/20.0g -> 8/22s 40.0g 1.8\~2.2ml/s
+
+### 9\~1bar/94C
+
+- 3/20.0g -> 8/22s 40.1g 2.0\~2.3ml/s, slightly less sweetness and stronger flavor
