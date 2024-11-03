@@ -58,4 +58,4 @@
 - 3.5/20.0g -> 8/25s 40.9g 1.3\~2.2ml/s, obvious sweet aftertaste, wine, balanced
   - yes!
 - (2024-11-2)
-- 3.5/20.0g -> 
+- 3/20.0g -> 8/22s 40.0g 1.7\~2.3ml/s, repros
