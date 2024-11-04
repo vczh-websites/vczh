@@ -59,4 +59,6 @@
 
 ### 6~1bar/92C
 
-- 3.20.0g ->
+- 3/20.0g -> 8/25s 40.0g \~1.7ml/s, flavor emphasized, citrus, sweet
+  - it has been 6 weeks, it needs lower pressure and much finer ground
+  - 94C next try
