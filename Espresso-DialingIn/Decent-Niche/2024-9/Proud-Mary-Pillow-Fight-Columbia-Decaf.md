@@ -49,3 +49,14 @@
 - 5.5/20.0g -> 7/24s 40.6g 2.0\~1.5ml/s
 - 5.5/20.0g -> 8/25s 41.0g 2.0\~1.5ml/s
   - bean released CO2, but still good
+
+### 9~1bar/94C
+
+- (2024-11-4)
+- 4.5/20.0g -> 10/17s 40.3g 5.0\~3.1ml/s, too coarse, too sour
+- 2.5/20.0g -> 8/26s 39.9g 1.5ml/s, flavor covered by thickness, still sweet in aftertaste
+- 3/20.0g -> 9/26s 40.1g 1.7/ml/s, flavor returns, a little bitter
+
+### 6~1bar/92C
+
+- 3.20.0g ->
