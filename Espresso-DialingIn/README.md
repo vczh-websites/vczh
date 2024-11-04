@@ -23,8 +23,10 @@ When dose and yield are fixed:
 - When the thickness is good but there is a little bitterness, if a flat pressure leads to a consistant raising flow rate, it could extract less in the finishing and maximize the flavor.
 - Different bean needs to mix with different amount of milk, to eliminate the rest of the bitterness, while maximized flavor and thickness.
 
-Always try to grind finer with lower pressure, after a recipe is found, it may brings to you a different taste.
-This also applies to light roasted or much degas-ed bean.
+- Always try to grind finer with lower pressure, after a recipe is found, it may brings to you a different taste.
+  - This also applies to light roasted or much degas-ed bean.
+  - By carefully choose a finer grind settings with low and decreasing pressure, it is possible to make an espresso that emphasizes the flavor without lowering the extraction rate.
+    - Needs more tests.
 
 The signal of over-extraction signal is bitterness in long lasting aftertaste.
 
