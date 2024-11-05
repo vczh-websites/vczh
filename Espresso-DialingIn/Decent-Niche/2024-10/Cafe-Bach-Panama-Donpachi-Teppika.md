@@ -49,5 +49,8 @@
 
 ### 6bar/92C
 
-- 4.5/15.5g -> 6/17s 30.1g 2.1\~2.8ml/s, balanced, tea like, bitterness completedly removed while thickness kept
+- 4.5/15.0g -> 6/17s 30.1g 2.1\~2.8ml/s, balanced, tea like, bitterness completedly removed while thickness kept
   - yes!
+- 4.5/15.0g -> 6/24s 40.0g 1.5\~2.2ml/s, bitter like thick red tea
+  - possibly because forgot to remove residual in the grinder
+- 4.5/15.0g -> 7/21s 40.4g 2.0\~2.6ml/s, repros, but need to pour all frothy milk (6oz before frothing)
