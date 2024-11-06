@@ -19,7 +19,7 @@
 
 - 7/20.0g -> 8/19s 40.6g 2.5\~2.9ml/s, not much changed
 - 7.5/20.0g -> 8/17s 39.5g 3.8\~4.1ml/s, not much changed
-  - why so fast? 6\~1 barbresults in a slightly lower flow rate, which mean this one may be right, not because of channeling
+  - why so fast? 6\~1 bar results in a slightly lower flow rate, which mean this one may be right, not because of channeling
   - why no change?
 
 ### 6~1bar/92C
@@ -51,6 +51,7 @@
 
 - 4.5/15.0g -> 6/17s 30.1g 2.1\~2.8ml/s, balanced, tea like, bitterness completedly removed while thickness kept
   - yes!
-- 4.5/15.0g -> 6/24s 40.0g 1.5\~2.2ml/s, bitter like thick red tea
+- 4.5/15.0g -> 6/24s 30.0g 1.5\~2.2ml/s, bitter like thick red tea
   - possibly because forgot to remove residual in the grinder
-- 4.5/15.0g -> 7/21s 40.4g 2.0\~2.6ml/s, repros, but need to pour all frothy milk (6oz before frothing)
+- 4.5/15.0g -> 7/21s 30.4g 2.0\~2.6ml/s, repros, but need to pour all frothy milk (6oz before frothing)
+- 4.5/15.0g -> 6/18s 30.4g 2.0\~2.6ml/s, repros, tea like, sweet
