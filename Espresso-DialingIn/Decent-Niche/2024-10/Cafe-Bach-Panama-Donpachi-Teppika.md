@@ -55,3 +55,9 @@
   - possibly because forgot to remove residual in the grinder
 - 4.5/15.0g -> 7/21s 30.4g 2.0\~2.6ml/s, repros, but need to pour all frothy milk (6oz before frothing)
 - 4.5/15.0g -> 6/18s 30.4g 2.0\~2.6ml/s, repros, tea like, sweet
+
+### 6bar/94C
+
+- 4.5/15.0g -> 7/18s 29.9g 2.2\~2.6ml/s, repros
+- 4.5/15.0g -> 6/16s 30.2g 2.2\~2.7ml/s
+- 4.6/15.0g -> 7/17s 30.1g 2.1\~2.5ml/s
