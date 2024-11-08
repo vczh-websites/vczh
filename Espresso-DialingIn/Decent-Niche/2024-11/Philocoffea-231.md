@@ -13,3 +13,4 @@
 - 2.5/15.0g -> 6/20s 30.0g 1.2\~2.2ml/s, some honey and red tea, balanced, thickness is enough
   - yes!
   - what about 15 in 40 out?
+  - what about starts from 0.5ml/s with 6\~1 bar?
