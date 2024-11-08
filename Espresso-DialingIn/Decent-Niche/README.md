@@ -19,6 +19,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Highly Recommended
 
+- [Philocoffea 231 Ethiopia Bona Zuria Washed](./2024-11/Philocoffea-231.md) (拉花交流) (juicy, honey, tea like)
 - [Philocoffea 152 Ethiopia Konga Natural](./2024-9/Philocoffea-152.md) (拉花交流) (milk tea, fruity)
 - [Methodical Repose Decaf](./2024-10/Methodical-Repose-Decaf.md) (Beanz) (cranberry, somewhat coconut, strong caramel, consume 2 weeks after roasted)
 
@@ -33,7 +34,6 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Uncategorized
 
-- [Philocoffea 231 Ethiopia Bona Zuria Washed](./2024-11/Philocoffea-231.md) (拉花交流)
 - [Cafe Bach パナマ ドンパチ ティピカ](./2024-10/Cafe-Bach-Panama-Donpachi-Teppika.md) (拉花交流)
 - [WonderState Heartstrings](./2024-9/WonderState-Heartstrings.md) (Beanz)
 - [Intelligentsia Frequency](./2024-9/Intelligentsia-Frequency.md) (Target)
