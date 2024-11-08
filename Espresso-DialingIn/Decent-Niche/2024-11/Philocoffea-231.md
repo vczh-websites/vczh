@@ -1,5 +1,7 @@
 # Philocoffea 231 Ethiopia Bona Zuria Washed
 
+**juicy, honey, tea like**
+
 ## Decent Pro / Niche Duo
 
 2024-11-7
