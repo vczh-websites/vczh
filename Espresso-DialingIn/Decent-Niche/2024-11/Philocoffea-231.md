@@ -1,4 +1,4 @@
-# Philocoffea 231
+# Philocoffea 231 Ethiopia Bona Zuria Washed
 
 ## Decent Pro / Niche Duo
 
