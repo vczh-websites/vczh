@@ -19,3 +19,5 @@
   - try original frothy milk dose
 - 0.5/15.0g -> 6/40s 30.0g 0.3\~1.2\~0.9ml/s, super sweet, tea weaker but still there
   - try 40g out
+- 0.5/15.0g -> 6/40s 40.2g 0.4\~1.6\~1.1ml/s, more flavor, less sweetness, tea like no much change
+  - try 30g and 40g out to repro, using 7.5oz glass cup
