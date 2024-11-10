@@ -24,4 +24,4 @@
 - 0.5/15.0g -> 6/36s 29.9g 0.4\~1.2\~1.0ml/s, repros
 - 0.5/15.0g -> 7/38s 40.4g 0.5\~1.5\~1.1ml/s, repros
   - yesterday's extraction was reproducible, 30g is better, the last 10g extraction already transparent
-
+- 0.5/15.0g -> 6/40s 30.2g 0.3\~1.2\~1.0ml/s
