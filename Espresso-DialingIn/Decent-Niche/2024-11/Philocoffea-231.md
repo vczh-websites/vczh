@@ -21,3 +21,7 @@
   - try 40g out
 - 0.5/15.0g -> 6/40s 40.2g 0.4\~1.6\~1.1ml/s, more flavor, less sweetness, tea like no much change
   - try 30g and 40g out to repro, using 7.5oz glass cup
+- 0.5/15.0g -> 6/36s 29.9g 0.4\~1.2\~1.0ml/s, repros
+- 0.5/15.0g -> 7/38s 40.4g 0.5\~1.5\~1.1ml/s, repros
+  - yesterday's extraction was reproducible, 30g is better, the last 10g extraction already transparent
+
