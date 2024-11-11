@@ -8,4 +8,6 @@
 
 2024-11-10 (one week after roasted)
 
-### 9~9bar/92C
+### 9~1bar/92C
+
+- 5/15.0g -> 
