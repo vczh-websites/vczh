@@ -6,7 +6,9 @@
 
 ## Highly Recommended
 
-- Philocoffea 152 Ethiopia Konga Natural
+- Philocoffea 152,231
+- Cafe Bach パナマ ドンパチ ティピカ
+- Methodical Repose Decaf
 - Iconik Iconoclast Blend
 
 ## Dialing In
