@@ -25,7 +25,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Yes!
 
-- [Philocoffea 152 Ethiopia Konga Natural](./2024-9/Philocoffea-152.md) (拉花交流) (milk tea, fruity)
+- [Philocoffea 152 Ethiopia Konga Natural](./2024-11/Philocoffea-152.md) (拉花交流) (milk tea, fruity)
 - [Cafe Bach Blue Mountain No.1](./2024-10/Cafe-Bach-Blue-Mountain-No1.md) (拉花交流)
 - [Iconik Iconoclast Blend](./2024-9/Iconik-Iconoclast-Blend.md) (Beanz) (very sweet, fruity)
 
