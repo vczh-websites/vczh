@@ -19,3 +19,9 @@
 
 - 6/15.0g -> 6/18s 30.0g 1.8\~2.2ml/s, milk tea, flavor emphasized, start to taste sweetness, still a little bitter in aftertaste
   - why faster?
+  - sweetness could come from milk
+
+### 7.5 glass cup with 6oz milk
+
+- 6/15.0g ->
+  - 25g yield
