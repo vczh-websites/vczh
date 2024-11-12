@@ -35,6 +35,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Uncategorized
 
+- [Methodical Honduras Walter Bautista](./2024-11/Methodical-Honduras.md) (Beanz)
 - [WonderState Heartstrings](./2024-9/WonderState-Heartstrings.md) (Beanz)
 - [Intelligentsia Frequency](./2024-9/Intelligentsia-Frequency.md) (Target)
 - [Intelligentsia House](./2024-9/Intelligentsia-House.md) (Target)
