@@ -48,5 +48,5 @@
 
 ### 6bar/92C
 
-- 6/20.0g ->
-  - use 7oz frothy milk
+- (2024-11-11)
+- 5/20.0g -> 9/22s 40.0g \~2.3ml/s, degased, repros
