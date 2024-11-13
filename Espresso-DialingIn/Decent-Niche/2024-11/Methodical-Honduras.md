@@ -11,4 +11,5 @@
 
 ### 6bar/94C
 
-- 2.5/15.0g ->
+- 2.5/15.0g -> 7/21s 30.5g 1.1\~2.4ml/s, flavor emphasized, no bitterness at all
+- 1.5/15.0g -> 
