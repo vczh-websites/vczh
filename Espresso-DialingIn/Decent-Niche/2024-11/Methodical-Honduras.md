@@ -16,4 +16,10 @@
 
 ### 6\~1bar/94C
 
-- 1.5/15.0g ->
+- 1.5/15.0g -> 6/27s 30.2g 0.7\~1.7ml/s, flavor could be over emphasized, a little bit spicy, brown spots on espresso
+  - try last recipe
+
+### 6bar/94C
+
+- 1.5/15.0g -> 6/27s 30.4g 0.6\~2.0ml/s, perfectly repros
+  - yes!
