@@ -8,8 +8,7 @@
 
 - Philocoffea 152,231
 - Cafe Bach パナマ ドンパチ ティピカ
-- Methodical Repose Decaf
-- Iconik Iconoclast Blend
+- Methodical Repose Decaf, Honduras Walter Bautista
 
 ## Dialing In
 
