@@ -11,5 +11,9 @@
 
 ### 6bar/94C
 
-- 2.5/15.0g -> 7/21s 30.5g 1.1\~2.4ml/s, flavor emphasized, no bitterness at all
-- 1.5/15.0g -> 
+- 2.5/15.0g -> 7/21s 30.5g 1.1\~2.4ml/s, flavor emphasized, no bitterness at all, long lasting sweet in aftertaste
+- 1.5/15.0g -> 6/28s 30.5g 0.6\~2.0ml/s, flavor emphasized while thickness also increased, very little bitter when swallowing
+
+### 6\~1bar/94C
+
+- 1.5/15.0g ->
