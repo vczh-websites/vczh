@@ -25,3 +25,7 @@
 - 0.5/15.0g -> 7/38s 40.4g 0.5\~1.5\~1.1ml/s, repros
   - yesterday's extraction was reproducible, 30g is better, the last 10g extraction already transparent
 - 0.5/15.0g -> 6/40s 30.2g 0.3\~1.2\~1.0ml/s
+- (2024-11-14)
+- 0.5/15.0g -> 6/36s 30.3g 0.4\~1.3\~1.2ml/s, slightly bitter
+- 0.5/15.0g -> 6/43s 30.1g 0.4\~1.4\~1.2ml/s, bitterness turns sweetness very fast
+- 0.5/15.0g ->
