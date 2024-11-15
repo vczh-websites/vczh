@@ -27,5 +27,5 @@
 - 0.5/15.0g -> 6/40s 30.2g 0.3\~1.2\~1.0ml/s
 - (2024-11-14)
 - 0.5/15.0g -> 6/36s 30.3g 0.4\~1.3\~1.2ml/s, slightly bitter
-- 0.5/15.0g -> 6/43s 30.1g 0.4\~1.4\~1.2ml/s, bitterness turns sweetness very fast
-- 0.5/15.0g ->
+- 0.5/15.0g -> 6/33s 30.1g 0.4\~1.4\~1.2ml/s, bitterness turns sweetness very fast
+- 0.5/15.0g -> 6/32s 30.2g 0.4\~1.6ml/s
