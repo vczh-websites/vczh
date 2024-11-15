@@ -66,4 +66,6 @@ https://www.youtube.com/watch?v=1qyFDbkRrOA
 
 ## Latte Art
 
+- When pouring on a 6oz cup, frothy milk needs to sitr strong and fast with only a small amount during fusion.
+
 [Latte Art Demos](../Espresso/LatteArt.md)
