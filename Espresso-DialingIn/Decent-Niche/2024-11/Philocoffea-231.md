@@ -31,3 +31,4 @@
 - 0.5/15.0g -> 6/32s 30.2g 0.4\~1.6ml/s
 - 0.5/15.0g -> 6/40s 29.8g 0.4\~1.0\~0.6ml/s, flavor decreasing, sweetness increasing
 - 0.5/15.0g -> 6/32s 30.5g 0.4\~1.6ml/s
+- 0.5/15.0g -> 6/34s 30.2g 0.4\~1.5ml/s
