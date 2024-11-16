@@ -50,3 +50,5 @@
 
 - (2024-11-11)
 - 5/20.0g -> 9/22s 40.0g \~2.3ml/s, degased, repros
+- (2024-11-15)
+- 5/20.0g ->10/20s 40.1g \~2.5ml/s, degased, cranberry emphasized, sweetness decreased
