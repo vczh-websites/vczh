@@ -49,9 +49,13 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 - Wait longer than 10 minites after turning on the machine for the first cup.
 - Flush the basket before every extraction (not important but better to do it).
 
+## Light roasted bean
+
+- Always starts with 6\~1bar/94C and find the finest grind setting, and then perform adjustment.
+
 ## Dialing In
 
-- Decide a proper dose, usually 20g ground in 20g basket, so that after brewing the group head doesn't leave a imprint on the paper screen. Having a little gap between the group head and the swelling puck will increase the evenness of extraction.
+- Decide a proper dose, usually 15g ground in 15g basket, so that after brewing the group head doesn't leave a imprint on the paper screen. Having a little gap between the group head and the swelling puck will increase the evenness of extraction.
 - Start from `Default` with 8bar/90-92C.
 - Adjust to the best grind setting.
 - Adjust temperature and then pressure to make the espresso better.
