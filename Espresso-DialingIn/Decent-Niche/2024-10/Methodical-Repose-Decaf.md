@@ -52,3 +52,9 @@
 - 5/20.0g -> 9/22s 40.0g \~2.3ml/s, degased, repros
 - (2024-11-15)
 - 5/20.0g ->10/20s 40.1g \~2.5ml/s, degased, cranberry emphasized, sweetness decreased
+
+### 6~1bar/94C (try 15g)
+
+- (2024-11-18)
+- 2.5/15.0g -> 7/22s 30.1g \~1.5ml/s, repros
+  - could try 1.5 grind
