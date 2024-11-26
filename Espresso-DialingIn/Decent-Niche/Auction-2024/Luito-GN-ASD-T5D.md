@@ -14,4 +14,6 @@
   - yes!
   - should have yield 30g but it seems quite good
   - still keep 40g next time
-- 0/15.0g ->
+- 0/15.0g -> 8/31s 30.4g 0.6\~1.7ml/s, strong flavor, a little bit spicy
+- 0/15.0g -> 6/35s 40.3g 0.5\~1.8\~1.6ml/s, not quite changed
+- 0.5/15.0g -> 7/31s 30.3g 0.5\~1.6ml/s, balanced, strong citrus, some sweetness
