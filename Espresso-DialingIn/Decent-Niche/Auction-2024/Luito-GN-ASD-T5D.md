@@ -14,3 +14,4 @@
   - yes!
   - should have yield 30g but it seems quite good
   - still keep 40g next time
+- 0/15.0g ->
