@@ -1,6 +1,6 @@
 # Philocoffea 152 Ethiopia Konga Natural
 
-**milk tea**
+**milk tea, smoky**
 
 [Previous](../2024-9/Philocoffea-152.md)
 
