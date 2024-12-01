@@ -11,3 +11,4 @@
 ### 6bar/94C
 
 - 3/20.0g -> 6/24s 30.1g 1.0\~1.9ml/s, some wine
+  - try 3.5 grind 91C
