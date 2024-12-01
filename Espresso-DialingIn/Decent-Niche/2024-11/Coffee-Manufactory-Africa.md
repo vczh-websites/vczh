@@ -10,4 +10,4 @@
 
 ### 6\~1bar
 
-- 1.5/15.0g ->
+- 1.5/15.0g -> 7/24s 30.1g 1.0\~1.9ml/s, flavor emphasized, less sweetness
