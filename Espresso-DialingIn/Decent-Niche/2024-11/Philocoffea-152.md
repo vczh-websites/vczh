@@ -26,3 +26,5 @@
 - (2024-11-28)
 - 4/15.0g -> 6/36s 30.0g 0.6\~1.1\~0.9ml/s 9\~3.5bar, over extraction
 - 5.5/15.0g -> 7/20s 30.2g 1.7\~2.1ml/s, brown spots, milk tea, sweet, smoky
+- (2024-12-1)
+- 6/15.0g ->
