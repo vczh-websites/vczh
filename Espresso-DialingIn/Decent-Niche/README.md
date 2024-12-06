@@ -22,7 +22,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 - [Philocoffea 231 Ethiopia Bona Zuria Washed](./2024-11/Philocoffea-231.md) (拉花交流) (juicy, honey, tea like)
 - [Cafe Bach パナマ ドンパチ ティピカ](./2024-10/Cafe-Bach-Panama-Donpachi-Teppika.md) (拉花交流)
 - [Methodical Repose Decaf](./2024-10/Methodical-Repose-Decaf.md) (Beanz) (cranberry, somewhat coconut, strong caramel, consume 2 weeks after roasted)
-- [Methodical Honduras Walter Bautista](./2024-11/Methodical-Honduras.md) (Beanz)
+- [Methodical Honduras Walter Bautista](./2024-12/Methodical-Honduras.md) (Beanz)
 
 ## Yes!
 
