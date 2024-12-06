@@ -10,4 +10,5 @@
 
 - 1.5/15.0g -> 8/30s 30.3g 0.5\~2.0ml/s, a little bit bitter
   - data looks quite like the previous bag, but it could be fresher
-- 2.5/15.0g -> 
+- 2.5/15.0g -> 6/20s 301g 1.3\~2.4ml/s, atrong dlavor, sweet
+  - yes!
