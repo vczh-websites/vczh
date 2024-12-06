@@ -24,6 +24,6 @@
 - 1.5/15.0g -> 6/27s 30.4g 0.6\~2.0ml/s, perfectly repros
   - yes!
 - 1.5/15.0g -> 6/25s 30.1g 0.6\~2.1ml/s
-- (2024-11-7), 1.25 grind to repro, log skipped
+- (2024-11-17), 1.25 grind to repro, log skipped
 - (2024-12-3)
 - 0.5/15.0g ->7/25s 29.8g 0.8\~2.1ml/s, flavor still tasted but much weakened
