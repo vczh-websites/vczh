@@ -1,8 +1,8 @@
 # Methodical Honduras Walter Bautista
 
-## Decent Pro / Niche Duo
-
 [Previous](../2024-11/Methodical-Honduras.md)
+
+## Decent Pro / Niche Duo
 
 ### 6bar/94C
 
