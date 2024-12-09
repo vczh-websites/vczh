@@ -17,3 +17,9 @@
 - 0/15.0g -> 8/31s 30.4g 0.6\~1.7ml/s, strong flavor, a little bit spicy
 - 0/15.0g -> 6/35s 40.3g 0.5\~1.8\~1.6ml/s, not quite changed
 - 0.5/15.0g -> 7/31s 30.3g 0.5\~1.6ml/s, balanced, strong citrus, some sweetness
+
+### 6~1bar/94C (maple hill, 7.5oz glass cup)
+
+- (2024-12-8)
+- 0/15.0g -> 7/26s 30.0g 0.8\~1.9ml/s, much better with maple hill milk
+  - yes!
