@@ -23,3 +23,4 @@
 - (2024-12-8)
 - 0/15.0g -> 7/26s 30.0g 0.8\~1.9ml/s, much better with maple hill milk
   - yes!
+- 0/15.0g -> 7/31s 30.0g 0.5\~1.6ml/s
