@@ -28,3 +28,11 @@
 ### 2.5ml/s -> 1ml/s < 6bar/94C
 
 - 0/15.0g -> 14/48s 44.8g 5.3\~1.7bar, more obvious citrus flavor
+
+### 96C
+
+- -0.75/15.0g -> 10/52s 45.0g 6.5\~1.7bar, even less flavor, why?
+
+### 2.5ml/s -> 1ml/s < 5bar/96C
+
+- 0.5/20.0g -> 11/59s 44.9g 5.5\~2.0bar, less flavor right into mouth, but grows later before swallowing.
