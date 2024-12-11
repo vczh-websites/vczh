@@ -24,3 +24,7 @@
 - 0/15.0g -> 7/26s 30.0g 0.8\~1.9ml/s, much better with maple hill milk
   - yes!
 - 0/15.0g -> 7/31s 30.0g 0.5\~1.6ml/s
+
+### 2.5ml/s -> 1ml/s < 6bar/94C
+
+- 0/15.0g -> 14/48s 44.8g 5.3\~1.7bar, more obvious citrus flavor
