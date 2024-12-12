@@ -6,4 +6,10 @@
 
 ### 6bar/94C
 
-- 2/15.0g ->
+- 2/15.0g -> 7/15s 30.1g 2.7\~3.1ml/s, clarity not enough, very sweet, no obvious aftertaste
+- 1/15.0g -> 6/20s 30.3g 1.4\~2.2ml/s, less sweetness, is it a little over extraction?
+
+### 2.0ml/s -> 2.0ml/s on 8bar/94C
+
+- 1.5/15.0g -> 15/26s 29.9g 5.8\~3.1bar, balanced
+  - yes!
