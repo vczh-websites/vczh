@@ -36,6 +36,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Uncategorized
 
+- [Philocoffea 237 El Salvador Santa Rosa Pacamara Natural](./2024-12/Philocoffea-237.md)
 - [WonderState Heartstrings](./2024-9/WonderState-Heartstrings.md) (Beanz)
 - [Intelligentsia Frequency](./2024-9/Intelligentsia-Frequency.md) (Target)
 - [Intelligentsia House](./2024-9/Intelligentsia-House.md) (Target)
