@@ -19,3 +19,14 @@
   - used organic valley instead of maple hill
 - 1.5/15.0g -> 13/25s 30.1g 5.0\~3.1bar
   - used maple hill again, taste of fat in milk is obvious
+
+### 4.0ml/s -> 3.0ml/s on 9bar/94C
+
+- 1.5/15.0g -> 7/19s 30.2g 9.2bar 1.5\~2.2ml/s, more balanced
+  - failed to reach 3ml/s, ground too fine to reach the flow under pressure limit
+
+### 4.0ml/s -> 1.0ml/s on 9bar/94C
+
+- 1.5/15.0g -> 7/32s 29.8g 6.6\~2.3bar, less creama, brighter but less thickness
+  - low flow -> low pressure -> slightly less extraction
+  - needs further verify
