@@ -13,3 +13,5 @@
 
 - 1.5/15.0g -> 15/26s 29.9g 5.8\~3.1bar, balanced
   - yes!
+- 1/15.0g -> 16/28s 30.0g 5.7\~3.1bar, a little less sweet and more bitter
+  - 1.5 grind still better
