@@ -15,3 +15,7 @@
   - yes!
 - 1/15.0g -> 16/28s 30.0g 5.7\~3.1bar, a little less sweet and more bitter
   - 1.5 grind still better
+- 1.5/15.0g -> 14/26s 30.0g 5.4\~3.6bar, a little bit bitter
+  - used organic valley instead of maple hill
+- 1.5/15.0g -> 13/25s 30.1g 5.0\~3.1bar
+  - used maple hill again, taste of fat in milk is obvious
