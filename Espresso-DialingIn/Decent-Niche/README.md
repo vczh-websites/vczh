@@ -54,7 +54,23 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 - Always starts with 6\~1bar/94C and find the finest grind setting, and then perform adjustment.
 
-## Dialing In
+## Dialing In (flow profile)
+
+- Starts from pressure profile and get a proper grind size to keep flow around 2.0ml/s.
+- Starts from flow profile`4.0ml/s -> 2.0ml/s on 9bar/94C`.
+
+### Hypothesis
+
+- Flow cannot increase as high as you want, decent believes higher flow requires higher pressure, but there is a pressure limit.
+- Decreasing flow lower the extraction.
+
+### Test
+
+- Finer and coarser ground with same flow rate, see how pressure adjusts and how tasting changes.
+- Increasing flow rate during extraction.
+- Decreasing flow rate during extraction.
+
+## Dialing In (pressure profile)
 
 - Decide a proper dose, usually 15g ground in 15g basket, so that after brewing the group head doesn't leave a imprint on the paper screen. Having a little gap between the group head and the swelling puck will increase the evenness of extraction.
 - Start from `Default` with 8bar/90-92C.
