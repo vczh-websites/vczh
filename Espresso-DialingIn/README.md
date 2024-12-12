@@ -6,9 +6,9 @@
 
 ## Highly Recommended
 
-- Philocoffea 152,231
+- Philocoffea 231,237
 - Cafe Bach パナマ ドンパチ ティピカ
-- Methodical Repose Decaf, Honduras Walter Bautista
+- Methodical Repose Decaf
 
 ## Dialing In
 
