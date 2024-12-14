@@ -30,3 +30,7 @@
 - 1.5/15.0g -> 7/32s 29.8g 6.6\~2.3bar, less creama, brighter but less thickness
   - low flow -> low pressure -> slightly less extraction
   - needs further verify
+
+### 4.0ml/s -> 2.0ml/s on 9bar/94C
+
+- 1.5/15.0g -> 7/22s 29.8g 9.3\~8.6bar, a little under extraction
