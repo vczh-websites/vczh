@@ -37,9 +37,12 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Uncategorized
 
+- [Philocoffea 229 Costa Rica Don Mayo La Loma Yellow Honey](./2024-12/Philocoffea-229.md) (拉花交流)
 - [WonderState Heartstrings](./2024-9/WonderState-Heartstrings.md) (Beanz)
 - [Intelligentsia Frequency](./2024-9/Intelligentsia-Frequency.md) (Target)
 - [Intelligentsia House](./2024-9/Intelligentsia-House.md) (Target)
+
+## Uncategorized (decaf)
 
 - [Doma Bella Luna Decaf](./2024-9/Doma-Bella-Luna-Decaf.md) (Beanz) (sweet)
 
@@ -47,8 +50,8 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Keep extraction stable
 
-- Wait longer than 10 minites after turning on the machine for the first cup.
-- Flush the basket before every extraction (not important but better to do it).
+- Wait 7 minites before grinding after turning on the machine.
+- Flush the basket after every extraction.
 
 ## Light roasted bean
 
