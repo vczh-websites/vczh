@@ -6,7 +6,7 @@
 
 ## Highly Recommended
 
-- Philocoffea 231,237
+- Philocoffea 229,231,237: (fast degrade)
 - Cafe Bach パナマ ドンパチ ティピカ
 - Methodical Repose Decaf
 
