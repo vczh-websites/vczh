@@ -12,3 +12,8 @@
 ### 8~1bar/94C
 
 - 1.75/15.0g -> 7/20s 30.0g 1.3\~2.3ml/s, hazelnut too obvious and sweetness appears only in aftertaste
+
+### 8~1bar/92C
+
+- 1.75/15.0g -> 7/19s 30.0g 1.5\~2.3ml/s
+  - yes!
