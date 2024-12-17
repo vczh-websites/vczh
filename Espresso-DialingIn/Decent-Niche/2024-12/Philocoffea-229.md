@@ -17,3 +17,5 @@
 
 - 1.75/15.0g -> 7/19s 30.0g 1.5\~2.3ml/s
   - yes!
+- 1.75/15.0g -> 7/19s 30.2g 1.7\~2.3ml/s, tea and sweetness much more obvious
+- 1.75/15.0g -> 6/18s 30.3g 1.7\~2.3ml/s, repros
