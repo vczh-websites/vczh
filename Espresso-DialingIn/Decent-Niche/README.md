@@ -49,6 +49,10 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## No!
 
+## TODO:
+
+- How to extract much more at the first part to make a thick 1:1.5 extraction while maximized flavor and sweetness?
+
 ## Keep extraction stable
 
 - Wait 7 minites before grinding after turning on the machine.
@@ -70,7 +74,6 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ### Test
 
-- Finer and coarser ground with same flow rate, see how pressure adjusts and how tasting changes.
 - Increasing flow rate during extraction.
 - Decreasing flow rate during extraction.
 
