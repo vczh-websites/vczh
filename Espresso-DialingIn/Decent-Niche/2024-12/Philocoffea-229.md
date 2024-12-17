@@ -22,4 +22,5 @@
 
 ### 4ml/s -> 2ml/s on 9bar/92C
 
-- 1.75/15.0g -> 7/19s 30.5g 9.1\~6.2bar 1.7\~2.2ml/s, repros, a little but less extraction but still yes
+- 1.75/15.0g -> 7/19s 30.5g 9.1\~6.2bar 1.7\~2.2ml/s, repros, flavor emphasized, sweetness reduced
+  - a little bit less extraction but still yes
