@@ -19,3 +19,7 @@
   - yes!
 - 1.75/15.0g -> 7/19s 30.2g 1.7\~2.3ml/s, tea and sweetness much more obvious
 - 1.75/15.0g -> 6/18s 30.3g 1.7\~2.3ml/s, repros
+
+### 4ml/s -> 2ml/s on 9bar/92C
+
+- 1.75/15.0g -> 7/19s 30.5g 9.1\~6.2bar 1.7\~2.2ml/s, repros, a little but less extraction but still yes
