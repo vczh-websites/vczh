@@ -41,3 +41,5 @@
 - 2/18.0g -> 7/24s 36.0g 1.4\~2.0ml/s, taste like over extraction
 - 2.5/18.0g -> 7/22s 36.0g 1.7\~2.1ml/s, balanced, sweet
   - yes!
+- 3/18.0g -> 7/20s 35.9g 2.0\~2.3ml/s, a little bit sour but tastes fruity
+  - try again, also a little bit uneven
