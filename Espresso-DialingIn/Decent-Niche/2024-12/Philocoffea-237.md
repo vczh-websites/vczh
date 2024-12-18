@@ -34,3 +34,10 @@
 ### 4.0ml/s -> 2.0ml/s on 9bar/94C
 
 - 1.5/15.0g -> 7/22s 29.8g 9.3\~8.6bar, a little under extraction
+
+### 9bar/92C
+
+- (2024-12-18)
+- 2/18.0g -> 7/24s 36.0g 1.4\~2.0ml/s, taste like over extraction
+- 2.5/18.0g -> 7/22s 36.0g 1.7\~2.1ml/s, balanced, sweet
+  - yes!
