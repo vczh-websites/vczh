@@ -24,3 +24,11 @@
 
 - 1.75/15.0g -> 7/19s 30.5g 9.1\~6.2bar 1.7\~2.2ml/s, repros, flavor emphasized, sweetness reduced
   - a little bit less extraction but still yes
+
+### 9~1bar/92C
+
+- 2.5/18.0g -> 8/24s 35.9g 1.3\~2.1ml/s, strong tea, no sweetness
+- 3/18.0g -> 8/21s 36.0g 2.0\~2.4ml/s, less stronger, no sweetness
+- 2.5/18.0g -> 7/22s 32.9g 1.3\~2.1ml/s, tea, hazelnut, some sweetness
+  - yes!
+  - yield 33g
