@@ -66,6 +66,8 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 - Starts from pressure profile and get a proper grind size to keep flow around 2.0ml/s.
 - Starts from flow profile`4.0ml/s -> 2.0ml/s on 9bar/94C`.
+- Slightly increase the target flow rate cause the pressure to increase significantly, which extracts more.
+- Decrease the target flow rate cause the pressure to decrease significantly, which extracts less.
 
 ### Hypothesis
 
@@ -75,18 +77,20 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 ### Test
 
 - Increasing flow rate during extraction.
-- Decreasing flow rate during extraction.
+- Decreasing flow rate during extraction
 
 ## Dialing In (pressure profile)
 
-- Decide a proper dose, usually 15g ground in 15g basket, so that after brewing the group head doesn't leave a imprint on the paper screen. Having a little gap between the group head and the swelling puck will increase the evenness of extraction.
-- Start from `Default` with 8bar/90-92C.
+- Decide a proper dose, usually 18g ground in 18g basket, so that after brewing the group head doesn't leave a imprint on the paper screen. Having a little gap between the group head and the swelling puck will increase the evenness of extraction.
+- Start from `Default` with 9bar/92C.
 - Adjust to the best grind setting.
-- Adjust temperature and then pressure to make the espresso better.
+- Adjust temperature and pressure to make the espresso better.
 - Use `Default` (temperature/pressure variety) profile even when you don't need variation of pressure or temperature.
   - `Classic Italian Espresso` has an extra stop condition of maximum brew time after pre-infusion, this is useless in most of the cases.
   - Only do variation pressure or temperature when fixed profile is not good enough.
   - If flow rate raises too fast, consider brewing with a higher temperature and a decreasing pressure profile.
+- If the finest ground still under extraction, try 20g.
+- If the good extraction looks too coarse, or flavor too dense (happened to Bach) try 15g.
 
 ## Milk Frothing
 
