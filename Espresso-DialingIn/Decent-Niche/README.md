@@ -45,7 +45,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Uncategorized (decaf)
 
-- [Olympia Coffee Decaf Asterisk](./2024-12/Olympia-Coffee-Decaf-Asterisk.md)
+- [Olympia Coffee Decaf Asterisk](./2024-12/Olympia-Coffee-Decaf-Asterisk.md) (Beanz)
 - [Doma Bella Luna Decaf](./2024-9/Doma-Bella-Luna-Decaf.md) (Beanz) (sweet)
 
 ## No!
