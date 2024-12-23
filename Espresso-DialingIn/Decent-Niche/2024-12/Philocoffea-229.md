@@ -32,3 +32,8 @@
 - 2.5/18.0g -> 7/22s 32.9g 1.3\~2.1ml/s, tea, hazelnut, some sweetness
   - yes!
   - yield 33g
+- (2024-12-22)
+- 2.5/18.0g -> 6/24s 32.9g 1.0\~1.9ml/s, like channeling
+- 2.0/18.0g -> 7/27s 33.3g 0.8\~2.0ml/s
+  - a little bit over extraction
+  - Good&Gather seems too sweet for latte
