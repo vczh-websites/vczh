@@ -64,6 +64,15 @@ https://www.youtube.com/watch?v=4dRYw8yl_dg
 
 https://www.youtube.com/watch?v=1qyFDbkRrOA
 
+## Milk Frothing
+
+- Organic Valley > Darigold
+- Costco / Kirkland Signature: smelly
+- Good & Gather: too sweet
+- Maple Hill: too thick
+- Lactose Free: too sweet
+- Low fat / fat free: not enough fat and protein for frothing
+
 ## Latte Art
 
 - When pouring on a 6oz cup, frothy milk needs to sitr strong and fast with only a small amount during fusion.
