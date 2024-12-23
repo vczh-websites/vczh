@@ -68,7 +68,7 @@ https://www.youtube.com/watch?v=1qyFDbkRrOA
 
 - Organic Valley > Darigold
 - Costco / Kirkland Signature: smelly
-- Good & Gather: too sweet
+- Good & Gather, Horizon: too sweet
 - Maple Hill: too thick
 - Lactose Free: too sweet
 - Low fat / fat free: not enough fat and protein for frothing
