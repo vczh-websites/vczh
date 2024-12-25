@@ -37,3 +37,7 @@
 - 2.0/18.0g -> 7/27s 33.3g 0.8\~2.0ml/s
   - a little bit over extraction
   - Good&Gather seems too sweet for latte
+- 2.5/18.0g -> 8/23s 36.7g 1.5\~2.2ml/s, a little bitter
+  - forget to yield 33g
+- 2.5/18.0g -> 7/20s 32.8g 1.7\~2.2ml/s
+  - yes!
