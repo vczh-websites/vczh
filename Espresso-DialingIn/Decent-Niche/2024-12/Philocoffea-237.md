@@ -43,3 +43,10 @@
   - yes!
 - 3/18.0g -> 7/20s 35.9g 2.0\~2.3ml/s, a little bit sour but tastes fruity
   - try again, also a little bit uneven
+
+### 9~1bar/92C
+
+- (2024-12-25)
+- 3/18.0g -> 7/19s 36.0g 2.3\~2.8ml/s
+  - degases but flavor emphasized while a little feeling of under extraction
+  - try 2.5 grind next time
