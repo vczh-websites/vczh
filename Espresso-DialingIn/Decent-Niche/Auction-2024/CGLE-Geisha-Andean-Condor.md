@@ -11,3 +11,5 @@
 - 2.5/18.0g -> 8/16s 36.0g 4ml/s, like Sunkist
 - 0.5/18.0g -> 7/26s 36.0g 1.0\~1.8ml/s, flavor much emphasized, sweet
   - yes!
+- 0.5/18.0g -> 7/20s 35.8g 1.9\~2.2ml/s, a little weaker rhan the last cup but still strong
+  - why flow rate increased?
