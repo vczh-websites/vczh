@@ -2,6 +2,8 @@
 
 ## Decent Pro / Niche Duo
 
+**Sunkist without CO2**
+
 2024-12-28 (roasted on 2024-12-24)
 
 ### 9~1bar/92C
