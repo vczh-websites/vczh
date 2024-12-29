@@ -13,3 +13,5 @@
   - yes!
 - 0.5/18.0g -> 7/20s 35.8g 1.9\~2.2ml/s, a little weaker rhan the last cup but still strong
   - why flow rate increased?
+- 0.5/18.0g -> 8/23s 35.8g 1.7\~2.2ml/s
+  - looks like thisnis thr actual flow rate
