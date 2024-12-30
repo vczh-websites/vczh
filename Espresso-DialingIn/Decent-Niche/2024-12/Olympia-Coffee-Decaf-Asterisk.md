@@ -11,3 +11,12 @@
   - may need to keep longer
 - 2.5/18.0g -> 9/20s 36.1g 2.4ml/s
   - may need to keep longer
+- (2024-12-29)
+- 2/18.0g -> 7/21s 35.9g 2.0ml/s
+
+### 9oz glass cup
+
+- 2/18.0g -> 7/18s 35.7g 2.7\~2.1ml/s, a little bit bitterness
+- 2.5/18.0g -> 8/18s 36.1g \~2.3ml/s
+  - yes!
+
