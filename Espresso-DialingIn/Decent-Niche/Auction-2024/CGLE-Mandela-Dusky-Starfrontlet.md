@@ -14,3 +14,10 @@
 
 - 3/18.0g -> 8/17s 36.0g 2.9\~3.2ml/s, good clarity
   - try 2.5 grind, hope density to be just below 9\~1/92C/3
+- (2024-12-31)
+- 2.5/18.0g -> 9/24s 36.5g 1.8\~2.7ml/s, a little bit bitter
+- 2.75/18.0g -> 5.5ml/s, unexpectedly good clarity
+  - why?
+- 2.75/18.0g -> 3bar 4ml/s
+  - 2.75 too coarse but 2.5 is good, doesn't make sense
+- 2.5/18.0g -> 
