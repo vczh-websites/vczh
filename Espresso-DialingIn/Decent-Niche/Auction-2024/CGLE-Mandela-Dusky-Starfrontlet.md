@@ -20,4 +20,7 @@
   - why?
 - 2.75/18.0g -> 3bar 4ml/s
   - 2.75 too coarse but 2.5 is good, doesn't make sense
-- 2.5/18.0g -> 
+- 2.5/18.0g -> 3.3 bar
+  - the first cup is actually not right
+- 1/18.0g -> 8/18s 36.7g 2.7\~3.0ml/s
+  - finally tastes good
