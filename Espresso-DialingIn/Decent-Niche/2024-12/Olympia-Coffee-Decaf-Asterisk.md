@@ -2,7 +2,7 @@
 
 ## Decent Pro / Niche Duo
 
-2024-12-22 (roasted on 2024-12-20)
+2024-12-22 (roasted on 2024-12-20, better taste after 10 days)
 
 ### 6~1bar/94C
 
@@ -24,4 +24,4 @@
 
 - 2.5/18.0g -> 8/20s 36.0g \~2.1ml/s, eventually tastes like note
   - yes!
-
+- 2.5/18.0g -> 
