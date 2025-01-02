@@ -18,4 +18,5 @@
 - 0.5/18.0g -> 7/34s 35.8g 0.7\~1.5ml/s, a little but stronger
   - looks like this is the actual flow rate too
   - why?
-- 1/18.0g ->
+- 1/18.0g -> 7/31s 35.9g 0.9\~1.5ml/s, balanced
+- 1/18.0g -> 7/28s 35.7g 1.0\~1.8ml/s, repros
