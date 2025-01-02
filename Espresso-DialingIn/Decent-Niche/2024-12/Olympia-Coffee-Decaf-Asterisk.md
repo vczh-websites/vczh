@@ -20,3 +20,8 @@
 - 2.5/18.0g -> 8/18s 36.1g \~2.3ml/s
   - yes!
 
+### 6~1bar/92C, 6oz glass cup
+
+- 2.5/18.0g -> 8/20s 36.0g \~2.1ml/s, eventually tastes like note
+  - yes!
+
