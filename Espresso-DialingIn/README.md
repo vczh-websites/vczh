@@ -52,6 +52,10 @@ adjust to emphasizing acidity.
 
 To emphasize flavor and increase thickness, try fine grind / low pressure / medium temperature / 1:1.5 yield.
 
+### Beans that difficult to extract
+
+Need high pressure and temperature enough to achieve a slow flow rate, only grinding finely may not enough.
+
 ### Puck Prep (needs experiments)
 
 https://www.youtube.com/watch?v=4dRYw8yl_dg
