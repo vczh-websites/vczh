@@ -36,3 +36,9 @@
 ### 2.5ml/s -> 1ml/s < 5bar/96C
 
 - 0.5/20.0g -> 11/59s 44.9g 5.5\~2.0bar, less flavor right into mouth, but grows later before swallowing.
+
+### 9~1bar/96C, 18g basket, 7.5oz glass cup
+
+- (2025-1-2)
+- 0/20.0g -> 7/40s 36.0g 0.4\~1.4ml/s
+- 0/20.0g -> 9/41s 36.0g 0.4\~1.4ml/s, good
