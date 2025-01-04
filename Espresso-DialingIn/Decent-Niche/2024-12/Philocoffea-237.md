@@ -50,3 +50,8 @@
 - 3/18.0g -> 7/19s 36.0g 2.3\~2.8ml/s
   - degases but flavor emphasized while a little feeling of under extraction
   - try 2.5 grind next time
+- (2025-1-3)
+- 2.5/18.0g -> 7/22s 36.0g 1.7\~2.0ml/s, black tea too heavy
+- 3/18.0g -> 7/19s 36.0g 2.1\~2.6, better
+- 3.5/18.0g -> 8/17s 36.1g 2.8\~3.0ml/s, sweet, flavor emphasized, but a little bit under extraction
+  - try 3.25 yield
