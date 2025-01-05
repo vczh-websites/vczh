@@ -2,7 +2,7 @@
 
 **milk tea, smoky**
 
-[Previous](../2024-9/Philocoffea-152.md)
+[Previous](../2024-09/Philocoffea-152.md)
 
 ## Decent Pro / Niche Duo
 

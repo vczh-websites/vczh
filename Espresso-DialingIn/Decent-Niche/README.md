@@ -31,22 +31,22 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 - [Methodical Honduras Walter Bautista](./2024-12/Methodical-Honduras.md) (Beanz)
 - [Philocoffea 152 Ethiopia Konga Natural](./2024-11/Philocoffea-152.md) (拉花交流) (milk tea, smoky)
 - [Cafe Bach Blue Mountain No.1](./2024-10/Cafe-Bach-Blue-Mountain-No1.md) (拉花交流)
-- [Iconik Iconoclast Blend](./2024-9/Iconik-Iconoclast-Blend.md) (Beanz) (very sweet, fruity)
+- [Iconik Iconoclast Blend](./2024-09/Iconik-Iconoclast-Blend.md) (Beanz) (very sweet, fruity)
 
 ## Yes! (decaf)
 
-- [Pround Mary Pillow Fight Columbia Decaf](./2024-9/Proud-Mary-Pillow-Fight-Columbia-Decaf.md) (Beanz) (citrus, chocolate)
+- [Pround Mary Pillow Fight Columbia Decaf](./2024-09/Proud-Mary-Pillow-Fight-Columbia-Decaf.md) (Beanz) (citrus, chocolate)
 
 ## Uncategorized
 
-- [WonderState Heartstrings](./2024-9/WonderState-Heartstrings.md) (Beanz)
-- [Intelligentsia Frequency](./2024-9/Intelligentsia-Frequency.md) (Target)
-- [Intelligentsia House](./2024-9/Intelligentsia-House.md) (Target)
+- [WonderState Heartstrings](./2024-09/WonderState-Heartstrings.md) (Beanz)
+- [Intelligentsia Frequency](./2024-09/Intelligentsia-Frequency.md) (Target)
+- [Intelligentsia House](./2024-09/Intelligentsia-House.md) (Target)
 
 ## Uncategorized (decaf)
 
 - [Olympia Coffee Decaf Asterisk](./2024-12/Olympia-Coffee-Decaf-Asterisk.md) (Beanz) (almond, chocolate, consume 10 days after roasted)
-- [Doma Bella Luna Decaf](./2024-9/Doma-Bella-Luna-Decaf.md) (Beanz) (sweet)
+- [Doma Bella Luna Decaf](./2024-09/Doma-Bella-Luna-Decaf.md) (Beanz) (sweet)
 
 ## No!
 
