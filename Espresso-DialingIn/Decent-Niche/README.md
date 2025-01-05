@@ -39,6 +39,8 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Uncategorized
 
+- [Coffee Manufactory Africa](./2024-11/Coffee-Manufactory-Africa.md) (Beanz)
+- [Cuvee Ethiopia Medium Light Roast](./2024-11/Cuvee-Ethiopia.md) (Beanz)
 - [WonderState Heartstrings](./2024-09/WonderState-Heartstrings.md) (Beanz)
 - [Intelligentsia Frequency](./2024-09/Intelligentsia-Frequency.md) (Target)
 - [Intelligentsia House](./2024-09/Intelligentsia-House.md) (Target)
