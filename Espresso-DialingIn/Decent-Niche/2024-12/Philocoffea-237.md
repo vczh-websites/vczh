@@ -55,3 +55,5 @@
 - 3/18.0g -> 7/19s 36.0g 2.1\~2.6, better
 - 3.5/18.0g -> 8/17s 36.1g 2.8\~3.0ml/s, sweet, flavor emphasized, but a little bit under extraction
   - try 3.25 yield
+- 3.25/18.0g -> 8/19s 2.4\~2.8ml/s
+- 3.25/18.0g -> 8/22s 35.9g 2.0\~2.6ml/s
