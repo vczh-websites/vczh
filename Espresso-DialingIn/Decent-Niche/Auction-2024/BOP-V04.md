@@ -89,4 +89,11 @@
 
 ### 9bar/94C
 
-- 2.5/18.0g ->
+- 2.5/18.0g -> 8/20s 36.9g 2.0\~3.8ml/s, no much changing
+  - need to set 35g for 36 yield
+  - first cup is the best
+
+### 6bar/94C
+
+- 2.5/18.0 ->
+  - set the goal to 35g and 31g the next try
