@@ -78,7 +78,7 @@
 
 2025-1-6 (roasted on 2025-1-1)
 
-### 6bar/94C
+### 6~1bar/94C
 
 - 2.5/18.0 -> 9/20s 36.3g 2.0\~3.4ml/s, strong flavor, very sweet
 - 2/18.0 -> 7/20s 35.9g 1.6\~2.8ml/s, less sweetness, less clarity
