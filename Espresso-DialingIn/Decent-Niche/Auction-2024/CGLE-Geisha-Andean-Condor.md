@@ -28,3 +28,5 @@
 2025-1-6 (roasted on 2025-1-1)
 
 - 1/18.0g -> 8/27s 36.2g 1.0\~2.0ml/s, bitter
+- 2/18.0g -> 7/27s 36.0g 1.3\~2.0ml/s, sweet, no bitterness
+  - much better
