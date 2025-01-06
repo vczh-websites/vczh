@@ -68,10 +68,16 @@
 
 ### 6bar/92C
 
-- 3.20.0g -> 8/18s 34.8g 2.2\~2.9ml/s, balanced, strong flavor and good thickness
+- 3/20.0g -> 8/18s 34.8g 2.2\~2.9ml/s, balanced, strong flavor and good thickness
 
 ### 6bar/94C
 
 - 3/20.0g -> 7/20s 35.7g 1.7\~2.7ml/s, more obvious sweet
 - 3/20.0g -> 8/19s 30.8g 1.7\~2.6ml/s, slightly decreased thickness
   - 1:1.75 yield is better
+
+2025-1-6 (roasted on 2025-1-1)
+
+### 6bar/94C
+
+- 2/18.0 -> 
