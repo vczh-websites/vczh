@@ -83,17 +83,17 @@
 - 2.5/18.0 -> 9/20s 36.3g 2.0\~3.4ml/s, strong flavor, very sweet
 - 2/18.0 -> 7/20s 35.9g 1.6\~2.8ml/s, less sweetness, less clarity
 
-### 6bar/92C
+### 6~1bar/92C
 
 - 2/18.0g -> 7/22s 36.4g 1.4\~2.8ml/s, clarity increased, not as sweet as first cup
 
-### 9bar/94C
+### 9~1bar/94C
 
 - 2.5/18.0g -> 8/20s 36.9g 2.0\~3.8ml/s, no much changing
   - need to set 35g for 36 yield
   - first cup is the best
 
-### 6bar/94C
+### 6~1bar/94C
 
 - 2.5/18.0 ->
   - set the goal to 35g and 31g the next try
