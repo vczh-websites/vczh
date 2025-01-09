@@ -103,4 +103,7 @@
 - 2.5/18.0g 30g -> 7/17s 31.0g 2.1\~3.0ml/s, strong acidity with clarity, less sweetness than the very first cup 
 - 2/18.0g 27g -> 7/19s 27.4g 1.5\~2.6ml/s, bright, sweet, complex flavor
   - yes!
-- 2/18.0g 27g -> 7/18s 1.7\~2.6ml/s, repros 
+- 2/18.0g 27g -> 7/18s 1.7\~2.6ml/s, repros
+  - -> 7/19s 27.6g 1.4\~2.7ml/s, a littl bit more sour
+    - degased?
+- 1.75/18.0g 27g -> 7/18s 27.9g 1.5\~2.5ml/s 
