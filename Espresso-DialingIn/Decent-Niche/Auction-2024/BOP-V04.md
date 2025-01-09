@@ -93,7 +93,14 @@
   - need to set 35g for 36 yield
   - first cup is the best
 
+### 6~1bar/92C
+
+- (2025-1-8)
+- 2.5/18.0 30g -> 9/19s 30.7g 2.0\~3.0ml/s, a little bit sour, some sweet in aftertaste
+
 ### 6~1bar/94C
 
-- 2.5/18.0 ->
-  - set the goal to 35g and 31g the next try
+- 2.5/18.0g 30g -> 7/17s 31.0g 2.1\~3.0ml/s, strong acidity with clarity, less sweetness than the very first cup 
+- 2/18.0g 27g -> 7/19s 27.4g 1.5\~2.6ml/s, bright, sweet, complex flavor
+  - yes!
+- 2/18.0g 27g -> 7/18s 1.7\~2.6ml/s, repros 
