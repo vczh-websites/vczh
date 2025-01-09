@@ -31,3 +31,6 @@
 - 2/18.0g -> 7/27s 36.0g 1.3\~2.0ml/s, sweet, no bitterness
   - much better
   - try 2.5 or 3 grind
+- (2025-1-9)
+- 3/18.0g -> 7/19s 36.0g 2.1\~2.4ml/s
+  - try 3.5
