@@ -37,4 +37,6 @@
 
 ### 9~1bar/96C
 
-- 2/18.0g 27g ->
+- 2/18.0g 27g -> 9/21s 27.5g 1.4\~2.1ml/s, almost like sunkist again
+- 2.5/18.0 27g -> 7/17s 27.2g 2.0\~2.3ml/s, balanced, tangerine, sweet
+  - yes!
