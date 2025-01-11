@@ -52,6 +52,8 @@ adjust to emphasizing acidity.
 
 Always starts with 6~1bar/94C and find the finest grind setting, and then perform adjustment.
 
+If bitterness easy to show up, try 9~1bar/96C with 1:1.5 yield.
+
 ### Strong without Bitterness
 
 To emphasize flavor and increase thickness, try fine grind / low pressure / medium temperature / 1:1.5 yield.
