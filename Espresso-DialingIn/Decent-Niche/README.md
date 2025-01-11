@@ -61,10 +61,6 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 - Wait 7 minites before grinding after turning on the machine.
 - Flush the basket after every extraction.
 
-## Light roasted bean
-
-- Always starts with 6\~1bar/94C and find the finest grind setting, and then perform adjustment.
-
 ## Dialing In (flow profile)
 
 - Starts from pressure profile and get a proper grind size to keep flow around 2.0ml/s.
