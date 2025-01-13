@@ -2,6 +2,10 @@
 
 ## Decent Pro / Niche Duo
 
+- 6g luito mix 14g CGLE Mandela Dusky Starfrontlet
+  - 6\~1bar/94C/, 1/20->30g, 9/18s, 2.3\~2.9ml/s
+  - taste of supermarket fresh orange juice
+
 2024-11-24 (roasted on 2024-11-16)
 
 ### 9bar/94C
