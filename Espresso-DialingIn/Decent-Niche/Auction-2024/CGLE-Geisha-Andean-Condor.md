@@ -42,3 +42,6 @@
   - yes!
 - 2.5/18.0g 27g -> 8/19s 27.1g 1.6\~2.1ml/s, a little bit stronger
   - the portafilter was on the group head for half an hour, the bot temperature may cause more extraction
+- (2025-1-13)
+- 2.5/18.0g 27g -> 8/19s 27.5g 1.7\~2.1ml/s
+- 2.5/18.0g 27g -> 7/19s 27.2g 1.6\~2.0ml/s
