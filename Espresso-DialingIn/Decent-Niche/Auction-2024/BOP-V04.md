@@ -76,7 +76,7 @@
 - 3/20.0g -> 8/19s 30.8g 1.7\~2.6ml/s, slightly decreased thickness
   - 1:1.75 yield is better
 
-2025-1-6 (roasted on 2025-1-1)
+2025-1-6 (roasted on 2025-1-1, Agtron 62.1)
 
 ### 6~1bar/94C
 
@@ -104,12 +104,15 @@
 - 2/18.0g 27g -> 7/19s 27.4g 1.5\~2.6ml/s, bright, sweet, complex flavor
   - yes!
 - 2/18.0g 27g -> 7/18s 1.7\~2.6ml/s, repros
-  - -> 7/19s 27.6g 1.4\~2.7ml/s, a littl bit more sour
+  - -> 7/19s 27.6g 1.4\~2.7ml/s, a little bit more sour
     - degased?
 - 1.75/18.0g 27g -> 7/18s 27.9g 1.5\~2.5ml/s
+- (2025-1-18)
+- 1.75/18.0g 27g -> 9/21s 27.9g 1.4\~2.6ml/s, a little bit sour
+  - right after cleaning the grinder
 
-2025-1-18 (roasted on 2025-1-12)
+2025-1-18 (roasted on 2025-1-12, Agtron 60.0)
 
 ### 6~1bar/94C
 
-- 1.75/18.0g 27g ->
+- 1.5/18.0g 27g -> 
