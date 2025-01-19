@@ -115,4 +115,9 @@
 
 ### 6~1bar/94C
 
-- 1.5/18.0g 27g -> 
+- 1.75/18.0g 27g -> 7/19s 27.6g 1.4\~2.4ml/s
+  - mixed with 6g bean from last batch
+- 2/18.0g 27g -> 8/21s 27.7g 1.2\~2.3ml/s, aromatic during brewing, a little bit sour but comfortable
+  - yes!
+  - adjusting by 0.25 doesn't seem significant
+  - lower flow rate might due to 100% of new batch
