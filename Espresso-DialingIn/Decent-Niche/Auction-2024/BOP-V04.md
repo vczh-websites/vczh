@@ -121,3 +121,6 @@
   - yes!
   - adjusting by 0.25 doesn't seem significant
   - lower flow rate might due to 100% of new batch
+- (2025-1-23)
+- 2/18.0g 27g -> 7/21s 27.8g 1.2\~2.3ml/s, tastes like under extraction
+  - degased? remaining beans kept for pour over
