@@ -17,4 +17,5 @@
 
 - 5.5/18.0g 30g -> 7/21s 30.6g 1.7\~2.1ml/s, juicy fermented, just a little bit bitter
   - bitterness could be simulating wine and chocolate, can't remove but it is comfortable when weak
-  - try 27g yield 
+  - try 27g yield
+  - try 36 yield but 8oz milk
