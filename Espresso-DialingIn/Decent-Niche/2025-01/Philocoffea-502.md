@@ -6,4 +6,5 @@
 
 ### 9bar/94C
 
-- 3/18.0g ->
+- 3/18.0g -> 8/40s 36.2g 0.4\~1.4ml/s, somewhat bitter but tastes fermented and mandarin
+- 4.5/18.0g -> 7/26s 36.1g 1.1\~1.7ml/s, 
