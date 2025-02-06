@@ -19,3 +19,8 @@
   - bitterness could be simulating wine and chocolate, can't remove but it is comfortable when weak
   - try 27g yield
   - try 36 yield but 8oz milk
+
+### 9~1bar/94C
+
+- (2025-2-5)
+- 5/18.0g -> 
