@@ -23,4 +23,7 @@
 ### 9~1bar/94C
 
 - (2025-2-5)
-- 5/18.0g -> 
+- 5/18.0g -> 10/24s 36.1g 1.6\~2.3ml/s, strong flavor, a little bit bitter
+- 5/18.0g 27g -> 7/20s 27.5g 1.4\~1.9ml/s, balanced
+- 6/18.0g 29g -> 8/18s 29.9g \~2.0ml/s, strong yellow peach, fruity, sweet, no bitterness, good aftertaste
+  - yes!
