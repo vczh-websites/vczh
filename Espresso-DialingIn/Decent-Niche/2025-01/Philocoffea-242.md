@@ -8,5 +8,8 @@
 
 - 4/18.0g -> 7/32s 36.0g 0.7\~1.8ml/s, a little bit over extraction, mango, no orange
 - 5.5/18.0g -> 8/24s 36.0g 1.3\~2.1ml/s, juicy, orange, mango, sweet
-  - try 6.5 grind
-  - try 4 grind 27g yield
+- (2025-2-6)
+- 6.5/18.0g 29g -> 9/16s 29.4g \~4ml/s, super sweet like kingo juice
+- 5.5/18.0g -> 8/20s 36.1g 2.0\~2.3ml/s, thickness, nut, lost some juicy
+- 5.5/18.0g 27g -> 8/18s 27.5g 1.8\~2.1ml/s, citrus stronger, thickness, sweet
+  - try 6 grind 1:1.5
