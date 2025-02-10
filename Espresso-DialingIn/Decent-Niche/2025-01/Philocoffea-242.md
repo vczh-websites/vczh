@@ -13,3 +13,5 @@
 - 5.5/18.0g -> 8/20s 36.1g 2.0\~2.3ml/s, thickness, nut, lost some juicy
 - 5.5/18.0g 27g -> 8/18s 27.5g 1.8\~2.1ml/s, citrus stronger, thickness, sweet
   - try 6 grind 1:1.5
+- 6/18.0g 27g -> 7/16s 27.7g 2.0\~2.4ml/s
+- 6/18.0g 27g -> 7/15s 27.9g 2.2\~2.4ml/s
