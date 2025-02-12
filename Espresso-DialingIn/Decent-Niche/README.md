@@ -7,6 +7,11 @@ using
 
 Decent needs to rest for 10 minutes after wakes up.
 
+If the bean is sensitive to extraction settings,
+it is recommended to flush the basket with bot water and then keep the portafilter in the machine for a while,
+to ensure the basket for the first shot is as hot as the second shot.
+The temperature of the basket does affect extraction for some beans.
+
 Sometimes the tablet double clicks, don't press the left side of the OK button after changing brewing parameters, it overlaps with the power button, there is a low possibility that the machine will be turned off. 
 
 ## Niche Duo Calibration
