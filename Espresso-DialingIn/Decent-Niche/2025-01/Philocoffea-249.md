@@ -23,3 +23,4 @@
   - higher flow rate probably due to much hotter basket for the second shot
   - but it does not really affect the taste too much
   - black tea reduced but still tastes
+- 3/18.0g -> 8/20s 27.8g 1.3\~2.1ml/s
