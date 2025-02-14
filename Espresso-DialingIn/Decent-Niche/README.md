@@ -26,21 +26,25 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 - Philocoffea (拉花交流)
   - [231: Ethiopia Bona Zuria Washed](./2024-11/Philocoffea-231.md) (juicy, honey, tea like)
-  - [237: El Salvador Santa Rosa Pacamara Natural](./2024-12/Philocoffea-237.md)
+  - [242: Colombia Mananitas Chiroso Washed](./2025-01/Philocoffea-242.md)
+  - [249: Colombia Geisha Washed](./2025-01/Philocoffea-249.md) (lemon, apricot, black tea, sweet in aftertaste, 4 weeks after roasted)
   - [502: Ethiopia Sky Project Tim Natural](./2025-01/Philocoffea-502.md)
-- [Cafe Bach パナマ ドンパチ ティピカ](./2024-10/Cafe-Bach-Panama-Donpachi-Teppika.md) (拉花交流)
+- [Cafe Bach パナマ ドンパチ ティピカ](./2024-10/Cafe-Bach-Panama-Donpachi-Teppika.md)
 - [Methodical Repose Decaf](./2024-10/Methodical-Repose-Decaf.md) (Beanz) (cranberry, somewhat coconut, strong caramel, consume 2 weeks after roasted)
 
 ## Yes!
 
+- Philocoffea (拉花交流)
+  - [152: Ethiopia Konga Natural](./2024-11/Philocoffea-152.md) (拉花交流) (milk tea, smoky)
+  - [229: Costa Rica Don Mayo La Loma Yellow Honey](./2024-12/Philocoffea-229.md)
+  - [237: El Salvador Santa Rosa Pacamara Natural](./2024-12/Philocoffea-237.md)
 - [Methodical Honduras Walter Bautista](./2024-12/Methodical-Honduras.md) (Beanz)
-- [Philocoffea 152 Ethiopia Konga Natural](./2024-11/Philocoffea-152.md) (拉花交流) (milk tea, smoky)
-- [229: Costa Rica Don Mayo La Loma Yellow Honey](./2024-12/Philocoffea-229.md)
 - [Cafe Bach Blue Mountain No.1](./2024-10/Cafe-Bach-Blue-Mountain-No1.md) (拉花交流)
 - [Iconik Iconoclast Blend](./2024-09/Iconik-Iconoclast-Blend.md) (Beanz) (very sweet, fruity)
 
 ## Yes! (decaf)
 
+- [Counter Culture Slow Motion Decaf](./2025-02/Counter-Culture-Slow-Motion-Decaf.md) (Beanz) (sweet, chocolate, but need more milk)
 - [Pround Mary Pillow Fight Columbia Decaf](./2024-09/Proud-Mary-Pillow-Fight-Columbia-Decaf.md) (Beanz) (citrus, chocolate)
 
 ## Uncategorized

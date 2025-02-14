@@ -2,6 +2,8 @@
 
 ## Decent Pro / Niche Duo
 
+**sweet, chocolate, but need more milk**
+
 2025-2-12 (roasted on 2025-2-4)
 
 ### 6~1bar/92C
