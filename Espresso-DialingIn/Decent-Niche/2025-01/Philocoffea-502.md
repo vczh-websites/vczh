@@ -27,3 +27,7 @@
 - 5/18.0g 27g -> 7/20s 27.5g 1.4\~1.9ml/s, balanced
 - 6/18.0g 29g -> 8/18s 29.9g \~2.0ml/s, strong yellow peach, fruity, sweet, no bitterness, good aftertaste
   - yes!
+- (2025-2-13)
+- 5.5/18.0g 27g -> 8/18s 27.6g \~2.0ml/s, strong flavors, more fermentation
+- 5.5/18.0g 30g -> 7/19s 30.9g \~2.0ml/s, a little more smooth and sweet
+- 5.5/18.0g 30g -> 8/19s 30.5g \~2.1ml/s
