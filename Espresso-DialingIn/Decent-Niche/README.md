@@ -29,7 +29,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
   - [242: Colombia Mananitas Chiroso Washed](./2025-01/Philocoffea-242.md)
   - [249: Colombia Geisha Washed](./2025-01/Philocoffea-249.md) (lemon, apricot, black tea, sweet in aftertaste, 4 weeks after roasted)
   - [502: Ethiopia Sky Project Tim Natural](./2025-01/Philocoffea-502.md)
-- [Cafe Bach パナマ ドンパチ ティピカ](./2024-10/Cafe-Bach-Panama-Donpachi-Teppika.md)
+- [Cafe Bach パナマ ドンパチ ティピカ](./2024-10/Cafe-Bach-Panama-Donpachi-Teppika.md) (拉花交流)
 - [Methodical Repose Decaf](./2024-10/Methodical-Repose-Decaf.md) (Beanz) (cranberry, somewhat coconut, strong caramel, consume 2 weeks after roasted)
 
 ## Yes!
