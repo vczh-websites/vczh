@@ -13,3 +13,5 @@
 - 6/18.0g -> 8/20s 35.7g \~2.4ml/s, smooth
   - with 8oz milk
   - try 7oz milk
+- 6/18.0 -> 8/18s 35.7g \~2.6ml/s, sweet, thickness
+  - with 7oz milk
