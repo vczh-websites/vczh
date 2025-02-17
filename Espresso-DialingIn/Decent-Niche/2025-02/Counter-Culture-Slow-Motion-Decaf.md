@@ -17,3 +17,6 @@
   - try 7oz milk
 - 6/18.0 -> 8/18s 35.7g \~2.6ml/s, sweet, thickness
   - with 7oz milk
+- (2025-2-17)
+- 6/18.0 -> 8/17s 35.7g \~2.7ml/s
+- 6/18.0 -> 9/19s 35.8g \~2.5ml/s
