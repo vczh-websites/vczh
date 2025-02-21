@@ -32,7 +32,9 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 - [Cafe Bach パナマ ドンパチ ティピカ](./2024-10/Cafe-Bach-Panama-Donpachi-Teppika.md) (拉花交流)
 - [Methodical Repose Decaf](./2024-10/Methodical-Repose-Decaf.md) (Beanz) (cranberry, somewhat coconut, strong caramel, consume 2 weeks after roasted)
 
-## Yes!
+## Ordinary
+
+### Yes!
 
 - Philocoffea (拉花交流)
   - [152: Ethiopia Konga Natural](./2024-11/Philocoffea-152.md) (拉花交流) (milk tea, smoky)
@@ -42,26 +44,29 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 - [Cafe Bach Blue Mountain No.1](./2024-10/Cafe-Bach-Blue-Mountain-No1.md) (拉花交流)
 - [Iconik Iconoclast Blend](./2024-09/Iconik-Iconoclast-Blend.md) (Beanz) (very sweet, fruity)
 
-## Yes! (decaf)
+### Uncategorized
+
+- [WonderState Heartstrings](./2024-09/WonderState-Heartstrings.md) (Beanz)
+
+### No!
+
+- [Tim Wendelboe Los Pirineos Espresso](./2025-02/Tim-Wendelboe-Los-Pirineos-Espresso.md) (Sirui)
+- [Coffee Manufactory Africa](./2024-11/Coffee-Manufactory-Africa.md) (Beanz)
+- [Cuvee Ethiopia Medium Light Roast](./2024-11/Cuvee-Ethiopia.md) (Beanz)
+- [Intelligentsia Frequency](./2024-09/Intelligentsia-Frequency.md) (Target)
+- [Intelligentsia House](./2024-09/Intelligentsia-House.md) (Target)
+
+## Decaf
+
+## Yes!
 
 - [Counter Culture Slow Motion Decaf](./2025-02/Counter-Culture-Slow-Motion-Decaf.md) (Beanz) (sweet, chocolate, but need more milk)
 - [Pround Mary Pillow Fight Columbia Decaf](./2024-09/Proud-Mary-Pillow-Fight-Columbia-Decaf.md) (Beanz) (citrus, chocolate)
 
 ## Uncategorized
 
-- [Tim Wendelboe Los Pirineos Espresso](./2025-02/Tim-Wendelboe-Los-Pirineos-Espresso.md) (Sirui)
-- [Coffee Manufactory Africa](./2024-11/Coffee-Manufactory-Africa.md) (Beanz)
-- [Cuvee Ethiopia Medium Light Roast](./2024-11/Cuvee-Ethiopia.md) (Beanz)
-- [WonderState Heartstrings](./2024-09/WonderState-Heartstrings.md) (Beanz)
-- [Intelligentsia Frequency](./2024-09/Intelligentsia-Frequency.md) (Target)
-- [Intelligentsia House](./2024-09/Intelligentsia-House.md) (Target)
-
-## Uncategorized (decaf)
-
 - [Olympia Coffee Decaf Asterisk](./2024-12/Olympia-Coffee-Decaf-Asterisk.md) (Beanz) (almond, chocolate, consume 10 days after roasted)
 - [Doma Bella Luna Decaf](./2024-09/Doma-Bella-Luna-Decaf.md) (Beanz) (sweet)
-
-## No!
 
 ## TODO:
 
