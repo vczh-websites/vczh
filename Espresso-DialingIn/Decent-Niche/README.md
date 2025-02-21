@@ -58,15 +58,17 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Decaf
 
-## Yes!
+### Yes!
 
 - [Counter Culture Slow Motion Decaf](./2025-02/Counter-Culture-Slow-Motion-Decaf.md) (Beanz) (sweet, chocolate, but need more milk)
 - [Pround Mary Pillow Fight Columbia Decaf](./2024-09/Proud-Mary-Pillow-Fight-Columbia-Decaf.md) (Beanz) (citrus, chocolate)
 
-## Uncategorized
+### Uncategorized
 
 - [Olympia Coffee Decaf Asterisk](./2024-12/Olympia-Coffee-Decaf-Asterisk.md) (Beanz) (almond, chocolate, consume 10 days after roasted)
 - [Doma Bella Luna Decaf](./2024-09/Doma-Bella-Luna-Decaf.md) (Beanz) (sweet)
+
+### No!
 
 ## TODO:
 
