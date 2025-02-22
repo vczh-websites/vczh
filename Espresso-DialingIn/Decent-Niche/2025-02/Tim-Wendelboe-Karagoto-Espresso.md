@@ -1,4 +1,4 @@
-# Tim Wendelboe Karagoto Espresso
+# Tim Wendelboe Karogoto Espresso
 
 ## Decent Pro / Nichr Duo
 
