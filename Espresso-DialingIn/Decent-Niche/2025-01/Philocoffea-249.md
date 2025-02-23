@@ -16,6 +16,7 @@
   - yes!
 
 ### 9~1bar/96C 1:1.5
+
 - (2025-2-12)
 - 3/18.0g -> 9/23s 27.8g 1.0\~2.0ml/s, lemon, apricot, black tea, sweet in aftertaste, properly mixed
   - yes!
@@ -24,3 +25,8 @@
   - but it does not really affect the taste too much
   - black tea reduced but still tastes
 - 3/18.0g -> 8/20s 27.8g 1.3\~2.1ml/s
+- (2025-2-22)
+- 3/18.0g -> 7/18s 27.9g 1.6\~2.1ml/s
+- 3/18.0g 29.5g -> 8/22s 30.3g 1.2\~2.1ml/s
+- 3:18.0g 29.5g -> 7/20s 30.2g 1.5\~2.0ml/s, like lemon beverage
+  - lactose free horizon
