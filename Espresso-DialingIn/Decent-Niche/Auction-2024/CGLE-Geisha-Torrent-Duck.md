@@ -2,7 +2,7 @@
 
 ## Decent Pro / Niche Duo
 
-2025-1-28 (roasted on 2025-1-26)
+2025-1-28 (roasted on 2025-1-26, Agtron 68.0)
 
 ### 9~1bar/94C
 
