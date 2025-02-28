@@ -31,3 +31,5 @@
 - 5.5/18.0g 27g -> 8/18s 27.6g \~2.0ml/s, strong flavors, more fermentation
 - 5.5/18.0g 30g -> 7/19s 30.9g \~2.0ml/s, a little more smooth and sweet
 - 5.5/18.0g 30g -> 8/19s 30.5g \~2.1ml/s
+- (2025-2-27)
+- 5.5/18.0g 30g -> 7/19s 30.5g \~2.0ml/s
