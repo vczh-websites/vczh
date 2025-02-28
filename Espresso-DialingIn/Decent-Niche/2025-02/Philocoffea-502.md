@@ -8,4 +8,4 @@
 
 ### 9~1bar/94C
 
-- 6/18.0g ->
+- 6/18.0g 27g -> 7/19s 27.6g 1.5\~1.9ml/s, repros the last cup in last batch today
