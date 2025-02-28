@@ -28,3 +28,7 @@
 - (2025-1-15)
 - 2.5/18.0g -> 9/17s 35.8g \~2.8ml/s, fine
   - degas observed but not many
+- (2025-2-27)
+- 2.5/18.0g -> 9/16s 35.9g \~2.9ml/s, thin creama, a little bit under extraction
+  - with lacrose free milk
+  - try 1.5 grind
