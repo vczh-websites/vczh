@@ -6,4 +6,5 @@
 
 ### 9~1bar/94C
 
-- 3/18.0g ->
+- 3/18.0g -> 7/29s 36.3g 0.6\~2.0ml/s, sweet, tea like, flavor not developed
+  - 6\~1bar -> 
