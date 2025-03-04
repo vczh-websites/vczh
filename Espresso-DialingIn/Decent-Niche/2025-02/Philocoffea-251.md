@@ -11,4 +11,4 @@
 ### 6~1bar/94C
 
 - 3/18.0g 27g -> 7/19s 27.7g 1.5\~2.7ml/s, flavor obvious, no tangerine, nut, sweetness increased
-- 4/18.0g 27g -> 
+- 4/18.0g 27g -> 7/17s 27.7g 2.0\~2.9ml/s, tangerine begins to appear
