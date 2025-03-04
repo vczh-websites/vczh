@@ -1,5 +1,7 @@
 # Philocoffea 251 Rwanda Dukunde Kawa Ruli 1704 Soil Project
 
+**weak tangerine, black tea, nut, very easy to over extraction**
+
 ## Decent Pro / Niche Duo
 
 2025-3-3 (roasted on 2025-2-9)
