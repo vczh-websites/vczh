@@ -25,7 +25,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 ## Highly Recommended
 
 - Philocoffea (拉花交流)
-  - [231: Ethiopia Bona Zuria Washed](./2024-11/Philocoffea-231.md) (juicy, honey, tea like)
+  - [231: Ethiopia Bona Zuria Washed](./2025-03/Philocoffea-231.md) (juicy, honey, tea like)
   - [242: Colombia Mananitas Chiroso Washed](./2025-01/Philocoffea-242.md)
   - [249: Colombia Geisha Washed](./2025-01/Philocoffea-249.md) (lemon, apricot, black tea, sweet in aftertaste, 4 weeks after roasted)
   - [502: Ethiopia Sky Project Tim Natural](./2025-02/Philocoffea-502.md)
