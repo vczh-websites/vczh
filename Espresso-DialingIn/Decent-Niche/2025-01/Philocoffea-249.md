@@ -28,5 +28,13 @@
 - (2025-2-22)
 - 3/18.0g -> 7/18s 27.9g 1.6\~2.1ml/s
 - 3/18.0g 29.5g -> 8/22s 30.3g 1.2\~2.1ml/s
-- 3:18.0g 29.5g -> 7/20s 30.2g 1.5\~2.0ml/s, like lemon beverage
-  - lactose free horizon
+
+### 9~1bar/96C 29.5g with lactose free milk
+
+- 3/18.0g -> 7/20s 30.2g 1.5\~2.0ml/s, like lemon beverage
+  - horizon
+- (2025-3-7)
+- 2.5/18.0g -> 7/23s 29.8g 1.2\~1.9ml/s, repros
+  - trader joes
+- 3/18.0g -> 7/20s 30.1g 1.5\~2.0ml/s
+  - degas did not happen
