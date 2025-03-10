@@ -15,7 +15,12 @@
   - try 6 grind 1:1.5
 - 6/18.0g 27g -> 7/16s 27.7g 2.0\~2.4ml/s
 - 6/18.0g 27g -> 7/15s 27.9g 2.2\~2.4ml/s
-- (2026-2-16)
+- (2025-2-16)
 - 5/18.0g 27g -> 8/21s 27.7g 1.4\~1.9ml/s, a little bit over extraction, obvious sweetness in aftertaste
 - 5.5/18.0g 27g -> 8/17s 27.8g 2.0\~2.2ml/s, a little bit under extraction
 - 5.5/18.0g 30g -> 8/20s 30.6g 1.8\~2.2ml/s, not much changed
+- (2025-3-9)
+- 5/18.0g 30g -> 7/19s 30.3g 1.7\~2.0ml/s, lack of taste
+- 5/18.0g 30g -> 7/19s 30.9g 1.7\~2.1ml/s, rich of mandarin, fruity, sweet
+  - without milk
+- 4/18.0g -> 7/28s 35.9g 1.0\~1.8ml/s, apricot, sweet
