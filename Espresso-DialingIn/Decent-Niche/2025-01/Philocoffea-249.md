@@ -38,3 +38,8 @@
   - trader joes
 - 3/18.0g -> 7/20s 30.1g 1.5\~2.0ml/s
   - degas did not happen
+- (2025-3-11)
+- 3/18.0g -> 7/19s 30.3g 1.6\~2.2ml/s
+- 3/18.0g -> 8/19s 30.7g 1.8\~2.2ml/s
+- 2/18.0g -> 8/23s 30.5g 1.2\~1.8ml/s, repros
+  - eventually degased
