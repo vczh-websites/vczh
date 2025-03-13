@@ -1,5 +1,7 @@
 # Lido OG / V60 No.1
 
+100 coarser with Hario Switch
+
 ## Philocoffea 502
 
 - 1200/15g/92C, 4:6 35/90/135/180/225, lasts about 3 minutes in total, but it is better to drop half of the 5th yield
@@ -15,6 +17,8 @@
   - or split the last 3 yields in half, last yield 70C hold 1 minutes in switch
 
 # 1zpresso K-Ultra / Hario Switch
+
+## Counter Culture Decaf
 
 - 9.0/15g/85C, 4:6 drops at 2:15
   - smooth with a little tastes of sour, unnoticable sweetness in aftertaste
