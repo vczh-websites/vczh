@@ -27,3 +27,4 @@
 - (2025-3-16)
 - 4/18.0g -> 7/24s 36.1g 1.4\~1.9ml/s, a little bit under extraction but still fine
 - 3.5/18.0g -> 7/31s 35.9g 0.8\~1.6ml/s, repros, first sip has significantly less taste
+  - try 32g yield
