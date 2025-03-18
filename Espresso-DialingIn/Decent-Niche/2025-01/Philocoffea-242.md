@@ -28,3 +28,6 @@
 - 4/18.0g -> 7/24s 36.1g 1.4\~1.9ml/s, a little bit under extraction but still fine
 - 3.5/18.0g -> 7/31s 35.9g 0.8\~1.6ml/s, repros, first sip has significantly less taste
   - try 32g yield
+- 3.5/18.0g 31.5g -> 7/29s 31.9g 0.9\~1.4ml/s
+- 3.5/18.0g 32.5g -> 7/27s 33.2g 1.0\~1.6ml/s
+  - try 32g yield on settings
