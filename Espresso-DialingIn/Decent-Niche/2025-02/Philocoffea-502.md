@@ -15,4 +15,6 @@
   - 5.5 grind next time
 - 6/18.0g 27g -> 8/20s 27.8g 1.7\~2.0ml/s
   - without milk
-- 5.5/18.0g 27g -> 
+- (2025-3-17)
+- 5.5/18.0g 29.5g -> 7/20s 30.1g 1.6\~2.0ml/s
+  - must pay attention to milk temperature, for non-first frothing 20s is enough
