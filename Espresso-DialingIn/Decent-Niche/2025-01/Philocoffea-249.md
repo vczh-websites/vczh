@@ -43,3 +43,6 @@
 - 3/18.0g -> 8/19s 30.7g 1.8\~2.2ml/s
 - 2/18.0g -> 8/23s 30.5g 1.2\~1.8ml/s, repros
   - eventually degased
+- (2025-3-30)
+- 2/18.0g -> 7/22s 30.1g 1.1\~2.0ml/s, lost lemon taste leaving thickness and sweetness
+  - with ordinary milk
