@@ -18,3 +18,5 @@
 - (2025-3-17)
 - 5.5/18.0g 29.5g -> 7/20s 30.1g 1.6\~2.0ml/s
   - must pay attention to milk temperature, for non-first frothing 20s is enough
+- (2025-3-22)
+- 5.5/18.0g 29.5g -> 8/19s 30.3g 1.9\~2.1ml/s
