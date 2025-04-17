@@ -34,3 +34,8 @@
 - 6/18g -> 10/15s 36.2g \~3.7ml/s
 - (2025-4-6)
   - \~3.3ml/s
+
+2025-4-16 (roasted on 2025-4-2)
+
+- same recipe but sometimes lack of marshmallows, while not tastes more bitterness
+  - consider 89C
