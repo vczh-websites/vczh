@@ -8,4 +8,5 @@
 
 - 4/18g -> 6ml/s, too fast
 - 1.5/18g -> 7/18s 36.5g 2.4\~2.8ml/s, cherry, honey, a little harsh
-- 0.5/18g 27g -> 7/20s 27.3g 1.5\~2.0ml/s, balance
+- 0.5/18g 27g -> 7/20s 27.3g 1.5\~2.0ml/s, balance, some bitterness in aftertaste
+  - try 1 grind 90C
