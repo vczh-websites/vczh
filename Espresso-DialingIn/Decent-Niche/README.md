@@ -46,6 +46,9 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ### Uncategorized
 
+- Philocoffea (拉花交流)
+  - [244: Brazil Guariroba Floral Peaberry](./2025-03/Philocoffea-244.md)
+  - [251: Rwanda Dukunde Kawa Ruli 1704 Soil Project](./2025-03/Philocoffea-251.md) (weak tangerine, black tea, nut, very easy to over extraction)
 - [Tim Wendelboe Karogoto Espresso](./2025-02/Tim-Wendelboe-Karagoto-Espresso.md) (Sirui)
 - [WonderState Heartstrings](./2024-09/WonderState-Heartstrings.md) (Beanz)
 
@@ -66,9 +69,6 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ### Uncategorized
 
-- Philocoffea (拉花交流)
-  - [244: Brazil Guariroba Floral Peaberry](./2025-03/Philocoffea-244.md)
-  - [251: Rwanda Dukunde Kawa Ruli 1704 Soil Project](./2025-03/Philocoffea-251.md) (weak tangerine, black tea, nut, very easy to over extraction)
 - [Olympia Coffee Decaf Asterisk](./2024-12/Olympia-Coffee-Decaf-Asterisk.md) (Beanz) (almond, chocolate, consume 10 days after roasted)
 - [Doma Bella Luna Decaf](./2024-09/Doma-Bella-Luna-Decaf.md) (Beanz) (sweet)
 
