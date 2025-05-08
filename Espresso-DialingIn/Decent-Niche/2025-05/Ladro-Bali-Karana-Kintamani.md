@@ -16,4 +16,5 @@
 - (2025-5-8)
 - 1/18.0g 27g -> 8/15s 27.7g \~4ml/s, balance, some cherry
   - although flow rate is fast but actually good
-  - try 20g ground 30g yield
+- 1/20g 29.5g -> 8/18s 29.8g 2.0\~2.4ml/s, a little bit more bitter but feels like fermentation.
+  - try 19g -> 28.5g
