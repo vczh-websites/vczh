@@ -9,3 +9,6 @@
 - 1/18.0g -> 6/24s 37.2g 1.0\~2.2ml/s, earl grey, some sweetness in aftertaste 
   - try 20g ground
 - 1/20.0g 39g -> 6/26s 39.8g 0.7\~2.2ml/s, balanced
+  - -> 6/38s 39.5g 0.6\~1.2ml/s, 15g basket is wrong
+- 1/20.0g 39g -> 7/38s 40.1g 0.7\~2.3ml/s
+  - 18g basket
