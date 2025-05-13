@@ -17,4 +17,4 @@
 
 - 1/20.0g 37g -> 8/27s 37.9g 0.7\~2.3ml/s, added 20g water super sweet
   - without milk
-- 1/23.0g 39g -> 7/34s 39.8g 0.5\~2.0ml/s, added 20g water slightly sour
+- 1/23.0g 39g -> 7/34s 39.8g 0.5\~2.0ml/s, added 20g water slightly sour, still feel intense sweetness later
