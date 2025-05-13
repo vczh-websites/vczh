@@ -15,5 +15,5 @@
 
 ### 9~1bar/92C 20g basket
 
-- 1/20.0g 37g -> 8/27s 37.9g 0.7\~2.3ml/s
+- 1/20.0g 37g -> 8/27s 37.9g 0.7\~2.3ml/s, added 20g water super sweet
   - without milk
