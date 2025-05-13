@@ -12,3 +12,8 @@
   - -> 6/38s 39.5g 0.6\~1.2ml/s, 15g basket is wrong
 - 1/20.0g 39g -> 7/28s 40.1g 0.7\~2.3ml/s
   - 18g basket
+
+### 9~1bar/92C 20g basket
+
+- 1/20.0g 37g -> 8/27s 37.9g 0.7\~2.3ml/s
+  - without milk
