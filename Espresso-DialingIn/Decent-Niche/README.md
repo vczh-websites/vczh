@@ -22,6 +22,13 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
   - Take this log so that if I get any chance to install a new burr I should zeroing it again and see if I need to adjust it 1 larger back.
   - Tasted Philocoffea 152 and CGLE vermilion cardinal, all needs to grind 1.5 unit finer, but Niche Duo only adjusts by 1 unit, could because bean is releasing CO2.
 
+## Pending
+
+- Philocoffea (拉花交流)
+  - 233: roasted on 2025-5-5, frozen on 2025-5-15
+  - 253: roasted on 2025-5-7, frozen on 2025-5-15
+  - 257: roasted on 2025-5-5, frozen on 2025-5-15
+
 ## Highly Recommended
 
 - Philocoffea (拉花交流)
@@ -31,6 +38,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
   - [502: Ethiopia Sky Project Tim Natural](./2025-02/Philocoffea-502.md)
 - [Cafe Bach パナマ ドンパチ ティピカ](./2024-10/Cafe-Bach-Panama-Donpachi-Teppika.md) (拉花交流)
 - [Methodical Repose Decaf](./2024-10/Methodical-Repose-Decaf.md) (Beanz) (cranberry, somewhat coconut, strong caramel, consume 2 weeks after roasted)
+- [Archer Ethiopia Alo Village Washed Peaberry](./2025-05/Archer-Alo-Washed-Peaberry.md) (拉花交流) (raw espresso)
 
 ## Ordinary
 

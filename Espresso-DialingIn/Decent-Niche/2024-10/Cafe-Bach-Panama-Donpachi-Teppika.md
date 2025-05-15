@@ -37,7 +37,7 @@
 ### 6bar/92C on 18g basket
 
 - 7.5/20.0g -> 7/17s 40.1g 3.2\~3.3ml/s, bitterness emphasized while flavor unchanged, expected
-- 7.5/20.0g -> 8/13s 30.6g 4ml/s, obvious sweet in actertaste but comes later, flavor emphasized but a little bit bitter, is it channeling?
+- 7.5/20.0g -> 8/13s 30.6g 4ml/s, obvious sweet in aftertaste but comes later, flavor emphasized but a little bit bitter, is it channeling?
   - why 4ml/s? repeat it tomorrow
   - repeat also with 20oz basket, 18oz might make channeling easier
   - repeat canceled, degas proven
