@@ -27,3 +27,10 @@
 - 9.0/15g/85C, 4:6 drops the last yield, open after water filled
   - balanced acidity, sweet, smooth, honey in aftertaste
   - yes!
+
+# 1zpresso K-Ultra / V60 No.1
+
+## Counter Culture Decaf
+
+- 7.5/15g/90C, 4:6
+  - after 6 weeks
