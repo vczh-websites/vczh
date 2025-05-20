@@ -12,3 +12,6 @@
 - 6.5/18.0g -> 8/17s 36.5g 2.6\~2.9ml/s
   - without milk: strong acidity, sweetness, apple juice
   - with mlik: very sweet, milk tea, herbal
+- 6/18.0g -> 8/20s 36.5g 2.0\~2.5ml/s
+  - without milk: just begin to introduce a little bitterness, strong sweetness
+  - with milk: even more sweet
