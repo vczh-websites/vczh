@@ -19,3 +19,4 @@
 > Acidity almost not tastable with milk,
 next day try to do espresso only,
 try 7 grind, and coarser with 1:2.5 ~ 1:3 yield.
+Also explore 1:1.5 yield with finer grind with and without milk.
