@@ -15,3 +15,7 @@
 - 6/18.0g -> 8/20s 36.5g 2.0\~2.5ml/s
   - without milk: just begin to introduce a little bitterness, strong sweetness
   - with milk: even more sweet
+
+> Acidity almost not tastable with milk,
+next day try to do espresso only,
+try 7 grind, and coarser with 1:2.5 ~ 1:3 yield.
