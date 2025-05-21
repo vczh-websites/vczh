@@ -57,6 +57,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 - Philocoffea (拉花交流)
   - [244: Brazil Guariroba Floral Peaberry](./2025-03/Philocoffea-244.md)
   - [251: Rwanda Dukunde Kawa Ruli 1704 Soil Project](./2025-03/Philocoffea-251.md) (weak tangerine, black tea, nut, very easy to over extraction)
+  - [257: Colombia Granito De Pro Chiroso](./2025-05/Philocoffea-257.md)
 - [Ladro Bali Karana Kintamani](./2025-05/Ladro-Bali-Karana-Kintamani.md) (Local)
 - [Stumptown Homestead](./2025-04/Stumptown-Homestead.md) (Target)
 - [Tim Wendelboe Karogoto Espresso](./2025-02/Tim-Wendelboe-Karagoto-Espresso.md) (Sirui)
