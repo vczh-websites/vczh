@@ -20,3 +20,14 @@
 next day try to do espresso only,
 try 7 grind, and coarser with 1:2.5 ~ 1:3 yield.
 Also explore 1:1.5 yield with finer grind with and without milk.
+
+### 9~1bar/92C 35.5g without milk
+
+- 7/18.0g -> 8/15s 36.2g \~4ml/s
+  - could be degased, 6 grind could be better now
+- 6/18.0g -> 7/18s 35.8g 2.2\~2.7ml/s, sweet, but strong bitterness in aftertaste
+
+### 6~1bar/92C without milk
+
+- 8/18.0g 44g -> 9/16s 44.3g 5.8\~5.6bar \~5.2ml/s, strong acidity, obvious honey, some sweetness and less bitterness in aftertaste than last cup
+  - try 36g yield
