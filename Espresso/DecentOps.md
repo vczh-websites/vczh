@@ -13,15 +13,15 @@
   - Flush the blind basket
   - Rinse x2
 - with Urnex Cafiza cleaning tablet
-  - dissolve one tablet in 20oz jar using 16oz cold water
+  - dissolve one tablet in 20oz pitcher using 16oz cold water
   - 60 seconds steaming in water
-  - Flush the jar
+  - Flush the pitcher
   - 60 seconds steaming in water
 
 ## Every 6 months
 
 - Dissolve ~250g citrus acid in water tank
-  - Point steam wand into a jar
+  - Point steam wand into a pitcher
   - Settings -> Machine -> Descale
   - Descale x3
 - Flush the water tank and refill

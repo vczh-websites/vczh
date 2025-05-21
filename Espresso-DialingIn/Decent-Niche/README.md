@@ -129,16 +129,16 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 https://www.youtube.com/watch?v=6_eyKzs_GU4
 
-Tilt jar,
+Tilt pitcher,
 ensure steam hole close to side,
 ensure milk just cover the hole,
 start and adjust the distance quickly.
-At \~12s, raise the jar, stop at \~22s.
+At \~12s, raise the pitcher, stop at \~22s.
 
 Swirl the milk somewhat but not too gentally.
 
 Don't froth too thick,
-pull foam from 12oz to 20oz jar before latte art.
+pull foam from 12oz to 20oz pitcher before latte art.
 
 When doing 7oz in deeper cup,
 stop at \~25s,
