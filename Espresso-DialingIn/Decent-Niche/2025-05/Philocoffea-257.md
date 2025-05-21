@@ -31,3 +31,4 @@ Also explore 1:1.5 yield with finer grind with and without milk.
 
 - 8/18.0g 44g -> 9/16s 44.3g 5.8\~5.6bar \~5.2ml/s, strong acidity, obvious honey, some sweetness and less bitterness in aftertaste than last cup
   - try 7.5grind 36g yield
+  - try 7grind with flair go
