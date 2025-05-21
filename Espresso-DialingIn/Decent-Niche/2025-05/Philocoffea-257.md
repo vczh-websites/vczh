@@ -30,5 +30,8 @@ Also explore 1:1.5 yield with finer grind with and without milk.
 ### 6~1bar/92C without milk
 
 - 8/18.0g 44g -> 9/16s 44.3g 5.8\~5.6bar \~5.2ml/s, strong acidity, obvious honey, some sweetness and less bitterness in aftertaste than last cup
-  - try 7.5grind 36g yield
-  - try 7grind with flair go
+
+> When >= 7 grind espresso ejects all over the machine,
+this could indicate a sign of channeling,
+considering the strong acidity with bitterness in aftertaste,
+might need to try 6 grind 1:1.5 yield
