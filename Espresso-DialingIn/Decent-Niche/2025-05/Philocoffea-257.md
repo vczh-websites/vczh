@@ -34,4 +34,4 @@ Also explore 1:1.5 yield with finer grind with and without milk.
 > When >= 7 grind espresso ejects all over the machine,
 this could indicate a sign of channeling,
 considering the strong acidity with bitterness in aftertaste,
-might need to try 6 grind 1:1.5 yield
+might need to try <6 grind 1:1.5 yield, or lower temperature e.g. 85C
