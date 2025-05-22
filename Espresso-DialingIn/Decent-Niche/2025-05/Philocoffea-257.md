@@ -40,3 +40,10 @@ might need to try <6 grind 1:1.5 yield, or lower temperature e.g. 85C
 
 - 6/18.0g -> 7/18s 36.0g 2.4\~2.8ml/s, strong but no over acidity, sweet, no bitterness in actertaste
   - no sign of channeling
+
+### 9~1bar/92C without milk
+
+- 3.5/16.0g 29g -> 29.7g 7/24s 0.9\~1.8ml/s, much more sour, but bitterness in aftertaste
+  - doesn't taste like channeling
+- 2/16.0g 29g -> 30.0g 7/35s 0.4\~1.3ml/s, balance, much less bitterness in aftertaste
+  - try 1.5 next day
