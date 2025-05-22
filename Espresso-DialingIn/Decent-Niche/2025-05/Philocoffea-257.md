@@ -38,4 +38,5 @@ might need to try <6 grind 1:1.5 yield, or lower temperature e.g. 85C
 
 ### 6~1bar/87C without milk
 
-- 6/18.0g ->
+- 6/18.0g -> 7/18s 36.0g 2.4\~2.8ml/s, strong but no over acidity, sweet, no bitterness in actertaste
+  - no sign of channeling
