@@ -45,5 +45,5 @@ might need to try <6 grind 1:1.5 yield, or lower temperature e.g. 85C
 
 - 3.5/16.0g 29g -> 29.7g 7/24s 0.9\~1.8ml/s, much more sour, but bitterness in aftertaste
   - doesn't taste like channeling
-- 2/16.0g 29g -> 30.0g 7/35s 0.4\~1.3ml/s, balance, sweetness with a little bitterness, much less bitterness in aftertaste
+- 2/16.0g 29g -> 30.0g 7/35s 0.4\~1.3ml/s, balance, sweetness with a little bitterness, much less bitterness in aftertaste with aroma from throat
   - try 1.5 next day
