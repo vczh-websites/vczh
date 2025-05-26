@@ -10,3 +10,4 @@
 - 1.5/20.0g 35.5g -> 36.3g, 7/16s 3.2\~3.8ml/s, even more sour
   - forgot to set 40g yield
 - 0.5/20.0g 39.5g -> 39.8g 6/24s 1.3\~2.2ml/s, much more balanced, very sweet
+- 0.5/20.0g 59.0g -> 59.6g 7/29s 1.6\~2.3\~2.8\~2.7ml/s, not sour at all, sweet comes up slow but strong
