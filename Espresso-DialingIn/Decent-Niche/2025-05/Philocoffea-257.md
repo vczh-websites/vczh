@@ -38,6 +38,7 @@ might need to try <6 grind 1:1.5 yield, or lower temperature e.g. 85C
 
 ### 6~1bar/87C without milk
 
+- (2025-5-22)
 - 6/18.0g -> 7/18s 36.0g 2.4\~2.8ml/s, strong but no over acidity, sweet, no bitterness in actertaste
   - no sign of channeling
 
@@ -47,3 +48,7 @@ might need to try <6 grind 1:1.5 yield, or lower temperature e.g. 85C
   - doesn't taste like channeling
 - 2/16.0g 29g -> 30.0g 7/35s 0.4\~1.3ml/s, balance, sweetness with a little bitterness, much less bitterness in aftertaste with aroma from throat
   - try 1.5 next day
+- (2025-5-25)
+- 1.75/16.0g 29g -> 29.9g 7/35s 0.4\~1.2ml/s, less bitterness in aftertaste
+  - tamp with springless
+  - grind to 40s next time, but need to wait 2 weeks of equivalent time
