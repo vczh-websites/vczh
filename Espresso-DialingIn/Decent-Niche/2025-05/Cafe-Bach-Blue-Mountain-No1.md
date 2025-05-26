@@ -2,6 +2,8 @@
 
 ## Decent Pro / Niche Duo
 
+**balanced acidity with strong sweetness and tea like**
+
 [Previous](../2024-10/Cafe-Bach-Blue-Mountain-No1.md)
 
 2025-5-26 (roasted on probably 2025-5-5)
