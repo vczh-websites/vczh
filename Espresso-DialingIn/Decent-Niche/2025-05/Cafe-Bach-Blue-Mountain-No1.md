@@ -2,6 +2,8 @@
 
 ## Decent Pro / Niche Duo
 
+[Previous](../2024-10/Cafe-Bach-Blue-Mountain-No1.md)
+
 2025-5-26 (roasted on probably 2025-5-5)
 
 ### 9bar/93C without milk
