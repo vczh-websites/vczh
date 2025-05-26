@@ -36,7 +36,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
   - [242: Colombia Mananitas Chiroso Washed](./2025-01/Philocoffea-242.md)
   - [249: Colombia Geisha Washed](./2025-01/Philocoffea-249.md) (lemon, apricot, black tea, sweet in aftertaste, 4 weeks after roasted)
   - [502: Ethiopia Sky Project Tim Natural](./2025-02/Philocoffea-502.md)
-- [Cafe Bach パナマ ドンパチ ティピカ](./2024-10/Cafe-Bach-Panama-Donpachi-Teppika.md) (拉花交流)
+- [Cafe Bach Blue Mountain No.1](./2025-05/Cafe-Bach-Blue-Mountain-No1.md) (拉花交流) (without milk, balanced acidity with strong sweetness and tea like)
 - [Methodical Repose Decaf](./2024-10/Methodical-Repose-Decaf.md) (Beanz) (cranberry, somewhat coconut, strong caramel, consume 2 weeks after roasted)
 - [Archer Ethiopia Alo Village Washed Peaberry](./2025-05/Archer-Alo-Washed-Peaberry.md) (拉花交流) (raw espresso)
 
@@ -48,8 +48,8 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
   - [152: Ethiopia Konga Natural](./2024-11/Philocoffea-152.md) (拉花交流) (milk tea, smoky)
   - [229: Costa Rica Don Mayo La Loma Yellow Honey](./2024-12/Philocoffea-229.md)
   - [237: El Salvador Santa Rosa Pacamara Natural](./2024-12/Philocoffea-237.md)
+- [Cafe Bach パナマ ドンパチ ティピカ](./2024-10/Cafe-Bach-Panama-Donpachi-Teppika.md) (拉花交流)
 - [Methodical Honduras Walter Bautista](./2024-12/Methodical-Honduras.md) (Beanz)
-- [Cafe Bach Blue Mountain No.1](./2024-10/Cafe-Bach-Blue-Mountain-No1.md) (拉花交流)
 - [Iconik Iconoclast Blend](./2024-09/Iconik-Iconoclast-Blend.md) (Beanz) (very sweet, fruity)
 
 ### Uncategorized
