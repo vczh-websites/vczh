@@ -15,3 +15,13 @@
   - forgot to set 40g yield
 - 0.5/20.0g 39.5g -> 39.8g 6/24s 1.3\~2.2ml/s, much more balanced, very sweet
 - 0.5/20.0g 59.0g -> 59.6g 7/29s 1.6\~2.3\~2.8\~2.7ml/s, not sour at all, good acidity, sweet comes up slow but strong, tea like just as pour over
+  - (2025-5-27)
+  - -> 59.5g 7/32s 1.3\~2.3ml/s, more bitterness
+
+### 9bar/94C without milk
+
+- 0.5/20.0g 49.5g -> 49.8g 7/28s 1.4\~2.3ml/s, no much changes
+
+### 9bar/92C without milk
+
+- 0.5/20.0g 49.5g -> 49.8g 7/27s 1.4\~2.5ml/s, less bitterness more tea like and honey
