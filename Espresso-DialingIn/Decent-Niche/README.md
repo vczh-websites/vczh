@@ -27,7 +27,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 - Philocoffea (拉花交流)
   - 233: roasted on 2025-5-5, frozen on 2025-5-15
   - 253: roasted on 2025-5-7, frozen on 2025-5-15
-  - 257: roasted on 2025-5-5, frozen on 2025-5-15
+  - 257: roasted on 2025-5-5, frozen on 2025-5-15, defrosted on 2025-5-29
 
 ## Highly Recommended
 
@@ -35,6 +35,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
   - [231: Ethiopia Bona Zuria Washed](./2025-03/Philocoffea-231.md) (juicy, honey, tea like)
   - [242: Colombia Mananitas Chiroso Washed](./2025-01/Philocoffea-242.md)
   - [249: Colombia Geisha Washed](./2025-01/Philocoffea-249.md) (lemon, apricot, black tea, sweet in aftertaste, 4 weeks after roasted)
+  - [257: Colombia Granito De Pro Chiroso](./2025-06/Philocoffea-257.md)
   - [502: Ethiopia Sky Project Tim Natural](./2025-02/Philocoffea-502.md)
 - [Cafe Bach Blue Mountain No.1](./2025-05/Cafe-Bach-Blue-Mountain-No1.md) (拉花交流) (without milk, balanced acidity with strong sweetness and tea like)
 - [Methodical Repose Decaf](./2024-10/Methodical-Repose-Decaf.md) (Beanz) (cranberry, somewhat coconut, strong caramel, consume 2 weeks after roasted)
@@ -57,7 +58,6 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 - Philocoffea (拉花交流)
   - [244: Brazil Guariroba Floral Peaberry](./2025-03/Philocoffea-244.md)
   - [251: Rwanda Dukunde Kawa Ruli 1704 Soil Project](./2025-03/Philocoffea-251.md) (weak tangerine, black tea, nut, very easy to over extraction)
-  - [257: Colombia Granito De Pro Chiroso](./2025-05/Philocoffea-257.md)
 - [Ladro Bali Karana Kintamani](./2025-05/Ladro-Bali-Karana-Kintamani.md) (Local)
 - [Stumptown Homestead](./2025-04/Stumptown-Homestead.md) (Target)
 - [Tim Wendelboe Karogoto Espresso](./2025-02/Tim-Wendelboe-Karagoto-Espresso.md) (Sirui)
