@@ -13,6 +13,14 @@
   - -> 7/34s 30.0g 0.4\~1.2ml/s
   - 93C 31.5g -> 7/40s 32.5g 0.3\~1.2ml/s, more sweetness, a little bitterness in aftertaste
 
-### 9~1bar/93C without milk
+### 9~1bar/93C without milk 15g basket
 
-- 2/16.0g 29g ->
+- (2025-6-1)
+- 2/16.0g 29g -> 6/39s 29.5g 0.2\~1.2ml/s
+
+### 9~1bar/92C without milk 15g basket
+
+- 2/16.0g 32g -> 6/44s 32.4g 0.2\~1.2ml/s, balanced
+- 2/16.0g 30.5g -> 6/32s 32.2g 0.5\~1.4ml/s
+  - puck shows pressure point is not in the oerfect center, could be sign of channeling
+  - but still tastes good, try again tomorrow
