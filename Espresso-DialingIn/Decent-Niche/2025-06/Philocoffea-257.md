@@ -11,9 +11,8 @@
 - 2/16.0g 29g -> 7/34s 29.9g 0.4\~1.3ml/s, clean acidity, no strong sweetness, very little bitterness in aftertaste, overall balance
   - do this configuration everyday to test the effect from frozening
   - -> 7/34s 30.0g 0.4\~1.2ml/s
-  - 93C 31.5g -> 7/40s 32.5g 0.3\~1.2ml/s, more sweetness
-    - yes!
+  - 93C 31.5g -> 7/40s 32.5g 0.3\~1.2ml/s, more sweetness, a little bitterness in aftertaste
 
 ### 9~1bar/93C without milk
 
-- 2/16.0g 31.5g ->
+- 2/16.0g 29g ->
