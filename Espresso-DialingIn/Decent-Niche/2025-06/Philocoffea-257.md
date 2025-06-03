@@ -24,3 +24,9 @@
 - 2/16.0g 30.5g -> 6/32s 32.2g 0.5\~1.4ml/s
   - puck shows pressure point is not in the oerfect center, could be sign of channeling
   - but still tastes good, try again tomorrow
+
+### 9~1bar/93C with ice milk 15g basket
+
+- (2025-6-2)
+  - beans become very aromatic even before grinding
+- 2/16.0g 32g -> 8/40s 32.5g 0.3\~1.2ml/s, stone fruit, black chocolate
