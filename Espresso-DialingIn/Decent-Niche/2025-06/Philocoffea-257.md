@@ -28,5 +28,5 @@
 ### 9~1bar/93C with ice milk 15g basket
 
 - (2025-6-2)
-  - beans become very aromatic even before grinding
+  - beans become very aromatic even before grinding, 12 days later than the previous bag
 - 2/16.0g 32g -> 8/40s 32.5g 0.3\~1.2ml/s, stone fruit, black chocolate
