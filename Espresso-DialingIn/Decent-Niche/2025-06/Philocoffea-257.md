@@ -30,3 +30,10 @@
 - (2025-6-2)
   - beans become very aromatic even before grinding, 12 days later than the previous bag
 - 2/16.0g 32g -> 8/40s 32.5g 0.3\~1.2ml/s, stone fruit, black chocolate
+
+### 9~1bar/92C without milk 15g basket
+
+- 2/16.0g 30.5g -> 6/36s 30.9g 0.3\~1.2ml/s
+  - perfect!
+  - -> 6/35s 30.8g 0.3\~1.3ml/s
+  - -> 6/39s 30.9g 0.2\~1.3ml/s
