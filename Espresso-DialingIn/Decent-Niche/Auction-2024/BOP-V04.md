@@ -124,3 +124,11 @@
 - (2025-1-23)
 - 2/18.0g 27g -> 7/21s 27.8g 1.2\~2.3ml/s, tastes like under extraction
   - degased? remaining beans kept for pour over
+
+2025-5-6 (roasted in 2025-5-26)
+
+### 9~1bar/94C
+
+- 2/18.0g -> 7/15s 36.9g 3.5\~4.2ml/s, sour but also honey
+- 0.5/18.0g -> 6/24s 36.0g 1.0\~2.2ml/s, more balance
+- 0.5/18.0g 53.0g -> 6/32s 54.0g 0.9\~2.2\~2.6ml/s, more clarity, less honey but strong sweetness in aftertaste
