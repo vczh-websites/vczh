@@ -34,3 +34,11 @@
 
 - 7.5/15g/90C, 4:6
   - after 6 weeks
+
+# Ice coffee with hario switch
+
+- 20g ground add 60g water
+- blooming for 1 minite
+- release and add 140g water (1:10)
+- blooming for another 1 minute
+- pour into ice
