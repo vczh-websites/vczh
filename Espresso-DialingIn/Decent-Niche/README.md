@@ -26,8 +26,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 - Philocoffea (拉花交流)
   - 233: roasted on 2025-5-5, frozen on 2025-5-15
-  - 253: roasted on 2025-5-7, frozen on 2025-5-15
-  - 257: roasted on 2025-5-5, frozen on 2025-5-15, defrosted on 2025-5-29, defrosted on 2025-6-9
+  - 253: roasted on 2025-5-7, frozen on 2025-5-15, defrosted on 2025-6-20
 - Alo Natural Peaberry: roasted on 2005-5-23, frozen on 2005-5-30, defrosted on 2025-6-17
 
 ## Highly Recommended
