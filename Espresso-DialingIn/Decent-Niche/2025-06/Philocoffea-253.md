@@ -14,3 +14,4 @@
 - 2.0/20.0g 39.0g -> 7/32s 39.7g 0.6\~2.2ml/s
   - use 20g basket
   - need milk
+  - try 2.5 or 3.0 grind keep 40g yield
