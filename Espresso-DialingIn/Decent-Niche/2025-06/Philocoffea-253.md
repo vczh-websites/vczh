@@ -28,4 +28,4 @@
 ### 6~1bar/92C without milk
 
 - 4.0/20.0g 39.0g -> 7/23s 39.8g 1.5\~2.7ml/s, balanced citrus and tea like, sweetness in aftertaste
-  - 4 shots in about 100g milk with ice, still taste good acidity
+  - 4 shots in gussed 150g milk with ice, still taste good acidity
