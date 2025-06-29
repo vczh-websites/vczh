@@ -64,6 +64,14 @@ To emphasize flavor and increase thickness, try fine grind / low pressure / medi
 
 Need high pressure and temperature enough to achieve a slow flow rate, only grinding finely may not enough.
 
+### Raw espresso
+
+Try 1:3 yield withiut extra hot water. Adding water could emohasize the bitterness. Condensed bitterness actually tastes a little bit sweet.
+
+### Dirty
+
+Less yield thab with frothy milk, 4 shots with 1:2 milk plus ice. Milk could make acidity less clear.
+
 ### Puck Prep (needs experiments)
 
 https://www.youtube.com/watch?v=4dRYw8yl_dg
