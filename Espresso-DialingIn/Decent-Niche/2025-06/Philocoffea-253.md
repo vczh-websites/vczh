@@ -22,3 +22,9 @@
   - (2025-6-27)
   - -> 8/19s 40.2g 2.6\~3.3ml/s
 - 3.0/20.0g 39.0g -> 8/23s 40.7g 1.7\~2.7ml/s, citrus too much
+
+2025-6-28 (roasted on 2025-5-7, frozen on 2025-5-15, defrosted on 2025-6-27)
+
+### 6~1bar/92C without milk
+
+- 4.0/20.0g 39.0g -> 
