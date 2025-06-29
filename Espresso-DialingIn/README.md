@@ -81,6 +81,7 @@ https://www.youtube.com/watch?v=4dRYw8yl_dg
   - Decrease the space between the puck and the shower screen (by using smaller basket).
 - Looser puck increases characteristic.
 - Thicker puck increases body (by using taper basket).
+- Tamping with heavier force makes almost difference than with 25lb.
 
 https://www.youtube.com/watch?v=1qyFDbkRrOA
 
