@@ -28,5 +28,10 @@
 ### 6~1bar/92C without milk
 
 - 4.0/20.0g 39.0g -> 7/23s 39.8g 1.5\~2.7ml/s, balanced citrus and tea like, sweetness in aftertaste
-  - 4 shots in gussed 150g milk with ice, still taste good acidity
+  - 4 shots in guessed 150g milk with ice, still taste good acidity
   - replicate next time but 35g even 30g each yield
+- (2025-6-29)
+- 4.0/20.0g 34.0g
+  - -> 7/29s 34.9g 1.9\~3.0ml/s, 2x repros
+  - full cup of ice not enough space for milk, use half ice tomorrow
+  - clear citrus and tea like
