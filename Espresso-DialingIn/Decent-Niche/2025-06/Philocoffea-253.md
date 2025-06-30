@@ -35,3 +35,7 @@
   - -> 7/29s 34.9g 1.9\~3.0ml/s, 2x repros
   - full cup of ice not enough space for milk, use half ice tomorrow
   - clear citrus and tea like
+- 3.0/20.0g 34.0g x2
+  - -> 9/23s 35.2g 1.6\~2.7ml/s
+  - -> 8/24s 35.3g 1.1\~2.4ml/s
+  - half cup ic with 3/4 milk, clarity, sweetness comes from coffee
