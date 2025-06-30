@@ -39,3 +39,4 @@
   - -> 9/23s 35.2g 1.6\~2.7ml/s
   - -> 8/24s 35.3g 1.1\~2.4ml/s
   - half cup ic with 3/4 milk, clarity, sweetness comes from coffee
+- second cup 91C tomorrow and check if same flow rate is produced
