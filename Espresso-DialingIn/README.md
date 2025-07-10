@@ -66,7 +66,20 @@ Need high pressure and temperature enough to achieve a slow flow rate, only grin
 
 ### Raw espresso
 
-Try 1:3 yield withiut extra hot water. Adding water could emohasize the bitterness. Condensed bitterness actually tastes a little bit sweet.
+Try 1:3 yield without extra hot water. Adding water could emohasize the bitterness. Condensed bitterness actually tastes a little bit sweet.
+
+To mix with milk for latte or dirty, espresso needs to extract less than when drinking pure espresso.
+
+From under to over extraction, the raw espresso could taste like:
+
+- sour
+- smooth, creamy, clarity and not so weet
+- bitter
+- very sweet like condensed syrup
+- watery
+- over extracted pour over
+
+"Smooth" will be the best espresso for mixing with milk.
 
 ### Dirty
 
