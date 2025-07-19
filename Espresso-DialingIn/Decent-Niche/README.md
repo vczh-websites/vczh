@@ -25,9 +25,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 ## Pending
 
 - Philocoffea (拉花交流)
-  - 233: roasted on 2025-5-5, frozen on 2025-5-15
-  - 253: roasted on 2025-5-7, frozen on 2025-5-15, defrosted on 2025-6-20/2025-6-27
-- Alo Natural Peaberry: roasted on 2005-5-23, frozen on 2005-5-30, defrosted on 2025-6-17
+  - 233: roasted on 2025-5-5, frozen on 2025-5-15, defrosted on 2025-7-16
 
 ## Highly Recommended
 
@@ -56,6 +54,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 ### Uncategorized
 
 - Philocoffea (拉花交流)
+  - [233: Ethiopia Mewa Washed](./2025-07/Philocoffea-233.md)
   - [244: Brazil Guariroba Floral Peaberry](./2025-03/Philocoffea-244.md)
   - [251: Rwanda Dukunde Kawa Ruli 1704 Soil Project](./2025-03/Philocoffea-251.md) (weak tangerine, black tea, nut, very easy to over extraction)
 - [Ladro Bali Karana Kintamani](./2025-05/Ladro-Bali-Karana-Kintamani.md) (Local)
