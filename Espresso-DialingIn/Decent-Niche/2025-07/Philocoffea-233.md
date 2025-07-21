@@ -13,3 +13,10 @@
     - -> 8/27s 34.8g 1.0\~2.0ml/s
     - -> 8/25s 35.1g 1.1\~2.1ml/s
   - tomorrow, try 4 and 4.5 grind and find the most balanced one, following by 4 shots dirty
+- (2025-7-20)
+- 4/20.0g 39g -> 8/23s 1.5\~2.2ml/s, a little bit over extraction, could due to 40g yield
+  - 34g -> 8/22s 34.5g 1.7\~2.1ml/s
+  - 34g -> 8/21s 34.7g 1.6\~2.3ml/s
+  - flavor a little bit emphasized
+
+2025-7-? (roasted on 2025-5-5, frozen on 2025-5-15, defrosted on 2025-7-20)
