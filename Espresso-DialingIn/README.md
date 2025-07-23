@@ -80,10 +80,12 @@ From under to over extraction, the raw espresso could taste like:
 - over extracted pour over
 
 "Smooth" will be the best espresso for mixing with milk.
+But if there still some bitterness in aftertaste long run, it may still over extracted.
 
 ### Dirty
 
-Less yield thab with frothy milk, 4 shots with 1:2 milk plus ice. Milk could make acidity less clear.
+Less yield than with frothy milk.
+4 shots raw expresso (in raw espresso standard) with 1:2 ~ 1:3 milk plus ice. Milk could make acidity less clear. 
 
 ### Puck Prep (needs experiments)
 
