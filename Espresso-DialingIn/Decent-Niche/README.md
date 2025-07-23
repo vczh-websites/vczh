@@ -24,9 +24,6 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 
 ## Pending
 
-- Philocoffea (拉花交流)
-  - 233: roasted on 2025-5-5, frozen on 2025-5-15, defrosted on 2025-7-16
-
 ## Highly Recommended
 
 - Philocoffea (拉花交流)
