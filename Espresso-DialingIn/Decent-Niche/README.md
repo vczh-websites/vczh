@@ -44,6 +44,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
   - [152: Ethiopia Konga Natural](./2024-11/Philocoffea-152.md) (拉花交流) (milk tea, smoky)
   - [229: Costa Rica Don Mayo La Loma Yellow Honey](./2024-12/Philocoffea-229.md)
   - [237: El Salvador Santa Rosa Pacamara Natural](./2024-12/Philocoffea-237.md)
+  - [233: Ethiopia Mewa Washed](./2025-07/Philocoffea-233.md)
 - [Cafe Bach パナマ ドンパチ ティピカ](./2024-10/Cafe-Bach-Panama-Donpachi-Teppika.md) (拉花交流)
 - [Methodical Honduras Walter Bautista](./2024-12/Methodical-Honduras.md) (Beanz)
 - [Iconik Iconoclast Blend](./2024-09/Iconik-Iconoclast-Blend.md) (Beanz) (very sweet, fruity)
@@ -51,7 +52,6 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 ### Uncategorized
 
 - Philocoffea (拉花交流)
-  - [233: Ethiopia Mewa Washed](./2025-07/Philocoffea-233.md)
   - [244: Brazil Guariroba Floral Peaberry](./2025-03/Philocoffea-244.md)
   - [251: Rwanda Dukunde Kawa Ruli 1704 Soil Project](./2025-03/Philocoffea-251.md) (weak tangerine, black tea, nut, very easy to over extraction)
 - [Ladro Bali Karana Kintamani](./2025-05/Ladro-Bali-Karana-Kintamani.md) (Local)
