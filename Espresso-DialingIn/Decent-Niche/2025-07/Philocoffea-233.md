@@ -19,4 +19,8 @@
   - 34g -> 8/21s 34.7g 1.6\~2.3ml/s
   - flavor a little bit emphasized
 
-2025-7-? (roasted on 2025-5-5, frozen on 2025-5-15, defrosted on 2025-7-20)
+2025-7-22 (roasted on 2025-5-5, frozen on 2025-5-15, defrosted on 2025-7-20)
+
+- 4.5/20.0g 34g -> 7/20s 34.9g 2.0\~2.3ml/s, clarity, flavor emphasized, literally no bitterness in actertaste
+  - -> 7/22s 34.6g 1.4\~2.1ml/s, 1:3 milk 4 shot dirty, sweetness, apricot, tea-like
+  - -> 8/21s 34.7g 1.8\~2.3ml/s, with frothed milk, tastes like under extraction
