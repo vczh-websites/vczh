@@ -7,7 +7,7 @@
 ## Highly Recommended
 
 - Philocoffea
-  - 231
+  - 231, 257
   - 242, 249, 502 (slow degrade)
 - Cafe Bach パナマ ドンパチ ティピカ
 - Methodical Repose Decaf
