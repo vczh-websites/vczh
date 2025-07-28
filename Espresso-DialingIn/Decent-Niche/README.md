@@ -58,6 +58,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 - [Stumptown Homestead](./2025-04/Stumptown-Homestead.md) (Target)
 - [Tim Wendelboe Karogoto Espresso](./2025-02/Tim-Wendelboe-Karagoto-Espresso.md) (Sirui)
 - [WonderState Heartstrings](./2024-09/WonderState-Heartstrings.md) (Beanz)
+- [Intelligentsia Black Cat](./2025-07/Intelligentsia-Black-Cat.md) (Target)
 
 ### No!
 
