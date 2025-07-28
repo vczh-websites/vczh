@@ -9,3 +9,4 @@
 - 3.5/20.0g 29.0g -> 8/20s 29.8g 1.8\~2.0ml/s, strobg flavor, honey, orange peel
   - -> 9/17s 30.3g \~2.3/s, smooth, the best
   - -> 8/19s 29.4g 1.9\~2.1ml/s, 4 shots dirty, good
+  - try 3 grind dirty
