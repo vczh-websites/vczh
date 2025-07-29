@@ -28,3 +28,6 @@
 - 4/20.0g 34g, 4.5 grind could still be better
   - -> 7/22s 34.5g 1.5\~2.2ml/s
   - -> 8/22s 34.4g 1.5\~2.1ml/s
+  - (2025-7-29)
+  - -> 7/19s 34.2g 1.8\~2.3ml/s
+  - -> repros
