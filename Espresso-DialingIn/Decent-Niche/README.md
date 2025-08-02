@@ -29,6 +29,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
   - 260, roasted on 2025-7-20, frozen on 2025-8-2
   - 261, roasted on 2025-7-25, frozen on 2025-8-2
 - Archer Ethiopia Alo Village Natural Peaberry
+  - roasted on 2025-7-23, frozen on 2025-8-2
 
 ## Highly Recommended
 
