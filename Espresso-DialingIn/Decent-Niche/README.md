@@ -38,6 +38,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
   - [242: Colombia Mananitas Chiroso Washed](./2025-01/Philocoffea-242.md)
   - [249: Colombia Geisha Washed](./2025-01/Philocoffea-249.md) (lemon, apricot, black tea, sweet in aftertaste, 4 weeks after roasted)
   - [257: Colombia Granito De Pro Chiroso](./2025-06/Philocoffea-257.md)
+  - [267: Colombia Lusitania Anaerobic Natural](./2025-08/Philocoffea-267.md)
   - [502: Ethiopia Sky Project Tim Natural](./2025-02/Philocoffea-502.md)
 - [Cafe Bach Blue Mountain No.1](./2025-05/Cafe-Bach-Blue-Mountain-No1.md) (拉花交流) (without milk, balanced acidity with strong sweetness and tea like)
 - [Methodical Repose Decaf](./2024-10/Methodical-Repose-Decaf.md) (Beanz) (cranberry, somewhat coconut, strong caramel, consume 2 weeks after roasted)
