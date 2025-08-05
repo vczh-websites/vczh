@@ -18,6 +18,7 @@
   - -> 7/26s 29.3g 1.0\~1.4ml/s
   - dirty a little bitterness
 - (2025-8-4)
-- 4.5/20.0g 29.0g ->
-- 5/20.0g 29.0g ->
-  - ->
+- 4.5/20.0g 29.0g -> 7/25s 29.5g 1.0\~1.5ml/s, obvious bitterness but also strong dried cherry
+  - ~20 minutes after starting the machine
+  - 5 -> 7/24s 29.3g 1.1\~1.7ml/s
+  - 5 -> 8/21s 29.4g 1.5\~2.0ml/s
