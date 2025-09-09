@@ -25,7 +25,7 @@ Sometimes the tablet double clicks, don't press the left side of the OK button a
 ## Pending
 
 - Philocoffea
-  - 267, roasted on 2025-7-15, frozen on 2025-8-2
+  - 267, roasted on 2025-7-15, frozen on 2025-8-2, defrosted on 2025-9-7
   - 260, roasted on 2025-7-20, frozen on 2025-8-2
   - 261, roasted on 2025-7-25, frozen on 2025-8-2
 - Archer Ethiopia Alo Village Natural Peaberry
