@@ -14,3 +14,4 @@
   - 160.2C 4:00; 184.0C 6:27 189.7C 7:12
     - ground agtron 90
     - sour
+  - development +10s

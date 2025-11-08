@@ -11,3 +11,6 @@
     - a little caramel bitterness (more)
     - weaker flavor comparing to above
     - black tea
+  - damper: 70; 4:00->80; 5:20->90
+  - curve: 185C->183C
+  - potential more development when any above attempt works
