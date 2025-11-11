@@ -14,4 +14,4 @@
   - damper: 70; 3:30->80; 5:20->90
   - curve: 185C->183C
   - potential more development when any above attempt works
-  - 183C622 189C725 forgot snapshot
+  - 183C622 189C705 forgot snapshot
