@@ -14,4 +14,7 @@
   - damper: 70; 3:30->80; 5:20->90
   - curve: 185C->183C
   - potential more development when any above attempt works
+
+- (2025-11-10)
   - 183C622 189C705 forgot snapshot
+  - 160.0C 3:59; 185.0C 6:34; 190.0C 7:15
