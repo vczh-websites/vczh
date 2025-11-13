@@ -19,6 +19,7 @@
   - 160.0C 3:59; 185.0C 6:34; 190.0C 7:15
     - No over caramelized
     - Zerno 525, sweetness
+    - Absolutely no over caramelized
 
 ## Next Improvements
 
