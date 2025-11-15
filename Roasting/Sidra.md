@@ -21,6 +21,7 @@
     - Zerno 525, sweetness
     - Absolutely no over caramelized
 
+- 182C/92C; 160C 3:55; 181C 6:45; 195C 9:58 (2025-11-15)
 - 645 FC+40s x2
 - 630 w/ damper + 5s
 - 630 w/ damper + 10s
