@@ -21,7 +21,7 @@
     - Zerno 525, sweetness
     - Absolutely no over caramelized
 
-- 182C/92C; 160C 3:55; 181C 6:45; 195C 9:58 (2025-11-15)
+- 182C/92C; 160C 3:55; 181C 6:45; 195C 9:58 (2025-11-15, 12C, humidity 92%)
 - 645 FC+40s
 - 645 FC+40s damper 3:30->80 6:00->90 7:30->100
 - 630 w/ damper + 5s
