@@ -21,7 +21,7 @@
     - Zerno 525, sweetness
     - Absolutely no over caramelized
 
-- 645 x2
+- 645 FC+40s x2
 - 630 w/ damper + 5s
 - 630 w/ damper + 10s
 
