@@ -37,7 +37,15 @@
   - 160.1C 3:59; 184.6C 6:31; 190.0C 7:15
   - 160C 4:00; 184.8C 6:33; 190.9C 7:22
 
+## Next
+
 # Potential Improvements
+
+- 182C/92C; 160C 3:55; 185C 6:30; 202C 8:59
+  - damper: 70; 3:30->80; 5:20->90
+  - drum: 60
+  - drum: 70
+  - drum: 80
   
 - curve: 185C->183C
   - 181C seems to low
