@@ -50,4 +50,3 @@
 - curve: 185C->183C
   - 181C seems to low
 - -5s/-10s development
-- 80% drum speed
