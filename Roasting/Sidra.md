@@ -39,14 +39,15 @@
 
 ## Next
 
-# Potential Improvements
-
 - 182C/92C; 160C 3:55; 185C 6:30; 202C 8:59
   - damper: 70; 3:30->80; 5:20->90
   - drum: 60
   - drum: 70
   - drum: 80
+
+# Potential Improvements
   
 - curve: 185C->183C
   - 181C seems to low
-- potential more development when any above attempt works
+- -5s/-10s development
+- 80% drum speed
