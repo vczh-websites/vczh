@@ -47,6 +47,5 @@
 
 # Potential Improvements
   
-- curve: 185C->183C
-  - 181C seems to low
+- move whole curve faster
 - -5s/-10s development
