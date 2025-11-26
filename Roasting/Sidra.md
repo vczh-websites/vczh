@@ -44,6 +44,7 @@
   - drum: 60: 160.0C 3:58; 185C 6:48; 191.7C 7:28
   - drum: 70: 160.2C 3:59; 186.1C 6:42; 191.2C 7:24
   - drum: 80: 160.0C 3:58; 184.8C 6:32; 190.0C 7:14
+  - no burnt sugar or smokey at all (cleaning is important!)
 
 # Potential Improvements
   
