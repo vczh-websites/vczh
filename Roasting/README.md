@@ -12,7 +12,7 @@
 - 中间按时加大 Damp
 - 听到约5声：`一爆开始`
 - 排豆：`排豆`，`Damp 100%`
-- 关机：“Cooling OFF”
+- 关机：`Cooling OFF`
 
 ## Kaleido Sniper M2 Pro
 
