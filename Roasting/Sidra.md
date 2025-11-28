@@ -46,7 +46,7 @@
   - drum: 80: 160.0C 3:58; 184.8C 6:32; 190.0C 7:14
   - no burnt sugar or smokey at all (cleaning is important!)
 
-## Next
+## 2025-11-28, 9C humidity 80%
 
 - 182C/92C; 160C 3:40; 185C 6:00; 194C 7:56;
   - drum: 80; damper: 70; 3:00->80; 4:50->90
