@@ -13,7 +13,10 @@
   - 160.2C 4:00; 184.0C 6:27; 189.2C 7:08
 - (2025-11-25)
   - damper: 3:30 80; 5:20 90; drum: 80; +40s
+  - Roasted normally but roast to 166C again
+    - Significantly more aroma and sweetness and fermentation
   - 160C 3:58; 183.5C 6:22; 188.5C 7:01;
+    - Not changed
 
 ## Geisha Bare-Faced IBIS (Natural)
 
@@ -30,4 +33,6 @@
 - (2025-11-25)
   - damper: 3:30 80; 5:20 90; drum: 80; +50s
   - 160C 3:58; 183.0C 6:18; 189.3C 7:08;
+    - Still sour
   - 160C 3:58; 184.8C 6:32; 191.0C 7:22;
+    - Not sour, juicy
