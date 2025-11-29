@@ -42,7 +42,9 @@
 - 182C/92C; 160C 3:55; 185C 6:30; 202C 8:59
   - damper: 70; 3:30->80; 5:20->90
   - drum: 60: 160.0C 3:58; 185C 6:48; 191.7C 7:28
+    - easy over extraction
   - drum: 70: 160.2C 3:59; 186.1C 6:42; 191.2C 7:24
+    - easy over extraction
   - drum: 80: 160.0C 3:58; 184.8C 6:32; 190.0C 7:14
   - no burnt sugar or smokey at all (cleaning is important!)
 
@@ -56,6 +58,10 @@
   - drum: 80; damper: 70; 3:00->80; 5:00->90
   - 160C 3:43; 185.1C 6:19; 189C 6:57;
   - 160C 3:43; 184.4C 6:13; 189.2C 6:59;
+
+# Test Brewing
+
+Zerno Z1 750; 15g; 93C; 45-100-224
 
 # Potential Improvements
   
