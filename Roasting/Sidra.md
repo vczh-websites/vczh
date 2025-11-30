@@ -53,7 +53,10 @@
 - 182C/92C; 160C 3:40; 185C 6:00; 194C 7:56;
   - drum: 80; damper: 70; 3:00->80; 4:50->90
   - 160C 3:43; 185C 6:03; 189.3C 6:43;
+    - Significantly improved
+    - Juicy, sweetness, no negative tastes at all
   - 160.2C 3:44; 185.1C 6:04; 189.7C 6:48;
+    - Less juicy, less sweetness, more caramel
 - 182C/92C; 160C 3:40; 185C 6:15; 194C 7:56;
   - drum: 80; damper: 70; 3:00->80; 5:00->90
   - 160C 3:43; 185.1C 6:19; 189C 6:57;
