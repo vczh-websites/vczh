@@ -78,5 +78,6 @@ Zerno Z1 750; 15g; 93C; 45-100-150-224
 # Potential Improvements
   
 - move whole curve faster
-  - e.g. 160C 330; 185C 5:50;
+  - 160C 3:30; 185C 5:50;
+  - 160C 3:40; 185C 5:50;
 - damper 100 when first crack
