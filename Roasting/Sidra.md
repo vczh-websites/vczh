@@ -78,7 +78,9 @@
 Zerno Z1 750; 15g; 93C; 45-100-150-224
 
 # Potential Improvements
-  
+
+- move 160C faster
+  - 160C 3:30; 185C 6:00;
 - move whole curve faster
   - 160C 3:30; 185C 5:50;
   - 160C 3:40; 185C 5:50;
