@@ -73,15 +73,17 @@
     - A little more sweetness but less than first two
     - Sugar over roasted (?)
 
+## 2025-12-9, 10C humidity 82%
+
+- 182C/92C; 160C 3:30; 185C 6:00; 194C 7:56;
+  - drum: 80; damper: 70; 3:00->80; 4:50->90
+- 182C/92C; 160C 3:30; 186C 5:50; 194C 7:56;
+  - drum: 80; damper: 70; 3:00->80; 4:50->90
+
 # Test Brewing
 
 Zerno Z1 750; 15g; 93C; 45-100-150-224
 
 # Potential Improvements
 
-- move 160C faster
-  - 160C 3:30; 185C 6:00;
-- move whole curve faster
-  - 160C 3:30; 185C 5:50;
-  - 160C 3:40; 185C 5:50;
 - damper 100 when first crack
