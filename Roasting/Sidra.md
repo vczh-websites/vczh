@@ -89,4 +89,4 @@ Zerno Z1 750; 15g; 93C; 45-100-150-224
 
 # Potential Improvements
 
-- damper 100 when first crack
+- preheat 160C
