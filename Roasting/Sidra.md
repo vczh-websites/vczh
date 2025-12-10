@@ -78,11 +78,15 @@
 - 182C/92C; 160C 3:30; 185C 6:00; 194C 7:56;
   - drum: 80; damper: 70; 3:00->80; 4:50->90; FC->100
   - 160.2C 3:34; 182.7C 5:44; 187.2 6:24; +40s
+    - a little bit sour
   - 160.2C 3:34; 185.1C 6:04; 189C 6:44; +40s
+    - best in the batch
 - 182C/92C; 160C 3:30; 186C 5:50; 194C 7:56;
   - drum: 80; damper: 70; 2:45->80; 4:30->90; FC->100
   - 160C 3:33; 186C 5:53; 190.3C 6:33; +40s
+    - feels watery
   - 160C 3:33; 184.5C 5:42; 189.3C 6:22; +40s
+    - a little bit under roasted
 
 
 # Test Brewing
