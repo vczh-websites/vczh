@@ -96,3 +96,6 @@ Zerno Z1 750; 15g; 93C; 45-100-150-224
 # Potential Improvements
 
 - preheat 160C
+  - longer yellow point
+  - same or little longer first crack
+  - same development
