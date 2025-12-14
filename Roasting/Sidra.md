@@ -11,7 +11,7 @@ Zerno Z1 750; 15g; 92C; 45-100-150-225, don't put kettle back
   - same or little longer first crack
   - same development
 
-## Next
+## 2025-12-14, 10C humidify 88%
 
 - 175C/92C; 160C 4:00; 185C 6:30; 195C 8:30;
   - drum: 80; damper: 70; 3:20->80; 5:30->90; FC->100;
