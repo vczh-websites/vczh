@@ -15,7 +15,7 @@ Zerno Z1 750; 15g; 92C; 45-100-150-225, don't put kettle back
 
 - 175C/92C; 160C 4:00; 185C 6:30; 195C 8:30;
   - drum: 80; damper: 70; 3:20->80; 5:30->90; FC->100;
-  - +40s
+  - 160.2C 4:04; 184.6C 6:30; 188.9C 7:09; +40s
   - +40s (can be changed if the previous roast hit expected timeline)
 - 175C/92C; 160C 4:10; 184C 6:40; 195C 8:45;
   - drum: 80; damper: 70; 3:30->80; 5:30->90; FC->100;
