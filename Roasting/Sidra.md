@@ -19,8 +19,11 @@ Zerno Z1 750; 15g; 92C; 45-100-150-225, don't put kettle back
   - 160.2C 4:04; 185.1C 6:34; 189.7C 7:18; +45s
 - 175C/92C; 160C 4:10; 184C 6:40; 195C 8:45;
   - drum: 80; damper: 70; 3:30->80; 5:30->90; FC->100;
-  - +40s
-  - +40s (can be changed if the previous roast hit expected timeline)
+  - 160.2C 4:14; 185.0C 6:52; 189.3C 7:34; +40s
+    - forgot damper 100 at FC
+  - 160.2C 4:14; 184.6C 6:36; 188.2C 7:06 +30s
+    - changed FC to 185.5C
+    - +30s for comparing might be too fast
 
 Previous configuration makes 6:00FC a very narrow window.
 Try lower the charge temperature to elongate the whole process,
