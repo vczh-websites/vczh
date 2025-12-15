@@ -1,5 +1,7 @@
 # Pepe Jijon Sidra
 
+11/28-1 so far the best
+
 # Test Brewing
 
 Zerno Z1 750; 15g; 92C; 45-100-150-225, don't put kettle back
@@ -16,6 +18,7 @@ Zerno Z1 750; 15g; 92C; 45-100-150-225, don't put kettle back
 - 175C/92C; 160C 4:00; 185C 6:30; 195C 8:30;
   - drum: 80; damper: 70; 3:20->80; 5:30->90; FC->100;
   - 160.2C 4:04; 184.6C 6:30; 188.9C 7:09; +40s
+    - red tea
   - 160.2C 4:04; 185.1C 6:34; 189.7C 7:18; +45s
 - 175C/92C; 160C 4:10; 184C 6:40; 195C 8:45;
   - drum: 80; damper: 70; 3:30->80; 5:30->90; FC->100;
@@ -24,8 +27,9 @@ Zerno Z1 750; 15g; 92C; 45-100-150-225, don't put kettle back
   - 160.2C 4:14; 184.6C 6:36; 188.2C 7:06 +30s
     - changed FC to 185.5C
     - +30s for comparing might be too fast
+    - red tea
 
-Significantly aromatic at the end, might mean over roasted.
+Significantly aromatic at the end, ~~might mean~~ over roasted.
 
 Previous configuration makes 6:00FC a very narrow window.
 Try lower the charge temperature to elongate the whole process,
