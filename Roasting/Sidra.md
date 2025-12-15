@@ -25,6 +25,8 @@ Zerno Z1 750; 15g; 92C; 45-100-150-225, don't put kettle back
     - changed FC to 185.5C
     - +30s for comparing might be too fast
 
+Significantly aromatic at the end, might mean over roasted.
+
 Previous configuration makes 6:00FC a very narrow window.
 Try lower the charge temperature to elongate the whole process,
 but keep the development unchanged.
