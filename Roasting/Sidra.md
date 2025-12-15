@@ -1,6 +1,7 @@
 # Pepe Jijon Sidra
 
 11/28-1 so far the best
+12/9 resting
 
 # Test Brewing
 
@@ -44,6 +45,7 @@ Measure agtron of bean and ground.
     - a little bit sour
   - 160.2C 3:34; 185.1C 6:04; 189C 6:44; +40s
     - best in the batch
+    - (2025-12-14) strong red tea, still need to rest
 - 182C/92C; 160C 3:30; 186C 5:50; 194C 7:56;
   - drum: 80; damper: 70; 2:45->80; 4:30->90; FC->100
   - 160C 3:33; 186C 5:53; 190.3C 6:33; +40s
