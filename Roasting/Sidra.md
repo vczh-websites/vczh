@@ -1,7 +1,7 @@
 # Pepe Jijon Sidra
 
 - 11/28-1 so far the best
-- 12/9 resting
+- 12/9 resting, first time without over-roasted bean surface
 - 12/14 over roasted, too red tea
 
 # Test Brewing
@@ -10,12 +10,20 @@ Zerno Z1 775; 20g; 92C;
 60-140-220-300;
 don't put kettle back
 
-# Potential Improvements
+## Next
 
-- preheat 160C
-  - longer yellow point
-  - same or little longer first crack
-  - same development
+- 175C/92C; 160C 3:45; 185C 6:10; 194C 8:15;
+  - drum: 80; damper: 70; 3:15->80; 5:10->90; FC->100;
+  - +40s
+  - +40s
+- 175C/92C; 160C 3:50; 184.5C 6:15; 193C 8:18;
+  - drum: 80; damper: 70; 3:15->80; 5:15->90; FC->100;
+  - +40s
+  - +40s
+
+The method of lowering charge temperature and elongate yellow point cures the over-roasted bean surface.
+But the overall roasting time is significantly longer than enough, making it too red tea.
+Here only make both yellow point +5/10s and first crack +5s and see what would happen.
 
 ## 2025-12-14, 10C humidify 88%
 
@@ -34,6 +42,7 @@ don't put kettle back
     - red tea
 
 Significantly aromatic at the end, ~~might mean~~ over roasted.
+No bitterness is tasted eating the roasted bean, no over-roasted bean surface issue.
 
 Previous configuration makes 6:00FC a very narrow window.
 Try lower the charge temperature to elongate the whole process,
@@ -55,6 +64,10 @@ Measure agtron of bean and ground.
     - feels watery
   - 160C 3:33; 184.5C 5:42; 189.3C 6:22; +40s
     - a little bit under roasted
+
+Try to shortern the yellow point and first crack time but seems under-roasted.
+This is the first time eating the roasted bean directly without tasting bitterness,
+it means it cures the over-roasted bean surface issue.
 
 ## 2025-11-28, 9C humidity 80%
 
@@ -79,6 +92,8 @@ Measure agtron of bean and ground.
     - Less sour but more than first two
     - A little more sweetness but less than first two
     - Sugar over roasted (?)
+
+The overall time of roasting looks good.
 
 ## 2025-11-22, 11C, humidity 83%
 
