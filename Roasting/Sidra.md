@@ -1,7 +1,8 @@
 # Pepe Jijon Sidra
 
-11/28-1 so far the best
-12/9 resting
+- 11/28-1 so far the best
+- 12/9 resting
+- 12/14 over roasted, too red tea
 
 # Test Brewing
 
