@@ -6,8 +6,7 @@
 
 # Test Brewing
 
-Zerno Z1 750; 15g; 92C;
-45-100-150-225;
+Zerno Z1 775; 20g; 92C;
 60-140-220-300;
 don't put kettle back
 
