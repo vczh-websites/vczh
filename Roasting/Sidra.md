@@ -1,7 +1,9 @@
 # Pepe Jijon Sidra
 
 - 11/28-1 so far the best
+  - 11/28-2 a little bitterness
 - 12/9 resting, first time without over-roasted bean surface
+  - 12/9-2 obvious bitterness
 - 12/14 over roasted, too red tea
 
 # Test Brewing
