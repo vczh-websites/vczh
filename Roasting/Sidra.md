@@ -21,7 +21,7 @@ don't put kettle back
   - 160.0C 3:48; 185.1C 6:14; 189.2C 6:54; +40s
 - 175C/92C; 160C 3:50; 184.5C 6:15; 193C 8:18;
   - drum: 80; damper: 70; 3:15->80; 5:15->90; FC->100;
-  - +40s
+  - 160.0C 3:53; 185.2C 6:25; 189.1C 7:05; +40s
   - +40s
 
 The method of lowering charge temperature and elongate yellow point cures the over-roasted bean surface.
