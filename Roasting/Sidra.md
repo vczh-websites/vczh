@@ -12,7 +12,7 @@ Zerno Z1 775; 20g; 92C;
 60-140-220-300;
 don't put kettle back
 
-## Next
+## 2025-12-22, 7C humidity 77%
 
 - 175C/92C; 160C 3:45; 185C 6:10; 194C 8:15;
   - drum: 80; damper: 70; 3:15->80; 5:10->90; FC->100;
