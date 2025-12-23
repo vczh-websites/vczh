@@ -18,11 +18,15 @@ don't put kettle back
   - drum: 80; damper: 70; 3:15->80; 5:10->90; FC->100;
   - 160.2C 3:49; 183.7C 6:03; 188.2C 6:43; +40s
     - FC no damper 100
+    - cupping: hot(tea), warm(sweetness, juicy get close to No.2)
   - 160.0C 3:48; 185.1C 6:14; 189.2C 6:54; +40s
+    - cupping: hot(juicy), hot(a little bit more tea like, still juicy)
 - 175C/92C; 160C 3:50; 184.5C 6:15; 193C 8:18;
   - drum: 80; damper: 70; 3:15->80; 5:15->90; FC->100;
   - 160.0C 3:53; 185.2C 6:25; 189.1C 7:05; +40s
+    - cupping: hot(weaker), warm(sour, could be acetic acid)
   - 160.1C 3:54; 184.0C 6:14; 188.1C 6:54; +40s
+    - cupping: weaker
 
 The method of lowering charge temperature and elongate yellow point cures the over-roasted bean surface.
 But the overall roasting time is significantly longer than enough, making it too red tea.
