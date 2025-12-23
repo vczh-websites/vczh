@@ -46,12 +46,14 @@ C语言子集一路做到汇编器、
 - BeginObject指令的双堆栈实现
 - 四则运算语法引出右递归、左递归的区别，以及语法的副作用如何产生AST
 - 自动错误恢复和局部歧义的做法（VlppParser一代的四个executor实现）
+  - ParsingGeneralParser和他的子类们
   - 指令对这套实现的影响
   - 为什么自动错误恢复无法避免歧义的产生
   - 为什么无法处理更复杂的消除歧义的情况
 - 如何应对天生就存在歧义的语法
   - Document第一代的C++ parser
   - VlppParser2重做C++语法分析
+  - 新的序列化方案以及Lzw压缩算法的使用
 - VlppParser2重新设计了歧义的实现，通过multiple passes取代上一代读一次就出结果的executor设计
 - 左递归和reuse rule产生的DelayFieldAssignment/LriStore/LriFetch指令
 - 为什么这个补丁对前缀合并产生了困难
