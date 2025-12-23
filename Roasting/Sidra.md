@@ -26,7 +26,7 @@ don't put kettle back
   - 160.0C 3:53; 185.2C 6:25; 189.1C 7:05; +40s
     - cupping: hot(weaker), warm(sour, could be acetic acid)
   - 160.1C 3:54; 184.0C 6:14; 188.1C 6:54; +40s
-    - cupping: weaker
+    - cupping: hot(weaker), warm(more sour)
 
 The method of lowering charge temperature and elongate yellow point cures the over-roasted bean surface.
 But the overall roasting time is significantly longer than enough, making it too red tea.
