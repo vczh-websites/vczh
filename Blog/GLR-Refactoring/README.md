@@ -39,3 +39,20 @@ C语言子集一路做到汇编器、
 故事便从VlppParser和VlppParser2这里发生。
 此时正是大学刚毕业的时候，
 所以VlppParser的设计还能看见当初在大学的时候诞生的很多想法。
+
+## 大纲
+
+- Json语法引出如何让parser做完语法分析就自动产生优雅的AST（语法的副作用，BeginObject指令）
+- BeginObject指令的双堆栈实现
+- 四则运算语法引出右递归、左递归的区别，以及语法的副作用如何产生AST
+- 自动错误恢复和局部歧义的做法（VlppParser一代的四个executor实现）
+  - 指令对这套实现的影响
+  - 为什么自动错误恢复无法避免歧义的产生
+  - 为什么无法处理更复杂的消除歧义的情况
+- 如何应对天生就存在歧义的语法
+  - Document第一代的C++ parser
+  - VlppParser2重做C++语法分析
+- VlppParser2重新设计了歧义的实现，通过multiple passes取代上一代读一次就出结果的executor设计
+- 左递归和reuse rule产生的DelayFieldAssignment/LriStore/LriFetch指令
+- 为什么这个补丁对前缀合并产生了困难
+- 此次重构如何解决这个问题
