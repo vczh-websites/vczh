@@ -12,6 +12,28 @@ Zerno Z1 775; 20g; 92C;
 60-140-220-300;
 don't put kettle back
 
+## Next
+
+**IMPORTANT** Record the discharge time, keep the same interval to the next charging. When the machine temperature reaches the target, wait for 90s before changing.
+
+- 175C/92C; 160C 3:45; 185C 6:10; 194C 8:15;
+  - drum: 80; damper: 70; 3:15->80; 5:10->90; FC->100;
+  - +40s
+  - +40s
+  - +40s
+  - +40s
+
+- Rerun 2025-12-22 (1), remember to apply damper changing.
+
+In the future:
+
+- Rerun 2025-12-22 (1) but FC 5s earlier.
+  - 175C/92C; 160C 3:45; 185C 6:95; 194C 8:15;
+  - drum: 80; damper: 70; 3:15->80; 5:05->90; FC->100;
+- Rerun 2025-11-28 (1), also apply full damper changing, but charge temperature reduces from 182 to 180.
+  - 180C/92C; 160C 3:40; 185C 6:00; 194C 7:56;
+  - drum: 80; damper: 70; 3:00->80; 4:50->90
+
 ## 2025-12-22, 7C humidity 77%
 
 |杯测|No.1|No.2|No.3|No.4|
