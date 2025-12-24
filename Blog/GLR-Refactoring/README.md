@@ -44,12 +44,6 @@ C语言子集一路做到汇编器、
 
 ```mermaid
 graph LR;
-  S((Object))-- #quot;{#quot; -->X;
-  X-->E((( )));
-```
-
-```mermaid
-graph LR;
   S((Object))-- #quot;{#quot; -->1;
   1-- #quot;}#quot; -->E((( )));
   1-- ObjectField -->2;
