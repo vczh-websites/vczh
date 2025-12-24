@@ -46,6 +46,13 @@ C语言子集一路做到汇编器、
 graph LR;
   S((Object));
   E(());
+  S-->1;
+```
+
+```mermaid
+graph LR;
+  S((Object));
+  E(());
   S-->|&quot;{&quot;|1;
   1-->|"}"|E;
   1-->|ObjectField|2;
