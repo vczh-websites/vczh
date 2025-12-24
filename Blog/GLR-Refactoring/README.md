@@ -44,8 +44,6 @@ C语言子集一路做到汇编器、
 
 ```mermaid
 graph LR;
-  S((Object));
-  E(());
   S-->X;
   X-->E;
 ```
