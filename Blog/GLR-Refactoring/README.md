@@ -46,7 +46,7 @@ C语言子集一路做到汇编器、
 graph LR;
   S((Object))-- #quot;{#quot; -->X;
   X-->E;
-  E(());
+  E((End));
 ```
 
 ```mermaid
