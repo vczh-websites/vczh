@@ -47,6 +47,7 @@ graph LR;
   S((Object));
   E(());
   S-->X;
+  X-->E;
 ```
 
 ```mermaid
