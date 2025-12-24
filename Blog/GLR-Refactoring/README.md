@@ -44,7 +44,7 @@ C语言子集一路做到汇编器、
 
 ```mermaid
 graph LR;
-  S-->|"{"|X;
+  S-->|&quot;{&qupt(|X;
   X-->E;
 ```
 
