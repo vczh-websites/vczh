@@ -50,14 +50,12 @@ graph LR;
 
 ```mermaid
 graph LR;
-  S((Object));
-  E(());
-  S-->|&quot;{&quot;|1;
-  1-->|"}"|E;
-  1-->|ObjectField|2;
-  2-->|"}"|E;
-  2-->|","|3;
-  3-->|ObjectField|2;
+  S((Object))-- #quot;{#quot; -->1;
+  1-- #quot;}#quot; -->E;
+  1-- ObjectField -->2;
+  2-- #quot;}#quot; -->E((()));
+  2-- #quot;,#quot; -->3;
+  3-- ObjectField -->2;
 ```
 
 - Json语法引出如何让parser做完语法分析就自动产生优雅的AST（语法的副作用，BeginObject指令）
