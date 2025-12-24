@@ -42,6 +42,18 @@ C语言子集一路做到汇编器、
 
 ## 大纲
 
+```mermaid
+graph LR
+  S((Object))
+  E(())
+  S-->|"{"|1
+  1-->|"}"|E
+  1-->|ObjectField|2
+  2-->|"}"|E
+  2-->|","|3
+  3-->|ObjectField|2
+```
+
 - Json语法引出如何让parser做完语法分析就自动产生优雅的AST（语法的副作用，BeginObject指令）
 - BeginObject指令的双堆栈实现
 - 四则运算语法引出右递归、左递归的区别，以及语法的副作用如何产生AST
