@@ -183,13 +183,64 @@ BeginObject(Object)
 EndObject
 ```
 
-我们不妨把它称之为“BeginObject指令集”。
+一切看起来都很美好，指令跟C++代码简单的对应起来了，实现它应该不费吹灰之力。我们不妨把它称之为“BeginObject指令集”。
 
 ### 实现BeginObject指令集
 
+指令集的表达是独立的，但是具体构造的类型又是生成的代码，所以中间需要一些设计模式的支持，这些对各位来说应该跟喝水一样简单了。但是我们还是可以讨论一下这些指令到底干了什么。`BeginObject`是嵌套的，所以它需要一个堆栈。Field就可以从堆栈里拿东西出来，写到成员变量里面去。但是我们怎么知道栈顶的对象到底经历了`EndObject`没有呢？这个好说，干脆把堆栈一分为二，`EndObject`就可以从堆栈1把东西pop出来push到堆栈2，`Token`可以把token也压到堆栈2，那么`Field`就可以从堆栈2把对象pop进成员变量了。我们不妨把他们命名为`Create堆栈`和`Object堆栈`：
+
+```
+BeginObject(type) = { cs.Push(Create(type)); }
+Token = { os.Push(NextToken()); }
+Discard = { os.Pop(); }
+Field(field) = { cs.Top().SetField(os.Pop()); }
+EndObject = { os.Push(cs.Pop()); }
+```
+
+于是我们就可以把这些指令都加到上面的PDA的transition里面去。需要注意的是，带`+`的指令说明它是在transition真正做出动作之前（比如`NextToken()`，比如进入`JField`对应的另一个PDA里）执行的：
+
+![](Images/JSON_PDA2.png)
+
+最后我们把`{"a": "b"}`送进`JRoot`，一顿分析，最后一看Create堆栈（cs）是空的，Object堆栈（os）剩下一个对象，好的！我们的语法树完成了。
+
+等等！还记得我们的`JRoot`吗？
+
+```
+@parser JRoot
+	::= !JObject
+	::= !JArray
+	;
+```
+
+这个“直接把东西拿来用”的`!`又要怎么表达呢？回顾一下上面说的，一行语法要做的事情有三件：
+- 构造语法树的一个对象，比如`JObject`
+- 把别人的语法树拿过来，比如`JValue ::= JObject`，这样`JValue`可能会生成好几个不同的东西
+- 不仅要把语法树拿过来，还要对他继续做修改，这个在JSON里暂时还不存在，后面会提到
+
+我们可以把2和3做在一起，`JRoot`看到`!JObject`就把已经在Object堆栈里面的`JObject`重新放回Create堆栈里，再进行一顿修改之后放回去就好，因此我们只需要加入一个新的指令：
+
+```
+ReopenObject = { cs.Push(os.Pop()); }
+```
+
+因为`JRoot ::= !JObject`，所以JRoot不能有自己的BeginObject指令了。下面的BeginObject(JObject)...EndObject是属于`JField`的：
+
+```
+// JRoot没有BeginObject
+  BeginObject(JObject)
+    ...
+  EndObject
+  ReopenObject
+EndObject
+```
+
+此时的味道已经不太好了，感觉就像给指令集打了个补丁，不过因为这个补丁实在是太过于直接而且合理，当时并没有想到以后会造成那么多问题。但是我们先不管，先来看看`JRoot`的PDA：
+
+![](Images/JSON_PDA3.png)
+
+## 四则运算与左递归
+
 <!--
-- Json语法引出如何让parser做完语法分析就自动产生优雅的AST（语法的副作用，BeginObject指令）
-- BeginObject指令的双堆栈实现
 - 四则运算语法引出右递归、左递归的区别，以及语法的副作用如何产生AST
 - if-else 歧义的解决方式
   - 自己展开成复杂的语法
