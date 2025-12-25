@@ -48,5 +48,6 @@ graph LR
 ```mermaid
 graph LR
   S((Object))-- JObject : ReopenObject -->1
+  S-- JArray : ReopenObject -->1
   1((1))-. : EndObject .->E((( )))
 ```
