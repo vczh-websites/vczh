@@ -34,7 +34,7 @@ graph LR
 
 ```mermaid
 graph LR
-  S((Object))-- #quot;{#quot; : +BeginObject(JsonObject)-->1
+  S((Object))-- #quot;{#quot; : +BeginObject(JsonObject) Discard-->1
   1((1))-- #quot;} : Discard#quot; -->4
   1-- JField : Field(fields) -->2
   2((2))-- #quot;}#quot; : Discard -->4
