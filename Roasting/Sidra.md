@@ -18,11 +18,9 @@ don't put kettle back
 
 - 175C/92C; 160C 3:45; 185C 6:10; 194C 8:15;
   - drum: 80; damper: 70; 3:15->80; 5:10->90; FC->100;
-  - +40s
-  - +40s
-  - +40s
-  - +40s
+- 6:05FC
 
+- Try 6:05 FC
 - Rerun 2025-12-22 (1), remember to apply damper changing.
 
 In the future:
