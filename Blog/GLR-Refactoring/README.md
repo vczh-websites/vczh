@@ -4,6 +4,8 @@
 
 这个过程没有光做编译器，还是图给所有的这些东西做编辑器，包括上下文有关着色和自动完成等一系列IDE的标准功能都是用C#做的。编译器是C++写的但是编辑器是C#写的，于是我从parser到类型推导都分别用C++和C#各做了一遍，这怎么想都是不对的。
 
+![](Turtle_Sample_01.jpg)
+
 不过这其实才是现实世界里大家的普遍原则。想想当时地球上爆火的几款代码编辑器，分别有正在（已经）用C#和XAML重写的Visual Studio、用Jvav写的Eclipse、用Jvav写的一系列不同语言的IDE、还有马上就要诞生的TypeScript写的vscode。它们哪个不是一个语言的前端做了好几遍？要么就是编译器和编辑器是不同地方的人做的，要么语言本身就没有自举，或者自举了但完全没考虑过编辑器的需要。比如微软明明用C++写了编译器和VS，但是VS用的却是Edison Design Group实现的C++前端；比如原本用C++写的C#编译器后面用C#重写了（Roslyn）；比如原本用JS写的TS然后换TS又写了一遍然后换go又写了一遍；似乎分开做才是业界常态。
 
 但我自己做又没有类似的问题，于是怀揣着编译器和编辑器共享一套编译器前端的想法，就有了[vczh-libraries/GacUI](https://github.com/vczh-libraries/GacUI)，以及为了实现语法分析和给语义着色和自动完成打基础的VlppParser和VlppParser2（做了两次）。故事便从[VlppParser](https://github.com/vczh-libraries/VlppParser)和[VlppParser2](https://github.com/vczh-libraries/VlppParser2)这里发生。此时正是大学刚毕业的时候，所以VlppParser的设计还能看见当初在大学的时候诞生的很多想法。
@@ -115,7 +117,75 @@ class Object : Node
 }
 ```
 
+最后只要把这些信息都加入到上面生成的PDA就可以了。一个很自然的想法就是，既然parse一个JSON无非就是从`JROOT`的状态机开始跑到完，那只要一边跑一边构造语法树就行了。从一个状态到另一个状态转移（transition）的时候，我们需要看下一个token是什么，从这个状态出发的那么多transition里选中我们想要的，顺便就可以做点事。
 
+“做点事”到底做什么事呢？现在我们已经从上面的语法树的定义[生成了它的C++代码](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Json/Generated/JsonAst.h)，那就先来看看，假如我们需要生成`{"a": "b"}`的语法树，我们需要做什么：
+
+```C++
+auto obj = Ptr(new JsonObject);
+{
+  auto field = Ptr(new JsonField);
+  field->name.value = L"a";
+  {
+    auto value = Ptr(new JsonString);
+    value->content.value = L"b";
+    field->value = value;
+  }
+  obj->fields.Add(field);
+}
+```
+
+pattern一下就看出来了。一个很自然的想法就是，我们可以设计一个指令集，就专门用来生成语法树。每一个transition带了一些指令，而运行指令就等于运行一些特定的函数，而这些函数就可以从语法树的定义里生成出来。那首先我们要补齐读token的动作：
+
+```C++
+auto obj = Ptr(new JsonObject);
+{
+  NextToken();                         // {这个token是不要的，但是又必须把他读掉
+  auto field = Ptr(new JsonField);
+  {
+    auto token = NextToken();          // "a"
+    field->name = token;
+  }
+  NextToken();                         // :
+  {
+    auto str = Ptr(new JsonString);
+    {
+      auto token = NextToken();        // "b"
+      str->content = token;
+    }
+    field->value = str;
+  }
+  obj->fields.Add(field);
+  NextToken();                         // "}"
+}
+```
+
+然后令他变得抽象：
+
+```
+BeginObject(Object)
+  Token                  // {
+  Discard
+  BeginObject(Field)
+    Token                // "a"
+    Field(name)
+    Token                // :
+    Discard
+    BeginObject(String)
+      Token              // "b"
+      Field(content)
+    EndObject
+    Field(value)
+  EndObject
+  Field(fields)
+  Token                  // }
+  Discard
+EndObject
+```
+
+我们不妨把它称之为“BeginObject指令集”。
+
+### 实现BeginObject指令集
 
 <!--
 - Json语法引出如何让parser做完语法分析就自动产生优雅的AST（语法的副作用，BeginObject指令）
