@@ -68,15 +68,54 @@ JValue
 
 以`JObject`为例，我们可以直接生成他的[epsilon-NFA](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)：
 
-![JSON epsilon-NFA](Images/JSON_ENFA.png)
+![](Images/JSON_ENFA.png)
 
 然后还是当他正则表达式那样做，把rule input和token input都先当成不一样的原子输入看，生成它的DFA。当然这并不是真的DFA，他是一个[PDA](https://en.wikipedia.org/wiki/Pushdown_automaton)，因为rule之间或者rule/token之间是会存在包含关系或者共享前缀的，但是先不管，后面自有办法：
 
-![JSON PDA](Images/JSON_PDA.png)
+![](Images/JSON_PDA.png)
 
 后面还有一系列复杂的处理，但总之我们还是得到了一个能跑的东西了。于是给一个JSON字符串，现在我们可以验证他是不是一个合法的JSON了，从`JROOT`开始运行，如果把所有token都吃掉的同时正好跑到状态机的最后一个状态，就说明成功了。费了这么大劲就搞出这么个东西？当然不是，我们的目标是生成JSON的语法树。
 
 ### 语法的副作用
+
+既然要生成语法树，那就得继续往语法上加信息。经过短暂地思考，就可以知道一行语法大概需要做的事情有：
+- 构造语法树的一个对象，比如`JObject`
+- 把别人的语法树拿过来，比如`JValue ::= JObject`，这样`JValue`可能会生成好几个不同的东西
+- 不仅要把语法树拿过来，还要对他继续做修改，这个在JSON里暂时还不存在，后面会提到
+
+此时语法的表达就不是特别的简洁了，慢慢罗嗦起来，但是至少为了[写上最必要的信息](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Json/Syntax/Syntax.txt)，我们还是得到了
+
+```
+...
+
+JObject
+	::= "{" {JField:fields ; ","} "}" as Object
+	;
+
+...
+
+@parser JRoot
+	::= !JObject
+	::= !JArray
+	;
+```
+
+为了解释加进去的信息的意思，我们还需要定义[JSON语法树的结构](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Json/Syntax/Ast.txt)：
+
+```
+class Node
+{
+}
+
+...
+
+class Object : Node
+{
+    var fields : ObjectField[];
+}
+```
+
+
 
 <!--
 - Json语法引出如何让parser做完语法分析就自动产生优雅的AST（语法的副作用，BeginObject指令）
