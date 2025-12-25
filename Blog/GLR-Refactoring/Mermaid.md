@@ -40,5 +40,5 @@ graph LR
   2((2))-- #quot;}#quot; : Discard -->4
   2-- #quot;,#quot; : Discard -->3
   3((3))-- JField : Field(fields) -->2
-  4((4))-.- EndObject -.->E((( )))
+  4((4))-. : EndObject .->E((( )))
 ```
