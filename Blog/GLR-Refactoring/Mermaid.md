@@ -24,8 +24,8 @@ graph LR
   S((Object))-- #quot;{#quot; -->1
   1((1))-- #quot;}#quot; -->4
   1-- JField -->2
-  2((2))-- #quot;}#quot; -->E
+  2((2))-- #quot;}#quot; -->4
   2-- #quot;,#quot; -->3
   3((3))-- JField -->2
-  4-.->E((( )))
+  4(( ))-.->E((( )))
 ```
