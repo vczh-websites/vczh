@@ -76,3 +76,17 @@ graph LR
   3((3))-- Factor : Field(right) --> 4
   4((4))-. : EndObject .->E
 ```
+
+## Lrec_TermL2.png
+
+```mermaid
+graph LR
+  S((TermL))-- Factor : ReopenObject --> 1
+  1((1))-. : EndObject .->E((( )))
+  S-.. "`~~TermL : +BeginObject(MulExpr) Field(left)~~`" ..->2
+  2((2))-- #quot;*#quot; : Discard -->3
+  3((3))-- Factor : Field(right) --> 4
+  4((4))-. : EndObject .->E
+  1-. <leftrec> : ?? .->2
+  4-. <leftrec> : ?? .->2
+```
