@@ -193,7 +193,7 @@ EndObject
 BeginObject(type) = { cs.Push(Create(type)); }
 Token = { os.Push(NextToken()); }
 Discard = { os.Pop(); }
-Field(field) = { cs.Top().SetField(os.Pop()); }
+Field(field) = { cs.Top().SetField(field, os.Pop()); }
 EndObject = { os.Push(cs.Pop()); }
 ```
 
@@ -234,7 +234,7 @@ ReopenObject = { cs.Push(os.Pop()); }
 EndObject
 ```
 
-此时的味道已经不太好了，感觉就像给指令集打了个补丁，不过因为这个补丁实在是太过于直接而且合理，当时并没有想到以后会造成那么多问题，补丁一个一个像滚雪球一样堆上去，直到不得不推翻重来两遍。但是我们先不管，先来看看`JRoot`的PDA：
+此时的味道已经不太好了，感觉就像给指令集打了个补丁，不过因为这个补丁实在是太过于直接而且合理，而且`EndObject`和`ReopenObject`的这件事让我莫名感到快乐，就像是推导出了理所当然的结构一样，当时并没有想到以后会造成那么多问题，补丁一个一个像滚雪球一样堆上去，直到不得不推翻重来两遍。但是我们先不管，先来看看`JRoot`的PDA：
 
 ![](Images/JSON_PDA3.png)
 
@@ -270,6 +270,38 @@ TermR和TermL的PDA分别如下：
 要化为循环，就需要确定循环的开始和结束，而这很明显是要做出`Factor {"*" Factor}`的效果。因此不管是第一个分支的`Factor`结束或者是第二个分支的`Factor`结束他都要回到`"*"`，于是我们可以在PDA上把这两个transition做出来，同时就要断开所有左递归语法的第一个输入：
 
 ![](Images/Lrec_TermL2.png)
+
+这个新出来的transition的指令应该填什么呢？显然再也不可能把`1*2`的`BeginObject(MulExpr)`放在`1`的外面了，否则你就要面临“到底需要提前放几个`BeginObject(MulExpr)`的问题”，问题等于没解决。所以在执行指令的时候，`1`只能放在`BeginObject(MulExpr)`的前面，而且接下来的`Field(left)`还得读到`1`产生的。不过我们马上就能发现：
+
+```
+BeginObject(MulExpr)
+  BeginObject(NumExpr) ... EndObject
+  Field(left)
+```
+
+和
+
+```
+BeginObject(NumExpr) ... EndObject
+BeginObject(MulExpr)
+  Field(left)
+```
+
+的效果竟然是一样的，因为按照前面的伪代码展开，我们会得到
+
+```
+cs.Push(Create(type));
+os.Push(NumExpr from "1");
+cs.Top().SetField(MulExpr::left, os.Pop());
+```
+
+和
+
+```
+os.Push(NumExpr from "1");
+cs.Push(Create(type));
+cs.Top().SetField(MulExpr::left, os.Pop());
+```
 
 <!--
 - if-else 歧义的解决方式
