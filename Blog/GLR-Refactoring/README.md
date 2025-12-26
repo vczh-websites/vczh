@@ -68,7 +68,7 @@ JValue
 	;
 ```
 
-以`JObject`为例，我们可以直接生成他的[epsilon-NFA](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)：
+以`JObject`为例，我们可以直接生成他的[epsilon-NFA](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)。其中`{a ; b}`是一个缩写，展开后会变成`[a {b a}]`，但是生成PDA的时候是直接处理的，这样就免去了重复计算：
 
 ![](Images/JSON_ENFA.png)
 
@@ -239,6 +239,29 @@ EndObject
 ![](Images/JSON_PDA3.png)
 
 ## 四则运算与左递归
+
+一样是循环，上面生成的AST是数组，但是如果我们想递归怎么办？考虑一个二元运算符的例子，比如说乘法。假如他是右结合或者左结合，分别会有两种写法：
+
+```
+Factor
+  ::= NUM:value as NumExpr
+  ;
+
+TermR
+  ::= !Factor
+  ::= Factor:left "*" TermR:right as MulExpr
+  ;
+
+TermL
+  ::= !Factor
+  ::= TermL:left "*" Factor:right as MulExpr
+  ;
+```
+
+TermR和TermL的PDA分别如下：
+
+![](Images/Lrec_TermR.png)
+![](Images/Lrec_TermL.png)
 
 <!--
 - 四则运算语法引出右递归、左递归的区别，以及语法的副作用如何产生AST

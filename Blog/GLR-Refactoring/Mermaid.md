@@ -48,6 +48,31 @@ graph LR
 ```mermaid
 graph LR
   S((Object))-- JObject : ReopenObject -->1
-  S-- JArray : ReopenObject -->1
   1((1))-. : EndObject .->E((( )))
+  S-- JArray : ReopenObject -->2
+  2((2))-. : EndObject .->
+```
+
+## Lrec_TermR.png
+
+```mermaid
+graph LR
+  S((TermR))-- Factor : ReopenObject --> 1
+  1((1))-. : EndObject .->E((( )))
+  S-- Factor : +BeginObject(MulExpr) Field(left) -->2
+  2((2))-- #quot;*#quot; : Discard -->3
+  3((3))-- TermR : Field(right) --> 4
+  4((4))-. : EndObject .->E
+```
+
+## Lrec_TermL.png
+
+```mermaid
+graph LR
+  S((TermL))-- Factor : ReopenObject --> 1
+  1((1))-. : EndObject .->E((( )))
+  S-- TermL : +BeginObject(MulExpr) Field(left) -->2
+  2((2))-- #quot;*#quot; : Discard -->3
+  3((3))-- Factor : Field(right) --> 4
+  4((4))-. : EndObject .->E
 ```
