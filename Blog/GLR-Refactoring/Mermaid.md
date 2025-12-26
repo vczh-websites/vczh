@@ -50,7 +50,7 @@ graph LR
   S((Object))-- JObject : ReopenObject -->1
   1((1))-. : EndObject .->E((( )))
   S-- JArray : ReopenObject -->2
-  2((2))-. : EndObject .->
+  2((2))-. : EndObject .->E
 ```
 
 ## Lrec_TermR.png
