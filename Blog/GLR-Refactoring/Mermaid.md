@@ -83,7 +83,6 @@ graph LR
 graph LR
   S((TermL))-- Factor : ReopenObject --> 1
   1((1))-. : EndObject .->E((( )))
-  S-.. TermL : +BeginObject(MulExpr) Field(left) ..->2
   2((2))-- #quot;*#quot; : Discard -->3
   3((3))-- Factor : Field(right) --> 4
   4((4))-. : EndObject .->E
