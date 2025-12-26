@@ -86,6 +86,6 @@ graph LR
   2((2))-- #quot;*#quot; : Discard -->3
   3((3))-- Factor : Field(right) --> 4
   4((4))-. : EndObject .->E
-  1-. <leftrec> : ?? .->2
-  4-. <leftrec> : ?? .->2
+  1-. [leftrec] : ?? .->2
+  4-. [leftrec] : ?? .->2
 ```
