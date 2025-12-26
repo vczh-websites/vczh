@@ -303,6 +303,10 @@ cs.Push(Create(type));
 cs.Top().SetField(MulExpr::left, os.Pop());
 ```
 
+这意味着我们只需要原封不动地复制原来`TermL`到`2`的transition的指令集就好了，于是我们得到了：
+
+![](Images/Lrec_TermL3.png)
+
 <!--
 - if-else 歧义的解决方式
   - 自己展开成复杂的语法
