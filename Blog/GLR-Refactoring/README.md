@@ -333,6 +333,70 @@ cs.Top().SetField(MulExpr::left, os.Pop());
 
 不过`VlppParser`依然遗留了一个问题，为了开发方便，状态机是用正常的定义数据结构的方法写出来的，序列化和反序列化要做的事情都太多了，非常的不cache friendly。`VlppParser2`解决了这个问题。
 
+## if-else歧义的解决方式
+
+if-else歧义说的是一个教科书上的经典案例。当你写下如此语法的时候：
+
+```
+IfStat
+  ::= "if" Expr:condition "then" Stat:thenBranch ["else" Stat:elseBranch] as IfStat
+  ;
+
+Stat:
+  ::= !IfStat
+  ::= "while" Expr:condition Stat:body as WhileStat;
+  ::= ";" as EmptyStat;
+  ::= "{" {Stat:stats} "}" as BlockStat;
+  ;
+```
+
+处理`if X then if Y then ; else ;`就会出问题，因为你无法确定这个`else`是跟着谁的，从而产生歧义。教科书给出的方法简单粗暴，你只要让`"then" Stat:thenBranch`的这个部分不能是一个不带`else`的`if`语句就好了，不过写起来会很麻烦。为什么我要在上面留一个`while`语句，就是为了展示这种情况：
+
+```
+IfStat_Complete
+  ::= "if" Expr:condition "then" Stat_Complete:thenBranch "else" Stat_Complete:elseBranch as IfStat
+  ;
+
+IfStat
+  ::= "if" Expr:condition "then" Stat:thenBranch as IfStat
+  ::= "if" Expr:condition "then" Stat_Complete:thenBranch "else" Stat:elseBranch as IfStat
+  ;
+
+Stat_Shared
+  ::= ";" as EmptyStat;
+  ::= "{" {Stat:stats} "}" as BlockStat;
+  ;
+
+Stat_Complete:
+  ::= !IfStat_Complete
+  ::= "while" Expr:condition Stat_Complete:body as WhileStat;
+  ::= !Stat_Shared
+  ;
+
+Stat:
+  ::= !IfStat
+  ::= "while" Expr:condition Stat:body as WhileStat;
+  ::= !Stat_Shared
+  ;
+```
+
+可以发现基本上每个东西都得两份。如果是面对一个真实的语言，那语法就会变得很乱。为了让他尽量保持高可维护性，有两个办法，一个是引入静态开关，另一个是优先级。这两个功能我都做了，不过if-else歧义更适合使用优先级来解决。我们可以给`[]`引入一个语法，如果出现歧义的时候，走`[]`的分支会胜出，如果运行时有嵌套的分支出现，最里面的优先胜出。这种时候我们可以写作`+[]`，那么语法只要这样写就好了：
+
+```
+IfStat
+  ::= "if" Expr:condition "then" Stat:thenBranch +["else" Stat:elseBranch] as IfStat
+  ;
+
+Stat:
+  ::= !IfStat
+  ::= "while" Expr:condition Stat:body as WhileStat;
+  ::= ";" as EmptyStat;
+  ::= "{" {Stat:stats} "}" as BlockStat;
+  ;
+```
+
+一下子就简洁了。
+
 <!--
 - if-else 歧义的解决方式
   - 自己展开成复杂的语法
