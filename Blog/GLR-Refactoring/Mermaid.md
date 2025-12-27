@@ -99,6 +99,27 @@ graph LR
   2((2))-- #quot;*#quot; : Discard -->3
   3((3))-- Factor : Field(right) --> 4
   4((4))-. : EndObject .->E
-  1-. [leftrec] : +BeginObject(MulExpr) Field(left) .->2
-  4-. [leftrec] : +BeginObject(MulExpr) Field(left) .->2
+  E-. [leftrec] : +BeginObject(MulExpr) Field(left) .->2
+```
+
+## Calc_PDA1.png
+
+```mermaid
+graph LR
+  fS((Factor))-- NUM : +BeginObject(NumExpr) Field(value) --> f1
+  f1((f1))-. : EndObject .->fE((( )))
+  fS-- #quot;(#quot; : Discard --> f2
+  f2((f2))-- Expr : ReopenObject --> f3
+  f3((f3))-- #quot;(#quot; : Discard -->f4
+  43((43))-. : EndObject .->fE
+
+  tS((Term))-- Factor : ReopenObject --> t1
+  t1((t1))-. : EndObject .->tE((( )))
+  t2((t2))-- #quot;*#quot; : Discard -->t3
+  t3((t3))-- Factor : Field(right) --> t4
+  t4((t4))-. : EnumItem(Multiply) Field(op) EndObject .->tE
+  t2((t2))-- #quot;/#quot; : Discard -->t5
+  t5((t5))-- Factor : Field(right) --> t6
+  t6((t6))-. : EnumItem(Divide) Field(op) EndObject .->tE
+  tE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->t2
 ```

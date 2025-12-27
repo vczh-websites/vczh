@@ -455,11 +455,15 @@ class ExpressionToResolve : Expression
 }
 ```
 
-`ExpressionToResolve`的存在也意味着，歧义发生的时候，parser需要准确地在得到`Expression`的语法处分开合并，这样所有的分支就可以被执行并得到一系列的`Expression`对象，然后存到`ExpressionToResolve`里。因为`ExpressionToResolve`也是`Expression`，因此其之前和之后的PDA执行都不会受到影响。
+`ExpressionToResolve`的存在也意味着，歧义发生的时候，parser需要准确地在得到`Expression`的语法处分开合并，这样所有的分支就可以被执行并得到一系列的`Expression`对象，然后存到`ExpressionToResolve`里。因为`ExpressionToResolve`也是`Expression`，因此其之前和之后的PDA执行都不会受到影响，好像歧义从来都没发生过一样。
 
-### ParsingGeneralParser
+### 一个可以被执行的PDA
 
-### 自动错误恢复以及为何它会不可避免地产生歧义
+上面提到每一个语法生成自己的PDA之后还有“后面还有一系列复杂的处理”，现在以上面提到的四则运算的例子来解释一下。上面的例子只有乘法，现在我们把括号和加减乘除全部包含进去。首先我们会得到`Factor`、`Term`和`Expr`的三个PDA如下：
+
+![](Images/Calc_PDA1.png)
+
+### VlppParser具体的执行手段
 
 ### 局限性：无法应对复杂的歧义结构
 
