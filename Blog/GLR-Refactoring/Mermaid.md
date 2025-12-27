@@ -111,15 +111,16 @@ graph LR
   fS-- #quot;(#quot; : Discard --> f2
   f2((f2))-- Expr : ReopenObject --> f3
   f3((f3))-- #quot;(#quot; : Discard -->f4
-  43((43))-. : EndObject .->fE
+  f4((f4))-. : EndObject .->fE
 
   tS((Term))-- Factor : ReopenObject --> t1
   t1((t1))-. : EndObject .->tE((( )))
   t2((t2))-- #quot;*#quot; : Discard -->t3
   t3((t3))-- Factor : Field(right) --> t4
   t4((t4))-. : EnumItem(Multiply) Field(op) EndObject .->tE
-  t2((t2))-- #quot;/#quot; : Discard -->t5
-  t5((t5))-- Factor : Field(right) --> t6
-  t6((t6))-. : EnumItem(Divide) Field(op) EndObject .->tE
+  tE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->t5
+  t5((t5))-- #quot;/#quot; : Discard -->t6
+  t6((t6))-- Factor : Field(right) --> t7
+  t7((t7))-. : EnumItem(Divide) Field(op) EndObject .->tE
   tE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->t2
 ```
