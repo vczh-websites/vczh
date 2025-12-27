@@ -191,3 +191,18 @@ graph LR
   e6-- NUM +BeginObject(NumExpr) Field(value) >Term->t1 >Expr->e1 >e5->e6 -->f1
   e6-- #quot;(#quot; : Discard >Term->t1 >Expr->e1 >e5->e6 -->f2
 ```
+
+## Calc_PDA3.png
+
+```mermaid
+graph LR
+  fS((Factor))-- NUM : +BeginObject(NumExpr) Field(value) --> f1
+  f1((f1))-. : EndObject .->fE((( )))
+  fS-- #quot;(#quot; : Discard --> f2
+  f2((f2))-. : ReopenObject .-> f3
+  f3((f3))-- #quot;)#quot; : Discard -->f4
+  f4((f4))-. : EndObject .->fE
+
+  f2-- NUM +BeginObject(NumExpr) Field(value) >Term->t1 >Expr->e1 >f2->f3 -->f1
+  f2-- #quot;(#quot; : Discard >Term->t1 >Expr->e1 >f2->f3 -->f2
+```
