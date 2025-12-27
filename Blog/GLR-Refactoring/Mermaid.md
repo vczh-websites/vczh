@@ -139,34 +139,40 @@ graph LR
 
 ```mermaid
 graph LR
-  fS((Factor))-- NUM : +BeginObject(NumExpr) Field(value) --> f1
-  f1((f1))-. : EndObject .->fE((( )))
-  fS-- #quot;(#quot; : Discard --> f2
-  f2((f2))-. : ReopenObject .-> f3
-  f3((f3))-- #quot;)#quot; : Discard -->f4
-  f4((f4))-. : EndObject .->fE
+  subgraph
+    fS((Factor))-- NUM : +BeginObject(NumExpr) Field(value) --> f1
+    f1((f1))-. : EndObject .->fE((( )))
+    fS-- #quot;(#quot; : Discard --> f2
+    f2((f2))-. : ReopenObject .-> f3
+    f3((f3))-- #quot;)#quot; : Discard -->f4
+    f4((f4))-. : EndObject .->fE
+  end
 
-  tS((Term))-. : ReopenObject .-> t1
-  t1((t1))-. : EndObject .->tE((( )))
-  t2((t2))-- #quot;*#quot; : Discard -->t3
-  t3((t3))-. : Field(right) .-> t4
-  t4((t4))-. : EnumItem(Multiply) Field(op) EndObject .->tE
-  tE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->t5
-  t5((t5))-- #quot;/#quot; : Discard -->t6
-  t6((t6))-. : Field(right) .-> t7
-  t7((t7))-. : EnumItem(Divide) Field(op) EndObject .->tE
-  tE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->t2
+  subgraph
+    tS((Term))-. : ReopenObject .-> t1
+    t1((t1))-. : EndObject .->tE((( )))
+    t2((t2))-- #quot;*#quot; : Discard -->t3
+    t3((t3))-. : Field(right) .-> t4
+    t4((t4))-. : EnumItem(Multiply) Field(op) EndObject .->tE
+    tE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->t5
+    t5((t5))-- #quot;/#quot; : Discard -->t6
+    t6((t6))-. : Field(right) .-> t7
+    t7((t7))-. : EnumItem(Divide) Field(op) EndObject .->tE
+    tE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->t2
+  end
 
-  eS((Expr))-. : ReopenObject .-> e1
-  e1((e1))-. : EndObject .->eE((( )))
-  e2((e2))-- #quot;+#quot; : Discard -->e3
-  e3((e3))-. : Field(right) .-> e4
-  e4((e4))-. : EnumItem(Add) Field(op) EndObject .->eE
-  eE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->e5
-  e5((e5))-- #quot;-#quot; : Discard -->e6
-  e6((e6))-. : Field(right) .-> e7
-  e7((e7))-. : EnumItem(Minus) Field(op) EndObject .->eE
-  eE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->e2
+  subgraph
+    eS((Expr))-. : ReopenObject .-> e1
+    e1((e1))-. : EndObject .->eE((( )))
+    e2((e2))-- #quot;+#quot; : Discard -->e3
+    e3((e3))-. : Field(right) .-> e4
+    e4((e4))-. : EnumItem(Add) Field(op) EndObject .->eE
+    eE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->e5
+    e5((e5))-- #quot;-#quot; : Discard -->e6
+    e6((e6))-. : Field(right) .-> e7
+    e7((e7))-. : EnumItem(Minus) Field(op) EndObject .->eE
+    eE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->e2
+  end
 
   f2-- NUM +BeginObject(NumExpr) Field(value) >Term->t1 >Expr->e1 >f2->f3 -->f1
   f2-- #quot;(#quot; : Discard >Term->t1 >Expr->e1 >f2->f3 -->f2
