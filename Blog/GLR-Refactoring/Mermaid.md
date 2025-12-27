@@ -100,6 +100,7 @@ graph LR
   3((3))-- Factor : Field(right) --> 4
   4((4))-. : EndObject .->E
   E-. [leftrec] : +BeginObject(MulExpr) Field(left) .->2
+  S~~~2
 ```
 
 ## Calc_PDA1.png
