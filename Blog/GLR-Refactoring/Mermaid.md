@@ -142,7 +142,7 @@ graph LR
   fS((Factor))-- NUM : +BeginObject(NumExpr) Field(value) --> f1
   f1((f1))-. : EndObject .->fE((( )))
   fS-- #quot;(#quot; : Discard --> f2
-  f2((f2))~~~f3
+  f2((f2))...f3
   f3((f3))-- #quot;)#quot; : Discard -->f4
   f4((f4))-. : EndObject .->fE
 
