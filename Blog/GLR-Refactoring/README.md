@@ -485,16 +485,48 @@ class ExpressionToResolve : Expression
 
 ### 局限性：无法应对复杂的歧义结构
 
-一切看起来都非常的美好，直到现实需求导致语法越来越复杂，中遇到了一个时刻，我看到了非常复杂的歧义分支和合并的结构。简单的理解，因为最后的PDA的每一个transition都必须要么消耗一个token要么有特殊的功能。我们看看上面四则运算的例子。在这里我只保留PDA里面`Factor`的部分，这样可以看得更清楚一点：
+一切看起来都非常的美好，直到现实需求导致语法越来越复杂，中遇到了一个时刻，我看到了非常复杂的歧义分支和合并的结构。简单的理解，因为最后的PDA的每一个transition都必须要么消耗一个token要么有特殊的功能。我们看看上面四则运算的例子。在这里我只保留PDA里面`Factor`的部分，这样可以看得更清楚一点。读者们可以跟上面“未处理过”的`Factor`对比一下：
 
 ![](Images/Calc_PDA3.png)
 
+为什么从`f2`可以通过消耗一个`NUM` token到`f1`，是因为这里原本是`( EXPR )`，那么他就会从`EXPR`走一圈，重新回到`Factor`并通过`NUM`抵达`f1`。大家可以从这个transition的细节从看到：
+
+```
+NUM
+
++BeginObject(NumExpr)
+Field(value)
+
+>Term->t1
+>Expr->e1
+>f2->f3
+```
+
+如果当前的两个token分别是`NUM`和`")"`，那么他就会依次走到`f1`、`Factor`双圆圈、`t1`、`Term`的双圆圈、`e1`、`Expr`的双圆圈、`f3`。那这条transition的指令是怎么来的呢？实际上就是通过折叠起来的这么多transition它的带`+`的指令全部合在一起（只是恰好`Term`和`Expr`都没有带`+`的指令）。那么就会出现一种情况，这条边会有若干个`BeginObject`，还会有一些别的。
+
+如果没有`!`的话，每一个`BeginObject`都会对应一个`EndObject`。如果出现了`!`，则每一个`BeginObject`在`EndObject`之后还会被重复`ReopenObject + EndObject`若干次。所以一个`BeginObject`最终会有一个位置最推迟的`EndObject`。
+
+在出现歧义的时候，就会有一些非常麻烦的情况发生。比如分支是在`BeginObject`之后很远才发生的，在分裂出来的几条分支里各有各自的`EndObject`。甚至随着分支被不断的合并，若干个在不同位置被合并的`EndObject`对应的`BeginObject`甚至都出现在第一次分支之前的transition，或者干脆就在同一个transition里面。`BeginObject`分裂出来的好几个`EndObject`也不一定会同时合并，而不同的嵌套`BeginObject`分裂出来的分支则可能在同一个（也就是第一个发生歧义的）`BeginObject`对应的`EndObject`处合并在一起。甚至还有一些非常诡异的情况，有些分支走了左递归，有些分支不走左递归，导致一个分支是`BeginObject - BeginObject - EndObject - Field - EndObject`,而另一个分支是`BeginObject - EndObject - BeginObject - Field - EndObject`，他们的指令嵌套结构甚至不一样。
+
+歧义表达在PDA执行过程中的结构实在是太复杂了，远远超出了“一边跑PDA一边出AST”所能处理的范围。那这两个事情肯定有一个是错的。到底是复杂的歧义结构不应该出现呢，还是“一边跑PDA一边出AST”行不通呢？
+
+如果不要复杂的歧义结构，除了指令的设计要改以外，你还不能在合并后的PDA上面跑。改指令问题不到，关键是如果PDA不合并而是分开运行的话，那跑一个复杂的输入所需要执行的transition数量可能会翻个几十倍，这对性能可是一个巨大的破坏。这是万万不能的。因此答案必须是“一边跑PDA一边出AST”行不通。
+
+有了这个结论就好办了，既然这个方法是错误的，而且`VlppParser`的PDA数据结构确实非常不cache friendly，那就重做吧！于是我开了一个新的项目，那就是[VlppParser2](https://github.com/vczh-libraries/VlppParser2)。此时[vczh-libraries/GacUI](https://github.com/vczh-libraries/GacUI)已经大量依赖`VlppParser2`，我重写的时候需要保证它生成的parser代码的外观尽量跟`VlppParser`相似，然后把所有的依赖都重新整一边，还花了一点时间。
+
+## 手写C++编译器前端
+
+在开始`VlppParser2`之前，我曾经为`GacUI`做了一个[文档生成工具](https://github.com/vczh-libraries/Document/tree/release-1.0)，因此我尝试用`VlppParser`写一个C++ parser，发现根本写不出来（原因如上），于是干脆从零开始做，顺便实践一下一遍语法分析一边符号处理的方法，这样可以在遇到歧义的时候马上查符号表来确定正确的分支。这个项目的[实际效果](../../CppVisualize.html)被我单独保存了起来，你甚至可以[查看每一个文件](https://vczh.net/CppVisualize/Gaclib/SourceFiles/GuiApplication.h.html)，上面的符号都是带了超链接的。超链接的结果就是通过符号表算出来的，它甚至考虑了重载和模板偏特化造成的影响。
+
+这个项目非常的难，主要是C++的内容真的是太多了，而且当时的进度连C++14都没支持完。而灾难发生在一次Visual Studio的升级里。我从2017升级到2019之后发现msvc带了好多新的不能容忍的bug，导致我的单元测试整个没用了。我为了确保我对C++代码的处理结果和msvc保持一致，我用了一些很fancy的写法，给一段代码作为上下文，然后我可以问msvc说这个符号是什么，然后我自己算一遍，最后比较一下两边类型是否一致，据此写了海量单元测试。结果新的msvc bug导致我的这种符合标准的做法报废了，我私底下给他们开了很多bug，到现在都没修完。
+
+单元测试不能跑，那这个项目就没用了。不过这确实让我意识到一个问题，因为我不可能做出真正的100%完整的C++编译器，就算我能我也不想陪着C++标准跑步，这根本不可能靠一个人的力量完成。因此我总会在一些奇怪的地方处理不了符号，这直接导致parsing出现中断。于是我就在想，其实我根本就不应该在parsing的时候处理所有歧义，我干脆把歧义保留下来，AST到时候之后我能做多少就做多少。
+
+因此重写`VlppParser`的一个目标，就是让他具备处理C++语法的能力。现在看来`VlppParser2`完全具备这个能力，因为[生成的C++ parser](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/Source/BuiltIn-Cpp/Syntax)已经[跑起来了](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/UnitTest/BuiltInTest_Cpp)。当然目前还有一些性能问题和C++20开始的一些新语法没做进去，但是目前没看到什么是不能做的。
+
+## VlppParser2诞生！
+
 <!--
-- 自动错误恢复和局部歧义的做法（VlppParser一代的四个executor实现）
-  - ParsingGeneralParser和他的子类们
-  - 指令对这套实现的影响
-  - 为什么自动错误恢复无法避免歧义的产生
-  - 为什么无法处理更复杂的消除歧义的情况
 - 如何应对天生就存在歧义的语法
   - Document第一代的C++ parser
   - VlppParser2重做C++语法分析
