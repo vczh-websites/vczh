@@ -125,13 +125,13 @@ graph LR
   tE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->t2
 
   eS((Expr))-- Factor : ReopenObject --> e1
-  e1((t1))-. : EndObject .->eE((( )))
-  e2((t2))-- #quot;+#quot; : Discard -->e3
-  e3((t3))-- Factor : Field(right) --> e4
-  e4((t4))-. : EnumItem(Add) Field(op) EndObject .->eE
+  e1((e1))-. : EndObject .->eE((( )))
+  e2((e2))-- #quot;+#quot; : Discard -->e3
+  e3((e3))-- Factor : Field(right) --> e4
+  e4((e4))-. : EnumItem(Add) Field(op) EndObject .->eE
   eE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->e5
-  e5((t5))-- #quot;-#quot; : Discard -->e6
-  e6((t6))-- Factor : Field(right) --> e7
-  e7((t7))-. : EnumItem(Minus) Field(op) EndObject .->eE
+  e5((e5))-- #quot;-#quot; : Discard -->e6
+  e6((e6))-- Factor : Field(right) --> e7
+  e7((e7))-. : EnumItem(Minus) Field(op) EndObject .->eE
   eE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->e2
 ```
