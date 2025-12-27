@@ -100,7 +100,6 @@ graph LR
   3((3))-- Factor : Field(right) --> 4
   4((4))-. : EndObject .->E
   E-. [leftrec] : +BeginObject(MulExpr) Field(left) .->2
-  S~~~2
 ```
 
 ## Calc_PDA1.png
@@ -124,4 +123,15 @@ graph LR
   t6((t6))-- Factor : Field(right) --> t7
   t7((t7))-. : EnumItem(Divide) Field(op) EndObject .->tE
   tE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->t2
+
+  eS((Expr))-- Factor : ReopenObject --> e1
+  e1((t1))-. : EndObject .->eE((( )))
+  e2((t2))-- #quot;+#quot; : Discard -->e3
+  e3((t3))-- Factor : Field(right) --> e4
+  e4((t4))-. : EnumItem(Add) Field(op) EndObject .->eE
+  eE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->e5
+  e5((t5))-- #quot;-#quot; : Discard -->e6
+  e6((t6))-- Factor : Field(right) --> e7
+  e7((t7))-. : EnumItem(Minus) Field(op) EndObject .->eE
+  eE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->e2
 ```
