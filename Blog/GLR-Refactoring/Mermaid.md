@@ -139,7 +139,7 @@ graph LR
 
 ```mermaid
 graph LR
-  subgraph
+  subgraph Factor
     fS((Factor))-- NUM : +BeginObject(NumExpr) Field(value) --> f1
     f1((f1))-. : EndObject .->fE((( )))
     fS-- #quot;(#quot; : Discard --> f2
@@ -148,7 +148,7 @@ graph LR
     f4((f4))-. : EndObject .->fE
   end
 
-  subgraph
+  subgraph Term
     tS((Term))-. : ReopenObject .-> t1
     t1((t1))-. : EndObject .->tE((( )))
     t2((t2))-- #quot;*#quot; : Discard -->t3
@@ -161,7 +161,7 @@ graph LR
     tE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->t2
   end
 
-  subgraph
+  subgraph Expr
     eS((Expr))-. : ReopenObject .-> e1
     e1((e1))-. : EndObject .->eE((( )))
     e2((e2))-- #quot;+#quot; : Discard -->e3
