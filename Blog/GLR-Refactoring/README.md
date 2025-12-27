@@ -420,6 +420,43 @@ int main()
 
 ### @ambiguous
 
+AST是强类型的，自然允许发生歧义的地方也需要在类型里面有所体现。为了简化声明，一个`class`前面可以标记`@ambiguous`，比如说我们的语法允许某些表达式可以有歧义，一个表达式的字符串经过parse出来可以有不同的结果，那么他会给你一个`ExpressionToResolve`，你访问其`candidates`成员就可以得到全部的可能性：
+
+```
+@ambiguous class Expression{}
+class NumExpr : Expression {...}
+class BinaryOpExpr : Expression {...}
+```
+
+它就会被翻译成：
+
+```
+class Expression{}
+class NumExpr : Expression {...}
+class BinaryOpExpr : Expression {...}
+
+class ExpressionToResolve : Expression
+{
+  var candidates : Expression[];
+}
+```
+
+而如果`Expression`里面有东西，那就还得再加一层：
+
+```
+class Expression{}
+class ExpressionCommon : Expression {...}
+class NumExpr : ExpressionCommon {...}
+class BinaryOpExpr : ExpressionCommon {...}
+
+class ExpressionToResolve : Expression
+{
+  var candidates : Expression[];
+}
+```
+
+`ExpressionToResolve`的存在也意味着，歧义发生的时候，parser需要准确地在得到`Expression`的语法处分开合并，这样所有的分支就可以被执行并得到一系列的`Expression`对象，然后存到`ExpressionToResolve`里。因为`ExpressionToResolve`也是`Expression`，因此其之前和之后的PDA执行都不会受到影响。
+
 ### ParsingGeneralParser
 
 ### 自动错误恢复以及为何它会不可避免地产生歧义
