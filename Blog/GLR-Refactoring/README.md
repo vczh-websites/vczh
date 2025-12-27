@@ -522,17 +522,24 @@ Field(value)
 
 单元测试不能跑，那这个项目就没用了。不过这确实让我意识到一个问题，因为我不可能做出真正的100%完整的C++编译器，就算我能我也不想陪着C++标准跑步，这根本不可能靠一个人的力量完成。因此我总会在一些奇怪的地方处理不了符号，这直接导致parsing出现中断。于是我就在想，其实我根本就不应该在parsing的时候处理所有歧义，我干脆把歧义保留下来，AST到手之后我能做多少就做多少。
 
-因此重写`VlppParser`的一个目标，就是让他具备处理C++语法的能力。现在看来`VlppParser2`完全具备这个能力，因为[生成的C++ parser](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/Source/BuiltIn-Cpp/Syntax)已经[跑起来了](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/UnitTest/BuiltInTest_Cpp)。当然目前还有一些性能问题和C++20开始的一些新语法没做进去，但是目前没看到什么是不能做的。
+因此重写`VlppParser`的一个目标，就是让他具备处理C++语法的能力。现在看来`VlppParser2`完全具备这个能力，因为[生成的C++ parser](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/Source/BuiltIn-Cpp/Syntax)已经[跑起来了](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/UnitTest/BuiltInTest_Cpp)。当然目前还有一些性能问题、潜在的可以消除的歧义和C++20开始的一些新语法没做进去，但是目前没看到什么是不能做的。
 
 ## VlppParser2诞生！
 
 <!--
-- 如何应对天生就存在歧义的语法
-  - Document第一代的C++ parser
-  - VlppParser2重做C++语法分析
-  - 新的序列化方案
 - VlppParser2重新设计了歧义的实现，通过multiple passes取代上一代读一次就出结果的executor设计
 - 左递归和reuse rule产生的DelayFieldAssignment/LriStore/LriFetch指令
+  - left_recursion_inject, left_recursion_inject_multiple, prefix_merge
 - 为什么这个补丁对前缀合并产生了困难
 - 此次重构如何解决这个问题
+  - 重新设计指令
+  - 重做multiple passes的歧义处理
+
+copilot翻译成英语
+- 原文复制到en_us.md
+- 抽出所有标题和段落，生成task list，写进en_us_todo.md
+- 一边翻译一边标记todo一边生成词汇表vocabulary.md
+- 翻译的结果保存金en_us_translation.md，标题重写，翻译的时候一段中文注释一段英语
+- 结束后重新复制回en_us.md
+- git对比一下翻译是否完整
 -->
