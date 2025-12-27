@@ -311,11 +311,13 @@ cs.Top().SetField(MulExpr::left, os.Pop());
 
 ![](Images/Lrec_TermL3.png)
 
+<!--
 ### 打补丁本质上是一个靠温水煮青蛙积累技术债的行为
 
 如果当初多想一下的话，就会发现其实我们已经在破坏自己的抽象了，正在实践[依赖巧合编程](https://en.wikipedia.org/wiki/Programming_by_permutation)。我们没有使用`BeginObject`们的语义，反而在利用他们的实现，破坏了封装。这位后面的灾难埋下了伏笔。而且打补丁真的很容易成为一个人下意识的选择，因为每一个补丁都太小了，比如上面实现左递归甚至不需要修改状态机本身的定义和实现，甚至都意识不到自己在打补丁，令人麻痹大意，温水煮青蛙也。没有在需要重构的时候马上动手，就会有越来越多的代码依赖错误的设计，总有一天会改不动。这个时候要么你真的特别牛逼把重构做出来，要么重写，要么就[干脆放弃](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)。
 
 不过换个角度，如今的资本主义社会令码农并不能在法律上产生对代码的ownership，其实你写的都是别人的东西，到底要不要容忍[错误的实践](https://en.wikipedia.org/wiki/List_of_software_anti-patterns)，其实也见仁见智了。不过是否执行好的实践，最好只是你的一个选择，而不是受限于你的能力。所以下班后折腾自己的项目，亲自体验这些东西，我认为都是很有必要的。特别是LLM时代AI把屎一车一车的运到屎山上喷，如果你不具备这种能力，项目可能在你可以离职前就已经光速崩掉了，那这就不好办了。就算你上班用不上AI，下班后用AI喷屎然后自己铲干净，也是一种练习。
+-->
 
 ### 状态机的尺寸
 
@@ -333,15 +335,198 @@ cs.Top().SetField(MulExpr::left, os.Pop());
 
 不过`VlppParser`依然遗留了一个问题，为了开发方便，状态机是用正常的定义数据结构的方法写出来的，序列化和反序列化要做的事情都太多了，非常的不cache friendly。`VlppParser2`解决了这个问题。
 
+## if-else歧义的解决方式
+
+if-else歧义说的是一个教科书上的经典案例。当你写下如此语法的时候：
+
+```
+IfStat
+  ::= "if" Expr:condition "then" Stat:thenBranch ["else" Stat:elseBranch] as IfStat
+  ;
+
+Stat:
+  ::= !IfStat
+  ::= "while" Expr:condition Stat:body as WhileStat;
+  ::= ";" as EmptyStat;
+  ::= "{" {Stat:stats} "}" as BlockStat;
+  ;
+```
+
+处理`if X then if Y then ; else ;`就会出问题，因为你无法确定这个`else`是跟着谁的，从而产生歧义。教科书给出的方法简单粗暴，你只要让`"then" Stat:thenBranch`的这个部分不能是一个不带`else`的`if`语句就好了，不过写起来会很麻烦。为什么我要在上面留一个`while`语句，就是为了展示这种情况：
+
+```
+IfStat_Complete
+  ::= "if" Expr:condition "then" Stat_Complete:thenBranch "else" Stat_Complete:elseBranch as IfStat
+  ;
+
+IfStat
+  ::= "if" Expr:condition "then" Stat:thenBranch as IfStat
+  ::= "if" Expr:condition "then" Stat_Complete:thenBranch "else" Stat:elseBranch as IfStat
+  ;
+
+Stat_Shared
+  ::= ";" as EmptyStat;
+  ::= "{" {Stat:stats} "}" as BlockStat;
+  ;
+
+Stat_Complete:
+  ::= !IfStat_Complete
+  ::= "while" Expr:condition Stat_Complete:body as WhileStat;
+  ::= !Stat_Shared
+  ;
+
+Stat:
+  ::= !IfStat
+  ::= "while" Expr:condition Stat:body as WhileStat;
+  ::= !Stat_Shared
+  ;
+```
+
+可以发现基本上每个东西都得两份。如果是面对一个真实的语言，那语法就会变得很乱。而且这不仅仅是写的难看的问题，在匹配的时候，所有的if-else都得被匹配两次，就因为`IfStat`两个分支共享了太多前缀。合并前缀的优化在这里也很难做，毕竟`Stat`和`Stat_Complete`的差别确实很大。
+
+为了让他尽量保持高可维护性和高性能，有两个办法，一个是引入静态开关，另一个是优先级。这两个功能我都做了，不过if-else歧义更适合使用优先级来解决。我们可以给`[]`引入一个语法，如果出现歧义的时候，走`[]`的分支会胜出，如果运行时有嵌套的分支出现，最里面的优先胜出。这种时候我们可以写作`+[]`，那么语法只要这样写就好了：
+
+```
+IfStat
+  ::= "if" Expr:condition "then" Stat:thenBranch +["else" Stat:elseBranch] as IfStat
+  ;
+
+Stat:
+  ::= !IfStat
+  ::= "while" Expr:condition Stat:body as WhileStat;
+  ::= ";" as EmptyStat;
+  ::= "{" {Stat:stats} "}" as BlockStat;
+  ;
+```
+
+一下子就简洁了。
+
+静态开关也有它的作用，比如C++的运算符有十几个优先级，你可以按照四则运算的手法写出一大串语法，结果有一天你突然发现模板参数里面不能用大于号，这下惨了，难道你要把这一大堆再复制一遍，就为了做一个没有大于号的表达式语法？为什么不用模板的手法来解决呢？这就是引入静态开关的重要原因。开关在这里就像模板参数，不过写语法模板只需要`true`和`false`作为参数的值就足够了，所以把它命名为开关。你在引用一个语法的时候，可以给开关赋值，语法内部也会根据开关的值来标记那些愈发的部分会被无效化，开关的值会随着调用链一级一级传播下去。实际产生PDA的时候，编译器就会帮你“把这一大堆再复制一遍”。
+
+## VlppParser实现局部歧义和自动恢复的做法
+
+首先说一下什么是局部歧义。比如下面这个C++函数：
+
+```C++
+int main()
+{
+  A<B>C;
+  D<E>F;
+  return 0;
+}
+```
+
+如果你不知道`A`和`D`是什么，那这两行都要么可以解释成表达式或者变量定义。如果你写的parser不想在parsing的过程中就去分析符号到底是什么，那你就需要在最终的语法树里面保留这两种选择。但是这是个组合爆炸，你肯定不希望parser直接给你4棵语法树，而是只告诉你这两个语句都有两种可能。这就是歧义为什么是局部的的意思。而`VlppParser`自然也要支持这一点，那么在运行PDA的过程中，不仅要有分支，你还需要知道什么时候合并，而且合并的还要恰到好处，因为这涉及到AST如何表达歧义。
+
+### @ambiguous
+
+AST是强类型的，自然允许发生歧义的地方也需要在类型里面有所体现。为了简化声明，一个`class`前面可以标记`@ambiguous`，比如说我们的语法允许某些表达式可以有歧义，一个表达式的字符串经过parse出来可以有不同的结果，那么他会给你一个`ExpressionToResolve`，你访问其`candidates`成员就可以得到全部的可能性：
+
+```
+@ambiguous class Expression{}
+class NumExpr : Expression {...}
+class BinaryOpExpr : Expression {...}
+```
+
+它就会被翻译成：
+
+```
+class Expression{}
+class NumExpr : Expression {...}
+class BinaryOpExpr : Expression {...}
+
+class ExpressionToResolve : Expression
+{
+  var candidates : Expression[];
+}
+```
+
+而如果`Expression`里面有东西，那就还得再加一层：
+
+```
+class Expression{}
+class ExpressionCommon : Expression {...}
+class NumExpr : ExpressionCommon {...}
+class BinaryOpExpr : ExpressionCommon {...}
+
+class ExpressionToResolve : Expression
+{
+  var candidates : Expression[];
+}
+```
+
+`ExpressionToResolve`的存在也意味着，歧义发生的时候，parser需要准确地在得到`Expression`的语法处分开合并，这样所有的分支就可以被执行并得到一系列的`Expression`对象，然后存到`ExpressionToResolve`里。因为`ExpressionToResolve`也是`Expression`，因此其之前和之后的PDA执行都不会受到影响，好像歧义从来都没发生过一样。
+
+### 一个可以被执行的PDA
+
+上面提到每一个语法生成自己的PDA之后还有“后面还有一系列复杂的处理”，现在以上面提到的四则运算的例子来解释一下。上面的例子只有乘法，现在我们把括号和加减乘除全部包含进去。首先我们会得到`Factor`、`Term`和`Expr`的三个PDA如下：
+
+![](Images/Calc_PDA1.png)
+
+下面这一步就要体现PDA之所以是PDA而不是DFA的意思，因为PDA比DFA多了个堆栈。比如说你走`Expr-->e1`的时候需要接收一个`Term`，`Term-->t1`的时候需要接收一个`Factor`，而`Factor`就要看当前token到底是`NUM`还是`"("`。假设现在就是`NUM`那么要走到`f1`，`f1`后面就没东西了所以会走虚线到双圆圈。双圆圈后面是哪呢？他已经是尽头了，于是就要看到底之前PDA的执行是如何走到`Factor`这一步的。
+
+最简单的方法，就从`Expr`到`f1`的时候往堆栈里放`Expr-->e1`和`Term-->t1`两个transition，那么`Factor`的双圆圈一看，栈顶是`Term-->t1`，所以当无路可走的时候就会把它pop掉（需要执行它的指令）然后走进`t1`。`t1`也是同理，下一步就是双圆圈，但是这个时候双圆圈是有其他选择的，于是就要看下一个token是不是`"*"`或者`"/"`，然后就有`t2`、`t5`和继续pop三个选择。
+
+这里就可以体现出虚线的意思，也就是他不消化任何新的token。而标记`[leftrec]`还有个好处，就是你可以选择在能左递归的时候就不退出。这当然取决于你的语法是不是希望带有这种语义，并不是强制性的，而是给予你继续扩展的灵活性。
+
+于是我们需要把三个PDA都合并起来，所有的rule input就都没有了，全部变成token input再加上transition堆栈的入栈操作。
+
+![](Images/Calc_PDA2.png)
+
+这么复杂的状态机我已经不指望读者真的去看了。一个简简单单的四则运算都能搞出来这么复杂的状态机，更别说JSON、XML、GacUI的Workflow脚本语言、甚至C++了。这就是为什么上面一个C++语法的PDA可以这么大（几千个状态序列化后10M）。
+
+### VlppParser具体的执行手段
+
+在`VlppParser`里面，状态机使用普通手段加载在内存里的，也就是说凡是列表的地方都用容器，不能预先分配好的对象都会用智能指针，这样内存负担就很大。`VlppParser2`解决了这个问题。不过这不是这一节的重点。`VlppParser`追求的是一次parse出结果，于是就有了`ParsingGeneralParser`这么个接口，负责的就是读token跑PDA执行指令。每次读到一条指令就会送到`ParsingTransitionProcessor`接口里，这个接口的实现可以直接构造语法树，或者在单元测试里面还能把他存下来，这里可以用combinator。
+
+根据是否允许歧义以及是否允许错误恢复，`ParsingGeneralParser`有了四个实现，但是因为理念很简单，实现起来竟然非常短。这里说到错误恢复，如果当前token导致状态无法进行转移，那他就会猜一个，这里有一些简单的策略略去不谈。一个不允许歧义的自动恢复策略，他就会优先猜一个最好的token补充进去，除非没有什么好的选择才会跳过当前token。之所以这样，是因为错误恢复一般用来处理打了一半的代码，于是我们总是可以假设出现语法错误的原因是代码没打完。一个允许歧义的自动恢复策略，他就会同时猜好几个，然后再设计另一个策略来在一段时间后比较哪一个（或者多个）猜测更好，只留下这些好的。
+
+不管是否有自动恢复或者歧义，这个实现会在当前状态只有一个可能的时候马上执行指令，这样随着token的读取，Create堆栈和Object堆栈的操作也在同步进行，一直到所有的token都消化完了，如果能顺利走到终点，那么你就得到了parse好的语法树。
+
+### 局限性：无法应对复杂的歧义结构
+
+一切看起来都非常的美好，直到现实需求导致语法越来越复杂，终于到了一个时刻，我看到了非常复杂的歧义分支和合并的结构。简单的解释一下，因为最后的PDA的每一个transition都必须要么消耗一个token要么有特殊的功能。我们看看上面四则运算的例子。在这里我只保留PDA里面`Factor`的部分，这样可以看得更清楚一点。读者们可以跟上面“未处理过”的`Factor`对比一下：
+
+![](Images/Calc_PDA3.png)
+
+为什么从`f2`可以通过消耗一个`NUM` token到`f1`，是因为这里原本是`( EXPR )`，那么他就会从`EXPR`走一圈，重新回到`Factor`并通过`NUM`抵达`f1`。大家可以从这个transition的细节从看到：
+
+```
+NUM
+
++BeginObject(NumExpr)
+Field(value)
+
+>Term->t1
+>Expr->e1
+>f2->f3
+```
+
+如果当前的两个token分别是`NUM`和`")"`，那么他就会依次走到`f1`、`Factor`双圆圈、`t1`、`Term`的双圆圈、`e1`、`Expr`的双圆圈、`f3`。那这条transition的指令是怎么来的呢？实际上就是通过折叠起来的这么多transition它的带`+`的指令全部合在一起（只是恰好`Term`和`Expr`都没有带`+`的指令）。那么就会出现一种情况，这条边会有若干个`BeginObject`，还会有一些别的。
+
+如果没有`!`的话，每一个`BeginObject`都会对应一个`EndObject`。如果出现了`!`，则每一个`BeginObject`在`EndObject`之后还会被重复`ReopenObject + EndObject`若干次。所以一个`BeginObject`最终会有一个位置最推迟的`EndObject`。
+
+在出现歧义的时候，就会有一些非常麻烦的情况发生。比如分支是在`BeginObject`之后很远才发生的，在分裂出来的几条分支里各有各自的`EndObject`。甚至随着分支被不断的合并，若干个在不同位置被合并的`EndObject`对应的`BeginObject`甚至都出现在第一次分支之前的transition，或者干脆就在同一个transition里面。`BeginObject`分裂出来的好几个`EndObject`也不一定会同时合并，而不同的嵌套`BeginObject`分裂出来的分支则可能在同一个（也就是第一个发生歧义的）`BeginObject`对应的`EndObject`处合并在一起。甚至还有一些非常诡异的情况，有些分支走了左递归，有些分支不走左递归，导致一个分支是`BeginObject - BeginObject - EndObject - Field - EndObject`,而另一个分支是`BeginObject - EndObject - BeginObject - Field - EndObject`，他们的指令嵌套结构甚至不一样。
+
+歧义表达在PDA执行过程中的结构实在是太复杂了，远远超出了“一边跑PDA一边出AST”所能处理的范围。那这两个事情肯定有一个是错的。到底是复杂的歧义结构不应该出现呢，还是“一边跑PDA一边出AST”行不通呢？
+
+如果不要复杂的歧义结构，除了指令的设计要改以外，你还不能在合并后的PDA上面跑。改指令问题不大，关键是如果PDA不合并而是分开运行的话，那跑一个复杂的输入所需要执行的transition数量可能会翻个几十倍，这对性能可是一个巨大的破坏。这是万万不能的。因此答案必须是“一边跑PDA一边出AST”行不通。
+
+有了这个结论就好办了，既然这个方法是错误的，而且`VlppParser`的PDA数据结构确实非常不cache friendly，那就重做吧！于是我开了一个新的项目，那就是[VlppParser2](https://github.com/vczh-libraries/VlppParser2)。此时[vczh-libraries/GacUI](https://github.com/vczh-libraries/GacUI)已经大量依赖`VlppParser2`，我重写的时候需要保证它生成的parser代码的外观尽量跟`VlppParser`相似，然后把所有的依赖都重新整一边，还花了一点时间。
+
+## 手写C++编译器前端
+
+在开始`VlppParser2`之前，我曾经为`GacUI`做了一个[文档生成工具](https://github.com/vczh-libraries/Document/tree/release-1.0)，因此我尝试用`VlppParser`写一个C++ parser，发现根本写不出来（原因如上），于是干脆从零开始做，顺便实践一下一遍语法分析一边符号处理的方法，这样可以在遇到歧义的时候马上查符号表来确定正确的分支。这个项目的[实际效果](../../CppVisualize.html)被我单独保存了起来，你甚至可以[查看每一个文件](../../CppVisualize/Gaclib/SourceFiles/GuiApplication.h.html)，上面的符号都是带了超链接的。超链接的结果就是通过符号表算出来的，它甚至考虑了重载和模板偏特化造成的影响。
+
+这个项目非常的难，主要是C++的内容真的是太多了，而且当时的进度连C++14都没支持完。而灾难发生在一次Visual Studio的升级里。我从2017升级到2019之后发现msvc带了好多新的不能容忍的bug，导致我的单元测试整个没用了。我为了确保我对C++代码的处理结果和msvc保持一致，我用了一些很fancy的写法，给一段代码作为上下文，然后我可以问msvc说这个符号是什么，然后我自己算一遍，最后比较一下两边类型是否一致。我用这个手法写了海量单元测试，结果新的msvc bug导致我的这种符合标准的做法报废了，我私底下给他们开了很多bug，从新冠发生之前到现在都没修完。
+
+单元测试不能跑，那这个项目就没用了。不过这确实让我意识到一个问题，因为我不可能做出真正的100%完整的C++编译器，就算我能我也不想陪着C++标准跑步，这根本不可能靠一个人的力量完成。因此我总会在一些奇怪的地方处理不了符号，这直接导致parsing出现中断。于是我就在想，其实我根本就不应该在parsing的时候处理所有歧义，我干脆把歧义保留下来，AST到手之后我能做多少就做多少。
+
+因此重写`VlppParser`的一个目标，就是让他具备处理C++语法的能力。现在看来`VlppParser2`完全具备这个能力，因为[生成的C++ parser](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/Source/BuiltIn-Cpp/Syntax)已经[跑起来了](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/UnitTest/BuiltInTest_Cpp)。当然目前还有一些性能问题和C++20开始的一些新语法没做进去，但是目前没看到什么是不能做的。
+
+## VlppParser2诞生！
+
 <!--
-- if-else 歧义的解决方式
-  - 自己展开成复杂的语法
-  - 设定优先级但是需要引入GLR parser
-- 自动错误恢复和局部歧义的做法（VlppParser一代的四个executor实现）
-  - ParsingGeneralParser和他的子类们
-  - 指令对这套实现的影响
-  - 为什么自动错误恢复无法避免歧义的产生
-  - 为什么无法处理更复杂的消除歧义的情况
 - 如何应对天生就存在歧义的语法
   - Document第一代的C++ parser
   - VlppParser2重做C++语法分析
