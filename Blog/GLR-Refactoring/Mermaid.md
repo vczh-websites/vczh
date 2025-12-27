@@ -86,11 +86,10 @@ graph LR
   2((2))-- #quot;*#quot; : Discard -->3
   3((3))-- Factor : Field(right) --> 4
   4((4))-. : EndObject .->E
-  1-. [leftrec] : ?? .->2
-  4-. [leftrec] : ?? .->2
+  E-. [leftrec] : ?? .->2
 ```
 
-## Lrec_TermL2.png
+## Lrec_TermL3.png
 
 ```mermaid
 graph LR
