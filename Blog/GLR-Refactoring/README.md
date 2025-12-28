@@ -527,9 +527,6 @@ Field(value)
 ## VlppParser2诞生！
 
 <!--
-- leftrec不是接在ending后面，而是一个状态同时出来ending和若干leftrec，leftrec包含了endng的指令
-  - 修改所有图片
-		- 修改相关文字说明
 - VlppParser2重新设计了歧义的实现，通过multiple passes取代上一代读一次就出结果的executor设计
   - 新的状态机存储方式
 		- Trace的存储方式
