@@ -531,6 +531,8 @@ Field(value)
   - 修改所有图片
 		- 修改相关文字说明
 - VlppParser2重新设计了歧义的实现，通过multiple passes取代上一代读一次就出结果的executor设计
+  - 新的状态机存储方式
+		- Trace的存储方式
 - 左递归和reuse rule产生的DelayFieldAssignment/LriStore/LriFetch指令
   - left_recursion_inject, left_recursion_inject_multiple, prefix_merge
 - 为什么这个补丁对前缀合并产生了困难
