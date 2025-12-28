@@ -527,9 +527,12 @@ Field(value)
 ## VlppParser2诞生！
 
 <!--
-- VlppParser2重新设计了歧义的实现，通过multiple passes取代上一代读一次就出结果的executor设计
+- VlppParser2
   - 新的状态机存储方式
 	- Trace的存储方式
+  - 重新设计了歧义的实现，通过multiple passes取代上一代读一次就出结果的executor设计
+    - Input / PrepareTraceRoute / ResolveAmbiguity
+    - Trace / TraceAmbiguity / ExecutionStep
 - reuse/partial rule产生的新指令：DelayFieldAssignment
 - 合并前缀（三个情况）
   - 前缀合并可以让Workflow跑一个长代码从11万trace缩小到6千
@@ -542,8 +545,13 @@ Field(value)
 - 为什么这个终极补丁对前缀合并产生了困难
 - 此次重构如何解决这个问题
   - 重新设计指令
-  - 新的合并前缀做法（三个情况）
+    - 把(DFA/)?BO/EO固化为SB/CO/SE
+    - 把(DFA/)?RO/EO固化为SB/SE
+    - 利用StackSlot把Field都移动到SE前面
+  - 新的指令如何让合并前缀变得更顺利处理的情况更多（三个情况）
   - 重做multiple passes的歧义处理
+    - PrepareTraceRoute从产生object改为产生stack，也就是追踪的是每一个SB/SE的结果，而不是具体的对象（因为对象可能被多个SB/SE共享）
+    - ResolveAmbiguity的BuildExecutionOrder重做
 
 copilot翻译成英语
 - 原文复制到en_us.md
