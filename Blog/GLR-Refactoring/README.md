@@ -529,12 +529,20 @@ Field(value)
 <!--
 - VlppParser2重新设计了歧义的实现，通过multiple passes取代上一代读一次就出结果的executor设计
   - 新的状态机存储方式
-		- Trace的存储方式
-- 左递归和reuse rule产生的DelayFieldAssignment/LriStore/LriFetch指令
-  - left_recursion_inject, left_recursion_inject_multiple, prefix_merge
-- 为什么这个补丁对前缀合并产生了困难
+	- Trace的存储方式
+- reuse/partial rule产生的新指令：DelayFieldAssignment
+- 合并前缀（三个情况）
+  - 前缀合并可以让Workflow跑一个长代码从11万trace缩小到6千
+  - 相同指令前缀合并
+  - 不同指令相同rule前缀合并
+  - 不同rule但是调用进去遇到相同的rule的前缀合并
+    - left_recursion_inject, left_recursion_inject_multiple
+    - prefix_merge语法重写
+    - LriStore/LriFetch
+- 为什么这个终极补丁对前缀合并产生了困难
 - 此次重构如何解决这个问题
   - 重新设计指令
+  - 新的合并前缀做法（三个情况）
   - 重做multiple passes的歧义处理
 
 copilot翻译成英语
