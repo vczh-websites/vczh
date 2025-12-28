@@ -119,22 +119,32 @@ graph LR
   t2((t2))-- #quot;*#quot; : Discard -->t3
   t3((t3))-- Term : Field(right) --> t4
   t4((t4))-. : EnumItem(Multiply) Field(op) EndObject .->tE
-  tE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->t5
   t5((t5))-- #quot;/#quot; : Discard -->t6
   t6((t6))-- Term : Field(right) --> t7
   t7((t7))-. : EnumItem(Divide) Field(op) EndObject .->tE
-  tE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->t2
+  
+  t1-. [leftrec] : +EndObject +BeginObject(BinaryOpExpr) Field(left) .->t2
+  t4-. [leftrec] : +EnumItem(Multiply) +Field(op) +EndObject+BeginObject(BinaryOpExpr) Field(left) .->t2
+  t7-. [leftrec] : +EnumItem(Divide) +Field(op) +EndObject+BeginObject(BinaryOpExpr) Field(left) .->t2
+  t1-. [leftrec] : +EndObject +BeginObject(BinaryOpExpr) Field(left) .->t5
+  t4-. [leftrec] : +EnumItem(Multiply) +Field(op) +EndObject+BeginObject(BinaryOpExpr) Field(left) .->t5
+  t7-. [leftrec] : +EnumItem(Divide) +Field(op) +EndObject+BeginObject(BinaryOpExpr) Field(left) .->t5
 
   eS((Expr))-- Term : ReopenObject --> e1
   e1((e1))-. : EndObject .->eE((( )))
   e2((e2))-- #quot;+#quot; : Discard -->e3
   e3((e3))-- Expr : Field(right) --> e4
   e4((e4))-. : EnumItem(Add) Field(op) EndObject .->eE
-  eE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->e5
   e5((e5))-- #quot;-#quot; : Discard -->e6
   e6((e6))-- Expr : Field(right) --> e7
   e7((e7))-. : EnumItem(Minus) Field(op) EndObject .->eE
-  eE-. [leftrec] : +BeginObject(BinaryOpExpr) Field(left) .->e2
+  
+  e1-. [leftrec] : +EndObject +BeginObject(BinaryOpExpr) Field(left) .->e2
+  e4-. [leftrec] : +EnumItem(Add) +Field(op) +EndObject+BeginObject(BinaryOpExpr) Field(left) .->e2
+  e7-. [leftrec] : +EnumItem(Minus) +Field(op) +EndObject+BeginObject(BinaryOpExpr) Field(left) .->e2
+  e1-. [leftrec] : +EndObject +BeginObject(BinaryOpExpr) Field(left) .->e5
+  e4-. [leftrec] : +EnumItem(Add) +Field(op) +EndObject+BeginObject(BinaryOpExpr) Field(left) .->e5
+  e7-. [leftrec] : +EnumItem(Minus) +Field(op) +EndObject+BeginObject(BinaryOpExpr) Field(left) .->e5
 ```
 
 ## Calc_PDA2.png
