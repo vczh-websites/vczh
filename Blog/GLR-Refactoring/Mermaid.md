@@ -87,6 +87,7 @@ graph LR
   3((3))-- Factor : Field(right) --> 4
   4((4))-. : EndObject .->E
   1-. [leftrec] : ?? .->2
+  4-. [leftrec] : ?? .->2
 ```
 
 ## Lrec_TermL3.png
@@ -99,6 +100,7 @@ graph LR
   3((3))-- Factor : Field(right) --> 4
   4((4))-. : EndObject .->E
   1-. [leftrec] : +EndObject +BeginObject(MulExpr) Field(left) .->2
+  4-. [leftrec] : +EndObject +BeginObject(MulExpr) Field(left) .->2
 ```
 
 ## Calc_PDA1.png
