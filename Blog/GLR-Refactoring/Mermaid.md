@@ -224,3 +224,20 @@ graph LR
   f2-- NUM +BeginObject(NumExpr) Field(value) >Term->t1 >Expr->e1 >f2->f3 -->f1
   f2-- #quot;(#quot; : Discard >Term->t1 >Expr->e1 >f2->f3 -->f2
 ```
+
+## Trace_Shape.png
+
+```mermaid
+graph TD
+  subgraph Yes
+    a-->b-->c
+  end
+
+  subgraph Yes
+    a & b --> c --> d & e
+  end
+
+  subgraph No
+    a & b --> c & d --> e & f
+  end
+```
