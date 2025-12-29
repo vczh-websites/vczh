@@ -272,7 +272,7 @@ graph TD
   end
 
   subgraph 3
-    subgraph (Single Trace)
+    subgraph Single Trace
       a3-->b3
     end
     b3-->c3 & d3-->e3(((e3)))
