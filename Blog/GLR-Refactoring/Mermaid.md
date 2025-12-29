@@ -298,7 +298,7 @@ graph TD
     subgraph Ambiguity 2
       b4[[b4]]-->c4-->d4 --> e4 & f4-->g4(((g4)))
     end
-    a4-->b4
+    a4[[a4]]-->b4
     c4-->h4
     g4 & h4-->i4(((i4)))
   end
