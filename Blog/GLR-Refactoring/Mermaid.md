@@ -234,7 +234,7 @@ graph LR
     a1-->b1-->c1
   end
 
-  subgraph Yes _2
+  subgraph Yes_2
     direction TB
     a2 & b2 --> c2 --> d2 & e2
   end
