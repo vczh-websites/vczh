@@ -270,4 +270,13 @@ graph TD
     b2-->f2(((f2)))
     c2 & d2-->e2-->f2
   end
+
+  subgraph 3
+    subgraph (Single Trace)
+      a3-->b3
+    end
+    b3-->c3 & d3-->e3(((e3)))
+    a3-->f3
+    e3 & f3-->g3(((g3)))
+  end
 ```
