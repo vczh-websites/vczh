@@ -595,6 +595,16 @@ struct Trace : Allocatable<Trace>
 
 ### 第四步：生成ExecutionStep
 
+`ExecutionStep`在构造的过程中是一棵树，构造完了会被重新整理成链表。在这里说一下最棘手的一种情况，就是上面的最后一张图。
+
+首先看`Ambiguity 2`，执行`c4`的时候不能包含`h4`，但是执行`d4`却要把`e4`和`f4`都走一遍。连起来也就是`BEGIN->b4->c4->d4->e4->BRANCH->b4->c4->d4->f4->BRANCH->RESOLVE(2)->g4`。这里的`BEGIN`、`BRANCH`和`RESOLVE`就是分别需要插入指令的地方，比如`RESOLVE`就需要插入`ResolveAmbiguity`好构造AST里面的`XToResolve`类型的对象。而且现实情况中，也有可能`g4`的一半要在两个`BRANCH`前面重复，而`RESOLVE`前面只有`g4`的另一半，在这里就都简化了。
+
+然后看看`Ambiguity 1`，他的路径就是`BEGIN->a4->Ambiguity 2->BRANCH->a4->b4->c4->h4->BRANCH->RESOLVE(2)->i4`。
+
+于是整个`Trace`的`ExecutionStep`链表就是：`S->BEGIN->a4->BEGIN->b4->c4->d4->e4->BRANCH->b4->c4->d4->f4->BRANCH->RESOLVE(2)->g4->BRANCH->a4->b4->c4->h4->BRANCH->RESOLVE(2)->i4->E`。
+
+说的时候理所当然，实际上要怎么在`Trace`上标记才能让你顺利生成这样的`ExecutionStep`链表呢？一开始也是一个棘手的问题。而且这些情况并不是一下子就摆在我眼前的，一开始只有简单的歧义结构，随着测试的语法越来越复杂，就跟温水煮青蛙一样，每次多一种情况，就在算法上多修改一点，最终变成一堆我自己都看不懂是什么逻辑的代码了。
+
 <!--
 - reuse/partial rule产生的新指令：DelayFieldAssignment
 - 合并前缀（三个情况）
