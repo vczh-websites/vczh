@@ -230,14 +230,14 @@ graph LR
 ```mermaid
 graph TD
   subgraph Yes 1
-    a-->b-->c
+    a1-->b1-->c1
   end
 
   subgraph Yes 2
-    a & b --> c --> d & e
+    a2 & b2 --> c2 --> d2 & e2
   end
 
   subgraph No
-    a & b --> c & d --> e & f
+    a3 & b3 --> c3 & d3 --> e3 & f3
   end
 ```
