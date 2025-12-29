@@ -255,28 +255,47 @@ graph TD
   d-- predecessors.last -->c
 ```
 
-## Trace_Shape3.png
+## Trace_Shape3_1.png
 
 ```mermaid
 graph TD
-  subgraph 1
-    a1[[a1]]-->b1 & c1
-    b1-->f1(((f1)))
-    c1-->d1 & e1-->f1
-  end
+  a1[[a1]]-->b1 & c1
+  b1-->f1(((f1)))
+  c1-->d1 & e1-->f1
+```
 
-  subgraph 2
-    a2[[a1]]-->b2 & c2 & d2
-    b2-->f2(((f2)))
-    c2 & d2-->e2-->f2
-  end
+## Trace_Shape3_2.png
 
-  subgraph 3
-    subgraph Single Trace
-      a3-->b3
+```mermaid
+graph TD
+  a2[[a1]]-->b2 & c2 & d2
+  b2-->f2(((f2)))
+  c2 & d2-->e2-->f2
+```
+
+## Trace_Shape3_3.png
+
+```mermaid
+graph TD
+  subgraph Single Trace
+    a3-->b3
+  end
+  b3-->c3 & d3-->e3(((e3)))
+  a3-->f3
+  e3 & f3-->g3(((g3)))
+```
+
+## Trace_Shape3_4.png
+
+```mermaid
+  subgraph Ambiguity 1
+    subgraph Ambiguity 2
+      b4[[b4]]-->c4-->d4 & e4-->f4(((f4)))
     end
-    b3-->c3 & d3-->e3(((e3)))
-    a3-->f3
-    e3 & f3-->g3(((g3)))
+    a4-->b4
+    c4-->g4
+    f4 & g4-->h4(((h4)))
   end
+  S->a4
+  h4->E
 ```
