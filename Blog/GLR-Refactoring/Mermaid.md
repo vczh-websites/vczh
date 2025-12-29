@@ -245,7 +245,7 @@ graph TD
 ## Trace_Shape2.png
 
 ```mermaid
-graph TD
+graph DT
   a-- predecessors.siblingNext -->b
   b-- predecessors.siblingNext -->c
   c-- predecessors.siblingPrev -->b
