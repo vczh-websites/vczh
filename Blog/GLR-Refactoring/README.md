@@ -542,9 +542,33 @@ Field(value)
 
 每一个`Trace`可能会有若干个分支，但是PDA的设计保证了`Trace`之间不会出现多对多的情况，也就是一个`Trace`，可能有多个分支从它这里出来，也可能会有多个分支到它这里结束，这两件事也许会同时发生，但是不会出现一边分裂一边合并的情况。
 
+![](Images/Trace_Shape.png)
+
+于是我设计了一个数据结构来表达这种情况：
+
+```C++
+struct TraceCollection
+{
+	Ref<Trace>					first;						// first trace in the collection
+	Ref<Trace>					last;						// last trace in the collection
+	Ref<Trace>					siblingPrev;				// previous trace in the collection of the owned trace
+	Ref<Trace>					siblingNext;				// next trace in the collection of the owned trace
+};
+
+struct Trace : Allocatable<Trace>
+{
+	TraceCollection			predecessors;				// ids of predecessor Tra
+	TraceCollection			successors;					// ids of successor Trace
+};
+```
+
+一个`Trace`的`predecessors.first`和`predecessors.last`分别代表了上游所有`Trace`的第一个和最后一个，这些`Trace`的`predecessors.siblingPrev`和`predecessors.siblingNext`则构成了一个链表，把所有的`Trace`串了起来。如果上图中的非法情形不发生，那么一个`Trace`就不会同时是多个上游`Trace`分裂的产物（之可能来源于多个上游，但是每个这样的`Trace`都只有一个下游）。也就是说，如果把每一个**含有多个元素**的`predecessors`视为一个容器，那每一个`Trace`只会出现在一个容器里，也就是只要他自己的`predecessors.siblingPrev`和`predecessors.siblingNext`只要不为空，那么这同时说明了三件事：
+- 本`Trace`会跟其他`Trace`合并到唯一的下游
+- 本`Trace`的下游的所有上游的`predecessors.siblingPrev`和`predecessors.siblingNext`跟下游`Trace`的`predecessors.first`和`predecessors.last`共同构成了一个完整的双向链表。
+
+`successors`同理。
+
 ### 第二步：对Trace上的指令做partial execution
-
-
 
 <!--
 - VlppParser2

@@ -241,3 +241,15 @@ graph TD
     a3 & b3 --> c3 & d3 --> e3 & f3
   end
 ```
+
+## Trace_Shape2.png
+
+```mermaid
+graph TD
+  a-- predecessors.siblingNext -->b
+  b-- predecessors.siblingNext -->c
+  c-- predecessors.siblingPrev -->b
+  b-- predecessors.siblingPrev -->a
+  d-- predecessors.first -->a
+  d-- predecessors.last -->c
+```
