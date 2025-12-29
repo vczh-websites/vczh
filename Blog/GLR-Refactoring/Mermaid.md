@@ -229,12 +229,12 @@ graph LR
 
 ```mermaid
 graph LR
-  subgraph Yes 1
+  subgraph Yes_1
     direction TB
     a1-->b1-->c1
   end
 
-  subgraph Yes 2
+  subgraph Yes _2
     direction TB
     a2 & b2 --> c2 --> d2 & e2
   end
@@ -244,7 +244,7 @@ graph LR
     a3 & b3 --> c3 & d3 --> e3 & f3
   end
 
-  Yes 1~~~Yes 2~~~No
+  Yes_1~~~Yes_2~~~No
 ```
 
 ## Trace_Shape2.png
