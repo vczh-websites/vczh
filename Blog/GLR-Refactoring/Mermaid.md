@@ -246,11 +246,11 @@ graph TD
 
 ```mermaid
 graph TD
-  d-- predecessors.first -->a
-  d~~~b
-  d-- predecessors.last -->c
   a-- predecessors.siblingNext -->b
   b-- predecessors.siblingNext -->c
   c-- predecessors.siblingPrev -->b
   b-- predecessors.siblingPrev -->a
+  d-- predecessors.first -->a
+  d~~~b
+  d-- predecessors.last -->c
 ```
