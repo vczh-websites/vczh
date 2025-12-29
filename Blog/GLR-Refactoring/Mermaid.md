@@ -288,6 +288,7 @@ graph TD
 ## Trace_Shape3_4.png
 
 ```mermaid
+graph TD
   subgraph Ambiguity 1
     subgraph Ambiguity 2
       b4[[b4]]-->c4-->d4 & e4-->f4(((f4)))
