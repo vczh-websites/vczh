@@ -562,9 +562,15 @@ struct Trace : Allocatable<Trace>
 };
 ```
 
+![](Images/Trace_Shape2.png)
+
+这个图表达了，如果abc都是d的上游的时候，各自的predecessors都会保存什么，没有的就是空引用。
+
 一个`Trace`的`predecessors.first`和`predecessors.last`分别代表了上游所有`Trace`的第一个和最后一个，这些`Trace`的`predecessors.siblingPrev`和`predecessors.siblingNext`则构成了一个链表，把所有的`Trace`串了起来。如果上图中的非法情形不发生，那么一个`Trace`就不会同时是多个上游`Trace`分裂的产物（之可能来源于多个上游，但是每个这样的`Trace`都只有一个下游）。也就是说，如果把每一个**含有多个元素**的`predecessors`视为一个容器，那每一个`Trace`只会出现在一个容器里，也就是只要他自己的`predecessors.siblingPrev`和`predecessors.siblingNext`只要不为空，那么这同时说明了三件事：
 - 本`Trace`会跟其他`Trace`合并到唯一的下游
 - 本`Trace`的下游的所有上游的`predecessors.siblingPrev`和`predecessors.siblingNext`跟下游`Trace`的`predecessors.first`和`predecessors.last`共同构成了一个完整的双向链表。
+
+说起来有点绕，但实际上就是保证了这么一件事，因为一个`Trace`只属于一个容器，那么`siblingPrev`和`siblingNext`就是别的唯一的`Trace`的容器的一部分，不会串台。既然不会串台，那确实只需要有一份变量就足够了。
 
 `successors`同理。
 
