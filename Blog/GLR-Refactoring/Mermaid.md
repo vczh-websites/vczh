@@ -228,7 +228,7 @@ graph LR
 ## Trace_Shape.png
 
 ```mermaid
-graph TD
+graph LR
   subgraph Yes 1
     direction TB
     a1-->b1-->c1
