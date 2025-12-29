@@ -260,8 +260,14 @@ graph TD
 ```mermaid
 graph TD
   subgraph 1
-    a[[start]]-->b & c
-    b-->f((end))
-    c-->d & e-->f
+    a1[[a1]]-->b1 & c1
+    b1-->f1((f1))
+    c1-->d1 & e1-->f1
+  end
+
+  subgraph 2
+    a2[[a1]]-->b2 & c2 & d2
+    b2-->f2((f2))
+    c2 & d2-->f2
   end
 ```
