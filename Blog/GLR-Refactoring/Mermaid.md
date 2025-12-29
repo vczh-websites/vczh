@@ -243,6 +243,8 @@ graph LR
     direction TB
     a3 & b3 --> c3 & d3 --> e3 & f3
   end
+
+  Yes 1~~~Yes 2~~~No
 ```
 
 ## Trace_Shape2.png
