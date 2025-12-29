@@ -229,11 +229,11 @@ graph LR
 
 ```mermaid
 graph TD
-  subgraph Yes
+  subgraph Yes 1
     a-->b-->c
   end
 
-  subgraph Yes
+  subgraph Yes 2
     a & b --> c --> d & e
   end
 
