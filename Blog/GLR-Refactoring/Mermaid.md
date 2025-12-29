@@ -291,12 +291,12 @@ graph TD
 graph TD
   subgraph Ambiguity 1
     subgraph Ambiguity 2
-      b4[[b4]]-->c4-->d4 & e4-->f4(((f4)))
+      b4[[b4]]-->c4-->d4 --> e4 & f4-->g4(((g4)))
     end
     a4-->b4
-    c4-->g4
-    f4 & g4-->h4(((h4)))
+    b4-->h4
+    g4 & h4-->i4(((i4)))
   end
   S-->a4
-  h4-->E
+  i4-->E
 ```
