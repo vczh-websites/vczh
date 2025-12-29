@@ -266,8 +266,8 @@ graph TD
   end
 
   subgraph 2
-    a2[[a1]]-->b2 & c2
+    a2[[a1]]-->b2 & c2 & d2
     b2-->f2(((f2)))
-    c2-->d2 & e2-->f2
+    c2 & d2-->e2-->f2
   end
 ```
