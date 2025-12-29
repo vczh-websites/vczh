@@ -230,17 +230,17 @@ graph LR
 ```mermaid
 graph TD
   subgraph Yes 1
-    direction TD
+    direction TB
     a1-->b1-->c1
   end
 
   subgraph Yes 2
-    direction TD
+    direction TB
     a2 & b2 --> c2 --> d2 & e2
   end
 
   subgraph No
-    direction TD
+    direction TB
     a3 & b3 --> c3 & d3 --> e3 & f3
   end
 ```
