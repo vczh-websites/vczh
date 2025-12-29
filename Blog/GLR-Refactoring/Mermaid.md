@@ -254,3 +254,14 @@ graph TD
   d~~~b
   d-- predecessors.last -->c
 ```
+
+## Trace_Shape3.png
+
+```mermaid
+graph TD
+  subgraph 1
+    a-->b & c
+    b-->f
+    c-->d & e-->f
+  end
+```

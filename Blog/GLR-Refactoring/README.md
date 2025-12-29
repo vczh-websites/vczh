@@ -41,35 +41,35 @@ discard SPACE:\s+
 
 ```
 JLiteral
-	::= STRING
-	::= NUMBER
-	::= "true"
-	::= "false"
-	::= "null"
-	;
+  ::= STRING
+  ::= NUMBER
+  ::= "true"
+  ::= "false"
+  ::= "null"
+  ;
 
 JField
-	::= STRING ":" JValue
-	;
+  ::= STRING ":" JValue
+  ;
 
 JObject
-	::= "{" {JField ; ","} "}"
-	;
+  ::= "{" {JField ; ","} "}"
+  ;
 
 JArray
-	::= "[" {JValue ; ","} "]"
-	;
+  ::= "[" {JValue ; ","} "]"
+  ;
 
 JValue
-	::= JLiteral
-	::= JObject
-	::= JArray
-	;
+  ::= JLiteral
+  ::= JObject
+  ::= JArray
+  ;
 
 @parser JRoot
-	::= JObject
-	::= JArray
-	;
+  ::= JObject
+  ::= JArray
+  ;
 ```
 
 以`JObject`为例，我们可以直接生成他的[epsilon-NFA](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)。其中`{a ; b}`是一个缩写，展开后会变成`[a {b a}]`，但是生成PDA的时候是直接处理的，这样就免去了重复计算：
@@ -95,15 +95,15 @@ JValue
 ...
 
 JObject
-	::= "{" {JField:fields ; ","} "}" as Object
-	;
+  ::= "{" {JField:fields ; ","} "}" as Object
+  ;
 
 ...
 
 @parser JRoot
-	::= !JObject
-	::= !JArray
-	;
+  ::= !JObject
+  ::= !JArray
+  ;
 ```
 
 为了解释加进去的信息的意思，我们还需要定义[JSON语法树的结构](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Json/Syntax/Ast.txt)：
@@ -117,7 +117,7 @@ class Node
 
 class Object : Node
 {
-    var fields : ObjectField[];
+  var fields : ObjectField[];
 }
 ```
 
@@ -211,9 +211,9 @@ EndObject = { os.Push(cs.Pop()); }
 
 ```
 @parser JRoot
-	::= !JObject
-	::= !JArray
-	;
+  ::= !JObject
+  ::= !JArray
+  ;
 ```
 
 这个“直接把东西拿来用”的`!`又要怎么表达呢？回顾一下上面说的，一行语法要做的事情有三件：
@@ -532,7 +532,7 @@ Field(value)
 
 而输入是否合法的判断也变得很简单，如果在读完最后一个token的时候，有且只有`Trace`抵达了终点，那么就算他成功了。可以进行后续的步骤产生AST。
 
-于是上面“局限性：无法应对复杂的歧义结构”这一节的问题都不存在了。现在摆在你眼前的是整个parsing的历史，parse完之后可以反复回味。
+于是上面 **“局限性：无法应对复杂的歧义结构”** 这一节的问题都不存在了。现在摆在你眼前的是整个parsing的历史，parse完之后可以反复回味。
 
 ### 第一步：构造Trace的双向偏序图
 
@@ -549,16 +549,16 @@ Field(value)
 ```C++
 struct TraceCollection
 {
-	Ref<Trace>					first;						// first trace in the collection
-	Ref<Trace>					last;						// last trace in the collection
-	Ref<Trace>					siblingPrev;				// previous trace in the collection of the owned trace
-	Ref<Trace>					siblingNext;				// next trace in the collection of the owned trace
+  Ref<Trace>          first;          // first trace in the collection
+  Ref<Trace>          last;           // last trace in the collection
+  Ref<Trace>          siblingPrev;    // previous trace in the collection of the owned trace
+  Ref<Trace>          siblingNext;    // next trace in the collection of the owned trace
 };
 
 struct Trace : Allocatable<Trace>
 {
-	TraceCollection			predecessors;				// ids of predecessor Tra
-	TraceCollection			successors;					// ids of successor Trace
+  TraceCollection      predecessors;   // ids of predecessor Tra
+  TraceCollection      successors;     // ids of successor Trace
 };
 ```
 
@@ -566,23 +566,31 @@ struct Trace : Allocatable<Trace>
 
 这个图表达了，如果abc都是d的上游的时候，各自的predecessors都会保存什么，没有的就是空引用。
 
-一个`Trace`的`predecessors.first`和`predecessors.last`分别代表了上游所有`Trace`的第一个和最后一个，这些`Trace`的`predecessors.siblingPrev`和`predecessors.siblingNext`则构成了一个链表，把所有的`Trace`串了起来。如果上图中的非法情形不发生，那么一个`Trace`就不会同时是多个上游`Trace`分裂的产物（之可能来源于多个上游，但是每个这样的`Trace`都只有一个下游）。也就是说，如果把每一个**含有多个元素**的`predecessors`视为一个容器，那每一个`Trace`只会出现在一个容器里，也就是只要他自己的`predecessors.siblingPrev`和`predecessors.siblingNext`只要不为空，那么这同时说明了三件事：
+一个`Trace`的`predecessors.first`和`predecessors.last`分别代表了上游所有`Trace`的第一个和最后一个，这些`Trace`的`predecessors.siblingPrev`和`predecessors.siblingNext`则构成了一个链表，把所有的`Trace`串了起来。如果上图中的非法情形不发生，那么一个`Trace`就不会同时是多个上游`Trace`分裂的产物（之可能来源于多个上游，但是每个这样的`Trace`都只有一个下游）。也就是说，如果把每一个**含有多个元素**的`predecessors`视为一个容器，那每一个`Trace`只会出现在一个容器里，也就是只要他自己的`predecessors.siblingPrev`和`predecessors.siblingNext`只要不为空，那么这同时说明了两件事：
 - 本`Trace`会跟其他`Trace`合并到唯一的下游
 - 本`Trace`的下游的所有上游的`predecessors.siblingPrev`和`predecessors.siblingNext`跟下游`Trace`的`predecessors.first`和`predecessors.last`共同构成了一个完整的双向链表。
 
 说起来有点绕，但实际上就是保证了这么一件事，因为一个`Trace`只属于一个容器，那么`siblingPrev`和`siblingNext`就是别的唯一的`Trace`的容器的一部分，不会串台。既然不会串台，那确实只需要有一份变量就足够了。
 
+这样做的好处就是省掉了一个新的强类型对象池，而且每个`Trace`的`predecessors`都可能会被下一个`Trace`修改，也就是邻近的一起分配的`Trace`都会互相操作，但是不会操作到更远的，非常的cache friendly。
+
 `successors`同理。
 
 ### 第二步：对Trace上的指令做partial execution
 
+每个`Trace`代表了一次状态转移，那么从一个`Trace`自然可以访问到跳转到这里需要执行的所有指令是什么，这可以从他引用的PDA的数据结构上恢复出来。于是我们得先执行一遍，确保知道每一个`BeginObject/ReopenObject/EndObject`操作的对象都是谁。这里可以跳过所有真正的操作，因为我们只追踪对象之间的关系。如果一个对象被`BeginObject`创造出来之后，分裂成了多个分支并被多个`EndObject`操作，这个对象就会记录下来所有的结束点。如果多个`BeginObject`创造出来之后，分支合并到了同一个`EndObject`身上，那Object堆栈里的栈顶就会同时出现这几个对象。也就是说这些对象本身已经包含了歧义的信息。
+
+歧义发生之后我会在指令里面插入一个`ResolveAmbiguity`，里面记录了要把多少个Object堆栈上的对象pop出来，放进一个类型为`XToResolve`的对象的里面之后放回去，那么我就要算出来到底需要pop多少个。然而这么做其实有一个很麻烦的事，就是partial execution跑出来的对象的数目往往需要去重，而且 **“局限性：无法应对复杂的歧义结构”** 这一节的结构最后也会反映到对象的关系里面区，就让整个计算变得非常的复杂，还很容易出错。
+
+现在看来，这个设计算是重写的一个败笔，看到算法这么复杂的时候我就该意识到这个设计是有问题的，可惜年轻的时候人就是比较naive，硬着头皮往下写，还真的把所有的问题都搞定了，用掌控复杂算法和代码的能力掩盖了设计的错误，是不好的。
+
+### 第三步：计算歧义真正发生的起点和终点。
+
+这个步骤旨在识别 **“局限性：无法应对复杂的歧义结构”** 这一节中提到的种种情况，具体的方法略去不谈，但是这一步骤的结果，就是标记了每一个歧义应该从哪一个`Trace`开始和结束，还有具体开始和结束的指令。需要注意的是，对于一个具有多个下游的`Trace`，哪怕歧义从这里开始，起点也可能是每个下游中间的指令。同一个`Trace`也许也有多个指令分别是多个歧义的起点。一个歧义可能有多个分支对应同一个终点。甚至多个歧义所在的`Trace`可能只是一条链表，真正的互相嵌套的分支发生下下游互相嵌套的分支里。反过来也一样。
+
+### 第四步：生成ExecutionStep
+
 <!--
-- VlppParser2
-  - 新的状态机存储方式
-	- Trace的存储方式
-  - 重新设计了歧义的实现，通过multiple passes取代上一代读一次就出结果的executor设计
-    - Input / PrepareTraceRoute / ResolveAmbiguity
-    - Trace / TraceAmbiguity / ExecutionStep
 - reuse/partial rule产生的新指令：DelayFieldAssignment
 - 合并前缀（三个情况）
   - 前缀合并可以让Workflow跑一个长代码从11万trace缩小到6千
