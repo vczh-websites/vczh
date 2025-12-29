@@ -598,7 +598,9 @@ struct Trace : Allocatable<Trace>
 
 ### 第四步：生成ExecutionStep
 
-`ExecutionStep`在构造的过程中是一棵树，构造完了会被重新整理成链表。在这里说一下最棘手的一种情况，就是上面的最后一张图。
+`ExecutionStep`在构造的过程中是一棵树，构造完了会被重新整理成链表。`ExceptionStep`需要的结构大概就是`BEGIN`，然后每一个分支所有指令跑一遍`->...->BRANCH`，最后由`RESOLVE`收尾。就拿上面第一张图来举例子，很明显我们要生成的结构就是`BEGIN`、`->a1->b1->BRANCH`、`->a1->c1->d1->BRANCH`、`->a1->c1->d1->BRANCH`、`->RESOLVE->f1`。由于多个分支都属于同一个歧义，那么`c1`理所当然需要在第二个和第三个分支里分别被执行遍次。
+
+在这里说一下最棘手的一种情况，就是上面的最后一张图。
 
 首先看`Ambiguity 2`，执行`c4`的时候不能包含`h4`，但是执行`d4`却要把`e4`和`f4`都走一遍。连起来也就是`BEGIN->b4->c4->d4->e4->BRANCH->b4->c4->d4->f4->BRANCH->RESOLVE(2)->g4`。这里的`BEGIN`、`BRANCH`和`RESOLVE`就是分别需要插入指令的地方，比如`RESOLVE`就需要插入`ResolveAmbiguity`好构造AST里面的`XToResolve`类型的对象。而且现实情况中，也有可能`g4`的一半要在两个`BRANCH`前面重复，而`RESOLVE`前面只有`g4`的另一半，在这里就都简化了。
 
