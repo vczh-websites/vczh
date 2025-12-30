@@ -653,8 +653,17 @@ Declaration
 
 ![](DFA_PDA3.png)
 
+这下糟糕了，`DelayFieldAssignment`的行为要怎么定义呢？并没有办法定义，于是只能硬着头皮先实现出来。实现非常的简单粗暴，就是在`DelayFieldAssignment`遇到`BeginObject`或者`ReopenObject`之前，先开个map把所有的`Field`缓存进去，遇到他们的时候，终于有真正的对象了，一次性把缓存起来的`Field`一股脑执行一遍。
+
+这就非常的难受了。但是因为补丁看起来还是非常的小，而且也没有给其他部分造成什么困难，就跟温水煮青蛙一样，哎呀就先这样吧！殊不知这个设计（当然也包括指令集本身）给合并前缀的优化造成了巨大的困扰，也是我下定决心重新设计的出发点。
+
+## 合并前缀
+
+合并前缀是一个非常重要的性能优化。特别是当你的语法很难表达成LL状态机的时候，总会发生一些几个分支一起parse了一样的东西，好长一段之后终于丢掉所有其他分支留下一个的情况，浪费了海量算力。这种分支往往非常难在语法层面处理，因为他是发生在rule的间接调用上面的。举个简单的例子，我们都知道C++的语句可以用表示开头也可以用类型开头，表达式有自己的一套层数很深的语法，类型也是。然而到了最底下，他们都要尝试一下[qualified identifier](https://en.cppreference.com/w/cpp/language/identifiers.html)，也就是`A::B<C, D, E>::E`这样的表达式。Qualified identifier后面甚至可能是个括号什么的，如果你不知道前面的这一串到底是什么，那就有无限的可能了。直到过了好多年，parser终于看到了类似`{ ... return ... }`的结构，一拍大腿，原来前面是函数声明！到这里扔掉了一大堆分支，留下了最后一个碰巧把它当成函数声明来parse的。这就造成了巨大的算力浪费。
+
+就算不是C++，哪怕只是[GacUI的Workflow脚本语言](https://vczh-libraries.github.io/doc/current/workflow/lang/module.html)，一个比较长的输入在没有合并前缀优化的时候跑了差不多120k个状态，实现了完整的合并前缀优化之后只需要6k个状态，出来的东西是一样的。可见这个东西非做不可。然而……让我们先来看看合并前缀的三种优化，后面一个都是前面一个更加泛化之后的结果，处理细节各不相同，但是目标是一致的。
+
 <!--
-- reuse/partial rule产生的新指令：DelayFieldAssignment
 - 合并前缀（三个情况）
   - 前缀合并可以让Workflow跑一个长代码从11万trace缩小到6千
   - 相同指令前缀合并
@@ -663,7 +672,7 @@ Declaration
     - left_recursion_inject, left_recursion_inject_multiple
     - prefix_merge语法重写
     - LriStore/LriFetch
-- 为什么这个终极补丁对前缀合并产生了困难
+  - 为什么这个终极补丁对前缀合并产生了困难
 - 此次重构如何解决这个问题
   - 重新设计指令
     - 把(DFA/)?BO/EO固化为SB/CO/SE
