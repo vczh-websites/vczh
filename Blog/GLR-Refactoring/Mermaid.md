@@ -305,3 +305,28 @@ graph TD
   S-->a4
   i4-->E
 ```
+
+## DFA_PDA1.png
+
+```
+  S((Declaration))-- ClassDeclaration ReopenObject -->1
+  1-. EndObject .->E((()))
+```
+
+## DFA_PDA2.png
+
+```
+  S((Declaration))-- ClassDeclaration ReopenObject -->1
+  S-- Attribute Field(attributes) -->S
+  1-. EndObject .->E((()))
+```
+
+## DFA_PDA3.png
+
+```
+  S((Declaration))-- ClassDeclaration +DelayFieldAssignment ReopenObject -->1
+  S-- Attribute +DelayFieldAssignment Field(attributes) -->2
+  2-- Attrbute Field(attributes) -->2
+  2-- ClassDeclaration +DelayFieldAssignment ReopenObject -->1
+  1-. EndObject .->E((()))
+```

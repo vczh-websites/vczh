@@ -614,6 +614,45 @@ struct Trace : Allocatable<Trace>
 
 ## 更复杂的reuse/partial rule，还得继续打补丁
 
+这个补丁比较重要，虽然也是为了接受更多的语法，从而去掉了编译错误打上去的，但却是最后的重构的起点。所谓的reuse rule就是前面说到的`!`，而partial rule可以理解为C语言的宏。描述一个稍具规模的语言的语法的时候，不可避免有很多重复的东西，但是却不是很能写成一个单独的语法。因为它虽然到处都用，但是并不想构造出一个独立的AST对象。举个例子，比如[GacUI的Workflow脚本语言](https://vczh-libraries.github.io/doc/current/workflow/lang/module.html)，可以在定义的类型函数变量等等上面加attribute，那这个语法要怎么写呢？有两种思路。
+
+第一种是让`Declaration`右递归，他要么是一个声明，要么是一个attribute加上声明。
+
+```
+Declaration
+  ::= Attribute:attributes !Declaration
+  ::= !ClassDeclaration
+  ::= !EnumDeclaration
+  ...
+  ;
+```
+
+第二种是让每一个声明前面都接受一个attribute数组
+
+```
+AttributeList
+  ::= {Attribute:attributes} as partial WorkflowDeclaration
+  ;
+
+Declaration
+  ::= AttributeList !ClassDeclaration
+  ::= AttributeList !EnumDeclaration
+  ...
+  ;
+```
+
+他们的共同点都是需要在`!`前面就给类成员变量赋值。当然你把`AttributeList`写在每一个具体的声明的语法里面就可以绕过这个问题，但是当时我就想，确实没有理由做出`!`一定要放在最前面的限制。然而这被迫让我加入了一个新指令。为什么呢？让我们来看一下原本我们是怎么处理`!`的。比如说`Declaration ::= !ClassDeclaration`：
+
+![](DFA_PDA1.png)
+
+然后现在变成了`Declaration ::= AttributeList !ClassDeclaration`，注意因为`AttributeList`是一个partial rule（也就是宏），所以它的内容会被复制到`Declaration`里面变成`Declaration ::= {Attribute:attributes} !ClassDeclaration`：
+
+![](DFA_PDA2.png)
+
+注意到问题了吗？`Attribute`产生的`Field`指令前面没有`BeginObject`，所以`Field`本身到底操作了哪个对象变成了一件没有定义的事情。当然我们都知道他操作的应该是`!`所`ReopenObject`进来的对象，那现在就麻烦了，如何把`Field`指令放到`ReopenObject`前面去操作呢？于是只好加一个placeholder，也就是`DelayFieldAssignment`指令，作为一个标记：
+
+![](DFA_PDA3.png)
+
 <!--
 - reuse/partial rule产生的新指令：DelayFieldAssignment
 - 合并前缀（三个情况）
