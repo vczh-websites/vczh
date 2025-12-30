@@ -1,4 +1,4 @@
-# 记录GLR Parser的重构，GacUI的起源，论打补丁和技术债的恶性循环，以及其他软件工程上的感悟的流水账
+# 记录GLR Parser的重构，论打补丁和技术债的恶性循环
 
 > 如果当初多想一下的话，就会发现其实我们已经在破坏自己的抽象了，正在实践[依赖巧合编程](https://en.wikipedia.org/wiki/Programming_by_permutation)...，破坏了封装。这位后面的灾难埋下了伏笔。而且打补丁真的很容易成为一个人下意识的选择，因为每一个补丁都太小了...，甚至都意识不到自己在打补丁，令人麻痹大意，温水煮青蛙也。没有在需要重构的时候马上动手，就会有越来越多的代码依赖错误的设计，总有一天会改不动。这个时候要么你真的特别牛逼把重构做出来，要么重写，要么就[干脆放弃](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)。
 
@@ -41,35 +41,35 @@ discard SPACE:\s+
 
 ```
 JLiteral
-	::= STRING
-	::= NUMBER
-	::= "true"
-	::= "false"
-	::= "null"
-	;
+  ::= STRING
+  ::= NUMBER
+  ::= "true"
+  ::= "false"
+  ::= "null"
+  ;
 
 JField
-	::= STRING ":" JValue
-	;
+  ::= STRING ":" JValue
+  ;
 
 JObject
-	::= "{" {JField ; ","} "}"
-	;
+  ::= "{" {JField ; ","} "}"
+  ;
 
 JArray
-	::= "[" {JValue ; ","} "]"
-	;
+  ::= "[" {JValue ; ","} "]"
+  ;
 
 JValue
-	::= JLiteral
-	::= JObject
-	::= JArray
-	;
+  ::= JLiteral
+  ::= JObject
+  ::= JArray
+  ;
 
 @parser JRoot
-	::= JObject
-	::= JArray
-	;
+  ::= JObject
+  ::= JArray
+  ;
 ```
 
 以`JObject`为例，我们可以直接生成他的[epsilon-NFA](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)。其中`{a ; b}`是一个缩写，展开后会变成`[a {b a}]`，但是生成PDA的时候是直接处理的，这样就免去了重复计算：
@@ -95,15 +95,15 @@ JValue
 ...
 
 JObject
-	::= "{" {JField:fields ; ","} "}" as Object
-	;
+  ::= "{" {JField:fields ; ","} "}" as Object
+  ;
 
 ...
 
 @parser JRoot
-	::= !JObject
-	::= !JArray
-	;
+  ::= !JObject
+  ::= !JArray
+  ;
 ```
 
 为了解释加进去的信息的意思，我们还需要定义[JSON语法树的结构](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Json/Syntax/Ast.txt)：
@@ -117,7 +117,7 @@ class Node
 
 class Object : Node
 {
-    var fields : ObjectField[];
+  var fields : ObjectField[];
 }
 ```
 
@@ -211,9 +211,9 @@ EndObject = { os.Push(cs.Pop()); }
 
 ```
 @parser JRoot
-	::= !JObject
-	::= !JArray
-	;
+  ::= !JObject
+  ::= !JArray
+  ;
 ```
 
 这个“直接把东西拿来用”的`!`又要怎么表达呢？回顾一下上面说的，一行语法要做的事情有三件：
@@ -310,14 +310,6 @@ cs.Top().SetField(MulExpr::left, os.Pop());
 这意味着我们只需要原封不动地复制原来`TermL`到`2`的transition的指令集就好了，于是我们得到了：
 
 ![](Images/Lrec_TermL3.png)
-
-<!--
-### 打补丁本质上是一个靠温水煮青蛙积累技术债的行为
-
-如果当初多想一下的话，就会发现其实我们已经在破坏自己的抽象了，正在实践[依赖巧合编程](https://en.wikipedia.org/wiki/Programming_by_permutation)。我们没有使用`BeginObject`们的语义，反而在利用他们的实现，破坏了封装。这位后面的灾难埋下了伏笔。而且打补丁真的很容易成为一个人下意识的选择，因为每一个补丁都太小了，比如上面实现左递归甚至不需要修改状态机本身的定义和实现，甚至都意识不到自己在打补丁，令人麻痹大意，温水煮青蛙也。没有在需要重构的时候马上动手，就会有越来越多的代码依赖错误的设计，总有一天会改不动。这个时候要么你真的特别牛逼把重构做出来，要么重写，要么就[干脆放弃](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)。
-
-不过换个角度，如今的资本主义社会令码农并不能在法律上产生对代码的ownership，其实你写的都是别人的东西，到底要不要容忍[错误的实践](https://en.wikipedia.org/wiki/List_of_software_anti-patterns)，其实也见仁见智了。不过是否执行好的实践，最好只是你的一个选择，而不是受限于你的能力。所以下班后折腾自己的项目，亲自体验这些东西，我认为都是很有必要的。特别是LLM时代AI把屎一车一车的运到屎山上喷，如果你不具备这种能力，项目可能在你可以离职前就已经光速崩掉了，那这就不好办了。就算你上班用不上AI，下班后用AI喷屎然后自己铲干净，也是一种练习。
--->
 
 ### 状态机的尺寸
 
@@ -522,17 +514,190 @@ Field(value)
 
 单元测试不能跑，那这个项目就没用了。不过这确实让我意识到一个问题，因为我不可能做出真正的100%完整的C++编译器，就算我能我也不想陪着C++标准跑步，这根本不可能靠一个人的力量完成。因此我总会在一些奇怪的地方处理不了符号，这直接导致parsing出现中断。于是我就在想，其实我根本就不应该在parsing的时候处理所有歧义，我干脆把歧义保留下来，AST到手之后我能做多少就做多少。
 
-因此重写`VlppParser`的一个目标，就是让他具备处理C++语法的能力。现在看来`VlppParser2`完全具备这个能力，因为[生成的C++ parser](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/Source/BuiltIn-Cpp/Syntax)已经[跑起来了](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/UnitTest/BuiltInTest_Cpp)。当然目前还有一些性能问题和C++20开始的一些新语法没做进去，但是目前没看到什么是不能做的。
+因此重写`VlppParser`的一个目标，就是让他具备处理C++语法的能力。现在看来`VlppParser2`完全具备这个能力，因为[生成的C++ parser](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/Source/BuiltIn-Cpp/Syntax)已经[跑起来了](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/UnitTest/BuiltInTest_Cpp)。当然目前还有一些性能问题、潜在的可以消除的歧义和C++20开始的一些新语法没做进去，但是目前没看到什么是不能做的。
 
 ## VlppParser2诞生！
 
+新的实现全面采用cache friendly的手法来储存。不管是状态机还是parsing的中间产物一律避免直接的堆操作，转而用自己的内存池来维护。内存池其实就是给每个类型都放一个`vl::collections::List`，然后跨类型的引用就全部用一个`vint32_t`来代替。虽然手法非常简单粗暴，但是由于每个对象都很小，节省成千上万的堆操作（处理长一点的代码我看可能可以到几万个）让性能有了巨大的提升。序列化和反序列化也变得很快，以前debug模式还要等个一秒钟让Workflow状态机加载，现在基本感觉不到。
+
+如果说上面的只是优化，那`Trace`的引入则是重写的根本目的。上面讨论过`ParsingGeneralParser`的四个实现，在这里全部没有了（虽然实际上错误恢复还没做，不过不影响结构的设计），因为有太多的语法，就算本身没有歧义，执行的过程也是避免不了歧义的发生的，因此`Trace`做的事就是把parsing的过程全部都记录下来。现在parse完了不会直接给你构造语法树的指令，而是给你一个偏序关系的`Trace`，代表了所有成功的执行路径。每一个`Trace`记录的就是一次状态的转换。`Trace`也使用相同的结构保存起来的，所以整个parsing的过程中也只产生几块连续的内存，而且执行的过程中大概率只会访问每块连续内存最靠后面的那一点点，非常的cache friendly。
+
+而输入是否合法的判断也变得很简单，如果在读完最后一个token的时候，有且只有`Trace`抵达了终点，那么就算他成功了。可以进行后续的步骤产生AST。
+
+于是上面 **“局限性：无法应对复杂的歧义结构”** 这一节的问题都不存在了。现在摆在你眼前的是整个parsing的历史，parse完之后可以反复回味。
+
+### 第一步：构造Trace的双向偏序图
+
+首先parsing的过程中会引入很多失败的`Trace`，不过每个`Trace`还是会记录的上一个`Trace`是谁。尽管有些`Trace`会走向覆灭，但是对于成功的`Trace`来说，它的“上一个”肯定都是合法的。因此从最后一个`Trace`开始往前看，最后生成一个数据结构，维护双向的偏序图。
+
+这一步会顺便查看parsing的过程中是否引发了歧义，如果没有的话（也就是`Trace`会退化成一个双向链表），那么会直接跳过所有步骤，直接生成一个`ExecutionStep`包含整个`Trace`链表，然后宣告结束。`ExecutionStep`的具体内容后面会提到。
+
+每一个`Trace`可能会有若干个分支，但是PDA的设计保证了`Trace`之间不会出现多对多的情况，也就是一个`Trace`，可能有多个分支从它这里出来，也可能会有多个分支到它这里结束，这两件事也许会同时发生，但是不会出现一边分裂一边合并的情况。
+
+![](Images/Trace_Shape.png)
+
+于是我设计了一个数据结构来表达这种情况：
+
+```C++
+struct TraceCollection
+{
+  Ref<Trace>          first;          // first trace in the collection
+  Ref<Trace>          last;           // last trace in the collection
+  Ref<Trace>          siblingPrev;    // previous trace in the collection of the owned trace
+  Ref<Trace>          siblingNext;    // next trace in the collection of the owned trace
+};
+
+struct Trace : Allocatable<Trace>
+{
+  TraceCollection      predecessors;   // ids of predecessor Tra
+  TraceCollection      successors;     // ids of successor Trace
+};
+```
+
+![](Images/Trace_Shape2.png)
+
+这个图表达了，如果abc都是d的上游的时候，各自的predecessors都会保存什么，没有的就是空引用。
+
+一个`Trace`的`predecessors.first`和`predecessors.last`分别代表了上游所有`Trace`的第一个和最后一个，这些`Trace`的`predecessors.siblingPrev`和`predecessors.siblingNext`则构成了一个链表，把所有的`Trace`串了起来。如果上图中的非法情形不发生，那么一个`Trace`就不会同时是多个上游`Trace`分裂的产物（之可能来源于多个上游，但是每个这样的`Trace`都只有一个下游）。也就是说，如果把每一个**含有多个元素**的`predecessors`视为一个容器，那每一个`Trace`只会出现在一个容器里，也就是只要他自己的`predecessors.siblingPrev`和`predecessors.siblingNext`只要不为空，那么这同时说明了两件事：
+- 本`Trace`会跟其他`Trace`合并到唯一的下游
+- 本`Trace`的下游的所有上游的`predecessors.siblingPrev`和`predecessors.siblingNext`跟下游`Trace`的`predecessors.first`和`predecessors.last`共同构成了一个完整的双向链表。
+
+说起来有点绕，但实际上就是保证了这么一件事，因为一个`Trace`只属于一个容器，那么`siblingPrev`和`siblingNext`就是别的唯一的`Trace`的容器的一部分，不会串台。既然不会串台，那确实只需要有一份变量就足够了。
+
+这样做的好处就是省掉了一个新的强类型对象池，而且每个`Trace`的`predecessors`都可能会被下一个`Trace`修改，也就是邻近的一起分配的`Trace`都会互相操作，但是不会操作到更远的，非常的cache friendly。
+
+`successors`同理。
+
+### 第二步：对Trace上的指令做partial execution
+
+每个`Trace`代表了一次状态转移，那么从一个`Trace`自然可以访问到跳转到这里需要执行的所有指令是什么，这可以从他引用的PDA的数据结构上恢复出来。于是我们得先执行一遍，确保知道每一个`BeginObject/ReopenObject/EndObject`操作的对象都是谁。这里可以跳过所有真正的操作，因为我们只追踪对象之间的关系。如果一个对象被`BeginObject`创造出来之后，分裂成了多个分支并被多个`EndObject`操作，这个对象就会记录下来所有的结束点。如果多个`BeginObject`创造出来之后，分支合并到了同一个`EndObject`身上，那Object堆栈里的栈顶就会同时出现这几个对象。也就是说这些对象本身已经包含了歧义的信息。
+
+歧义发生之后我会在指令里面插入一个`ResolveAmbiguity`，里面记录了要把多少个Object堆栈上的对象pop出来，放进一个类型为`XToResolve`的对象的里面之后放回去，那么我就要算出来到底需要pop多少个。然而这么做其实有一个很麻烦的事，就是partial execution跑出来的对象的数目往往需要去重，而且 **“局限性：无法应对复杂的歧义结构”** 这一节的结构最后也会反映到对象的关系里面区，就让整个计算变得非常的复杂，还很容易出错。
+
+现在看来，这个设计算是重写的一个败笔，看到算法这么复杂的时候我就该意识到这个设计是有问题的，可惜年轻的时候人就是比较naive，硬着头皮往下写，还真的把所有的问题都搞定了，用掌控复杂算法和代码的能力掩盖了设计的错误，是不好的。
+
+### 第三步：计算歧义真正发生的起点和终点。
+
+这个步骤旨在识别 **“局限性：无法应对复杂的歧义结构”** 这一节中提到的种种情况，具体的方法略去不谈，但是这一步骤的结果，就是标记了每一个歧义应该从哪一个`Trace`开始和结束，还有具体开始和结束的指令。需要注意的是，对于一个具有多个下游的`Trace`，哪怕歧义从这里开始，起点也可能是每个下游中间的指令。同一个`Trace`也许也有多个指令分别是多个歧义的起点。一个歧义可能有多个分支对应同一个终点。甚至多个歧义所在的`Trace`可能只是一条链表，真正的互相嵌套的分支发生下下游互相嵌套的分支里。反过来也一样。
+
+例子1：同一个歧义，发生了多次分支，在同一个`Trace`结束
+
+![](Images/Trace_Shape3_1.png)
+
+例子2：同一个歧义，在同一个`Trace`开始，中间合并了多次
+
+![](Images/Trace_Shape3_2.png)
+
+例子3：一个`Trace`的不同的指令引发了两个嵌套的歧义
+
+![](Images/Trace_Shape3_3.png)
+
+例子4：两个嵌套的歧义，外面的歧义生的分支在里面的歧义的起点之后
+
+![](Images/Trace_Shape3_4.png)
+
+### 第四步：生成ExecutionStep
+
+`ExecutionStep`在构造的过程中是一棵树，构造完了会被重新整理成链表。`ExceptionStep`需要的结构大概就是`BEGIN`，然后每一个分支所有指令跑一遍`->...->BRANCH`，最后由`RESOLVE`收尾。就拿上面第一张图来举例子，很明显我们要生成的结构就是`BEGIN`、`->a1->b1->BRANCH`、`->a1->c1->d1->BRANCH`、`->a1->c1->e1->BRANCH`、`->RESOLVE->f1`。由于多个分支都属于同一个歧义，那么`c1`理所当然需要在第二个和第三个分支里分别被执行遍次。
+
+在这里说一下最棘手的一种情况，就是上面的最后一张图。e
+
+首先看`Ambiguity 2`，执行`c4`的时候不能包含`h4`，但是执行`d4`却要把`e4`和`f4`都走一遍。连起来也就是`BEGIN->b4->c4->d4->e4->BRANCH->b4->c4->d4->f4->BRANCH->RESOLVE(2)->g4`。这里的`BEGIN`、`BRANCH`和`RESOLVE`就是分别需要插入指令的地方，比如`RESOLVE`就需要插入`ResolveAmbiguity`好构造AST里面的`XToResolve`类型的对象。而且现实情况中，也有可能`g4`的一半要在两个`BRANCH`前面重复，而`RESOLVE`前面只有`g4`的另一半，在这里就都简化了。
+
+然后看看`Ambiguity 1`，他的路径就是`BEGIN->a4->Ambiguity 2->BRANCH->a4->b4->c4->h4->BRANCH->RESOLVE(2)->i4`。
+
+于是整个`Trace`的`ExecutionStep`链表就是：`S->BEGIN->a4->BEGIN->b4->c4->d4->e4->BRANCH->b4->c4->d4->f4->BRANCH->RESOLVE(2)->g4->BRANCH->a4->b4->c4->h4->BRANCH->RESOLVE(2)->i4->E`。
+
+注意到原本属于`Ambiguity 2`的`b4->c4`竟然在`Ambiguity 1`的另一个分支里出现了。因为`Ambiguity 2`真正的分支实在`d4`发生的，只不过因为前面不断的左递归，导致它生成的AST的第一个`BeginObject`跑到了很前面。
+
+不过说的时候理所当然，实际上要怎么在`Trace`上标记才能让你顺利生成这样的`ExecutionStep`链表呢？一开始也是一个棘手的问题。而且这些情况并不是一下子就摆在我眼前的，一开始只有简单的歧义结构，随着测试的语法越来越复杂，就跟温水煮青蛙一样，每次多一种情况，就在算法上多修改一点，最终变成一堆我自己都看不懂是什么逻辑的代码了。
+
+## 更复杂的reuse/partial rule，还得继续打补丁
+
+这个补丁比较重要，虽然也是为了接受更多的语法，从而去掉了编译错误打上去的，但却是最后的重构的起点。所谓的reuse rule就是前面说到的`!`，而partial rule可以理解为C语言的宏。描述一个稍具规模的语言的语法的时候，不可避免有很多重复的东西，但是却不是很能写成一个单独的语法。因为它虽然到处都用，但是并不想构造出一个独立的AST对象。举个例子，比如[GacUI的Workflow脚本语言](https://vczh-libraries.github.io/doc/current/workflow/lang/module.html)，可以在定义的类型函数变量等等上面加attribute，那这个语法要怎么写呢？有两种思路。
+
+第一种是让`Declaration`右递归，他要么是一个声明，要么是一个attribute加上声明。
+
+```
+Declaration
+  ::= Attribute:attributes !Declaration
+  ::= !ClassDeclaration
+  ::= !EnumDeclaration
+  ...
+  ;
+```
+
+第二种是让每一个声明前面都接受一个attribute数组
+
+```
+AttributeList
+  ::= {Attribute:attributes} as partial WorkflowDeclaration
+  ;
+
+Declaration
+  ::= AttributeList !ClassDeclaration
+  ::= AttributeList !EnumDeclaration
+  ...
+  ;
+```
+
+他们的共同点都是需要在`!`前面就给类成员变量赋值。当然你把`AttributeList`写在每一个具体的声明的语法里面就可以绕过这个问题，但是当时我就想，确实没有理由做出`!`一定要放在最前面的限制。然而这被迫让我加入了一个新指令。为什么呢？让我们来看一下原本我们是怎么处理`!`的。比如说`Declaration ::= !ClassDeclaration`：
+
+![](Images/DFA_PDA1.png)
+
+然后现在变成了`Declaration ::= AttributeList !ClassDeclaration`，注意因为`AttributeList`是一个partial rule（也就是宏），所以它的内容会被复制到`Declaration`里面变成`Declaration ::= {Attribute:attributes} !ClassDeclaration`：
+
+![](Images/DFA_PDA2.png)
+
+注意到问题了吗？`Attribute`产生的`Field`指令前面没有`BeginObject`，所以`Field`本身到底操作了哪个对象变成了一件没有定义的事情。当然我们都知道他操作的应该是`!`所`ReopenObject`进来的对象，那现在就麻烦了，如何把`Field`指令放到`ReopenObject`前面去操作呢？于是只好加一个placeholder，也就是`DelayFieldAssignment`指令，作为一个标记：
+
+![](Images/DFA_PDA3.png)
+
+这下糟糕了，`DelayFieldAssignment`的行为要怎么定义呢？并没有办法定义，因为它的出现是为了更改后面的指令的意思，而不是用于操作AST。于是只能硬着头皮先实现出来。实现非常的简单粗暴，就是在`DelayFieldAssignment`遇到`BeginObject`或者`ReopenObject`之前，先开个map把所有的`Field`缓存进去，遇到他们的时候，终于有真正的对象了，一次性把缓存起来的`Field`一股脑执行一遍。
+
+这就非常的难受了。但是因为补丁看起来还是非常的小，而且也没有给其他部分造成什么困难，就跟温水煮青蛙一样，哎呀就先这样吧！殊不知这个设计（当然也包括指令集本身）给合并前缀的优化造成了巨大的困扰，也是我下定决心重新设计的出发点。
+
+## 合并前缀
+
+合并前缀是一个非常重要的性能优化。特别是当你的语法很难表达成LL状态机的时候，总会发生一些几个分支一起parse了一样的东西，好长一段之后终于丢掉所有其他分支留下一个的情况，浪费了海量算力。这种分支往往非常难在语法层面处理，因为他是发生在rule的间接调用上面的。举个简单的例子，我们都知道C++的语句可以用表示开头也可以用类型开头，表达式有自己的一套层数很深的语法，类型也是。然而到了最底下，他们都要尝试一下[qualified identifier](https://en.cppreference.com/w/cpp/language/identifiers.html)，也就是`A::B<C, D, E>::E`这样的表达式。Qualified identifier后面甚至可能是个括号什么的，如果你不知道前面的这一串到底是什么，那就有无限的可能了。直到过了好多年，parser终于看到了类似`{ ... return ... }`的结构，一拍大腿，原来前面是函数声明！到这里扔掉了一大堆分支，留下了最后一个碰巧把它当成函数声明来parse的。这就造成了巨大的算力浪费。
+
+更加难办的是，qualified identifier既可以是表达式也可以是类型，遇到两者都可以出现的地方，比如说模板实参，parser会给我一个歧义的结果（因为一边是表达式的语法构造的，另一边是类型的语法构造的），但是两者其实都是一样的qualified identifier。这就不是一个优化问题，而是错误了。
+
+就算不是C++，哪怕只是[GacUI的Workflow脚本语言](https://vczh-libraries.github.io/doc/current/workflow/lang/module.html)，一个比较长的输入在没有合并前缀优化的时候跑了差不多120k个状态，实现了完整的合并前缀优化之后只需要6k个状态，出来的东西是一样的。可见这个东西非做不可。然而……让我们先来看看合并前缀的三种优化，后面一个都是前面一个更加泛化之后的结果，处理细节各不相同，但是目标是一致的。
+
 <!--
-- 如何应对天生就存在歧义的语法
-  - Document第一代的C++ parser
-  - VlppParser2重做C++语法分析
-  - 新的序列化方案
-- VlppParser2重新设计了歧义的实现，通过multiple passes取代上一代读一次就出结果的executor设计
-- 左递归和reuse rule产生的DelayFieldAssignment/LriStore/LriFetch指令
-- 为什么这个补丁对前缀合并产生了困难
+- 合并前缀（三个情况）
+  - 前缀合并可以让Workflow跑一个长代码从11万trace缩小到6千
+  - 相同指令前缀合并
+  - 不同指令相同rule前缀合并
+  - 不同rule但是调用进去遇到相同的rule的前缀合并
+    - left_recursion_inject, left_recursion_inject_multiple
+    - prefix_merge语法重写
+    - LriStore/LriFetch
+  - 为什么这个终极补丁对前缀合并产生了困难
 - 此次重构如何解决这个问题
+  - 重新设计指令
+    - 把(DFA/)?BO/EO固化为SB/CO/SE
+    - 把(DFA/)?RO/EO固化为SB/SE
+    - 利用StackSlot把Field都移动到SE前面
+  - 新的指令如何让合并前缀变得更顺利处理的情况更多（三个情况）
+  - 重做multiple passes的歧义处理
+    - PrepareTraceRoute从产生object改为产生stack，也就是追踪的是每一个SB/SE的结果，而不是具体的对象（因为对象可能被多个SB/SE共享）
+    - ResolveAmbiguity的BuildExecutionOrder重做
+
+copilot翻译成英语
+- 原文复制到en_us.md
+- 抽出所有标题和段落，生成task list，写进en_us_todo.md
+- 一边翻译一边标记todo一边生成词汇表vocabulary.md
+- 翻译的结果保存金en_us_translation.md，标题重写，翻译的时候一段中文注释一段英语
+- 结束后重新复制回en_us.md
+- git对比一下翻译是否完整
+-->
+
+<!--
+### 打补丁本质上是一个靠温水煮青蛙积累技术债的行为
+
+如果当初多想一下的话，就会发现其实我们已经在破坏自己的抽象了，正在实践[依赖巧合编程](https://en.wikipedia.org/wiki/Programming_by_permutation)。我们没有使用`BeginObject`们的语义，反而在利用他们的实现，破坏了封装。这位后面的灾难埋下了伏笔。而且打补丁真的很容易成为一个人下意识的选择，因为每一个补丁都太小了，比如上面实现左递归甚至不需要修改状态机本身的定义和实现，甚至都意识不到自己在打补丁，令人麻痹大意，温水煮青蛙也。没有在需要重构的时候马上动手，就会有越来越多的代码依赖错误的设计，总有一天会改不动。这个时候要么你真的特别牛逼把重构做出来，要么重写，要么就[干脆放弃](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)。
+
+不过换个角度，如今的资本主义社会令码农并不能在法律上产生对代码的ownership，其实你写的都是别人的东西，到底要不要容忍[错误的实践](https://en.wikipedia.org/wiki/List_of_software_anti-patterns)，其实也见仁见智了。不过是否执行好的实践，最好只是你的一个选择，而不是受限于你的能力。所以下班后折腾自己的项目，亲自体验这些东西，我认为都是很有必要的。特别是LLM时代AI把屎一车一车的运到屎山上喷，如果你不具备这种能力，项目可能在你可以离职前就已经光速崩掉了，那这就不好办了。就算你上班用不上AI，下班后用AI喷屎然后自己铲干净，也是一种练习。
 -->
