@@ -310,7 +310,7 @@ graph TD
 
 ```mermaid
 graph LR
-  S((Declaration))-- ClassDeclaration ReopenObject -->1
+  S((Declaration))-- ClassDeclaration\nReopenObject -->1
   1((1))-. EndObject .->E((( )))
 ```
 
