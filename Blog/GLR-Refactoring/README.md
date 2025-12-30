@@ -653,7 +653,7 @@ Declaration
 
 ![](Images/DFA_PDA3.png)
 
-这下糟糕了，`DelayFieldAssignment`的行为要怎么定义呢？并没有办法定义，于是只能硬着头皮先实现出来。实现非常的简单粗暴，就是在`DelayFieldAssignment`遇到`BeginObject`或者`ReopenObject`之前，先开个map把所有的`Field`缓存进去，遇到他们的时候，终于有真正的对象了，一次性把缓存起来的`Field`一股脑执行一遍。
+这下糟糕了，`DelayFieldAssignment`的行为要怎么定义呢？并没有办法定义，因为它的出现是为了更改后面的指令的意思，而不是用于操作AST。于是只能硬着头皮先实现出来。实现非常的简单粗暴，就是在`DelayFieldAssignment`遇到`BeginObject`或者`ReopenObject`之前，先开个map把所有的`Field`缓存进去，遇到他们的时候，终于有真正的对象了，一次性把缓存起来的`Field`一股脑执行一遍。
 
 这就非常的难受了。但是因为补丁看起来还是非常的小，而且也没有给其他部分造成什么困难，就跟温水煮青蛙一样，哎呀就先这样吧！殊不知这个设计（当然也包括指令集本身）给合并前缀的优化造成了巨大的困扰，也是我下定决心重新设计的出发点。
 
