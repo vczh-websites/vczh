@@ -643,15 +643,15 @@ Declaration
 
 他们的共同点都是需要在`!`前面就给类成员变量赋值。当然你把`AttributeList`写在每一个具体的声明的语法里面就可以绕过这个问题，但是当时我就想，确实没有理由做出`!`一定要放在最前面的限制。然而这被迫让我加入了一个新指令。为什么呢？让我们来看一下原本我们是怎么处理`!`的。比如说`Declaration ::= !ClassDeclaration`：
 
-![](DFA_PDA1.png)
+![](Images/DFA_PDA1.png)
 
 然后现在变成了`Declaration ::= AttributeList !ClassDeclaration`，注意因为`AttributeList`是一个partial rule（也就是宏），所以它的内容会被复制到`Declaration`里面变成`Declaration ::= {Attribute:attributes} !ClassDeclaration`：
 
-![](DFA_PDA2.png)
+![](Images/DFA_PDA2.png)
 
 注意到问题了吗？`Attribute`产生的`Field`指令前面没有`BeginObject`，所以`Field`本身到底操作了哪个对象变成了一件没有定义的事情。当然我们都知道他操作的应该是`!`所`ReopenObject`进来的对象，那现在就麻烦了，如何把`Field`指令放到`ReopenObject`前面去操作呢？于是只好加一个placeholder，也就是`DelayFieldAssignment`指令，作为一个标记：
 
-![](DFA_PDA3.png)
+![](Images/DFA_PDA3.png)
 
 这下糟糕了，`DelayFieldAssignment`的行为要怎么定义呢？并没有办法定义，于是只能硬着头皮先实现出来。实现非常的简单粗暴，就是在`DelayFieldAssignment`遇到`BeginObject`或者`ReopenObject`之前，先开个map把所有的`Field`缓存进去，遇到他们的时候，终于有真正的对象了，一次性把缓存起来的`Field`一股脑执行一遍。
 
