@@ -19,6 +19,14 @@ don't put kettle back
 - Rerun 2025-11-28 (1), also apply full damper changin
 - Try 150g
 
+|杯测|No.1|No.2|No.3|No.4|No.5|No.6|
+|-|-|-|-|-|-|-|
+|转黄|  |  |  |  |  |  |
+|一爆|  |  |  |  |  |  |
+|下豆|  |  |  |  |  |  |
+|热  |  |  |  |  |  |  |
+|温  |  |  |  |  |  |  |
+
 ### 100g
 
 - 180C/92C; 160C 3:40; 185C 6:00; 194C 7:56;
@@ -31,8 +39,12 @@ don't put kettle back
 - 180C/92C; 160C 4:30; 185C 6:55; 194C 9:00;
   - drum: 80; damper: 70; 3:15->80; 5:40->90; FC->100;
   - +40s
+  - +40s (+45s if same FC time)
+
+- 180C/92C; 160C 4:20; 185C 6:40; 194C 8:40;
+  - drum: 80; damper: 70; 3:10->80; 5:30->90; FC->100;
   - +40s
-  - +40s
+  - +40s (+45s if same FC time)
 
 ## 2025-12-22, 7C humidity 77%
 
