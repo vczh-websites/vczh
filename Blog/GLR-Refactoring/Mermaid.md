@@ -310,7 +310,7 @@ graph TD
 
 ```mermaid
   S((Declaration))-- ClassDeclaration ReopenObject -->1
-  1-. EndObject .->E((()))
+  1-. EndObject .->E((( )))
 ```
 
 ## DFA_PDA2.png
@@ -318,7 +318,7 @@ graph TD
 ```mermaid
   S((Declaration))-- ClassDeclaration ReopenObject -->1
   S-- Attribute Field(attributes) -->S
-  1-. EndObject .->E((()))
+  1-. EndObject .->E((( )))
 ```
 
 ## DFA_PDA3.png
@@ -328,5 +328,5 @@ graph TD
   S-- Attribute +DelayFieldAssignment Field(attributes) -->2
   2-- Attrbute Field(attributes) -->2
   2-- ClassDeclaration +DelayFieldAssignment ReopenObject -->1
-  1-. EndObject .->E((()))
+  1-. EndObject .->E((( )))
 ```
