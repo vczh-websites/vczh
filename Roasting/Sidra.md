@@ -12,7 +12,7 @@ Zerno Z1 775; 20g; 92C;
 60-140-220-300;
 don't put kettle back
 
-## Next
+## 2025-12-30, 5C humidity 77%
 
 **IMPORTANT** Record the discharge time, keep the same interval to the next charging. When the machine temperature reaches the target, wait for 90s before changing.
 
