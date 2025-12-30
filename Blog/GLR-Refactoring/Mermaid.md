@@ -319,7 +319,8 @@ ReopenObject -->1
 
 ```mermaid
 graph LR
-  S((Declaration))-- ClassDeclaration ReopenObject -->1
+  S((Declaration))-- ClassDeclaration
+ReopenObject -->1
   S-- Attribute Field(attributes) -->S
   1((1))-. EndObject .->E((( )))
 ```
@@ -328,9 +329,16 @@ graph LR
 
 ```mermaid
 graph LR
-  S((Declaration))-- ClassDeclaration +DelayFieldAssignment ReopenObject -->1
-  S-- Attribute +DelayFieldAssignment Field(attributes) -->2
-  2((2))-- Attrbute Field(attributes) -->2
-  2-- ClassDeclaration +DelayFieldAssignment ReopenObject -->1
+  S((Declaration))-- ClassDeclaration
+    +DelayFieldAssignment
+    ReopenObject -->1
+  S-- Attribute
+    +DelayFieldAssignment
+    Field(attributes) -->2
+  2((2))-- Attrbute
+    Field(attributes) -->2
+  2-- ClassDeclaration
+    +DelayFieldAssignment
+    ReopenObject -->1
   1((1))-. EndObject .->E((( )))
 ```
