@@ -775,6 +775,7 @@ BeginObject(MyObject)
     - ResolveAmbiguity的BuildExecutionOrder重做
 
 copilot翻译成英语
+- 改正错别字，最低限度地调整语序
 - 原文复制到en_us.md
 - 抽出所有标题和段落，生成task list，写进en_us_todo.md
 - 一边翻译一边标记todo一边生成词汇表vocabulary.md
