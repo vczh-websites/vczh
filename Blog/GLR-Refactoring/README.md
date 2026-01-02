@@ -1,7 +1,7 @@
 # 记录GLR Parser的重构，论打补丁和技术债的恶性循环
 
-> 如果当初多想一下的话，就会发现其实我们已经在破坏自己的抽象了，正在实践[依赖巧合编程](https://en.wikipedia.org/wiki/Programming_by_permutation)...，破坏了封装。这位后面的灾难埋下了伏笔。而且打补丁真的很容易成为一个人下意识的选择，因为每一个补丁都太小了...，甚至都意识不到自己在打补丁，令人麻痹大意，温水煮青蛙也。没有在需要重构的时候马上动手，就会有越来越多的代码依赖错误的设计，总有一天会改不动。这个时候要么你真的特别牛逼把重构做出来，要么重写，要么就[干脆放弃](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)。
-
+> 做到这已经非常累了，正常来说早就要审视一下过去的设计是不是有问题了。不过实际情况是，从文章的开头走到这已经花了10年，这个项目一开始很简单，就是GacUI当初需要JSON和XML的时候，觉得以后反正还有很多parser要写，不如干脆做个GLR parser gen。后面随着feature的加入越来越复杂，每隔一两年就做一点修改，完全忘记了上一次打补丁的情绪和感受。而且前面每一个补丁规模都很小，有些甚至只需要修改语法的编译器而不需要改动到PDA的设计，就算是改动了也只不过是小修小补，自己经常意识不到自己在打补丁，令人麻痹大意，温水煮青蛙也。一路走过来，我们破坏了很多原本引入的抽象，每一个补丁都逐渐依赖抽象背后的实现，实际上就是在实践[依赖巧合编程](https://en.wikipedia.org/wiki/Programming_by_permutation)。没有在需要重构的时候马上动手，就会有越来越多的代码依赖错误的设计，总有一天会改不动。这个时候要么你真的特别牛逼把重构做出来，要么重写，要么就[干脆放弃](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)。
+>
 > 不过换个角度，如今的资本主义社会令码农并不能在法律上产生对代码的ownership，其实你写的都是别人的东西，到底要不要容忍[错误的实践](https://en.wikipedia.org/wiki/List_of_software_anti-patterns)，其实也见仁见智了。不过是否执行好的实践，最好只是你的一个选择，而不是受限于你的能力。所以下班后折腾自己的项目，亲自体验这些东西，我认为都是很有必要的。特别是LLM时代AI把屎一车一车的运到屎山上喷，如果你不具备这种能力，项目可能在你可以离职前就已经光速崩掉了，那这就不好办了。就算你上班用不上AI，下班后用AI喷屎然后自己铲干净，也是一种练习。
 
 此刻正是2025的圣诞节。项目的起源还得从许久以前说起。回顾这一路走来的过程，先是中学的时候为了开发游戏制作第一个游戏引擎随后对编译原理产生了兴趣；接着就是在大学时期先后实现了垃圾收集器、C语言子集一路做到汇编器、和一个Haskell子集的类型推导；毕业后又借机把type class加到了C语言上面。
@@ -238,7 +238,7 @@ ReopenObject = { cs.Push(os.Pop()); }
 EndObject
 ```
 
-此时的味道已经不太好了，感觉就像给指令集打了个补丁，不过因为这个补丁实在是太过于直接而且合理，而且`EndObject`和`ReopenObject`的这件事让我莫名感到快乐，就像是推导出了理所当然的结构一样，当时并没有想到以后会造成那么多问题，补丁一个一个像滚雪球一样堆上去，直到不得不推翻重来两遍。但是我们先不管，先来看看`JRoot`的PDA：
+此时的味道已经不太好了，感觉就像给指令集打了个补丁，不过因为这个补丁实在是太过于直接而且合理，而且`EndObject`和`ReopenObject`互为逆操作的这件事让我莫名感到快乐，就像是推导出了理所当然的结构一样，当时并没有想到以后会造成那么多问题，补丁一个一个像滚雪球一样堆上去，直到不得不推翻重来两遍。但是我们先不管，先来看看`JRoot`的PDA：
 
 ![](Images/JSON_PDA3.png)
 
@@ -315,7 +315,7 @@ cs.Top().SetField(MulExpr::left, os.Pop());
 
 大家可能会注意到，一个语法有多少行，虚线就会被复制多少次。不过这其实不是个问题，因为每一行语法生成PDA之后，最后还要背合并成一个大的，transition会只剩下token和虚线。那rule去哪了呢？当然是折叠起来了。比如说从`TermL`到`NUM`要经过`Factor->NUM`，那这两个transition会被合并到一起。这个时候`TermL`和`Factor`就会被push到一个return堆栈里，不然虚线走到结束的时候你怎么知道回到哪呢？这就是PDA比起DFA复杂的地方。到这一步各种transition就会被疯狂复制，状态机会变得很大，你已经不在乎多复制的那几条虚线了。
 
-不过状态机太大，保存就回城问题。为了使用方便，这个项目提供了一个编译器，可以帮你把一系列文法文件（[VlppParser](https://github.com/vczh-libraries/VlppParser)把AST, Lexer, Syntax都写在一个文件了，而[VlppParser2](https://github.com/vczh-libraries/VlppParser2)可以让你分开写一大堆小文件）编译成几个cpp文件，而状态机就序列化到了其中一个cpp文件的字符串里面去。
+不过状态机太大，保存就会出问题。为了使用方便，这个项目提供了一个编译器，可以帮你把一系列文法文件（[VlppParser](https://github.com/vczh-libraries/VlppParser)把AST, Lexer, Syntax都写在一个文件了，而[VlppParser2](https://github.com/vczh-libraries/VlppParser2)可以让你分开写一大堆小文件）编译成几个cpp文件，而状态机就序列化到了其中一个cpp文件的字符串里面去。
 
 `VlppParser2`的测试程序里有一个C++的语法，他生成了超过10M的状态机，但是每一个字符都表达为`\xXX`的形式的话他就要40M，这显然是不行的。所以我做了一个[LZW压缩算法](https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch)。这个算法真的设计得非常精妙，首先他不用保存字典，因为你压缩和解压的过程中都能做出来同一个字典。其次实现也很简单，我都不用怎么调试，基本就一次成型了。后面在各种地方使用他也没发现过问题。
 
@@ -374,7 +374,7 @@ Stat:
   ;
 ```
 
-可以发现基本上每个东西都得两份。如果是面对一个真实的语言，那语法就会变得很乱。而且这不仅仅是写的难看的问题，在匹配的时候，所有的if-else都得被匹配两次，就因为`IfStat`两个分支共享了太多前缀。合并前缀的优化在这里也很难做，毕竟`Stat`和`Stat_Complete`的差别确实很大。
+可以发现基本上每个东西都得写两份。如果是面对一个真实的语言，那语法就会变得很乱。而且这不仅仅是写的难看的问题，在匹配的时候，所有的if-else都得被匹配两次，就因为`IfStat`两个分支共享了太多前缀。合并前缀的优化在这里也很难做，毕竟`Stat`和`Stat_Complete`的差别确实很大。
 
 为了让他尽量保持高可维护性和高性能，有两个办法，一个是引入静态开关，另一个是优先级。这两个功能我都做了，不过if-else歧义更适合使用优先级来解决。我们可以给`[]`引入一个语法，如果出现歧义的时候，走`[]`的分支会胜出，如果运行时有嵌套的分支出现，最里面的优先胜出。这种时候我们可以写作`+[]`，那么语法只要这样写就好了：
 
@@ -393,7 +393,7 @@ Stat:
 
 一下子就简洁了。
 
-静态开关也有它的作用，比如C++的运算符有十几个优先级，你可以按照四则运算的手法写出一大串语法，结果有一天你突然发现模板参数里面不能用大于号，这下惨了，难道你要把这一大堆再复制一遍，就为了做一个没有大于号的表达式语法？为什么不用模板的手法来解决呢？这就是引入静态开关的重要原因。开关在这里就像模板参数，不过写语法模板只需要`true`和`false`作为参数的值就足够了，所以把它命名为开关。你在引用一个语法的时候，可以给开关赋值，语法内部也会根据开关的值来标记那些愈发的部分会被无效化，开关的值会随着调用链一级一级传播下去。实际产生PDA的时候，编译器就会帮你“把这一大堆再复制一遍”。
+静态开关也有它的作用，比如C++的运算符有十几个优先级，你可以按照四则运算的手法写出一大串语法，结果有一天你突然发现模板参数里面不能用大于号，这下惨了，难道你要把这一大堆再复制一遍，就为了做一个没有大于号的表达式语法？为什么不用模板的手法来解决呢？这就是引入静态开关的重要原因。开关在这里就像模板参数，不过写语法模板只需要`true`和`false`作为参数的值就足够了，所以把它命名为开关。你在引用一个语法的时候，可以给开关赋值，语法内部也会根据开关的值来标记语法的哪些部分会被无效化，开关的值会随着调用链一级一级传播下去。实际产生PDA的时候，编译器就会帮你“把这一大堆再复制一遍”。
 
 ## VlppParser实现局部歧义和自动恢复的做法
 
@@ -455,9 +455,9 @@ class ExpressionToResolve : Expression
 
 ![](Images/Calc_PDA1.png)
 
-下面这一步就要体现PDA之所以是PDA而不是DFA的意思，因为PDA比DFA多了个堆栈。比如说你走`Expr-->e1`的时候需要接收一个`Term`，`Term-->t1`的时候需要接收一个`Factor`，而`Factor`就要看当前token到底是`NUM`还是`"("`。假设现在就是`NUM`那么要走到`f1`，`f1`后面就没东西了所以会走虚线到双圆圈。双圆圈后面是哪呢？他已经是尽头了，于是就要看到底之前PDA的执行是如何走到`Factor`这一步的。
+下面这一步就要体现PDA之所以是PDA而不是DFA的意思，因为PDA比DFA多了个堆栈。比如说你走`Expr-->e1`的时候需要接收一个`Term`，`Term-->t1`的时候需要接收一个`Factor`，而`Factor`就要看当前token到底是`NUM`还是`"("`。假设现在就读到了`NUM`，那么要走到`f1`，`f1`后面就没东西了，所以会走虚线到双圆圈。双圆圈后面是哪呢？他已经是尽头了，于是就要看到底之前PDA的执行是如何走到`Factor`这一步的。
 
-最简单的方法，就从`Expr`到`f1`的时候往堆栈里放`Expr-->e1`和`Term-->t1`两个transition，那么`Factor`的双圆圈一看，栈顶是`Term-->t1`，所以当无路可走的时候就会把它pop掉（需要执行它的指令）然后走进`t1`。`t1`也是同理，下一步就是双圆圈，但是这个时候双圆圈是有其他选择的，于是就要看下一个token是不是`"*"`或者`"/"`，然后就有`t2`、`t5`和继续pop三个选择。
+最简单的方法，就从`Expr`到`f1`的时候往堆栈里放`Expr-->e1`和`Term-->t1`两个transition，那么`Factor`的双圆圈一看，栈顶是`Term-->t1`，所以当无路可走的时候就会把它pop掉（需要执行它的指令）然后走进`t1`。`t1`也是同理，下一步就是双圆圈。但这一步其实算是有其他选择的，于是就要看下一个token是不是`"*"`或者`"/"`，然后就有`t2`、`t5`和继续pop三个选择。
 
 这里就可以体现出虚线的意思，也就是他不消化任何新的token。而标记`[leftrec]`还有个好处，就是你可以选择在能左递归的时候就不退出。这当然取决于你的语法是不是希望带有这种语义，并不是强制性的，而是给予你继续扩展的灵活性。
 
@@ -494,7 +494,7 @@ Field(value)
 >f2->f3
 ```
 
-如果当前的两个token分别是`NUM`和`")"`，那么他就会依次走到`f1`、`Factor`双圆圈、`t1`、`Term`的双圆圈、`e1`、`Expr`的双圆圈、`f3`。那这条transition的指令是怎么来的呢？实际上就是通过折叠起来的这么多transition它的带`+`的指令全部合在一起（只是恰好`Term`和`Expr`都没有带`+`的指令）。那么就会出现一种情况，这条边会有若干个`BeginObject`，还会有一些别的。
+如果当前的两个token分别是`NUM`和`")"`，那么他就会依次走到`f1`、`Factor`双圆圈、`t1`、`Term`的双圆圈、`e1`、`Expr`的双圆圈、`f3`。那这条transition的指令是怎么来的呢？实际上就是通过折叠起来的这么多transition它的带`+`的指令全部合在一起（只是恰好`Term`和`Expr`都没有带`+`的指令）。那么就会出现一种情况，这条边会有若干个`BeginObject`，还会有一些别的。在这里复习一下，带`+`的指令说明它是在transition真正做出动作之前执行的。
 
 如果没有`!`的话，每一个`BeginObject`都会对应一个`EndObject`。如果出现了`!`，则每一个`BeginObject`在`EndObject`之后还会被重复`ReopenObject + EndObject`若干次。所以一个`BeginObject`最终会有一个位置最推迟的`EndObject`。
 
@@ -502,7 +502,7 @@ Field(value)
 
 歧义表达在PDA执行过程中的结构实在是太复杂了，远远超出了“一边跑PDA一边出AST”所能处理的范围。那这两个事情肯定有一个是错的。到底是复杂的歧义结构不应该出现呢，还是“一边跑PDA一边出AST”行不通呢？
 
-如果不要复杂的歧义结构，除了指令的设计要改以外，你还不能在合并后的PDA上面跑。改指令问题不大，关键是如果PDA不合并而是分开运行的话，那跑一个复杂的输入所需要执行的transition数量可能会翻个几十倍，这对性能可是一个巨大的破坏。这是万万不能的。因此答案必须是“一边跑PDA一边出AST”行不通。
+如果不要复杂的歧义结构，除了指令的设计要改以外，你还不能在合并后的PDA上面跑。改指令问题不大，关键是如果PDA不合并而是分开运行的话，那跑一个复杂的输入所需要执行的transition数量可能会翻个几十倍，这对性能可是一个巨大的破坏，是万万不能的。因此答案必须是“一边跑PDA一边出AST”行不通。
 
 有了这个结论就好办了，既然这个方法是错误的，而且`VlppParser`的PDA数据结构确实非常不cache friendly，那就重做吧！于是我开了一个新的项目，那就是[VlppParser2](https://github.com/vczh-libraries/VlppParser2)。此时[vczh-libraries/GacUI](https://github.com/vczh-libraries/GacUI)已经大量依赖`VlppParser2`，我重写的时候需要保证它生成的parser代码的外观尽量跟`VlppParser`相似，然后把所有的依赖都重新整一边，还花了一点时间。
 
@@ -510,9 +510,9 @@ Field(value)
 
 在开始`VlppParser2`之前，我曾经为`GacUI`做了一个[文档生成工具](https://github.com/vczh-libraries/Document/tree/release-1.0)，因此我尝试用`VlppParser`写一个C++ parser，发现根本写不出来（原因如上），于是干脆从零开始做，顺便实践一下一遍语法分析一边符号处理的方法，这样可以在遇到歧义的时候马上查符号表来确定正确的分支。这个项目的[实际效果](../../CppVisualize.html)被我单独保存了起来，你甚至可以[查看每一个文件](../../CppVisualize/Gaclib/SourceFiles/GuiApplication.h.html)，上面的符号都是带了超链接的。超链接的结果就是通过符号表算出来的，它甚至考虑了重载和模板偏特化造成的影响。
 
-这个项目非常的难，主要是C++的内容真的是太多了，而且当时的进度连C++14都没支持完。而灾难发生在一次Visual Studio的升级里。我从2017升级到2019之后发现msvc带了好多新的不能容忍的bug，导致我的单元测试整个没用了。我为了确保我对C++代码的处理结果和msvc保持一致，我用了一些很fancy的写法，给一段代码作为上下文，然后我可以问msvc说这个符号是什么，然后我自己算一遍，最后比较一下两边类型是否一致。我用这个手法写了海量单元测试，结果新的msvc bug导致我的这种符合标准的做法报废了，我私底下给他们开了很多bug，从新冠发生之前到现在都没修完。
+这个项目非常的难，主要是C++的内容真的是太多了，而且当时的进度连C++14都没支持完。而灾难发生在一次Visual Studio的升级里。我从2017升级到2019之后发现msvc带了好多新的不能容忍的bug，导致我的单元测试整个没用了。我为了确保我对C++代码的处理结果和msvc保持一致，在单元测试里面用了一些很fancy的写法，给一段代码作为上下文，然后就可以问msvc说这个符号是什么，同时自己算一遍，最后比较一下两边类型是否一致。我用这个手法写了海量单元测试，结果新的msvc bug导致我的这种符合标准的做法报废了，我私底下给他们开了很多bug，从新冠发生之前到现在都没修完。
 
-单元测试不能跑，那这个项目就没用了。不过这确实让我意识到一个问题，因为我不可能做出真正的100%完整的C++编译器，就算我能我也不想陪着C++标准跑步，这根本不可能靠一个人的力量完成。因此我总会在一些奇怪的地方处理不了符号，这直接导致parsing出现中断。于是我就在想，其实我根本就不应该在parsing的时候处理所有歧义，我干脆把歧义保留下来，AST到手之后我能做多少就做多少。
+单元测试不能跑，那这个项目就没用了。不过这确实让我意识到一个问题，因为我不可能做出真正的100%完整的C++编译器，就算我能我也不想陪着C++标准跑步，这根本不可能靠一个人的力量完成。但人又不能因噎废食，总不能文档生成工具处理不了的C++语法我就不用了吧。因此继续下去的话，未来总有一刻文档生成工具会在一些奇怪的地方处理不了符号，这直接导致parsing出现中断。于是我就在想，其实我根本就不应该在parsing的时候处理所有歧义，我干脆把歧义保留下来，AST到手之后我能做多少就做多少。
 
 因此重写`VlppParser`的一个目标，就是让他具备处理C++语法的能力。现在看来`VlppParser2`完全具备这个能力，因为[生成的C++ parser](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/Source/BuiltIn-Cpp/Syntax)已经[跑起来了](https://github.com/vczh-libraries/VlppParser2/tree/master/Test/UnitTest/BuiltInTest_Cpp)。当然目前还有一些性能问题、潜在的可以消除的歧义和C++20开始的一些新语法没做进去，但是目前没看到什么是不能做的。
 
@@ -549,7 +549,7 @@ struct TraceCollection
 
 struct Trace : Allocatable<Trace>
 {
-  TraceCollection      predecessors;   // ids of predecessor Tra
+  TraceCollection      predecessors;   // ids of predecessor Trace
   TraceCollection      successors;     // ids of successor Trace
 };
 ```
@@ -562,7 +562,7 @@ struct Trace : Allocatable<Trace>
 - 本`Trace`会跟其他`Trace`合并到唯一的下游
 - 本`Trace`的下游的所有上游的`predecessors.siblingPrev`和`predecessors.siblingNext`跟下游`Trace`的`predecessors.first`和`predecessors.last`共同构成了一个完整的双向链表。
 
-说起来有点绕，但实际上就是保证了这么一件事，因为一个`Trace`只属于一个容器，那么`siblingPrev`和`siblingNext`就是别的唯一的`Trace`的容器的一部分，不会串台。既然不会串台，那确实只需要有一份变量就足够了。
+说起来有点绕，但实际上就是保证了这么一件事：一个`Trace`只属于一个容器。那么`siblingPrev`和`siblingNext`就是别的唯一的`Trace`的容器的一部分，不会串台。既然不会串台，那确实只需要有一份变量就足够了。
 
 这样做的好处就是省掉了一个新的强类型对象池，而且每个`Trace`的`predecessors`都可能会被下一个`Trace`修改，也就是邻近的一起分配的`Trace`都会互相操作，但是不会操作到更远的，非常的cache friendly。
 
@@ -598,7 +598,12 @@ struct Trace : Allocatable<Trace>
 
 ### 第四步：生成ExecutionStep
 
-`ExecutionStep`在构造的过程中是一棵树，构造完了会被重新整理成链表。`ExceptionStep`需要的结构大概就是`BEGIN`，然后每一个分支所有指令跑一遍`->...->BRANCH`，最后由`RESOLVE`收尾。就拿上面第一张图来举例子，很明显我们要生成的结构就是`BEGIN`、`->a1->b1->BRANCH`、`->a1->c1->d1->BRANCH`、`->a1->c1->e1->BRANCH`、`->RESOLVE->f1`。由于多个分支都属于同一个歧义，那么`c1`理所当然需要在第二个和第三个分支里分别被执行遍次。
+`ExecutionStep`在构造的过程中是一棵树，构造完了会被重新整理成链表。在表达歧义的过程中，多个`ExceptionStep`组成的结构如下：
+- `BEGIN`
+- 每一个分支所有指令跑一遍`->...->BRANCH`
+- 由`RESOLVE`收尾
+
+就拿上面第一张图来举例子，很明显我们要生成的结构就是`BEGIN`、`->a1->b1->BRANCH`、`->a1->c1->d1->BRANCH`、`->a1->c1->e1->BRANCH`、`->RESOLVE->f1`。由于多个分支都属于同一个歧义，那么`c1`理所当然需要在第二个和第三个分支里分别被执行遍次。
 
 在这里说一下最棘手的一种情况，就是上面的最后一张图。e
 
@@ -608,13 +613,13 @@ struct Trace : Allocatable<Trace>
 
 于是整个`Trace`的`ExecutionStep`链表就是：`S->BEGIN->a4->BEGIN->b4->c4->d4->e4->BRANCH->b4->c4->d4->f4->BRANCH->RESOLVE(2)->g4->BRANCH->a4->b4->c4->h4->BRANCH->RESOLVE(2)->i4->E`。
 
-注意到原本属于`Ambiguity 2`的`b4->c4`竟然在`Ambiguity 1`的另一个分支里出现了。因为`Ambiguity 2`真正的分支实在`d4`发生的，只不过因为前面不断的左递归，导致它生成的AST的第一个`BeginObject`跑到了很前面。
+注意到原本属于`Ambiguity 2`的`b4->c4`竟然在`Ambiguity 1`的另一个分支里出现了。因为`Ambiguity 2`真正的分支是在`d4`发生的，只不过因为前面不断的左递归，导致它生成的AST的第一个`BeginObject`跑到了很前面。
 
 不过说的时候理所当然，实际上要怎么在`Trace`上标记才能让你顺利生成这样的`ExecutionStep`链表呢？一开始也是一个棘手的问题。而且这些情况并不是一下子就摆在我眼前的，一开始只有简单的歧义结构，随着测试的语法越来越复杂，就跟温水煮青蛙一样，每次多一种情况，就在算法上多修改一点，最终变成一堆我自己都看不懂是什么逻辑的代码了。
 
 ## 更复杂的reuse/partial rule，还得继续打补丁
 
-这个补丁比较重要，虽然也是为了接受更多的语法，从而去掉了编译错误打上去的，但却是最后的重构的起点。所谓的reuse rule就是前面说到的`!`，而partial rule可以理解为C语言的宏。描述一个稍具规模的语言的语法的时候，不可避免有很多重复的东西，但是却不是很能写成一个单独的语法。因为它虽然到处都用，但是并不想构造出一个独立的AST对象。举个例子，比如[GacUI的Workflow脚本语言](https://vczh-libraries.github.io/doc/current/workflow/lang/module.html)，可以在定义的类型函数变量等等上面加attribute，那这个语法要怎么写呢？有两种思路。
+这个补丁比较重要，虽然也是为了接受更多的语法，从而去掉了编译错误打上去的，但却是最后的重构的思路的起点。所谓的reuse rule就是前面说到的`!`，而partial rule可以理解为C语言的宏。描述一个稍具规模的语言的语法的时候，不可避免有很多重复的东西，但是却不是很能写成一个单独的语法。因为它虽然到处都用，但是并不想构造出一个独立的AST对象。举个例子，比如[GacUI的Workflow脚本语言](https://vczh-libraries.github.io/doc/current/workflow/lang/module.html)，可以在定义的类型函数变量等等上面加attribute，那这个语法要怎么写呢？有两种思路。
 
 第一种是让`Declaration`右递归，他要么是一个声明，要么是一个attribute加上声明。
 
@@ -665,16 +670,107 @@ Declaration
 
 就算不是C++，哪怕只是[GacUI的Workflow脚本语言](https://vczh-libraries.github.io/doc/current/workflow/lang/module.html)，一个比较长的输入在没有合并前缀优化的时候跑了差不多120k个状态，实现了完整的合并前缀优化之后只需要6k个状态，出来的东西是一样的。可见这个东西非做不可。然而……让我们先来看看合并前缀的三种优化，后面一个都是前面一个更加泛化之后的结果，处理细节各不相同，但是目标是一致的。
 
+首先我们来考虑一下最简单的情况：
+
+```
+Rule
+  ::= Prefix:prefix ThisRemains as MyObject
+  ::= Prefix:prefix ThatRemains as MyObject
+  ;
+```
+
+两个`Prefix`不仅输入一样，产生的指令也是一样的：
+
+```
++BeginObject(MyObject)
+Field(prefix)
+```
+
+这样的语法在编译成PDA之后会产生两条从`Rule`起始状态出来的一摸一样的transition，只是通往了不同的地方，我们可以把它合并起来变成一条，两个目标状态也融合成了一个状态。需要注意的是如果有其他状态指向被融合的状态的其中一个的话，那它就不能被删掉。这个过程跟[NFA转DFA](https://en.wikipedia.org/wiki/Powerset_construction)是一样的。
+
+在这里复习一下，带`+`的指令说明它是在transition真正做出动作之前执行的。也就是先有`BeginObject(MyObject)`，再有`Prefix`产生的一系列指令，最后才到`Field(prefix)`。具体的实现就是在`Prefix`被转成指向`Prefix`的状态机的token transition的时候，把所有return transitions的`+`指令单独复制到新的transition上，后面走虚线的时候只执行return transition的非`+`指令。
+
+但这类情况实际上是罕见的，真正常见的是一样的rule input但是指令却不一样的情况。比如说：
+
+```
+Rule
+  ::= Prefix:prefix Remains1 as MyObject
+  ::= Prefix:prefix2 Remains2 as MyObject
+  ::= Prefix:prefix Remains3 as YourObject
+  ::= Prefix:prefix !Remains4
+  ::= !Prefix [left_recursion_inject(X) _Remains5]
+  ;
+```
+
+这个`left_recursion_inject`会随后解释，这是重写前打的最后一个也是最大的补丁。他们产生的指令分别是：
+
+```
++BeginObject(MyObject)
+Field(prefix)
+```
+
+```
++BeginObject(MyObject)
+Field(prefix2)
+```
+
+```
++BeginObject(YourObject)
+Field(prefix)
+```
+
+```
++DelayFieldAssignment
+Field(prefix)
+```
+
+```
++DelayFieldAssignment
+ReopenObject
+```
+
+这下麻烦了，指令不一样怎么办呢？有些情况还能通过把非`+`指令挪给后面的transition当`+`指令绕过去，有些则可以从：
+
+```
+BeginObject(MyObject)
+  Prefix ...
+  Field(prefix)
+```
+
+改成
+
+```
+Prefix ...
+LriStore
+BeginObject(MyObject)
+  LriFecth
+  Field(prefix)
+```
+
+`LriStore`和`LriFetch`可以理解为把Object堆栈栈顶pop出来存到一个寄存器里，后面再从寄存器读出来push回Object堆栈。这也是引入`left_recursion_inject`的时候新加的，会随后解释。总之通过总总办法先把指令对齐，然后才能合并。
+
+## 为什么总是一直打补丁
+
+做到这已经非常累了，正常来说早就要审视一下过去的设计是不是有问题了。不过实际情况是，从文章的开头走到这已经花了10年，这个项目一开始很简单，就是GacUI当初需要JSON和XML的时候，觉得以后反正还有很多parser要写，不如干脆做个GLR parser gen。后面随着feature的加入越来越复杂，每隔一两年就做一点修改，完全忘记了上一次打补丁的情绪和感受。而且前面每一个补丁规模都很小，有些甚至只需要修改语法的编译器而不需要改动到PDA的设计，就算是改动了也只不过是小修小补，自己经常意识不到自己在打补丁，令人麻痹大意，温水煮青蛙也。一路走过来，我们破坏了很多原本引入的抽象，每一个补丁都逐渐依赖抽象背后的实现，实际上就是在实践[依赖巧合编程](https://en.wikipedia.org/wiki/Programming_by_permutation)。没有在需要重构的时候马上动手，就会有越来越多的代码依赖错误的设计，总有一天会改不动。这个时候要么你真的特别牛逼把重构做出来，要么重写，要么就[干脆放弃](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)。
+
+不过换个角度，如今的资本主义社会令码农并不能在法律上产生对代码的ownership，其实你写的都是别人的东西，到底要不要容忍[错误的实践](https://en.wikipedia.org/wiki/List_of_software_anti-patterns)，其实也见仁见智了。不过是否执行好的实践，最好只是你的一个选择，而不是受限于你的能力。所以下班后折腾自己的项目，亲自体验这些东西，我认为都是很有必要的。特别是LLM时代AI把屎一车一车的运到屎山上喷，如果你不具备这种能力，项目可能在你可以离职前就已经光速崩掉了，那这就不好办了。就算你上班用不上AI，下班后用AI喷屎然后自己铲干净，也是一种练习。
+
+## 最后的超级大补丁：left_recursion_inject和!prefix_merge
+
+于是我们终于迎来了最后的一个补丁。这个补丁的规模之大，解决的问题之复杂，终于让我意识到我需要修改设计了。不过彼时还对原本的设计抱有侥幸心理，想看看是不是还能继续做下去。最后确实做出来了，但是我也忍不了了。这个补丁原本是尝试做C++ parser的时候引入的，解决的是上面提到的问题：
+
+- 一个C++语句既可以从类型开始也可以从表达式开始，但是她们都可以有一个共同的前缀，就是复杂的qualified identifier。直接parse会浪费海量算力。
+- 一个模板参数既可以是类型也可以是表达式，但是他们也同时都是复杂的qualified identifier。直接parse会导致产生两个一摸一样的歧义结果。
+
+第一个情况还可以说性能问题不能解决就放着，第二个就是bug了，直接导致语法写不出来。我们还不能为了模板参数直接分化出只有qualified identifier的这种情况，因为qualified identifier本身也可以是类型和表达式的前缀，我们很难再做出一个类型和表达式的语法，让他们既可以从qualified identifier开始，本身又不包含只有qualified identifier的这种情况。既然问题要解决，又不能修改语法，想在状态机身上入手难度也很大，那只能加新功能了。毕竟有bug就一定要修是不是。
+
+Ladies and gentlemen！让我们来看看最后的超级大补丁是怎么打的。
+
 <!--
-- 合并前缀（三个情况）
-  - 前缀合并可以让Workflow跑一个长代码从11万trace缩小到6千
-  - 相同指令前缀合并
-  - 不同指令相同rule前缀合并
-  - 不同rule但是调用进去遇到相同的rule的前缀合并
-    - left_recursion_inject, left_recursion_inject_multiple
-    - prefix_merge语法重写
-    - LriStore/LriFetch
-  - 为什么这个终极补丁对前缀合并产生了困难
+- 终极补丁
+  - left_recursion_inject, left_recursion_inject_multiple
+  - prefix_merge语法重写
+  - LriStore/LriFetch
 - 此次重构如何解决这个问题
   - 重新设计指令
     - 把(DFA/)?BO/EO固化为SB/CO/SE
@@ -686,18 +782,11 @@ Declaration
     - ResolveAmbiguity的BuildExecutionOrder重做
 
 copilot翻译成英语
+- 改正错别字，改正语法错误，最低限度地调整语序
 - 原文复制到en_us.md
 - 抽出所有标题和段落，生成task list，写进en_us_todo.md
 - 一边翻译一边标记todo一边生成词汇表vocabulary.md
 - 翻译的结果保存金en_us_translation.md，标题重写，翻译的时候一段中文注释一段英语
 - 结束后重新复制回en_us.md
 - git对比一下翻译是否完整
--->
-
-<!--
-### 打补丁本质上是一个靠温水煮青蛙积累技术债的行为
-
-如果当初多想一下的话，就会发现其实我们已经在破坏自己的抽象了，正在实践[依赖巧合编程](https://en.wikipedia.org/wiki/Programming_by_permutation)。我们没有使用`BeginObject`们的语义，反而在利用他们的实现，破坏了封装。这位后面的灾难埋下了伏笔。而且打补丁真的很容易成为一个人下意识的选择，因为每一个补丁都太小了，比如上面实现左递归甚至不需要修改状态机本身的定义和实现，甚至都意识不到自己在打补丁，令人麻痹大意，温水煮青蛙也。没有在需要重构的时候马上动手，就会有越来越多的代码依赖错误的设计，总有一天会改不动。这个时候要么你真的特别牛逼把重构做出来，要么重写，要么就[干脆放弃](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)。
-
-不过换个角度，如今的资本主义社会令码农并不能在法律上产生对代码的ownership，其实你写的都是别人的东西，到底要不要容忍[错误的实践](https://en.wikipedia.org/wiki/List_of_software_anti-patterns)，其实也见仁见智了。不过是否执行好的实践，最好只是你的一个选择，而不是受限于你的能力。所以下班后折腾自己的项目，亲自体验这些东西，我认为都是很有必要的。特别是LLM时代AI把屎一车一车的运到屎山上喷，如果你不具备这种能力，项目可能在你可以离职前就已经光速崩掉了，那这就不好办了。就算你上班用不上AI，下班后用AI喷屎然后自己铲干净，也是一种练习。
 -->
