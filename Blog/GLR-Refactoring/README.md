@@ -494,7 +494,7 @@ Field(value)
 >f2->f3
 ```
 
-如果当前的两个token分别是`NUM`和`")"`，那么他就会依次走到`f1`、`Factor`双圆圈、`t1`、`Term`的双圆圈、`e1`、`Expr`的双圆圈、`f3`。那这条transition的指令是怎么来的呢？实际上就是通过折叠起来的这么多transition它的带`+`的指令全部合在一起（只是恰好`Term`和`Expr`都没有带`+`的指令）。那么就会出现一种情况，这条边会有若干个`BeginObject`，还会有一些别的。
+如果当前的两个token分别是`NUM`和`")"`，那么他就会依次走到`f1`、`Factor`双圆圈、`t1`、`Term`的双圆圈、`e1`、`Expr`的双圆圈、`f3`。那这条transition的指令是怎么来的呢？实际上就是通过折叠起来的这么多transition它的带`+`的指令全部合在一起（只是恰好`Term`和`Expr`都没有带`+`的指令）。那么就会出现一种情况，这条边会有若干个`BeginObject`，还会有一些别的。在这里复习一下，带`+`的指令说明它是在transition真正做出动作之前执行的。
 
 如果没有`!`的话，每一个`BeginObject`都会对应一个`EndObject`。如果出现了`!`，则每一个`BeginObject`在`EndObject`之后还会被重复`ReopenObject + EndObject`若干次。所以一个`BeginObject`最终会有一个位置最推迟的`EndObject`。
 
@@ -665,16 +665,101 @@ Declaration
 
 就算不是C++，哪怕只是[GacUI的Workflow脚本语言](https://vczh-libraries.github.io/doc/current/workflow/lang/module.html)，一个比较长的输入在没有合并前缀优化的时候跑了差不多120k个状态，实现了完整的合并前缀优化之后只需要6k个状态，出来的东西是一样的。可见这个东西非做不可。然而……让我们先来看看合并前缀的三种优化，后面一个都是前面一个更加泛化之后的结果，处理细节各不相同，但是目标是一致的。
 
+首先我们来考虑一下最简单的情况：
+
+```
+Rule
+  ::= Prefix:prefix ThisRemains as MyObject
+  ::= Prefix:prefix ThatRemains as MyObject
+  ;
+```
+
+两个`Prefix`不仅输入一样，产生的指令也是一样的：
+
+```
++BeginObject(MyObject)
+Field(prefix)
+```
+
+这样的语法在编译成PDA之后会产生两条从`Rule`起始状态出来的一摸一样的transition，只是通往了不同的地方，我们可以把它合并起来变成一条，两个目标状态也融合成了一个状态。需要注意的是如果有其他状态指向被融合的状态的其中一个的话，那它就不能被删掉。这个过程跟[NFA转DFA](https://en.wikipedia.org/wiki/Powerset_construction)是一样的。
+
+在这里复习一下，带`+`的指令说明它是在transition真正做出动作之前执行的。也就是先有`BeginObject(MyObject)`，再有`Prefix`产生的一系列指令，最后才到`Field(prefix)`。具体的实现就是在`Prefix`被转成只想`Prefix`的状态机的token transition的时候，把所有return transitions的`+`指令单独复制到新的transition上，后面走虚线的时候只执行return transition的非`+`指令。
+
+但这类情况实际上是罕见的，真正常见的是一样的rule input但是指令却不一样的情况。比如说：
+
+```
+Rule
+  ::= Prefix:prefix Remains1 as MyObject
+  ::= Prefix:prefix2 Remains2 as MyObject
+  ::= Prefix:prefix Remains3 as YourObject
+  ::= Prefix:prefix !Remains4
+  ::= !Prefix [left_recursion_inject(X) _Remains5]
+  ;
+```
+
+这个`left_recursion_inject`会随后解释，这是重写前打的最后一个也是最大的补丁。他们产生的指令分别是：
+
+```
++BeginObject(MyObject)
+Field(prefix)
+```
+
+```
++BeginObject(MyObject)
+Field(prefix2)
+```
+
+```
++BeginObject(YourObject)
+Field(prefix)
+```
+
+```
++DelayFieldAssignment
+Field(prefix)
+```
+
+```
++DelayFieldAssignment
+ReopenObject
+```
+
+这下麻烦了，指令不一样怎么办呢？有些情况还能通过把非`+`指令挪给后面的transition当`+`指令绕过去，有些则可以从：
+
+```
+BeginObject(MyObject)
+  Prefix ...
+  Field(prefix)
+```
+
+改成
+
+```
+Prefix ...
+LriStore
+BeginObject(MyObject)
+  LriFecth
+  Field(prefix)
+```
+
+`LriStore`和`LriFetch`可以理解为把Object堆栈栈顶pop出来存到一个寄存器里，后面再从寄存器读出来push回Object堆栈。这也是引入`left_recursion_inject`的时候新加的，会随后解释。总之通过总总办法先把指令对齐，然后才能合并。
+
+## 为什么总是一直打补丁
+
+做到这已经非常累了，正常来说早就要审视一下过去的设计是不是有问题了。不过实际情况是，从文章的开头走到这已经花了10年，这个项目一开始很简单，就是GacUI当初需要JSON和XML的时候，觉得以后反正还有很多parser要写，不如干脆做个GLR parser gen。后面随着feature的加入越来越复杂，每隔一两年就做一点修改，完全忘记了上一次打补丁的时候的情绪和感受。于是我们终于迎来了最后的一个补丁，这个补丁原本是尝试做C++ parser的时候引入的，解决的是上面提到的问题：
+
+- 一个C++语句既可以从类型开始也可以从表达式开始，但是她们都可以有一个共同的前缀，就是复杂的qualified identifier。直接parse会浪费海量算力。
+- 一个模板参数既可以是类型也可以是表达式，但是他们也同时都是复杂的qualified identifier。直接parse会导致产生两个一摸一样的歧义结果。
+
+第一个情况还可以说性能问题不能解决就放着，第二个就是bug了，直接导致语法写不出来。有bug就一定要修是不是。Ladies and gentlemen！让我们来看看最后的超级大补丁是怎么打的。
+
+## 最后的超级大补丁：left_recursion_inject和!prefix_merge
+
 <!--
-- 合并前缀（三个情况）
-  - 前缀合并可以让Workflow跑一个长代码从11万trace缩小到6千
-  - 相同指令前缀合并
-  - 不同指令相同rule前缀合并
-  - 不同rule但是调用进去遇到相同的rule的前缀合并
-    - left_recursion_inject, left_recursion_inject_multiple
-    - prefix_merge语法重写
-    - LriStore/LriFetch
-  - 为什么这个终极补丁对前缀合并产生了困难
+- 终极补丁
+  - left_recursion_inject, left_recursion_inject_multiple
+  - prefix_merge语法重写
+  - LriStore/LriFetch
 - 此次重构如何解决这个问题
   - 重新设计指令
     - 把(DFA/)?BO/EO固化为SB/CO/SE
