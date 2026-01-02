@@ -757,7 +757,9 @@ BeginObject(MyObject)
 - 一个C++语句既可以从类型开始也可以从表达式开始，但是她们都可以有一个共同的前缀，就是复杂的qualified identifier。直接parse会浪费海量算力。
 - 一个模板参数既可以是类型也可以是表达式，但是他们也同时都是复杂的qualified identifier。直接parse会导致产生两个一摸一样的歧义结果。
 
-第一个情况还可以说性能问题不能解决就放着，第二个就是bug了，直接导致语法写不出来。有bug就一定要修是不是。Ladies and gentlemen！让我们来看看最后的超级大补丁是怎么打的。
+第一个情况还可以说性能问题不能解决就放着，第二个就是bug了，直接导致语法写不出来。我们还不能为了模板参数直接分化出只有qualified identifier的这种情况，因为qualified identifier本身也可以是类型和表达式的前缀，我们很难再做出一个类型和表达式的语法，让他们既可以从qualified identifier开始，本身又不包含只有qualified identifier的这种情况。既然问题要解决，又不能修改语法，想在状态机身上入手难度也很大，那只能加新功能了。毕竟有bug就一定要修是不是。
+
+Ladies and gentlemen！让我们来看看最后的超级大补丁是怎么打的。
 
 <!--
 - 终极补丁
