@@ -906,7 +906,40 @@ Module_Original
 
 ### !prefix_merge
 
+显然让写语法的人自己标记还是太难了，但是`left_recursion_inject`作为一个语法结构他是有用的，因为它至少指导了PDA的生成。就像前面的开关是个宏一样，我也可以为它发明一个宏，这就是`!prefix_merge`。我们只要标记出来`left_recursion_placeholder`是因为`Id`引起的，至于剩下的`left_recursion_inject`和`_Original`让编译器自己去算就好了。所以在彻底重做之前的最后一个方案长这样：
 
+```
+Id
+  :: NAME:name as Identifier
+  ;
+
+PrimitiveExpr
+  ::= !prefix_merge(Id)
+  ::= NUMBER:content as NumberExpr
+  ;
+
+Expr
+  ::= !PrimitiveExpr
+  ::= Expr:left "*" PrimitiveExpr:right as MulExpr
+  ;
+
+PrimitiveType
+  ::= !prefix_merge(Id)
+  ::= "int" as IntType
+  ;
+
+Type
+  ::= !PrimitiveType
+  ::= Type:type "*" as PointerType
+  ;
+
+@parser Module
+  ::= !Expr
+  ::= !Type
+  ;
+```
+
+编译器一看，`Module`开始能走到好几个重复的`!prefix_merge(Id)`，于是开始搜集语法的结构，然后把他改写成上面`left_recursion_inject`的样子，再生成PDA就行了。
 
 <!--
 - 终极补丁
