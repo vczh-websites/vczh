@@ -766,6 +766,87 @@ BeginObject(MyObject)
 
 Ladies and gentlemen！让我们来看看最后的超级大补丁是怎么打的。
 
+### Qualified Identifier问题的简化版本
+
+我们可以来看一个简化后的例子，加入我们要parse的就是类型或者表达式的结构，表达式可以是a\*b，类型可以是a\*，当然a本身都满足两边的要求。由于语法是强类型的，怎么设计AST就很重要。一般有两种做法，要么就是设计类似`IdentifierExpr`和`IdentifierType`这样的结构，要么就是让`Expr`和`Type`都继承自`TypeOrExpr`，然后让`Identifier`变成`TypeOrExpr`的直接子类，而`Expr`和`Type`表达不可能互相造成歧义的其他类型。
+
+对于C++模板参数来说，我们当然要选择后者。因为在resolve符号之前我们根本不知道那是类型还是表达式，如果建模成`IdentifierExpr`和`IdentifierType`就不得不构造两遍`Identifier`然后把它分别包在这两个类型里面了，没有解决浪费算力的问题。也就是说，如果输入是一个`Identifier`，那么我们的语法应该只返回一个结果：
+
+```
+Id
+  :: NAME:name as Identifier
+  ;
+
+PrimitiveExpr
+  ::= !Id
+  ::= NUMBER:content as NumberExpr
+  ;
+
+Expr
+  ::= !PrimitiveExpr
+  ::= Expr:left "*" PrimitiveExpr:right as MulExpr
+  ;
+
+PrimitiveType
+  ::= !Id
+  ::= "int" as IntType
+  ;
+
+Type
+  ::= !PrimitiveType
+  ::= Type:type "*" as PointerType
+  ;
+
+@parser Module
+  ::= !Expr
+  ::= !Type
+  ;
+```
+
+这样看是不是就清楚了？`a*1`会走
+
+```
+Module
+::= Expr
+::= Expr "*" PrimitiveExpr
+::= PrimitiveExpr "*" PrimitiveExpr
+::= Id "*" PrimitiveExpr
+::= NAME "*" NUMBER
+```
+
+而`a*`会走
+
+```
+Module
+::= Type
+::= Type "*"
+::= PrimitiveType "*"
+::= Id "*"
+::= NAME "*"
+```
+
+但是`a`就会同时走
+
+```
+Module
+::= Expr
+::= PrimitiveExpr
+::= Id
+::= NAME
+```
+
+和
+
+```
+Module
+::= Type
+::= PrimitiveType
+::= Id
+::= NAME
+```
+
+这就是我们要解决的问题：虽然有两个path，但是我们只要一个`Identifier`，而不是parser告诉我们有歧义，结果给了两个一样的`Identifier`。
+
 <!--
 - 终极补丁
   - left_recursion_inject, left_recursion_inject_multiple
