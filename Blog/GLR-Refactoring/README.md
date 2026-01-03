@@ -898,9 +898,9 @@ Module_Original
   ;
 ```
 
-语法设计出来了，吭哧吭哧实现了，做了海量测试，然后就开始投入实战。然而一个问题马上就浮现了出来。这个例子是简单，但是实际上C++有太多地方都需要这种结构了，就连表达式本身都可能是`Type{}`，需要写的`left_recursion_placeholder`、`left_recursion_inject`和`_Original`都太多太多了。而且这里面还有一些其他情况，也就是`Module`一路走到`!Id`但是中间并不是全都是`!Rule`的形式，这就是为什么`left_recursion_inject`的例子会带一个`[]`，你可以不写，那前面的`!Id`就不会直接当成`Module`的一种情况直接返回了。
+语法设计出来了，吭哧吭哧实现了，做了海量测试，然后就开始投入实战。然而一个问题马上就浮现了出来。这个例子是简单，但是实际上C++有太多地方都需要这种结构了，就连表达式本身都可能是`Type{}`，需要写的`left_recursion_placeholder`、`left_recursion_inject`和`_Original`都太多太多了。而且这里面还有一些其他情况，也就是`Module`一路走到`!Id`但是中间并不是全都是`!Rule`的形式，这就是为什么`left_recursion_inject`的例子会带一个`[]`，你可以不写，那么`left_recursion_inject`就从本来可选变成现在强制的了，自然前面的`!Id`就不会直接当成`Module`的一种情况直接返回了。
 
-后面还出现一些更复杂的情况，也就是这种`Id`并不只有一层，如果类型和表达式都共享了`Id`，但是`Id`本身又是一种`Module`，怎么办呢？这种时候我们就要允许`Module_Original`还可以继续嵌套`left_recursion_inject`的结构。
+后面还出现一些更复杂的情况，也就是这种`Id`并不只有一层，如果类型和表达式都共享了`Id`，但是`Id`本身又是一种`Module`，怎么办呢？这种时候我们就要允许`left_recursion_inject(IdShortcut) Module_Original`还可以继续嵌套`left_recursion_inject`的结构。
 
 哇塞没完没了了，本来语法已经很复杂了，现在为了解决歧义和性能的问题改到断手。这可不行！
 
@@ -940,6 +940,8 @@ Type
 ```
 
 编译器一看，`Module`开始能走到好几个重复的`!prefix_merge(Id)`，于是开始搜集语法的结构，然后把他改写成上面`left_recursion_inject`的样子，再生成PDA就行了。
+
+于是测试程序里的C++语法就从[用!prefix_merge](https://github.com/vczh-libraries/VlppParser2/tree/release-2.0-archive-DfaBoEo/Test/Source/BuiltIn-Cpp/Syntax/Syntax)被重写成了[用left_recursion_inject](https://github.com/vczh-libraries/VlppParser2/blob/release-2.0-archive-DfaBoEo/Test/ParserLog/ParserGen/SyntaxRewrittenActual%5BBuiltIn-Cpp%5D.txt)了，感受一下这个宏的必要性。
 
 <!--
 - 终极补丁
