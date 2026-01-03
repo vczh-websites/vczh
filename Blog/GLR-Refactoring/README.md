@@ -847,6 +847,67 @@ Module
 
 这就是我们要解决的问题：虽然有两个path，但是我们只要一个`Identifier`，而不是parser告诉我们有歧义，结果给了两个一样的`Identifier`。
 
+### left_recursion_inject
+
+我的第一个想法是让写语法的人自己标记出来，说`Module`的几条分支都可以走到`Id`，那我们就应该先试试看`Id`。如果成功了，那就有三个选择：
+- 返回。反正`Id`本来就是`Module`的其中一种情况，语义上是正确的。
+- 假装是走进了`Expr`分支，从`PrimitiveExpr ::= !Id`的尾巴开始继续做。
+- 假装是走进了`Type`分支，从`PrimitiveType ::= !Id`的尾巴开始继续做。
+
+“假装”这件事是很容易做的，因为在PDA上的transition本来就有return transitions的数据，一开始是在合并出最大的PDA的时候用的。最大的PDA只有token input，那我们如何表达一个状态是走了多少rule之后才来到这的呢？就是把全面所有的transition都装进return transitions里面。实际执行的时候return transitions就会被压栈，最后在双圆圈那个地方一个一个退出来。在这也是一个道理，假装从`Module`直接走进`PrimitiveExpr ::= !Id`就是生成一条虚线transition，其return transitions就依次排列着：
+
+```
+PrimitiveExpr ::= @ Id -> PrimitiveExpr ::= Id @
+Expr ::= @ PrimitiveExpr -> Expr ::= PrimitiveExpr @
+Module ::= @ Expr -> Module ::= Expr @
+```
+
+后续从epsilon-NFA生成NFA的时候就会和后面的transition合并之后直接指向`PrimitiveExpr`的双圆圈。上面提到的`LriStore`和`LriFetch`指令便是在这里用上的。因为这一次跳转把那么多transition合并在了一起，他们会有不可预测的一系列`+`指令。为了顺利吧`Id`产生的对象在执行完一系列`+`指令之后正好保留在Object堆栈的栈顶，于是就创造了一个寄存器。
+
+具体的实现怎么做呢？既然是让写语法的人来标记，那必然就要发明新的语法。我们需要表达的就有两件事：
+- 先parse `Id`。
+- parse完跳转到哪里。
+
+很明显这就是两个语法。首先我用`left_recursion_placeholder`表达了“parse完跳转到哪里”的问题。我们注意从`Module`到`Id`的一系列动作，必定是以`!Id`结束的，所以`left_recursion_placeholder`本身就必须是一个完整的语法，放在所有`!Id`存在的地方，也就是`PrimitiveExpr`和`PrimitiveType`
+
+```
+PrimitiveExpr
+  ::= left_recursion_placeholder(IdShortcut)
+  ::= !Id
+  ::= NUMBER:content as NumberExpr
+  ;
+
+
+PrimitiveType
+  ::= left_recursion_placeholder(IdShortcut)
+  ::= !Id
+  ::= "int" as IntType
+  ;
+```
+
+接着就要来表达“先parse Id”。这其实蕴涵着两个动作，首先是“parse Id”，其次是parse之后的跳转。尽管上面已经标记了`left_recursion_placeholder`，但我们仍然需要算出return transitions的部分，也就意味着原来的`Module`语法是要保留的，作用就是计算出跳转到每一个placeholder到底需要什么return transitions。这就意味着`Module`要写两遍，一个是真的语法，另一个是魔改后的入口。别人调用`Module`的时候就得用这个入口，而这个入口依赖原本的`Module`来做剩下的计算：
+
+```
+Module_Original
+  ::= !Expr
+  ::= !Type
+  ;
+
+@parser Module
+  ::= !Id [left_recursion_inject(IdShortcut) Module_Original]
+  ;
+```
+
+语法设计出来了，吭哧吭哧实现了，做了海量测试，然后就开始投入实战。然而一个问题马上就浮现了出来。这个例子是简单，但是实际上C++有太多地方都需要这种结构了，就连表达式本身都可能是`Type{}`，需要写的`left_recursion_placeholder`、`left_recursion_inject`和`_Original`都太多太多了。而且这里面还有一些其他情况，也就是`Module`一路走到`!Id`但是中间并不是全都是`!Rule`的形式，这就是为什么`left_recursion_inject`的例子会带一个`[]`，你可以不写，那前面的`!Id`就不会直接当成`Module`的一种情况直接返回了。
+
+后面还出现一些更复杂的情况，也就是这种`Id`并不只有一层，如果类型和表达式都共享了`Id`，但是`Id`本身又是一种`Module`，怎么办呢？这种时候我们就要允许`Module_Original`还可以继续嵌套`left_recursion_inject`的结构。
+
+哇塞没完没了了，本来语法已经很复杂了，现在为了解决歧义和性能的问题改到断手。这可不行！
+
+### !prefix_merge
+
+
+
 <!--
 - 终极补丁
   - left_recursion_inject, left_recursion_inject_multiple
