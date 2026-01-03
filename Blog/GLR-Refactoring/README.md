@@ -943,11 +943,25 @@ Type
 
 于是测试程序里的C++语法就从[用!prefix_merge](https://github.com/vczh-libraries/VlppParser2/tree/release-2.0-archive-DfaBoEo/Test/Source/BuiltIn-Cpp/Syntax/Syntax)被重写成了[用left_recursion_inject](https://github.com/vczh-libraries/VlppParser2/blob/release-2.0-archive-DfaBoEo/Test/ParserLog/ParserGen/SyntaxRewrittenActual%5BBuiltIn-Cpp%5D.txt)了，感受一下这个宏的必要性。
 
+## 补丁终于还是打不下去了
+
+为什么会有上面的终极大补丁？本质上还是因为指令设计的不好。我们要合并前缀，就不得不处理前缀的transition们的指令。然而这里的指令其实包含了后面的语法的其他信息，最明显的莫过于`BeginObject`里面的类型名了，或者干脆不存在`BeginObject`，而且我前缀没parse完我怎么知道你要走哪个分支，不知道的话那些`Field`指令要怎么办呢？正是因为需要合并的前缀其实并不一样，总有太多细节上的区别，所以才把合并前缀的方法整的这么累，更别说后面的`!prefix_merge`。从“合并前缀”这一节占了开头到这里超过1/3的篇幅就知道实际上做起来有多累。
+
+更别说`!prefix_merge`做了这么多事情，其实解决的问题仍然不完整。最明显的一个问题，就只有前缀需要合并吗？如果`left_recursion_inject`是从语法中间开始的怎么办？到此已经山穷水尽走投无路了。
+
+所以为了彻底重做“合并前缀”这一节描述的全部内容，不得不从指令的设计入手，重新设计一套新的，目标就是让所有语法的前缀，如果他们都一样，那就得产生相同的指令。而且所有的“合并前缀”操作必须可以从任意一个PDA的状态出发，才能对语法做完整的优化。
+
+接下来我们将详细描述新的指令集的灵感来源、实际的设计以及它是如何解决上面提到的全部困难的。此时已经是2025年的年底，距离`VlppParser`项目的开始已经过去了13年。甚至这个repo都不是新的。
+
+学生时代的我用Win32 API封装UI库的时候就留下了一些基础代码。后来演变成了架构上跨平台的GacUI，而Windows的部分仍然保留了最开始的基础代码。然而此时的GacUI仍然是一个编译器项目的附属工具。一开始只是想着把C#写的编辑器用C++再写一遍，手上有没有趁手的UI库，那就自己来做一个吧！结果一不小心做泛化了，就有了他自己的repo。codeplex死了之后又转到了github上，随着代码越来越大最后被[切成了一堆repo](https://github.com/vczh-libraries)。
+
+我们都说monorepo好，但是一个人做就不太行，为了让项目的每个部分可以独立进化，我甚至开发了一个预处理程序，用来吧一个repo的所有C++代码合并成几个大文件（甚至就只有一对h/cpp）。这个github org的CI是一个巨大的powershell脚本，他会做所有以来更新的动作，然后编译运行测试程序，repo里面有些C++代码还是用其他repo的工具生成出来的（典型的就是各种parser）
+
+脚本用到的所有工具一开始还是C#写的，后来用C++重新做了一次，配置文件是个XML，XML的parse自然就是`VlppParser`随后变成`VlppParser2`生成的。可见`VlppParser2`早就变成了整个org运作的基础。现在在一些"Deprecated"文件夹里面，还能看到很多因为C++本身的进步而废弃掉的代码生成工具，典型的就有[variadic template argument](https://en.cppreference.com/w/cpp/language/parameter_pack.html)发明出来之前我做的一个更灵活的预处理程序。以前Func啊Tuple什么的就是用他写的，现在这些东西当然早就用C++重做了。
+
+## 新的指令：StackBegin指令集
+
 <!--
-- 终极补丁
-  - left_recursion_inject, left_recursion_inject_multiple
-  - prefix_merge语法重写
-  - LriStore/LriFetch
 - 此次重构如何解决这个问题
   - 重新设计指令
     - 把(DFA/)?BO/EO固化为SB/CO/SE
