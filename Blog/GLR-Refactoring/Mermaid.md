@@ -582,6 +582,7 @@ graph LR
     Field(right, 2)
     StackEnd .->E
   1-. [leftrec] :
+    StackEnd
     StackBegin
     StackSlot(0) .->2
   4-. [leftrec] :
