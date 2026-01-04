@@ -1066,6 +1066,25 @@ StackEnd
 
 本来嵌套的结构直接展开了！还记得为什么`left_recursion_inject`需要引入`LriStore`和`LriFetch`吗？由于新的指令结构的发生，生成的指令不仅是左递归无关，同时也自动地`left_recursion_inject`无关了。这给我们的优化算法打开了一扇新的大门：可能`!prefix_merge`不需要手动标记了，我们完全可以自动找出来，不仅如此，它再也不需要是一个single reuse rule了（也就是语法只有一个rule input，它还带有`!`）。这也就是说，前缀合并可以发生在任何PDA状态处，连前缀这个约束也消失了。
 
+而且既然`StackBegin`不再是语法的第一个指令，那`+`指令的存在也就没有必要了。`StackBegin`是生在第一个rule input之前还是之后都没有区别，而且我们总是会把它移动到后面，也就是说指令再也不需要区分是否带`+`了。在这里复习一下，带`+`的指令说明它是在transition真正做出动作之前执行的。
+
+我们来回顾一下“四则运算与左递归”一节中的例子，当时我们从这样的语法：
+
+```
+Term
+  ::= !Factor
+  :：= Term:left "*" Factor:right as MulExpr
+  ;
+```
+
+生成了这样的PDA：
+
+![](Images/Lrec_TermL3.png)
+
+新的版本就变成了：
+
+![](Images/New_Lrec_TermL3.png)
+
 <!--
 - 新的指令如何让合并前缀变得更顺利处理的情况更多（三个情况）
 - 重做multiple passes的歧义处理
