@@ -584,7 +584,10 @@ graph LR
   1-. [leftrec] : +EndObject
     StackBegin
     StackSlot(0) .->2
-  4-. [leftrec] : +EndObject
+  4-. [leftrec] : CreateObject(MulExpr)
+    Field(left, 0)
+    Field(right, 2)
+    StackEnd
     StackBegin
     StackSlot(0) .->2
 ```

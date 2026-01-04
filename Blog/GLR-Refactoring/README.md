@@ -1040,9 +1040,9 @@ StackEnd
 这样我们不妨把新的指令集称之为“StackBegin指令”。于是我们就可以重新推演每个指令的意思：
 - StackBegin：在Create堆栈栈顶上构造一个新的scope
 - StackSlot：把Object栈顶pop出来存进当前scope的表格里，跟一个key对应起来
-- CreateObject/Field/StackEnd：从当前scope拿出保存的所有对象，把他们当成员变量的值，构造出对应的AST类型的实例，Create栈顶的当前scope扔掉，构造玩的对象push进Object堆栈。这一堆会在后面细化。
+- CreateObject/Field/StackEnd：从当前scope拿出保存的所有对象，把他们当成员变量的值，构造出对应的AST类型的实例，Create栈顶的当前scope扔掉，构造完的对象push进Object堆栈。这一堆会在后面细化。
 
-这样做递归也不需要特别处理，因为`... 1 ...`肯定以`StackEnd`结束，东西一定在Object堆栈栈顶，`StackBegin`不对Object对战做任何干涉，`StackSlot`就一定能读到。这种做法还有一个美妙的特性，让我们来看`1*2+3`，现在我们知道，不管语法是不是左递归的，出来地指令都一样：
+这样左递归也不需要特别处理，因为`... 1 ...`肯定以`StackEnd`结束，东西一定在Object堆栈栈顶，`StackBegin`不对Object堆栈做任何干涉，`StackSlot`就一定能读到。这种做法还有一个美妙的特性，让我们来看`1*2+3`，现在我们知道，不管语法是不是左递归的，出来地指令都一样：
 
 ```
 ... 1 ...
