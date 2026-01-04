@@ -1040,7 +1040,7 @@ StackEnd
 这样我们不妨把新的指令集称之为“StackBegin指令”。于是我们就可以重新推演每个指令的意思：
 - StackBegin：在Create堆栈栈顶上构造一个新的scope
 - StackSlot：把Object栈顶pop出来存进当前scope的表格里，跟一个key对应起来
-- CreateObject/Field/StackEnd：从当前scope拿出保存的所有对象，把他们当成员变量的值，构造出对应的AST类型的实例，Create栈顶的当前scope扔掉，构造玩的对象push进Object堆栈
+- CreateObject/Field/StackEnd：从当前scope拿出保存的所有对象，把他们当成员变量的值，构造出对应的AST类型的实例，Create栈顶的当前scope扔掉，构造玩的对象push进Object堆栈。这一堆会在后面细化。
 
 这样做递归也不需要特别处理，因为`... 1 ...`肯定以`StackEnd`结束，东西一定在Object堆栈栈顶，`StackBegin`不对Object对战做任何干涉，`StackSlot`就一定能读到。这种做法还有一个美妙的特性，让我们来看`1*2+3`，现在我们知道，不管语法是不是左递归的，出来地指令都一样：
 
@@ -1084,6 +1084,13 @@ Term
 新的版本就变成了：
 
 ![](Images/New_Lrec_TermL3.png)
+
+我们注意到带`!`的语法依然会生成`StackBegin`和`StackEnd`，但是没有`CreateObject`。虽然这个例子是简单的，但是更复杂的例子我们会在`!`的前后都绑定成员变量。那没有`CreateObject`的话，`Field`指令要对谁发生呢？显然作用的对象就是Object栈顶的对象。因为现在不存在`DelayFieldAssignment`原本要解决的“在`!`之前对成员变量赋值的问题，我们就可以把`CreateObject`、`Field`和`StackEnd`具体做了什么细化下来了：
+- `CreateObject`：根据指定的AST类型创建一个实例，push进Object堆栈。
+- `Field`：作用在栈顶对象。
+- `StackEnd`：把当前的scope从Create栈顶拿掉。
+
+由于所有的成员变量都已经从Object栈顶拿掉存进当前scope的表格里面了，所以这里不会发生冲突。
 
 <!--
 - 新的指令如何让合并前缀变得更顺利处理的情况更多（三个情况）
