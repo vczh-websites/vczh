@@ -726,7 +726,7 @@ Field(prefix)
 
 ```
 +DelayFieldAssignment
-ReopenObject
+LriStore
 ```
 
 这下麻烦了，指令不一样怎么办呢？有些情况还能通过把非`+`指令挪给后面的transition当`+`指令绕过去，有些则可以从：
@@ -961,16 +961,116 @@ Type
 
 ## 新的指令：StackBegin指令集
 
+“合并前缀”一章详细解释了优化PDA和解决歧义的时候发生的种种困难，大多数都是围绕着如何处理指令集的。如果要重新设计，那新的指令及就必须满足以下特征：
+- 前缀一样的两条语法指令集的前缀也一样（也就是说不能出现AST类型和Field）。
+- 在`!`之前的指令前缀不要包含后面有`!`的信息。
+- 第一个rule input不要区分是否左递归（为了解决更早之前提到的复杂的歧义结构）
+
+这里可以做一些简单的推理：
+- 如果在执行到指向双圆圈的虚线transition之前不暴露AST类型和Field，那就只能把它们放在后面。然而由于`[]`和`(|)`这样的选择结构的存在，那种把rule input入栈后被Field出栈的做法自然就不能用了，因为分支的左右两边可能入栈了完全不同的类型和成员变量的名字。这直接说明了我们不能使用栈，那下一个备选自然就是打表了。我们可以用rule input在语法中出现的位置作为key，只在结尾处把所有的key和成员变量绑定起来就行了。这甚至直接解决了第一条的问题，不同的语法如果他的前缀长得一样，那么生成的key必然也是一样的，他们最终生成不同的类型绑定不同的成员变量那都是后面的事了。
+- 如果`!`不影响第一个rule input生成的指令，那就意味着我们永远要生成`BeginObject`，然后才在后面解决`!`的`ReopenObject`怎么生效的问题。由于上一条的关系，`BeginObject`已经不带类型了，那么`DelayFieldAssignment`也就顺理成章地上位了。有没有注意到第一条讲的其实就是任何时候都要首先生成`DelayFieldAssignment`？
+- 左递归的指令结构必须让第一个rule input在原本的`BeginObject`之前结束，如果我们不做区分，那就意味着任何第一个rule input产生的指令都必须以这种结构出现。
+
+不过Create堆栈和Object堆栈依然需要留下来。因为`EndObject`后挂起正在编辑的对象的需求依然存在。一通推理可能还是比较乱，让我们从一个例子入手。假如我们要生成`1+2`这个语法树，原本的指令大概长这样（假设没有左递归）：
+
+```
+BeginObject(AddExpr)
+  ... 1 ...
+  Field(left)
+  ... 2 ...
+  Field(right)
+EndObject
+```
+
+首先我们得把前面的Field都换成key，只在最后才把key和Field联系起来：
+
+```
+BeginObject(AddExpr)
+  ... 1 ...
+  StackSlot(0)
+  ... 2 ...
+  StackSlot(2)
+  Field(left, 0)
+  Field(right, 2)
+EndObject
+```
+
+其次，我们“任何时候都要首先生成`DelayFieldAssignment`”：
+
+```
+DelayFieldAssignment
+  ... 1 ...
+  StackSlot(0)
+  ... 2 ...
+  StackSlot(2)
+  BeginObject(AddExpr)
+  Field(left, 0)
+  Field(right, 2)
+EndObject
+```
+
+最后，我们不能区分是否左递归，所以任何与发的第一个rule input都得拿到外面：
+
+```
+... 1 ...
+DelayFieldAssignment
+  StackSlot(0)
+  ... 2 ...
+  StackSlot(2)
+  BeginObject(AddExpr)
+  Field(left, 0)
+  Field(right, 2)
+EndObject
+```
+
+新的指令当然要有新的名字，一边是他们原本的意思在这么多年的补丁中已经悄然发生了变化，另一边是改名有利于C++全面找出所有需要重构的地方，使用海量编译错误代替海量测试错误，搞不好还有什么地方没被测试覆盖。所以改名总是最好的：
+
+```
+... 1 ...
+StackBegin
+  StackSlot(0)
+  ... 2 ...
+  StackSlot(2)
+  CreateObject(AddExpr)
+  Field(left, 0)
+  Field(right, 2)
+StackEnd
+```
+
+这样我们不妨把新的指令集称之为“StackBegin指令”。于是我们就可以重新推演每个指令的意思：
+- StackBegin：在Create堆栈栈顶上构造一个新的scope
+- StackSlot：把Object栈顶pop出来存进当前scope的表格里，跟一个key对应起来
+- CreateObject/Field/StackEnd：从当前scope拿出保存的所有对象，把他们当成员变量的值，构造出对应的AST类型的实例，Create栈顶的当前scope扔掉，构造玩的对象push进Object堆栈
+
+这样做递归也不需要特别处理，因为`... 1 ...`肯定以`StackEnd`结束，东西一定在Object堆栈栈顶，`StackBegin`不对Object对战做任何干涉，`StackSlot`就一定能读到。这种做法还有一个美妙的特性，让我们来看`1*2+3`，现在我们知道，不管语法是不是左递归的，出来地指令都一样：
+
+```
+... 1 ...
+StackBegin
+  StackSlot(0)
+  ... 2 ...
+  StackSlot(2)
+  CreateObject(MulExpr)
+  Field(left, 0)
+  Field(right, 2)
+StackEnd
+StackBegin
+  StackSlot(0)
+  ... 3 ...
+  StackSlot(2)
+  CreateObject(AddExpr)
+  Field(left, 0)
+  Field(right, 2)
+StackEnd
+```
+
+本来嵌套的结构直接展开了！还记得为什么`left_recursion_inject`需要引入`LriStore`和`LriFetch`吗？由于新的指令结构的发生，生成的指令不仅是左递归无关，同时也自动地`left_recursion_inject`无关了。这给我们的优化算法打开了一扇新的大门：可能`!prefix_merge`不需要手动标记了，我们完全可以自动找出来，不仅如此，它再也不需要是一个single reuse rule了（也就是语法只有一个rule input，它还带有`!`）。这也就是说，前缀合并可以发生在任何PDA状态处，连前缀这个约束也消失了。
+
 <!--
-- 此次重构如何解决这个问题
-  - 重新设计指令
-    - 把(DFA/)?BO/EO固化为SB/CO/SE
-    - 把(DFA/)?RO/EO固化为SB/SE
-    - 利用StackSlot把Field都移动到SE前面
-  - 新的指令如何让合并前缀变得更顺利处理的情况更多（三个情况）
-  - 重做multiple passes的歧义处理
-    - PrepareTraceRoute从产生object改为产生stack，也就是追踪的是每一个SB/SE的结果，而不是具体的对象（因为对象可能被多个SB/SE共享）
-    - ResolveAmbiguity的BuildExecutionOrder重做
+- 新的指令如何让合并前缀变得更顺利处理的情况更多（三个情况）
+- 重做multiple passes的歧义处理
+  - PrepareTraceRoute从产生object改为产生stack，也就是追踪的是每一个SB/SE的结果，而不是具体的对象（因为对象可能被多个SB/SE共享）
+  - ResolveAmbiguity的BuildExecutionOrder重做
 
 copilot翻译成英语
 - 改正错别字，改正语法错误，最低限度地调整语序
