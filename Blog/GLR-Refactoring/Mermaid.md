@@ -565,3 +565,31 @@ graph LR
     ReopenObject -->1
   1((1))-. EndObject .->E((( )))
 ```
+
+## New_Lrec_TermL3.png
+
+```mermaid
+graph LR
+  S((TermL))-- Factor :
+    StackBegin --> 1
+  1((1))-. : StackEnd .->E((( )))
+  2((2))-- #quot;*#quot; :
+    Discard --> 3
+  3((3))-- Factor :
+    StackSlot(2) --> 4
+  4((4))-. : CreateObject(MulExpr)
+    Field(left, 0)
+    Field(right, 2)
+    StackEnd .->E
+  1-. [leftrec] :
+    StackEnd
+    StackBegin
+    StackSlot(0) .->2
+  4-. [leftrec] :
+    CreateObject(MulExpr)
+    Field(left, 0)
+    Field(right, 2)
+    StackEnd
+    StackBegin
+    StackSlot(0) .->2
+```

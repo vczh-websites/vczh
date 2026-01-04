@@ -702,31 +702,38 @@ Rule
   ;
 ```
 
-这个`left_recursion_inject`会随后解释，这是重写前打的最后一个也是最大的补丁。他们产生的指令分别是：
+这个`left_recursion_inject`会随后解释，这是重写前打的最后一个也是最大的补丁。在上面的语法中，每一行的`Prefix`产生的指令分别是：
 
 ```
 +BeginObject(MyObject)
+... Prefix ...
 Field(prefix)
 ```
 
 ```
 +BeginObject(MyObject)
+... Prefix ...
 Field(prefix2)
 ```
 
 ```
 +BeginObject(YourObject)
+... Prefix ...
 Field(prefix)
 ```
 
 ```
 +DelayFieldAssignment
+... Prefix ...
 Field(prefix)
 ```
 
 ```
+... Prefix ...
+LriStore
 +DelayFieldAssignment
-ReopenObject
+...
+LriFetch
 ```
 
 这下麻烦了，指令不一样怎么办呢？有些情况还能通过把非`+`指令挪给后面的transition当`+`指令绕过去，有些则可以从：
@@ -766,20 +773,393 @@ BeginObject(MyObject)
 
 Ladies and gentlemen！让我们来看看最后的超级大补丁是怎么打的。
 
+### Qualified Identifier问题的简化版本
+
+我们可以来看一个简化后的例子，加入我们要parse的就是类型或者表达式的结构，表达式可以是a\*b，类型可以是a\*，当然a本身都满足两边的要求。由于语法是强类型的，怎么设计AST就很重要。一般有两种做法，要么就是设计类似`IdentifierExpr`和`IdentifierType`这样的结构，要么就是让`Expr`和`Type`都继承自`TypeOrExpr`，然后让`Identifier`变成`TypeOrExpr`的直接子类，而`Expr`和`Type`表达不可能互相造成歧义的其他类型。
+
+对于C++模板参数来说，我们当然要选择后者。因为在resolve符号之前我们根本不知道那是类型还是表达式，如果建模成`IdentifierExpr`和`IdentifierType`就不得不构造两遍`Identifier`然后把它分别包在这两个类型里面了，没有解决浪费算力的问题。也就是说，如果输入是一个`Identifier`，那么我们的语法应该只返回一个结果：
+
+```
+Id
+  :: NAME:name as Identifier
+  ;
+
+PrimitiveExpr
+  ::= !Id
+  ::= NUMBER:content as NumberExpr
+  ;
+
+Expr
+  ::= !PrimitiveExpr
+  ::= Expr:left "*" PrimitiveExpr:right as MulExpr
+  ;
+
+PrimitiveType
+  ::= !Id
+  ::= "int" as IntType
+  ;
+
+Type
+  ::= !PrimitiveType
+  ::= Type:type "*" as PointerType
+  ;
+
+@parser Module
+  ::= !Expr
+  ::= !Type
+  ;
+```
+
+这样看是不是就清楚了？`a*1`会走
+
+```
+Module
+::= Expr
+::= Expr "*" PrimitiveExpr
+::= PrimitiveExpr "*" PrimitiveExpr
+::= Id "*" PrimitiveExpr
+::= NAME "*" NUMBER
+```
+
+而`a*`会走
+
+```
+Module
+::= Type
+::= Type "*"
+::= PrimitiveType "*"
+::= Id "*"
+::= NAME "*"
+```
+
+但是`a`就会同时走
+
+```
+Module
+::= Expr
+::= PrimitiveExpr
+::= Id
+::= NAME
+```
+
+和
+
+```
+Module
+::= Type
+::= PrimitiveType
+::= Id
+::= NAME
+```
+
+这就是我们要解决的问题：虽然有两个path，但是我们只要一个`Identifier`，而不是parser告诉我们有歧义，结果给了两个一样的`Identifier`。
+
+### left_recursion_inject
+
+我的第一个想法是让写语法的人自己标记出来，说`Module`的几条分支都可以走到`Id`，那我们就应该先试试看`Id`。如果成功了，那就有三个选择：
+- 返回。反正`Id`本来就是`Module`的其中一种情况，语义上是正确的。
+- 假装是走进了`Expr`分支，从`PrimitiveExpr ::= !Id`的尾巴开始继续做。
+- 假装是走进了`Type`分支，从`PrimitiveType ::= !Id`的尾巴开始继续做。
+
+“假装”这件事是很容易做的，因为在PDA上的transition本来就有return transitions的数据，一开始是在合并出最大的PDA的时候用的。最大的PDA只有token input，那我们如何表达一个状态是走了多少rule之后才来到这的呢？就是把全面所有的transition都装进return transitions里面。实际执行的时候return transitions就会被压栈，最后在双圆圈那个地方一个一个退出来。在这也是一个道理，假装从`Module`直接走进`PrimitiveExpr ::= !Id`就是生成一条虚线transition，其return transitions就依次排列着：
+
+```
+PrimitiveExpr ::= @ Id -> PrimitiveExpr ::= Id @
+Expr ::= @ PrimitiveExpr -> Expr ::= PrimitiveExpr @
+Module ::= @ Expr -> Module ::= Expr @
+```
+
+后续从epsilon-NFA生成NFA的时候就会和后面的transition合并之后直接指向`PrimitiveExpr`的双圆圈。上面提到的`LriStore`和`LriFetch`指令便是在这里用上的。因为这一次跳转把那么多transition合并在了一起，他们会有不可预测的一系列`+`指令。为了顺利吧`Id`产生的对象在执行完一系列`+`指令之后正好保留在Object堆栈的栈顶，于是就创造了一个寄存器。
+
+具体的实现怎么做呢？既然是让写语法的人来标记，那必然就要发明新的语法。我们需要表达的就有两件事：
+- 先parse `Id`。
+- parse完跳转到哪里。
+
+很明显这就是两个语法。首先我用`left_recursion_placeholder`表达了“parse完跳转到哪里”的问题。我们注意从`Module`到`Id`的一系列动作，必定是以`!Id`结束的，所以`left_recursion_placeholder`本身就必须是一个完整的语法，放在所有`!Id`存在的地方，也就是`PrimitiveExpr`和`PrimitiveType`
+
+```
+PrimitiveExpr
+  ::= left_recursion_placeholder(IdShortcut)
+  ::= !Id
+  ::= NUMBER:content as NumberExpr
+  ;
+
+
+PrimitiveType
+  ::= left_recursion_placeholder(IdShortcut)
+  ::= !Id
+  ::= "int" as IntType
+  ;
+```
+
+接着就要来表达“先parse Id”。这其实蕴涵着两个动作，首先是“parse Id”，其次是parse之后的跳转。尽管上面已经标记了`left_recursion_placeholder`，但我们仍然需要算出return transitions的部分，也就意味着原来的`Module`语法是要保留的，作用就是计算出跳转到每一个placeholder到底需要什么return transitions。这就意味着`Module`要写两遍，一个是真的语法，另一个是魔改后的入口。别人调用`Module`的时候就得用这个入口，而这个入口依赖原本的`Module`来做剩下的计算：
+
+```
+Module_Original
+  ::= !Expr
+  ::= !Type
+  ;
+
+@parser Module
+  ::= !Id [left_recursion_inject(IdShortcut) Module_Original]
+  ;
+```
+
+语法设计出来了，吭哧吭哧实现了，做了海量测试，然后就开始投入实战。然而一个问题马上就浮现了出来。这个例子是简单，但是实际上C++有太多地方都需要这种结构了，就连表达式本身都可能是`Type{}`，需要写的`left_recursion_placeholder`、`left_recursion_inject`和`_Original`都太多太多了。而且这里面还有一些其他情况，也就是`Module`一路走到`!Id`但是中间并不是全都是`!Rule`的形式，这就是为什么`left_recursion_inject`的例子会带一个`[]`，你可以不写，那么`left_recursion_inject`就从本来可选变成现在强制的了，自然前面的`!Id`就不会直接当成`Module`的一种情况直接返回了。
+
+后面还出现一些更复杂的情况，也就是这种`Id`并不只有一层，如果类型和表达式都共享了`Id`，但是`Id`本身又是一种`Module`，怎么办呢？这种时候我们就要允许`left_recursion_inject(IdShortcut) Module_Original`还可以继续嵌套`left_recursion_inject`的结构。
+
+哇塞没完没了了，本来语法已经很复杂了，现在为了解决歧义和性能的问题改到断手。这可不行！
+
+### !prefix_merge
+
+显然让写语法的人自己标记还是太难了，但是`left_recursion_inject`作为一个语法结构他是有用的，因为它至少指导了PDA的生成。就像前面的开关是个宏一样，我也可以为它发明一个宏，这就是`!prefix_merge`。我们只要标记出来`left_recursion_placeholder`是因为`Id`引起的，至于剩下的`left_recursion_inject`和`_Original`让编译器自己去算就好了。所以在彻底重做之前的最后一个方案长这样：
+
+```
+Id
+  :: NAME:name as Identifier
+  ;
+
+PrimitiveExpr
+  ::= !prefix_merge(Id)
+  ::= NUMBER:content as NumberExpr
+  ;
+
+Expr
+  ::= !PrimitiveExpr
+  ::= Expr:left "*" PrimitiveExpr:right as MulExpr
+  ;
+
+PrimitiveType
+  ::= !prefix_merge(Id)
+  ::= "int" as IntType
+  ;
+
+Type
+  ::= !PrimitiveType
+  ::= Type:type "*" as PointerType
+  ;
+
+@parser Module
+  ::= !Expr
+  ::= !Type
+  ;
+```
+
+编译器一看，`Module`开始能走到好几个重复的`!prefix_merge(Id)`，于是开始搜集语法的结构，然后把他改写成上面`left_recursion_inject`的样子，再生成PDA就行了。
+
+于是测试程序里的C++语法就从[用!prefix_merge](https://github.com/vczh-libraries/VlppParser2/tree/release-2.0-archive-DfaBoEo/Test/Source/BuiltIn-Cpp/Syntax/Syntax)被重写成了[用left_recursion_inject](https://github.com/vczh-libraries/VlppParser2/blob/release-2.0-archive-DfaBoEo/Test/ParserLog/ParserGen/SyntaxRewrittenActual%5BBuiltIn-Cpp%5D.txt)了，感受一下这个宏的必要性。
+
+## 补丁终于还是打不下去了
+
+为什么会有上面的终极大补丁？本质上还是因为指令设计的不好。我们要合并前缀，就不得不处理前缀的transition们的指令。然而这里的指令其实包含了后面的语法的其他信息，最明显的莫过于`BeginObject`里面的类型名了，或者干脆不存在`BeginObject`，而且我前缀没parse完我怎么知道你要走哪个分支，不知道的话那些`Field`指令要怎么办呢？正是因为需要合并的前缀其实并不一样，总有太多细节上的区别，所以才把合并前缀的方法整的这么累，更别说后面的`!prefix_merge`。从“合并前缀”这一节占了开头到这里超过1/3的篇幅就知道实际上做起来有多累。
+
+更别说`!prefix_merge`做了这么多事情，其实解决的问题仍然不完整。最明显的一个问题，就只有前缀需要合并吗？如果`left_recursion_inject`是从语法中间开始的怎么办？到此已经山穷水尽走投无路了。
+
+所以为了彻底重做“合并前缀”这一节描述的全部内容，不得不从指令的设计入手，重新设计一套新的，目标就是让所有语法的前缀，如果他们都一样，那就得产生相同的指令。而且所有的“合并前缀”操作必须可以从任意一个PDA的状态出发，才能对语法做完整的优化。
+
+接下来我们将详细描述新的指令集的灵感来源、实际的设计以及它是如何解决上面提到的全部困难的。此时已经是2025年的年底，距离`VlppParser`项目的开始已经过去了13年。甚至这个repo都不是新的。
+
+学生时代的我用Win32 API封装UI库的时候就留下了一些基础代码。后来演变成了架构上跨平台的GacUI，而Windows的部分仍然保留了最开始的基础代码。然而此时的GacUI仍然是一个编译器项目的附属工具。一开始只是想着把C#写的编辑器用C++再写一遍，手上有没有趁手的UI库，那就自己来做一个吧！结果一不小心做泛化了，就有了他自己的repo。codeplex死了之后又转到了github上，随着代码越来越大最后被[切成了一堆repo](https://github.com/vczh-libraries)。
+
+我们都说monorepo好，但是一个人做就不太行，为了让项目的每个部分可以独立进化，我甚至开发了一个预处理程序，用来吧一个repo的所有C++代码合并成几个大文件（甚至就只有一对h/cpp）。这个github org的CI是一个巨大的powershell脚本，他会做所有以来更新的动作，然后编译运行测试程序，repo里面有些C++代码还是用其他repo的工具生成出来的（典型的就是各种parser）
+
+脚本用到的所有工具一开始还是C#写的，后来用C++重新做了一次，配置文件是个XML，XML的parse自然就是`VlppParser`随后变成`VlppParser2`生成的。可见`VlppParser2`早就变成了整个org运作的基础。现在在一些"Deprecated"文件夹里面，还能看到很多因为C++本身的进步而废弃掉的代码生成工具，典型的就有[variadic template argument](https://en.cppreference.com/w/cpp/language/parameter_pack.html)发明出来之前我做的一个更灵活的预处理程序。以前Func啊Tuple什么的就是用他写的，现在这些东西当然早就用C++重做了。
+
+## 新的指令：StackBegin指令集
+
+“合并前缀”一章详细解释了优化PDA和解决歧义的时候发生的种种困难，大多数都是围绕着如何处理指令集的。如果要重新设计，那新的指令及就必须满足以下特征：
+- 前缀一样的两条语法指令集的前缀也一样（也就是说不能出现AST类型和Field）。
+- 在`!`之前的指令前缀不要包含后面有`!`的信息。
+- 第一个rule input不要区分是否左递归（为了解决更早之前提到的复杂的歧义结构）
+
+这里可以做一些简单的推理：
+- 如果在执行到指向双圆圈的虚线transition之前不暴露AST类型和Field，那就只能把它们放在后面。然而由于`[]`和`(|)`这样的选择结构的存在，那种把rule input入栈后被Field出栈的做法自然就不能用了，因为分支的左右两边可能入栈了完全不同的类型和成员变量的名字。这直接说明了我们不能使用栈，那下一个备选自然就是打表了。我们可以用rule input在语法中出现的位置作为key，只在结尾处把所有的key和成员变量绑定起来就行了。这甚至直接解决了第一条的问题，不同的语法如果他的前缀长得一样，那么生成的key必然也是一样的，他们最终生成不同的类型绑定不同的成员变量那都是后面的事了。
+- 如果`!`不影响第一个rule input生成的指令，那就意味着我们永远要生成`BeginObject`，然后才在后面解决`!`的`ReopenObject`怎么生效的问题。由于上一条的关系，`BeginObject`已经不带类型了，那么`DelayFieldAssignment`也就顺理成章地上位了。有没有注意到第一条讲的其实就是任何时候都要首先生成`DelayFieldAssignment`？
+- 左递归的指令结构必须让第一个rule input在原本的`BeginObject`之前结束，如果我们不做区分，那就意味着任何第一个rule input产生的指令都必须以这种结构出现。
+
+不过Create堆栈和Object堆栈依然需要留下来。因为`EndObject`后挂起正在编辑的对象的需求依然存在。一通推理可能还是比较乱，让我们从一个例子入手。假如我们要生成`1+2`这个语法树，原本的指令大概长这样（假设没有左递归）：
+
+```
+BeginObject(AddExpr)
+  ... 1 ...
+  Field(left)
+  ... 2 ...
+  Field(right)
+EndObject
+```
+
+首先我们得把前面的Field都换成key，只在最后才把key和Field联系起来：
+
+```
+BeginObject(AddExpr)
+  ... 1 ...
+  StackSlot(0)
+  ... 2 ...
+  StackSlot(2)
+  Field(left, 0)
+  Field(right, 2)
+EndObject
+```
+
+其次，我们“任何时候都要首先生成`DelayFieldAssignment`”：
+
+```
+DelayFieldAssignment
+  ... 1 ...
+  StackSlot(0)
+  ... 2 ...
+  StackSlot(2)
+  BeginObject(AddExpr)
+  Field(left, 0)
+  Field(right, 2)
+EndObject
+```
+
+最后，我们不能区分是否左递归，所以任何与发的第一个rule input都得拿到外面：
+
+```
+... 1 ...
+DelayFieldAssignment
+  StackSlot(0)
+  ... 2 ...
+  StackSlot(2)
+  BeginObject(AddExpr)
+  Field(left, 0)
+  Field(right, 2)
+EndObject
+```
+
+新的指令当然要有新的名字，一边是他们原本的意思在这么多年的补丁中已经悄然发生了变化，另一边是改名有利于C++全面找出所有需要重构的地方，使用海量编译错误代替海量测试错误，搞不好还有什么地方没被测试覆盖。所以改名总是最好的：
+
+```
+... 1 ...
+StackBegin
+  StackSlot(0)
+  ... 2 ...
+  StackSlot(2)
+  CreateObject(AddExpr)
+  Field(left, 0)
+  Field(right, 2)
+StackEnd
+```
+
+这样我们不妨把新的指令集称之为“StackBegin指令”。于是我们就可以重新推演每个指令的意思：
+- StackBegin：在Create堆栈栈顶上构造一个新的scope
+- StackSlot：把Object栈顶pop出来存进当前scope的表格里，跟一个key对应起来
+- CreateObject/Field/StackEnd：从当前scope拿出保存的所有对象，把他们当成员变量的值，构造出对应的AST类型的实例，Create栈顶的当前scope扔掉，构造完的对象push进Object堆栈。这一堆会在后面细化。
+
+这样左递归也不需要特别处理，因为`... 1 ...`肯定以`StackEnd`结束，东西一定在Object堆栈栈顶，`StackBegin`不对Object堆栈做任何干涉，`StackSlot`就一定能读到。这种做法还有一个美妙的特性，让我们来看`1*2+3`，现在我们知道，不管语法是不是左递归的，出来地指令都一样：
+
+```
+... 1 ...
+StackBegin
+  StackSlot(0)
+  ... 2 ...
+  StackSlot(2)
+  CreateObject(MulExpr)
+  Field(left, 0)
+  Field(right, 2)
+StackEnd
+StackBegin
+  StackSlot(0)
+  ... 3 ...
+  StackSlot(2)
+  CreateObject(AddExpr)
+  Field(left, 0)
+  Field(right, 2)
+StackEnd
+```
+
+本来嵌套的结构直接展开了！还记得为什么`left_recursion_inject`需要引入`LriStore`和`LriFetch`吗？由于新的指令结构的发生，生成的指令不仅是左递归无关，同时也自动地`left_recursion_inject`无关了。这给我们的优化算法打开了一扇新的大门：可能`!prefix_merge`不需要手动标记了，我们完全可以自动找出来，不仅如此，它再也不需要是一个single reuse rule了（也就是语法只有一个rule input，它还带有`!`）。这也就是说，前缀合并可以发生在任何PDA状态处，连前缀这个约束也消失了。
+
+而且既然`StackBegin`不再是语法的第一个指令，那`+`指令的存在也就没有必要了。`StackBegin`是生在第一个rule input之前还是之后都没有区别，而且我们总是会把它移动到后面，也就是说指令再也不需要区分是否带`+`了。在这里复习一下，带`+`的指令说明它是在transition真正做出动作之前执行的。
+
+我们来回顾一下“四则运算与左递归”一节中的例子，当时我们从这样的语法：
+
+```
+Term
+  ::= !Factor
+  :：= Term:left "*" Factor:right as MulExpr
+  ;
+```
+
+生成了这样的PDA：
+
+![](Images/Lrec_TermL3.png)
+
+新的版本就变成了：
+
+![](Images/New_Lrec_TermL3.png)
+
+我们注意到带`!`的语法依然会生成`StackBegin`和`StackEnd`，但是没有`CreateObject`。虽然这个例子是简单的，但是更复杂的例子我们会在`!`的前后都绑定成员变量。那没有`CreateObject`的话，`Field`指令要对谁发生呢？显然作用的对象就是Object栈顶的对象。因为现在不存在`DelayFieldAssignment`原本要解决的“在`!`之前对成员变量赋值的问题，我们就可以把`CreateObject`、`Field`和`StackEnd`具体做了什么细化下来了：
+- `CreateObject`：根据指定的AST类型创建一个实例，push进Object堆栈。
+- `Field`：作用在栈顶对象。
+- `StackEnd`：把当前的scope从Create栈顶拿掉。
+
+由于所有的成员变量都已经从Object栈顶拿掉存进当前scope的表格里面了，所以这里不会发生冲突。
+
+### 更多的例子
+
+在“合并前缀”一节中，我们曾经举了一些例子：
+
+```
+Rule
+  ::= Prefix:prefix Remains1 as MyObject
+  ::= Prefix:prefix2 Remains2 as MyObject
+  ::= Prefix:prefix Remains3 as YourObject
+  ::= Prefix:prefix !Remains4
+  ::= !Prefix [left_recursion_inject(X) _Remains5]
+  ;
+```
+
+在原本的BeginObject指令集的框架下，每一行的`Prefix`分别会产生左边指令前缀，而StackBegin指令集则在右边：
+
+```
++BeginObject(MyObject)         ... Prefix ...
+... Prefix ...                 StackBegin
+Field(prefix)                  StackSlot(0)
+```
+
+```
++BeginObject(MyObject)         ... Prefix ...
+... Prefix ...                 StackBegin
+Field(prefix2)                 StackSlot(0)
+```
+
+```
++BeginObject(YourObject)       ... Prefix ...
+... Prefix ...                 StackBegin
+Field(prefix)                  StackSlot(0)
+```
+
+```
++DelayFieldAssignment          ... Prefix ...
+... Prefix ...                 StackBegin
+Field(prefix)                  StackSlot(0)
+```
+
+```
+... Prefix ...                 ... Prefix ...
+LriStore                       StackBegin
++DelayFieldAssignment          StackSlot(0)
+...
+LriFetch
+```
+
+![](Keikaku_Doori.jpg)
+
+唯一有区别的是`Rule:field`和`!Rule`，他们一个会产生`StackSlot`一个没有，所以处理这种情况的代码依然存在，然而复杂程度已经断崖式下跌。
+
+在这里必须指出，由于新指令集的出现解锁了新算法，原本的`left_recursion_inject`和`!prefix_merge`已经不存在了。写语法的人再也不需要意识到他写的语法有这种情况从而需要手动标记，这一切全都自动发生了。
+
+## 新的!prefix_merge
+
 <!--
-- 终极补丁
-  - left_recursion_inject, left_recursion_inject_multiple
-  - prefix_merge语法重写
-  - LriStore/LriFetch
-- 此次重构如何解决这个问题
-  - 重新设计指令
-    - 把(DFA/)?BO/EO固化为SB/CO/SE
-    - 把(DFA/)?RO/EO固化为SB/SE
-    - 利用StackSlot把Field都移动到SE前面
-  - 新的指令如何让合并前缀变得更顺利处理的情况更多（三个情况）
-  - 重做multiple passes的歧义处理
-    - PrepareTraceRoute从产生object改为产生stack，也就是追踪的是每一个SB/SE的结果，而不是具体的对象（因为对象可能被多个SB/SE共享）
-    - ResolveAmbiguity的BuildExecutionOrder重做
+- 新的!prefix_merge
+- 重做multiple passes的歧义处理
+  - PrepareTraceRoute从产生object改为产生stack，也就是追踪的是每一个SB/SE的结果，而不是具体的对象（因为对象可能被多个SB/SE共享）
+  - ResolveAmbiguity的BuildExecutionOrder重做
 
 copilot翻译成英语
 - 改正错别字，改正语法错误，最低限度地调整语序
