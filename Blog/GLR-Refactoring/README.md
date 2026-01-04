@@ -702,31 +702,38 @@ Rule
   ;
 ```
 
-这个`left_recursion_inject`会随后解释，这是重写前打的最后一个也是最大的补丁。他们产生的指令分别是：
+这个`left_recursion_inject`会随后解释，这是重写前打的最后一个也是最大的补丁。在上面的语法中，每一行的`Prefix`产生的指令分别是：
 
 ```
 +BeginObject(MyObject)
+... Prefix ...
 Field(prefix)
 ```
 
 ```
 +BeginObject(MyObject)
+... Prefix ...
 Field(prefix2)
 ```
 
 ```
 +BeginObject(YourObject)
+... Prefix ...
 Field(prefix)
 ```
 
 ```
 +DelayFieldAssignment
+... Prefix ...
 Field(prefix)
 ```
 
 ```
-+DelayFieldAssignment
+... Prefix ...
 LriStore
++DelayFieldAssignment
+...
+LriFetch
 ```
 
 这下麻烦了，指令不一样怎么办呢？有些情况还能通过把非`+`指令挪给后面的transition当`+`指令绕过去，有些则可以从：
@@ -1092,8 +1099,62 @@ Term
 
 由于所有的成员变量都已经从Object栈顶拿掉存进当前scope的表格里面了，所以这里不会发生冲突。
 
+### 更多的例子
+
+在“合并前缀”一节中，我们曾经举了一些例子：
+
+```
+Rule
+  ::= Prefix:prefix Remains1 as MyObject
+  ::= Prefix:prefix2 Remains2 as MyObject
+  ::= Prefix:prefix Remains3 as YourObject
+  ::= Prefix:prefix !Remains4
+  ::= !Prefix [left_recursion_inject(X) _Remains5]
+  ;
+```
+
+在原本的BeginObject指令集的框架下，每一行的`Prefix`分别会产生左边指令前缀，而StackBegin指令集则在右边：
+
+```
++BeginObject(MyObject)         ... Prefix ...
+... Prefix ...                 StackBegin
+Field(prefix)                  StackSlot(0)
+```
+
+```
++BeginObject(MyObject)         ... Prefix ...
+... Prefix ...                 StackBegin
+Field(prefix2)                 StackSlot(0)
+```
+
+```
++BeginObject(YourObject)       ... Prefix ...
+... Prefix ...                 StackBegin
+Field(prefix)                  StackSlot(0)
+```
+
+```
++DelayFieldAssignment          ... Prefix ...
+... Prefix ...                 StackBegin
+Field(prefix)                  StackSlot(0)
+```
+
+```
+... Prefix ...                 ... Prefix ...
+LriStore                       StackBegin
++DelayFieldAssignment          StackSlot(0)
+...
+LriFetch
+```
+
+![](Keikaku_Doori.jpg)
+
+唯一有区别的是`Rule:field`和`!Rule`，他们一个会产生`StackSlot`一个没有，所以处理这种情况的代码依然存在，然而复杂程度已经断崖式下跌。
+
+## 新的!prefix_merge
+
 <!--
-- 新的指令如何让合并前缀变得更顺利处理的情况更多（三个情况）
+- 新的!prefix_merge
 - 重做multiple passes的歧义处理
   - PrepareTraceRoute从产生object改为产生stack，也就是追踪的是每一个SB/SE的结果，而不是具体的对象（因为对象可能被多个SB/SE共享）
   - ResolveAmbiguity的BuildExecutionOrder重做
