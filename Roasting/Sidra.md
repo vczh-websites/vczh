@@ -27,6 +27,9 @@ don't put kettle back
   - for 100g roasting 3:40 yellow point may too fast
     - citrus peel
     - test 12/22 samples again and find out of 175C/3:50 works
+      - No.4 watery
+      - No.2 more YP less FC stronger flavor
+      - Need to taste No.1 snd No.3 before making final decision 
     - may try 100g 178C/~3:45 YP
   - for 150g roadting 4:30 yellow point may too long. It needs further confirmation if 14 days test still feel watery.
 
