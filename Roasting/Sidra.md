@@ -29,6 +29,10 @@ don't put kettle back
 |温  | 略甜，更少的苦，略涩 | | 略甜，一丝丝蜂蜜，变淡 | 介于两边，可能醋酸 | 一点点苦 | 一点点苦，一丝丝蜂蜜 |
 |6天| 湿香像白粥，柑橘皮拉丝的苦味明显 | | 湿香有甜味，甜感略低，有点酸，可能有点水，没有苦味 | | | |
 
+- The 6 days test may mean:
+  - for 100g roasting 3:40 yellow point may too fast
+  - for 150g roadting 4:30 yellow point may too long. It needs further confirmation if 14 days test still feel watery.
+
 ### 100g
 
 - 180C/92C; 160C 3:40; 185C 6:00; 194C 7:56;
