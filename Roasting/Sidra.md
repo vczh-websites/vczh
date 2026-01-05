@@ -32,6 +32,8 @@ don't put kettle back
 - The 6 days test may mean:
   - for 100g roasting 3:40 yellow point may too fast
     - citrus peel
+    - test 12/22 samples again and find out of 175C/3:50 works
+    - may try 180C/~3:50 YP
   - for 150g roadting 4:30 yellow point may too long. It needs further confirmation if 14 days test still feel watery.
 
 ### 100g
