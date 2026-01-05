@@ -1,11 +1,5 @@
 # Pepe Jijon Sidra
 
-- 11/28-1 so far the best
-  - 11/28-2 a little bitterness
-- 12/9 resting, first time without over-roasted bean surface
-  - 12/9-2 obvious bitterness
-- 12/14 over roasted, too red tea
-
 # Test Brewing
 
 Zerno Z1 775; 20g; 92C;
@@ -72,7 +66,7 @@ don't put kettle back
 |热  |茶感|果汁|偏淡|偏淡|
 |温  |茶感变弱，甜感和果汁开始上来|依然果汁，略微多了茶感|次酸|最酸|
 |9天|一般甜，柑橘苦|茶感明显，温了之后稍微顺滑，更少苦|二氧化碳多，茶，柑橘苦|二氧化碳多，更鲜明，最果汁，不苦|
-|14天|  |  |  | 湿香香甜，热的时候略淡 |
+|14天|  |  |  | 湿香香甜，热略淡，温尚可 |
 
 - 175C/92C; 160C 3:45; 185C 6:10; 194C 8:15;
   - drum: 80; damper: 70; 3:15->80; 5:10->90; FC->100;
@@ -93,6 +87,8 @@ But the overall roasting time is significantly longer than enough, making it too
 Here only make both yellow point +5/10s and first crack +5s and see what would happen.
 
 ## 2025-12-14, 10C humidify 88%
+
+Overall over roasted
 
 - 175C/92C; 160C 4:00; 185C 6:30; 195C 8:30;
   - drum: 80; damper: 70; 3:20->80; 5:30->90; FC->100;
