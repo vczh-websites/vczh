@@ -1155,8 +1155,50 @@ LriFetch
 
 ## 新的!prefix_merge
 
+我们来回顾一下前面的例子：
+
+```
+Id
+  :: NAME:name as Identifier
+  ;
+
+PrimitiveExpr
+  ::= !Id
+  ::= NUMBER:content as NumberExpr
+  ;
+
+Expr
+  ::= !PrimitiveExpr
+  ::= Expr:left "*" PrimitiveExpr:right as MulExpr
+  ;
+
+PrimitiveType
+  ::= !Id
+  ::= "int" as IntType
+  ;
+
+Type
+  ::= !PrimitiveType
+  ::= Type:type "*" as PointerType
+  ;
+
+@parser Module
+  ::= !Expr
+  ::= !Type
+  ;
+```
+
+既然不需要手动标记`left_recursion_inject`和`!prefix_merge`，就等于我们要从这个语法里面，看出来`Module`可以从两条路去到`Id`。这个问题有一个简单暴力的方法，就是我们先按照start set给所有的rule排序。所谓start set就是构成某个rule的第一个rule的集合，比如说`Expr`的start set就是`PrimitiveExpr`和`Id`。当然也有rule的token start set，但是在这里略过不谈，处理方法是一样的。
+
+前面提到过我们不支持间接左递归，那排除掉一个rule左递归自己的情况，把start set视为一个关系的话那么rule就构成一个偏序集合。对它们进行排序的其中一个简单算法就是[Kosaraju-Sharir算法](https://en.wikipedia.org/wiki/Kosaraju%27s_algorithm#:~:text=In%20computer%20science%2C%20Kosaraju%2DSharir's,Rao%20Kosaraju%20and%20Micha%20Sharir.)。我们甚至可以用这个算法同时找到所有间接左递归的情况然后当场报错。
+
+排序完就可以很暴力的处理这件事了。一个rule的start set可以表达成一个bit set，那么我们从`Module`开始，分别对`Expr`和`Type`按顺序测试一下他们的start set是否包含某个rule。形如C++那样的语言无非也就两千个rule，做两千次布尔运算快如闪电，根本不用管算法复杂度。稍微优化一下你还可以直接算出两个start set的交集，然后再按偏序顺序去遍历里面的bit，不过这对运行效率几乎没有实质性的提升，所以我目前还是选择了最暴力的方法，以后真的会被卡在这里再说（我觉得这辈子都不太可能）。等我们算出来`Expr`和`Type`都可以从`Id`开始之后，就可以把`Id`当`!prefix_merge`去处理了。
+
+不过此时我们再也不是通过重写语法去做，而是直接在PDA上面做。虽然实际的算法需要考虑很多边界条件，但是思路是很简单的。现在我们的新指令已经在绝大多数情况下都保持前缀的指令相同了（见“更多的例子”一节），那我们就可以把`Module`的PDA改成，先parse一个`Id`，然后可选地左递归到`Module->Expr->PrimitiveExpr->Id`和`Module->Type->PrimitiveType->Id`的末尾。当然`Module`也可以不从`Id`开始，所以一旦要做这种合并，就得把整个start set都处理一遍。这个“左递归到”是什么意思呢？可以参考“一个可以被执行的PDA”一节，就是通过操纵return transitions的方式让parser以为他是真的通过这么多层transition一层一层进去的。
+
+比起`!prefix_merge`的方法，这个新算法的优势是可以从PDA的任何状态开始，不局限于rule的前缀了。而且我们再也不需要给`Module`留一个重写语法前的备份了，因为只要把合并前缀前的transition留下来就可以了，等于把`Module`和`Module_Original`做在了一个PDA里面
+
 <!--
-- 新的!prefix_merge
 - 重做multiple passes的歧义处理
   - PrepareTraceRoute从产生object改为产生stack，也就是追踪的是每一个SB/SE的结果，而不是具体的对象（因为对象可能被多个SB/SE共享）
   - ResolveAmbiguity的BuildExecutionOrder重做
