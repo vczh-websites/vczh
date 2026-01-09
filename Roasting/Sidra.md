@@ -31,7 +31,6 @@ don't put kettle back
       - No.2 stronger flavor, citrus bitterness
       - No.3 best but maybe acetic acid
       - No.4 watery
-      - Need to taste No.1 snd No.3 before making final decision 
     - may try 100g 180C/3:50 YP 185.5C/6:15~6:20 F +45s
       - longer YP for reducing citrus bitterness 
       - longer FC for reducing tea-like taste
