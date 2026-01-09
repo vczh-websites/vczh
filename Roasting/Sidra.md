@@ -32,9 +32,9 @@ don't put kettle back
       - No.3 best but maybe acetic acid
       - No.4 watery
       - Need to taste No.1 snd No.3 before making final decision 
-    - may try 100g 178C/3:50 YP 185.5C/6:10~6:15 F +50s
+    - may try 100g 180C/3:50 YP 185.5C/6:15~6:20 F +45s
       - longer YP for reducing citrus bitterness 
-      - longer development for reducing tea-like taste
+      - longer FC for reducing tea-like taste
   - for 150g roadting 4:30 yellow point may too long. It needs further confirmation if 14 days test still feel watery.
 
 ### 100g
