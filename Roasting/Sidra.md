@@ -35,6 +35,7 @@ don't put kettle back
       - longer YP for reducing citrus bitterness 
       - longer FC for reducing tea-like taste
   - for 150g roadting 4:30 yellow point may too long. It needs further confirmation if 14 days test still feel watery.
+  - 150g needs higher charge temperature
 
 ### 100g
 
