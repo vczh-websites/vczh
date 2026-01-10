@@ -1194,7 +1194,53 @@ Type
 
 排序完就可以很暴力的处理这件事了。一个rule的start set可以表达成一个bit set，那么我们从`Module`开始，分别对`Expr`和`Type`按顺序测试一下他们的start set是否包含某个rule。形如C++那样的语言无非也就两千个rule，做两千次布尔运算快如闪电，根本不用管算法复杂度。稍微优化一下你还可以直接算出两个start set的交集，然后再按偏序顺序去遍历里面的bit，不过这对运行效率几乎没有实质性的提升，所以我目前还是选择了最暴力的方法，以后真的会被卡在这里再说（我觉得这辈子都不太可能）。等我们算出来`Expr`和`Type`都可以从`Id`开始之后，就可以把`Id`当`!prefix_merge`去处理了。
 
-不过此时我们再也不是通过重写语法去做，而是直接在PDA上面做。虽然实际的算法需要考虑很多边界条件，但是思路是很简单的。现在我们的新指令已经在绝大多数情况下都保持前缀的指令相同了（见“更多的例子”一节），那我们就可以把`Module`的PDA改成，先parse一个`Id`，然后可选地左递归到`Module->Expr->PrimitiveExpr->Id`和`Module->Type->PrimitiveType->Id`的末尾。当然`Module`也可以不从`Id`开始，所以一旦要做这种合并，就得把整个start set都处理一遍。这个“左递归到”是什么意思呢？可以参考“一个可以被执行的PDA”一节，就是通过操纵return transitions的方式让parser以为他是真的通过这么多层transition一层一层进去的。
+不过此时我们再也不是通过重写语法去做，而是直接在PDA上面做。虽然实际的算法需要考虑很多边界条件，但是思路是很简单的：把start set本身也看成一个偏序图，我们的目标就是找到尽可能高层尽可能少的`Expr`和`Type`的start set的交集的元素，并覆盖各自的start set的所有叶子节点。等交集的元素都找完了所有的叶子节点还没被全部覆盖，那剩下的就是各自剩下的情况了。每找到一个解我们都可以在start set里面把解的间接父节点全部去掉，是否覆盖所有叶子结点的问题就转换成了这个集合是否变成空集的问题。而按照前面提到的排序结果逐个测试的话，我们一定可以先测试到父节点。这一切都大大简化了处理的过程。
+
+我们来模拟一下具体的运算过程，上面的例子的情况比较简单，在C++语法里面可以找到更复杂的情况。首先我们得到`Expr`和`Type`的start set，并表达成偏序图。在这里这个偏序图正好是一棵树，非常好画：
+
+```
+Expr
+  |
+  +--PrimitiveExpr
+       |
+       +--Id
+       |   |
+       |   +--NAME
+       |
+       +--NUMBER
+
+Type
+  |
+  +--PrimitiveType
+       |
+       +--Id
+       |   |
+       |   +--NAME
+       |
+       +--"int"
+```
+
+把每个rule的start set都看成关系的话，所有rule排序的其中一个结果（偏序关系排序的结果是不唯一的）就是：
+
+```
+Module, Expr, PrimitiveExpr, Type, PrimitiveType, Id
+```
+
+挨个看下去就可以知道，`Expr`和`Type`的start set的交集里，按照上面的顺序第一个出现的rule就是`Id`。因此我们得到了一个`!prefix_merge`的解`Id`。这个时候就可以把start set里面`Id`和他所有的父节点都拿掉，剩下：
+
+```
+Expr
+  |
+  +--NUMBER
+
+Type
+  |
+  +--"int"
+```
+
+此时start set交集已经是空了。剩下的依样画葫芦，一直做到两个start set都是空集，我们就可以知道，`Id`应该标记上`!prefix_merge`，而且`Expr`和`Type`都分别有`NUMBER`和`"int"`的情况要处理。因此`Module`的PDA的开始状态出去的所有transition就会被改成`Id`、`NUMBER`和`"int"`这三个。
+
+现在我们的新指令已经在绝大多数情况下都保持前缀的指令相同了（见“更多的例子”一节），那我们就可以把`Module`的PDA改成，先parse一个`Id`，然后可选地左递归到`Module->Expr->PrimitiveExpr->Id`和`Module->Type->PrimitiveType->Id`的末尾。当然`Module`也可以不从`Id`开始，所以一旦要做这种合并，就得把整个start set都处理一遍。这个“左递归到”是什么意思呢？可以参考“一个可以被执行的PDA”一节，就是通过操纵return transitions的方式让parser以为他是真的通过这么多层transition一层一层进去的。
 
 比起`!prefix_merge`的方法，这个新算法的优势是可以从PDA的任何状态开始，不局限于rule的前缀了。而且我们再也不需要给`Module`留一个重写语法前的备份了，因为只要把合并前缀前的transition留下来就可以了，等于把`Module`和`Module_Original`做在了一个PDA里面
 
