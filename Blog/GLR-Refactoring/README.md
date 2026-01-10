@@ -1242,7 +1242,11 @@ Type
 
 现在我们的新指令已经在绝大多数情况下都保持前缀的指令相同了（见“更多的例子”一节），那我们就可以把`Module`的PDA改成，先parse一个`Id`，然后可选地左递归到`Module->Expr->PrimitiveExpr->Id`和`Module->Type->PrimitiveType->Id`的末尾。当然`Module`也可以不从`Id`开始，所以一旦要做这种合并，就得把整个start set都处理一遍。这个“左递归到”是什么意思呢？可以参考“一个可以被执行的PDA”一节，就是通过操纵return transitions的方式让parser以为他是真的通过这么多层transition一层一层进去的。
 
-比起`!prefix_merge`的方法，这个新算法的优势是可以从PDA的任何状态开始，不局限于rule的前缀了。而且我们再也不需要给`Module`留一个重写语法前的备份了，因为只要把合并前缀前的transition留下来就可以了，等于把`Module`和`Module_Original`做在了一个PDA里面
+比起`!prefix_merge`的方法，这个新算法的优势是可以从PDA的任何状态开始，不局限于rule的前缀了。而且我们再也不需要给`Module`留一个重写语法前的备份了，因为只要把合并前缀前的transition留下来就可以了，等于把`Module`和`Module_Original`做在了一个PDA里面。
+
+## StackBegin指令集下在Trace上计算歧义的新方法
+
+在“VlppParser2诞生！”一节中我们介绍了VlppParser2处理歧义的方法。当初也是走了一些弯路，而且这个部分打补丁的后果是最严重的，直接导致了整个算法的重新实现。不过这里更多的是实现的问题。
 
 <!--
 - 重做multiple passes的歧义处理
