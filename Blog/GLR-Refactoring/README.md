@@ -1226,7 +1226,7 @@ Type
 Module, Expr, PrimitiveExpr, Type, PrimitiveType, Id
 ```
 
-挨个看下去就可以知道，`Expr`和`Type`的start set的交集里，按照上面的顺序第一个出现的rule就是`Id`。因此我们得到了一个`!prefix_merge`的解`Id`。这个时候就可以把start set里面`Id`和他所有的父节点都拿掉，剩下：
+挨个看下去就可以知道，`Expr`和`Type`的start set的交集里，按照上面的顺序第一个出现的rule就是`Id`。因此我们得到了一个`!prefix_merge`的解`Id`。这个时候就可以把start set里面`Id`、`Id`自己的start set、和`Expr`和`Type`的start set里`Id`的父节点都拿掉，剩下：
 
 ```
 Expr
