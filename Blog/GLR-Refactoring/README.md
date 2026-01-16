@@ -1299,11 +1299,11 @@ Term
 
 现在我们已经得到了`a4..i4`的`ExecutionStep`，只要把剩下的头尾接上去，这个算法就跑完了
 
-<!--
-- 重做multiple passes的歧义处理
-  - PrepareTraceRoute从产生object改为产生stack，也就是追踪的是每一个SB/SE的结果，而不是具体的对象（因为对象可能被多个SB/SE共享）
-  - ResolveAmbiguity的BuildExecutionOrder重做
+## VlppParser2如何自举
 
+## 尾声
+
+<!--
 copilot翻译成英语
 - 改正错别字，改正语法错误，最低限度地调整语序
 - 原文复制到en_us.md
