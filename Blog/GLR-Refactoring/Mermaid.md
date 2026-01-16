@@ -618,7 +618,6 @@ graph LR
   R_1-->b4_2[b4]-->c4_2[c4]-->d4_2[d4]-->f4_2[f4]-->R_2[[RESOLVE]]
   R_2-->g4(((g4)))
 ```
-```
 
 ## Trace_Shape3_4_4.png
 
