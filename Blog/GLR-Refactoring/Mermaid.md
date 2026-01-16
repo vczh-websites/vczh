@@ -632,7 +632,7 @@ graph LR
 
 ```mermaid
 graph LR
-  S[[BEGIN]]-->a4[[a4]]-->b4_g4[["b4..g4"]]-->R_1[[RESOLVE]]
-  S-->a4-->b4-->c4-->h4-->R_2[[RESOLVE]]
+  S[[BEGIN]]-->a4_1[[a4]]-->b4_g4[["b4..g4"]]-->R_1[[RESOLVE]]
+  S-->a4_2[[a4]]-->b4-->c4-->h4-->R_2[[RESOLVE]]
   R_1 & R_2-->i4(((i4)))
 ```
