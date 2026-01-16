@@ -1281,13 +1281,23 @@ Term
 
 ![](Images/Trace_Shape3_4_1.png)
 
-然后从`b4`到所有`g4`的分叉，共享的部分都直接复制一遍
+然后从`b4`到所有`g4`的分叉，共享的部分都直接复制一遍，加上`BEGIN`、`BRANCH`和`RESOLVE`节点：
 
 ![](Images/Trace_Shape3_4_2.png)
 
 最后头尾相接:
 
 ![](Images/Trace_Shape3_4_3.png)
+
+接下来就可以对`a4..i4`如法炮制：
+
+![](Images/Trace_Shape3_4_4.png)
+
+![](Images/Trace_Shape3_4_5.png)
+
+![](Images/Trace_Shape3_4_6.png)
+
+现在我们已经得到了`a4..i4`的`ExecutionStep`，只要把剩下的头尾接上去，这个算法就跑完了
 
 <!--
 - 重做multiple passes的歧义处理
