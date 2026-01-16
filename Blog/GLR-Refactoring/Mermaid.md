@@ -593,3 +593,11 @@ graph LR
     StackBegin
     StackSlot(0) .->2
 ```
+
+## Trace_Shape3_4_1.png
+
+```mermaid
+  b4[[b4]]-->c4-->d4 --> e4 & f4
+  e4-->g4_1(((g4)))
+  f4-->g4_2(((g4)))
+```
