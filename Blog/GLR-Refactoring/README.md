@@ -1242,13 +1242,68 @@ Type
 
 现在我们的新指令已经在绝大多数情况下都保持前缀的指令相同了（见“更多的例子”一节），那我们就可以把`Module`的PDA改成，先parse一个`Id`，然后可选地左递归到`Module->Expr->PrimitiveExpr->Id`和`Module->Type->PrimitiveType->Id`的末尾。当然`Module`也可以不从`Id`开始，所以一旦要做这种合并，就得把整个start set都处理一遍。这个“左递归到”是什么意思呢？可以参考“一个可以被执行的PDA”一节，就是通过操纵return transitions的方式让parser以为他是真的通过这么多层transition一层一层进去的。
 
-比起`!prefix_merge`的方法，这个新算法的优势是可以从PDA的任何状态开始，不局限于rule的前缀了。而且我们再也不需要给`Module`留一个重写语法前的备份了，因为只要把合并前缀前的transition留下来就可以了，等于把`Module`和`Module_Original`做在了一个PDA里面
+比起`!prefix_merge`的方法，这个新算法的优势是可以从PDA的任何状态开始，不局限于rule的前缀了。而且我们再也不需要给`Module`留一个重写语法前的备份了，因为只要把合并前缀前的transition留下来就可以了，等于把`Module`和`Module_Original`做在了一个PDA里面。
+
+## StackBegin指令集下在Trace上计算歧义的新方法
+
+在“VlppParser2诞生！”一节中我们介绍了VlppParser2处理歧义的方法。当初也是走了一些弯路，而且这个部分打补丁的后果是最严重的，直接导致了整个算法的重新实现。不过这里更多的是实现的问题。
+
+在“第二步：对Trace上的指令做partial execution”这一节中，提到了对parse好的Trace做partial execution的具体做法。当时遇到的问题就是判断`ResolveAmbiguity`的时候要从Object堆栈弹出多少对象，但是同时执行分支产生的对象记录错综复杂，这一步做起来特别难。然而StackBegin指令集从根本上消灭了这个问题，因为`ResolveAmbiguity`的目标被存在了一个固定编号的slot里面（也就是-2）。既然如此，也就可以实现一个更简化的办法：就是不在追踪具体的对象，改而追踪`StackBegin`和`StackEnd`之间的多对多关系。
+
+现在存进Create堆栈和Object堆栈的再也不是代表某个具体AST对象的记录，而是`StackBegin`的记录。每一个`StackBegin`会创造一个记录。每次`StackSlot`发生的时候，两个`StackBegin`记录就会被联系起来，这是一个field的关系。`!`本身也会创造一个记录，也就是这两个`StackBegin`其实是属于同一个具体的AST对象的，这是一个reuse的关系。维护这两套关系的目标，就是要确定任意一个AST对象是由哪些`StackBegin`开始又由哪些`StackEnd`结束。
+
+StackBegin指令集的设计，会让对象的第一个rule，不管它属于field关系还是reuse关系，它的`StackBegin`和`StackEnd`整个范围都是发生在所属节点的前面的，所以一个AST对象最开始的节点，当然不仅仅由最后一个关闭它的`StackEnd`所属的`StackBegin`决定，要把这个对象的field关系和reuse关系的所有`StackBegin`都考虑进去，取最早出现的那个。而且由于reuse关系串连起来的所有记录的成员变量实际上都是同一个AST对象的成员变量，所以就有“reuse的field也是field”的规则。考虑了这一切之后，计算一个AST对象最早的`StackBegin`们和最晚的`StackEnd`们也就变得非常简单。
+
+还是看看四则运算的例子：
+
+```
+Term
+  ::= !Factor
+  :：= Term:left "*" Factor:right as MulExpr
+  ;
+```
+
+如果我们从`Term`走了`!Factor`，他们分别都会产生`StackBegin`和`StackEnd`，因此就有两个记录。而`Factor`产生的记录就是`Term`产生的记录的reuse。
+
+如果我们走了第二行，`Term:left`的整个`StackBegin`和`StackEnd`会在`Term`的前面产生。虽然前者是后者的field，但是前者的指令并没有被包裹在后者的指令里面。
+
+那么对于形如`1*2+3`这样的AST，`1*2`本身会走`Expr ::= !Term`，然后`Term`会走一次左递归之后再走一次`Term ::= !Factor`。虽然这个表达式只产生了5个AST对象，但是却有几十个`StackBegin`和`StackEnd`，可见每个AST对象对应了好些`StackBegin`记录，这就是为什么分别确定AST对象真实的`StackBegin`和`StackEnd`非常的重要，因为它们往往不是配对的。
+
+实现它有一个技巧，就是我们可以把所有`StackBegin`创造的记录按照时间关系用一个链表串起来，按顺序遍历它们的同时优先访问field和reuse关系指向的记录，访问到了就在记录里设置一个flag。我们需要一个额外的堆栈来实现“优先访问field和reuse关系”，但是为了让这个堆栈不要退化成特别长，前面提到的链表就非常有用。所有的记录访问几遍就可以把每一个AST对象最早和最晚的`StackBegin`们和`StackEnd`们分别找到了。
+
+## StackBegin指令集下生成ExecutionStep的新方法
+
+在“第四步：生成ExecutionStep”一节中我们介绍了ExceptionStep的定义，这里并没有真的“新方法”，只不过是过去的算法实现的实在太扭曲了，于是整个删掉做了一遍。上面的第三部已经确定了每个歧义的范围，于是这是一个简单的递归算法：把歧义的每一个分支拉直，然后几个分支重新拼接在一起，就等于把歧义本身拉直了。现在让我们复习一下之前的例子：
+
+![](Images/Trace_Shape3_4.png)
+
+我们先来看歧义`b4..g4`。我们从`b4`开始，遇到不同的分支就开枝散叶（注意这里的`c4`到`h4`的分支是属于`a4`的，所以不走）。合并起来的部分也不要管，出来一棵树：
+
+![](Images/Trace_Shape3_4_1.png)
+
+然后从`b4`到所有`g4`的分叉，共享的部分都直接复制一遍，加上`BEGIN`、`BRANCH`和`RESOLVE`节点：
+
+![](Images/Trace_Shape3_4_2.png)
+
+最后头尾相接:
+
+![](Images/Trace_Shape3_4_3.png)
+
+接下来就可以对`a4..i4`如法炮制：
+
+![](Images/Trace_Shape3_4_4.png)
+
+![](Images/Trace_Shape3_4_5.png)
+
+![](Images/Trace_Shape3_4_6.png)
+
+现在我们已经得到了`a4..i4`的`ExecutionStep`，只要把剩下的头尾接上去，这个算法就跑完了
+
+## VlppParser2如何自举
+
+## 尾声
 
 <!--
-- 重做multiple passes的歧义处理
-  - PrepareTraceRoute从产生object改为产生stack，也就是追踪的是每一个SB/SE的结果，而不是具体的对象（因为对象可能被多个SB/SE共享）
-  - ResolveAmbiguity的BuildExecutionOrder重做
-
 copilot翻译成英语
 - 改正错别字，改正语法错误，最低限度地调整语序
 - 原文复制到en_us.md
