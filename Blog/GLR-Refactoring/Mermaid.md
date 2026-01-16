@@ -597,7 +597,7 @@ graph LR
 ## Trace_Shape3_4_1.png
 
 ```mermaid
-graph TD
+graph LR
   b4[[b4]]-->c4-->d4 --> e4 & f4
   e4-->g4_1(((g4)))
   f4-->g4_2(((g4)))
@@ -606,7 +606,7 @@ graph TD
 ## Trace_Shape3_4_2.png
 
 ```mermaid
-graph TD
+graph LR
   S[[ ]]-->b4_1[b4]-->c4_1[c4]-->d4_1[d4]-->e4_1[e4]-->g4_1(((g4)))
   S-->b4_2[b4]-->c4_2[c4]-->d4_2[d4]-->f4_2[f4]-->g4_2(((g4)))
 ```
@@ -614,7 +614,7 @@ graph TD
 ## Trace_Shape3_4_3.png
 
 ```mermaid
-graph TD
+graph LR
   b4_1[b4]-->c4_1[c4]-->d4_1[d4]-->e4_1[e4]-->g4_1(((g4)))
   g4_1-->b4_2[b4]-->c4_2[c4]-->d4_2[d4]-->f4_2[f4]-->g4_2(((g4)))
 ```
