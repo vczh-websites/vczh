@@ -1252,9 +1252,24 @@ Type
 
 现在存进Create堆栈和Object堆栈的再也不是代表某个具体AST对象的记录，而是`StackBegin`的记录。每一个`StackBegin`会创造一个记录。每次`StackSlot`发生的时候，两个`StackBegin`记录就会被联系起来，这是一个field的关系。`!`本身也会创造一个记录，也就是这两个`StackBegin`其实是属于同一个具体的AST对象的，这是一个reuse的关系。维护这两套关系的目标，就是要确定任意一个AST对象是由哪些`StackBegin`开始又由哪些`StackEnd`结束。
 
-StackBegin指令集的设计，会让对象的第一个rule，不管它属于field关系还是reuse关系，它的`StackBegin`和`StackEnd`整个范围都是发生在所属节点的前面的，所以一个AST对象最开始的节点，当然不仅仅由最后一个关闭它的`StackEnd`所属的`StackBegin`决定，要把这个对象的field关系和reuse关系的所有`StackBegin`都考虑进去，取最早出现的那个。而且由于reuse关系串连起来的所有对象的成员变量实际上都是同一个AST对象的成员变量，所以就有“reuse的field也是field”的规则。考虑了这一切之后，计算一个AST对象最早的`StackBegin`们和最晚的`StackEnd`们也就变得非常简单。
+StackBegin指令集的设计，会让对象的第一个rule，不管它属于field关系还是reuse关系，它的`StackBegin`和`StackEnd`整个范围都是发生在所属节点的前面的，所以一个AST对象最开始的节点，当然不仅仅由最后一个关闭它的`StackEnd`所属的`StackBegin`决定，要把这个对象的field关系和reuse关系的所有`StackBegin`都考虑进去，取最早出现的那个。而且由于reuse关系串连起来的所有记录的成员变量实际上都是同一个AST对象的成员变量，所以就有“reuse的field也是field”的规则。考虑了这一切之后，计算一个AST对象最早的`StackBegin`们和最晚的`StackEnd`们也就变得非常简单。
 
-实现它有一个技巧，就是我们可以把所有`StackBegin`创造的纪录按照时间关系用一个链表串起来，按顺序遍历它们的同时优先访问field和reuse关系指向的对象，访问到了就在对象里设置一个flag。我们需要一个额外的堆栈来实现“优先访问field和reuse关系”，但是为了让这个堆栈不要退化成特别长，前面提到的链表就非常有用。所有的对象访问几遍就可以把每一个AST对象最早和最晚的`StackBegin`们和`StackEnd`们分别找到了。
+还是看看四则运算的例子：
+
+```
+Term
+  ::= !Factor
+  :：= Term:left "*" Factor:right as MulExpr
+  ;
+```
+
+如果我们从`Term`走了`!Factor`，他们分别都会产生`StackBegin`和`StackEnd`，因此就有两个记录。而`Factor`产生的记录就是`Term`产生的记录的reuse。
+
+如果我们走了第二行，`Term:left`的整个`StackBegin`和`StackEnd`会在`Term`的前面产生。虽然前者是后者的field，但是前者的指令并没有被包裹在后者的指令里面。
+
+那么对于形如`1*2+3`这样的AST，`1*2`本身会走`Expr ::= !Term`，然后`Term`会走一次左递归之后再走一次`Term ::= !Factor`。虽然这个表达式只产生了5个AST对象，但是却有几十个`StackBegin`和`StackEnd`，可见每个AST对象对应了好些`StackBegin`记录，这就是为什么分别确定AST对象真实的`StackBegin`和`StackEnd`非常的重要，因为它们往往不是配对的。
+
+实现它有一个技巧，就是我们可以把所有`StackBegin`创造的记录按照时间关系用一个链表串起来，按顺序遍历它们的同时优先访问field和reuse关系指向的记录，访问到了就在记录里设置一个flag。我们需要一个额外的堆栈来实现“优先访问field和reuse关系”，但是为了让这个堆栈不要退化成特别长，前面提到的链表就非常有用。所有的记录访问几遍就可以把每一个AST对象最早和最晚的`StackBegin`们和`StackEnd`们分别找到了。
 
 ## StackBegin指令集下生成ExecutionStep的新方法
 
