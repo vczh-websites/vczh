@@ -627,3 +627,12 @@ graph LR
   a4-->b4-->c4-->h4
   b4_g4 & h4-->i4(((i4)))
 ```
+
+## Trace_Shape3_4_5.png
+
+```mermaid
+graph LR
+  S[[BEGIN]]-->a4[[a4]]-->b4_g4[["b4..g4"]]-->R_1[[RESOLVE]]
+  S-->a4-->b4-->c4-->h4-->R_2[[RESOLVE]]
+  R_1 & R_2-->i4(((i4)))
+```
