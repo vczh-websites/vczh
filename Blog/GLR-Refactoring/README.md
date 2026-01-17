@@ -1303,7 +1303,11 @@ Term
 
 把上面的所有内容总结一下，使用VlppParser2从撰写语法到parse出东西来一共要经历这么多事：
 
+首先是编译的部份，把语法处理成带有该parser的C++代码。整个项目最后会产生一个叫做`GlrParserGen.exe`的工具，在[GacUI的Release](https://github.com/vczh-libraries/Release/tree/master/Tools/Executables/GlrParserGen)里面可以找到。生成的C++代码就有上面提到的PDA序列化后再压缩的二进制内容。
+
 ![](Images/Parser_Compile.png)
+
+然后就可以编译这些C++代码，来parse你要的文本了。
 
 ![](Images/Parser_Execute.png)
 
