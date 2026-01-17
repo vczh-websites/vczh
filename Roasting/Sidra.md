@@ -6,13 +6,14 @@ Zerno Z1 775; 20g; 92C;
 60-140-220-300;
 don't put kettle back
 
-## Next
+## 2026-1-17, 8C Humidity 73%
 
-Begins from `180C/92C; 160C 4:30; 185C 6:55; 198C 9:00;`:
-- Current YP and longer YP (+10s)
-- longer FC (+10s)
-- higher charge temperature 185C
-- try different development 40s/60s
+- 185C/92C; 160C 4:30; 186C 7:05; 198C 9:10;
+  - +40s
+  - +50s
+- 185C/92C; 160C 4:40; 186C 7:15; 198C 9:20;
+  - +40s
+  - +50s
 
 ## 2025-12-30, 5C humidity 77%
 
