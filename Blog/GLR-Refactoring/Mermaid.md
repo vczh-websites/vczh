@@ -658,12 +658,17 @@ graph LR
   
     LEXER_FILE[[Lexer.txt]] -- CompileLexer() --> LEXER_MGR[LexerSymbolManager]
     
-    SYNTAX_FILE_1[[Ast1.txt]] -- RuleParser::ParseFile() --> SYNTAX_1[GlrSyntaxFile]
-    SYNTAX_FILE_2[[Ast2.txt]] -- RuleParser::ParseFile() --> SYNTAX_2[GlrSyntaxFile]
+    SYNTAX_FILE_1[[Syntax1.txt]] -- RuleParser::ParseFile() --> SYNTAX_1[GlrSyntaxFile]
+    SYNTAX_FILE_2[[Syntax2.txt]] -- RuleParser::ParseFile() --> SYNTAX_2[GlrSyntaxFile]
     AST_MGR & LEXER_MGR & SYNTAX_1 & SYNTAX_2 -- CompileSyntax() --> AST_MGR_1[SyntaxSymbolManager]
   
     AST_MGR_1 -- SyntaxSymbolManager::BuildCompactNFA() --> AST_MGR_2[w/ prefix merging]
     AST_MGR_2 -- SyntaxSymbolManager::BuildCrossReferencedNFA() --> AST_MGR_3[w/ only token transition ]
     AST_MGR_3 -- SyntaxSymbolManager::BuildAutomaton() --> AUTOMATON[Executable + Metadata]
+  end
+
+  subgraph Execute
+    direction TB
+    LEXER_GEN_FILE_2[["Lexer.cpp"]] --> LEXER[RegexLexer]
   end
 ```
