@@ -20,7 +20,7 @@ don't put kettle back
 - 185C/92C; 160C 4:40; 188C 7:20; 202C 10:00;
   - 190.1C 7:39; 194.8C 8:20; +40s
     - Cracking sound starts low, difficult to tell the beginning, treat it like the +50s running
-  - +40s
+  - 189.2C 7:32; 194.1C 8:13; +40s
 
 ## 2025-12-30, 5C humidity 77%
 
