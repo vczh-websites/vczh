@@ -1301,6 +1301,12 @@ Term
 
 ## VlppParser2如何自举
 
+把上面的所有内容总结一下，使用VlppParser2从撰写语法到parse出东西来一共要经历这么多事：
+
+![](Images/Parser_Compile.png)
+
+![](Images/Parser_Execute.png)
+
 ## 尾声
 
 <!--

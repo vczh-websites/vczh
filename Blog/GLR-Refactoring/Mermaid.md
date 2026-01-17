@@ -651,7 +651,7 @@ graph LR
 ```mermaid
 graph TD
   AST_FILE_1[[Ast1.txt]] -- TypeParser::ParseFile() --> AST_1[Ptr#lt;GlrAstFile#gt;]
-  AST_FILE_2[[Ast2.txt]] -- TypeParser::ParseFile() --> AST_2[Ptr#lt;GlrAstFile]
+  AST_FILE_2[[Ast2.txt]] -- TypeParser::ParseFile() --> AST_2[Ptr#lt;GlrAstFile#gt;]
   AST_1 & AST_2 -- CompileAst --> AST_MGR[AstSymbolManager]
 
   LEXER_FILE[[Lexer.txt]] -- CompileLexer() --> LEXER_MGR[LexerSymbolManager]
