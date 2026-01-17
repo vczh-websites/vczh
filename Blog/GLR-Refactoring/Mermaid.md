@@ -660,9 +660,9 @@ graph TD
   SYNTAX_FILE_2[[Syntax2.txt]] -- RuleParser::ParseFile() --> SYNTAX_2[GlrSyntaxFile]
   AST_MGR & LEXER_MGR & SYNTAX_1 & SYNTAX_2 -- CompileSyntax() --> AST_MGR_1[SyntaxSymbolManager]
 
-  AST_MGR_1 -- SyntaxSymbolManager::BuildCompactNFA() --> AST_MGR_2[w/ prefix merging]
-  AST_MGR_2 -- SyntaxSymbolManager::BuildCrossReferencedNFA() --> AST_MGR_3[w/ only token transition ]
-  AST_MGR_3 -- SyntaxSymbolManager::BuildAutomaton() --> AUTOMATON[Executable + Metadata]
+  AST_MGR_1 -- BuildCompactNFA() --> AST_MGR_2[w/ prefix merging]
+  AST_MGR_2 -- BuildCrossReferencedNFA() --> AST_MGR_3[w/ only token transition ]
+  AST_MGR_3 -- BuildAutomaton() --> AUTOMATON[Executable + Metadata]
 
   AUTOMATON -- Executable::Serialize --> BINARY[[Compressed Automaton]]
   AST_MGR -- WriteAstFiles() --> AST_GEN_FILE[["Ast.cpp + Assembler.cpp"]]
