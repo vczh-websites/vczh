@@ -1329,6 +1329,16 @@ Term
 
 ## 尾声
 
+我在GacUI里面引入vibe coding也有一段时间了，前期虽然各种方法论、文档什么的都准备好了，但是一直失败，每天阅读AI产生的狗屎一样的代码不知所措。直到codex + gpt 5.1横空出世，这个问题突然得到了解决。
+
+在这之前我尝试过vscode + sonnet 4.0，简直就是一泡污。后来升级到了sonnet 4.5，稍微好了一点点。我就在外面抱怨，有人指出来是vscode自己的coding agent太烂让我试试cursor。结果两者的产出完全没有区别不说，cursor的$20试用budget光速耗尽，我甚至都没把一个函数的unit test写完，一看居然已经花了这么多token。此时我才发现github copilot的定价简直是做慈善，必须感谢satya，$390年付给你每个月1500的premium query，完全不看你用了多少token。后面我看opus 4.5的价格竟然是gpt 5.2的三倍，但是实际体验下来效果也就比sonnet 4.5好一点，只能给gpt 5.2打打下手。
+
+vscode在前一段时间允许大家用github copilot来登录openai的codex coding agent，我用它写GacUI用了很长一段时间，效果还不错。后来我又尝试让vscode coding agent自己去驱动gpt 5.2，发现竟然没有任何区别。现在我懂了，写C++就得靠模型，coding agent这些边角料你靠prompt就能解决了。gpt 5.2之所以能成功，不仅在于模型本身的思考非常的严谨，而且他愿意阅读超多资料后才开始动手。Claude系的模型行动过于仓促，所以什么都做不好。
+
+于是经过了不断的迭代，现在得到了一些结构：首先是喜闻乐见的[copilot-instruction.md](https://github.com/vczh-libraries/GacUI/blob/master/.github/copilot-instructions.md)，写了一些基本的内容用于快速启动。然后按照本科学习的《软件工程文档写作》弄出了[一些固定流程](https://github.com/vczh-libraries/GacUI/tree/master/.github/prompts)。于是我就可以从非常简短的语言开始，指导AI一步一步把事情做完。有这些还不够，项目必须要有[源码导读](https://github.com/vczh-libraries/GacUI/tree/master/.github/KnowledgeBase)，大幅缩短AI做判断消耗的token数量。
+
+可惜这一套在对付VlppParser2的时候依然失败了，可见对于这种整个项目就是一个函数的C++代码，跑一次单元测试能出来1G log的C++工程，目前LLM还是显得无能为力。于是最终花了一个多月的时间，手动把这个超大重构给完成了。有感而发，写下了这篇博客。
+
 <!--
 copilot翻译成英语
 - 改正错别字，改正语法错误，最低限度地调整语序
