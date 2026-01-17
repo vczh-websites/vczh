@@ -667,8 +667,8 @@ graph LR
     AST_MGR_3 -- SyntaxSymbolManager::BuildAutomaton() --> AUTOMATON[Executable + Metadata]
   end
 
-  subgraph Execute
-    direction TB
-    LEXER_GEN_FILE_2[["Lexer.cpp"]] --> LEXER[RegexLexer]
-  end
+  AUTOMATON -- Executable::Serialize --> BINARY[[Compressed Automaton]]
+  AST_MGR -- WriteAstFiles() --> AST_GEN_FILE[["Ast.cpp + Assembler.cpp"]]
+  LEXER_MGR -- WriteLexerFiles() --> LEXER_GEN_FILE[["Lexer.cpp"]]
+  BINARY -- WriteSyntaxFile() --> SYNTAX_GEN_FILE[["Syntax.cpp"]]
 ```
