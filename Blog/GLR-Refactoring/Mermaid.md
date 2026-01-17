@@ -650,14 +650,14 @@ graph LR
 
 ```mermaid
 graph TD
-  AST_FILE_1[[Ast1.txt]] -- TypeParser::ParseFile() --> AST_1[GlrAstFile]
-  AST_FILE_2[[Ast2.txt]] -- TypeParser::ParseFile() --> AST_2[GlrAstFile]
+  AST_FILE_1[[Ast1.txt]] -- TypeParser::ParseFile() --> AST_1[Ptr#lt;GlrAstFile#gt;]
+  AST_FILE_2[[Ast2.txt]] -- TypeParser::ParseFile() --> AST_2[Ptr#lt;GlrAstFile]
   AST_1 & AST_2 -- CompileAst --> AST_MGR[AstSymbolManager]
 
   LEXER_FILE[[Lexer.txt]] -- CompileLexer() --> LEXER_MGR[LexerSymbolManager]
   
-  SYNTAX_FILE_1[[Syntax1.txt]] -- RuleParser::ParseFile() --> SYNTAX_1[GlrSyntaxFile]
-  SYNTAX_FILE_2[[Syntax2.txt]] -- RuleParser::ParseFile() --> SYNTAX_2[GlrSyntaxFile]
+  SYNTAX_FILE_1[[Syntax1.txt]] -- RuleParser::ParseFile() --> SYNTAX_1[Ptr#lt;GlrSyntaxFile#gt;]
+  SYNTAX_FILE_2[[Syntax2.txt]] -- RuleParser::ParseFile() --> SYNTAX_2[Ptr#lt;GlrSyntaxFile#gt;]
   AST_MGR & LEXER_MGR & SYNTAX_1 & SYNTAX_2 -- CompileSyntax() --> AST_MGR_1[SyntaxSymbolManager]
 
   AST_MGR_1 -- BuildCompactNFA() --> AST_MGR_2[w/ prefix merging]
@@ -676,7 +676,7 @@ graph TD
 graph TD
   LEXER_GEN_FILE_2[["Lexer.cpp"]] --> LEXER[RegexLexer]
   INPUT[[Input.txt]] & LEXER -- Tokenize() --> TOKENS[List#lt;RegexToken#gt;]
-  SYNTAX_GEN_FILE_2[["Syntax.cpp"]] -- Executable::Executable() --> EXECUTABLE[[Executable]]
+  SYNTAX_GEN_FILE_2[["Syntax.cpp"]] -- Executable::Executable() --> EXECUTABLE[Executable]
   EXECUTABLE -- CreateExecutor() --> TRACE_MGR[TraceManager]
   TOKENS & TRACE_MGR -- Input/EndOfInput --> TRACE_MGR2[w/ Traces]
   TRACE_MGR2 -- PrepareTraceRoute() --> TRACE_MGR3[w/ Partial Execution]
