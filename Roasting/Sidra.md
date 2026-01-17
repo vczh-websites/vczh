@@ -6,7 +6,7 @@ Zerno Z1 775; 20g; 92C;
 60-140-220-300;
 don't put kettle back
 
-## 2026-1-17, 8C Humidity 73%
+## 2026-1-17, 10C Humidity 73%
 
 - Drum 80; Damper 70; 3:30 80; 6:00 90; FC 100;
 - 185C/92C; 160C 4:30; 185.5C 7:05; 198C 9:10;
@@ -19,7 +19,8 @@ don't put kettle back
   - 188.8C 7:24; 194.0C 8:24; +40s
 - 185C/92C; 160C 4:40; 188C 7:20; 202C 10:00;
   - 190.1C 7:39; 194.8C 8:20; +40s
-  - +50s
+    - Cracking sound starts low, difficult to tell the beginning, treat it like the +50s running
+  - +40s
 
 ## 2025-12-30, 5C humidity 77%
 
