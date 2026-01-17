@@ -6,11 +6,11 @@
 
 此刻正是2025的圣诞节。项目的起源还得从许久以前说起。回顾这一路走来的过程，先是中学的时候为了开发游戏制作第一个游戏引擎随后对编译原理产生了兴趣；接着就是在大学时期先后实现了垃圾收集器、C语言子集一路做到汇编器、和一个Haskell子集的类型推导；毕业后又借机把type class加到了C语言上面。
 
-这个过程没有光做编译器，还是图给所有的这些东西做编辑器，包括上下文有关着色和自动完成等一系列IDE的标准功能都是用C#做的。编译器是C++写的但是编辑器是C#写的，于是我从parser到类型推导都分别用C++和C#各做了一遍，这怎么想都是不对的。
+这个过程没有光做编译器，还试图给所有的这些东西做编辑器，包括上下文有关着色和自动完成等一系列IDE的标准功能都是用C#做的。编译器是C++写的但是编辑器是C#写的，于是我从parser到类型推导都分别用C++和C#各做了一遍，这怎么想都是不对的。
 
 ![](Turtle_Sample_01.jpg)
 
-不过这其实才是现实世界里大家的普遍原则。想想当时地球上爆火的几款代码编辑器，分别有正在（已经）用C#和XAML重写的Visual Studio、用Jvav写的Eclipse、用Jvav写的一系列不同语言的IDE、还有马上就要诞生的TypeScript写的vscode。它们哪个不是一个语言的前端做了好几遍？要么就是编译器和编辑器是不同地方的人做的，要么语言本身就没有自举，或者自举了但完全没考虑过编辑器的需要。比如微软明明用C++写了编译器和VS，但是VS用的却是Edison Design Group实现的C++前端；比如原本用C++写的C#编译器后面用C#重写了（Roslyn）；比如原本用JS写的TS然后换TS又写了一遍然后换go又写了一遍；似乎分开做才是业界常态。
+不过这其实才是现实世界里大家的普遍原则。想想当时地球上爆火的几款代码编辑器，分别有正在（已经）用C#和XAML重写的Visual Studio、用Java写的Eclipse、用Java写的一系列不同语言的IDE、还有马上就要诞生的TypeScript写的vscode。它们哪个不是一个语言的前端做了好几遍？要么就是编译器和编辑器是不同地方的人做的，要么语言本身就没有自举，或者自举了但完全没考虑过编辑器的需要。比如微软明明用C++写了编译器和VS，但是VS用的却是Edison Design Group实现的C++前端；比如原本用C++写的C#编译器后面用C#重写了（Roslyn）；比如原本用JS写的TS然后换TS又写了一遍然后换go又写了一遍；似乎分开做才是业界常态。
 
 但我自己做又没有类似的问题，于是怀揣着编译器和编辑器共享一套编译器前端的想法，就有了[vczh-libraries/GacUI](https://github.com/vczh-libraries/GacUI)，以及为了实现语法分析和给语义着色和自动完成打基础的VlppParser和VlppParser2（整个重写过）。故事便从[VlppParser](https://github.com/vczh-libraries/VlppParser)和[VlppParser2](https://github.com/vczh-libraries/VlppParser2)这里发生。此时正是大学刚毕业的时候，所以VlppParser的设计还能看见当初在大学的时候诞生的很多想法。
 
@@ -321,7 +321,7 @@ cs.Top().SetField(MulExpr::left, os.Pop());
 
 当然压缩后你的cpp依然会因为`\xXX`而膨涨四倍，这个我就没办法了。C++23实现了[\#embed](https://en.cppreference.com/w/c/preprocessor/embed)预处理操作，可以让你在一个字符串里引入二进制文件的内容。可惜我的项目只开到了C++20，只能以后再实现。
 
-不得不说Lzw的性能真是好，10M的状态机压缩到剩下0.7M，[这个压缩比](https://github.com/vczh-libraries/VlppParser2/blob/master/Test/Source/BuiltIn-Cpp/Generated/CppParser.cpp)真的是非常厉害了。
+不得不说LZW的性能真是好，10M的状态机压缩到剩下0.7M，[这个压缩比](https://github.com/vczh-libraries/VlppParser2/blob/master/Test/Source/BuiltIn-Cpp/Generated/CppParser.cpp)真的是非常厉害了。
 
 ![](CppParser_Lzw.jpg)
 
@@ -598,7 +598,7 @@ struct Trace : Allocatable<Trace>
 
 ### 第四步：生成ExecutionStep
 
-`ExecutionStep`在构造的过程中是一棵树，构造完了会被重新整理成链表。在表达歧义的过程中，多个`ExceptionStep`组成的结构如下：
+`ExecutionStep`在构造的过程中是一棵树，构造完了会被重新整理成链表。在表达歧义的过程中，多个`ExecutionStep`组成的结构如下：
 - `BEGIN`
 - 每一个分支所有指令跑一遍`->...->BRANCH`
 - 由`RESOLVE`收尾
@@ -1080,7 +1080,7 @@ StackEnd
 ```
 Term
   ::= !Factor
-  :：= Term:left "*" Factor:right as MulExpr
+  ::= Term:left "*" Factor:right as MulExpr
   ;
 ```
 
@@ -1273,7 +1273,7 @@ Term
 
 ## StackBegin指令集下生成ExecutionStep的新方法
 
-在“第四步：生成ExecutionStep”一节中我们介绍了ExceptionStep的定义，这里并没有真的“新方法”，只不过是过去的算法实现的实在太扭曲了，于是整个删掉做了一遍。上面的第三部已经确定了每个歧义的范围，于是这是一个简单的递归算法：把歧义的每一个分支拉直，然后几个分支重新拼接在一起，就等于把歧义本身拉直了。现在让我们复习一下之前的例子：
+在“第四步：生成ExecutionStep”一节中我们介绍了ExecutionStep的定义，这里并没有真的“新方法”，只不过是过去的算法实现的实在太扭曲了，于是整个删掉做了一遍。上面的第三步已经确定了每个歧义的范围，于是这是一个简单的递归算法：把歧义的每一个分支拉直，然后几个分支重新拼接在一起，就等于把歧义本身拉直了。现在让我们复习一下之前的例子：
 
 ![](Images/Trace_Shape3_4.png)
 
