@@ -666,23 +666,4 @@ graph LR
     AST_MGR_2 -- SyntaxSymbolManager::BuildCrossReferencedNFA() --> AST_MGR_3[w/ only token transition ]
     AST_MGR_3 -- SyntaxSymbolManager::BuildAutomaton() --> AUTOMATON[Executable + Metadata]
   end
-
-  subgraph Execute
-    direction TB
-    LEXER_GEN_FILE_2[["Lexer.cpp"]] --> LEXER[RegexLexer]
-    INPUT[[Input.txt]] & LEXER -- Tokenize() --> TOKENS[List#lt;RegexToken#gt;]
-    SYNTAX_GEN_FILE_2[["Syntax.cpp"]] -- Executable::Executable() --> EXECUTABLE[[Executable]]
-    EXECUTABLE -- CreateExecutor() --> TRACE_MGR[TraceManager]
-    TOKENS & TRACE_MGR -- Input/EndOfInput --> TRACE_MGR2[w/ Traces]
-    TRACE_MGR2 -- PrepareTraceRoute() --> TRACE_MGR3[w/ Partial Execution]
-    TRACE_MGR3 -- CheckMergeTraces() --> TRACE_MGR4[w/ TraceAmbiguity]
-    TRACE_MGR4 -- BuildExecutionOrder() --> STEPS[ExecutionStep]
-    TRACE_MGR2 -. (if not ambiguity involved) --> STEPS
-    AST_GEN_FILE_2[["Assembler.cpp"]] & TOKENS & STEPS --> AST(((Parsed AST)))
-  end
-
-  AUTOMATON -- Executable::Serialize --> BINARY[[Compressed Automaton]]
-  AST_MGR -- WriteAstFiles() --> AST_GEN_FILE[["Ast.cpp + Assembler.cpp"]]
-  LEXER_MGR -- WriteLexerFiles() --> LEXER_GEN_FILE[["Lexer.cpp"]]
-  BINARY -- WriteSyntaxFile() --> SYNTAX_GEN_FILE[["Syntax.cpp"]]
 ```
