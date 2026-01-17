@@ -649,8 +649,7 @@ graph LR
 ## Parser_Compile.png
 
 ```mermaid
-graph LR
-  direction TB
+graph TD
   AST_FILE_1[[Ast1.txt]] -- TypeParser::ParseFile() --> AST_1[GlrAstFile]
   AST_FILE_2[[Ast2.txt]] -- TypeParser::ParseFile() --> AST_2[GlrAstFile]
   AST_1 & AST_2 -- CompileAst --> AST_MGR[AstSymbolManager]
@@ -674,8 +673,7 @@ graph LR
 ## Parser_Executte.png
 
 ```mermaid
-graph LR
-  direction TB
+graph TD
   LEXER_GEN_FILE_2[["Lexer.cpp"]] --> LEXER[RegexLexer]
   INPUT[[Input.txt]] & LEXER -- Tokenize() --> TOKENS[List#lt;RegexToken#gt;]
   SYNTAX_GEN_FILE_2[["Syntax.cpp"]] -- Executable::Executable() --> EXECUTABLE[[Executable]]
