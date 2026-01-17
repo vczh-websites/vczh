@@ -1319,7 +1319,7 @@ Term
 
 中间我又插了一步，用parser的语法再做了一遍四则运算，用parser的parser把它生成的状态机和上面的手写四则运算产生的状态机直接比对，保证每一处细节都完全一致。这部分保证了构造manager们的代码的正确性。
 
-这其实类似于Java的`Object`和`Class`的问题，最终被我利用来构造单元测试，于是把所有的单元测试项目按顺序跑一遍，相应的代码也就生成了出来。
+这其实类似于Java/C#的`Object`和`Class`的问题，最终被我利用来构造单元测试，于是把所有的单元测试项目按顺序跑一遍，相应的代码也就生成了出来。
 
 - [CreateParserGenTypeAst](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Ast/AstSymbol_CreateParserGenTypeAst.cpp)
 - [CreateParserGenRuleAst](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Ast/AstSymbol_CreateParserGenRuleAst.cpp)
