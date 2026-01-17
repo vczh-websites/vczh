@@ -1301,7 +1301,43 @@ Term
 
 ## VlppParser2如何自举
 
+把上面的所有内容总结一下，使用VlppParser2从撰写语法到parse出东西来一共要经历这么多事：
+
+首先是编译的部份，把语法处理成带有该parser的C++代码。整个项目最后会产生一个叫做`GlrParserGen.exe`的工具，在[GacUI的Release](https://github.com/vczh-libraries/Release/tree/master/Tools/Executables/GlrParserGen)里面可以找到。生成的C++代码就有上面提到的PDA序列化后再压缩的二进制内容。
+
+![](Images/Parser_Compile.png)
+
+然后就可以编译这些C++代码，来parse你要的文本了。
+
+![](Images/Parser_Execute.png)
+
+输入的AST.txt、Lexer.txt和Syntax.txt的结构也很复杂，除了Lexer.txt是手写的parser以外，其他两种文件的parser也是用VlppParser2生成的。这里就有一个鸡生蛋的问题，解决起来其实也很有意思。
+
+整个项目的测试有很多，那么当一个测试用的parser出问题的时候，我如何判断到底是parser自己出了错，还是生成parser这一步出了错呢？所以只能尽可能地降低AST.txt和Syntax.txt的复杂程度，比如说不要引入任何能造成歧义的语法。于是我就可以对这部分先进行测试。
+
+刚开始我做了一个四则运算的test case，直接写代码`AstSymbolManager`、`LexerSymbolManager`和`SyntaxSymbolManager`，跳过了编译部分第一层的内容。然后吭哧吭哧地把所有的bug消灭掉。然后再写几个函数直接生成parser的三个manager。这个时候就可以开始写C++代码生成了。到此为止我们就有了完整的parser的parser。
+
+中间我又插了一步，用parser的语法再做了一遍四则运算，用parser的parser把它生成的状态机和上面的手写四则运算产生的状态机直接比对，保证每一处细节都完全一致。这部分保证了构造manager们的代码的正确性。
+
+这其实类似于Java/C#的`Object`和`Class`的问题，最终被我利用来构造单元测试，于是把所有的单元测试项目按顺序跑一遍，相应的代码也就生成了出来。
+
+- [CreateParserGenTypeAst](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Ast/AstSymbol_CreateParserGenTypeAst.cpp)
+- [CreateParserGenRuleAst](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Ast/AstSymbol_CreateParserGenRuleAst.cpp)
+- [CreateParserGenLexer](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Lexer/LexerSymbol_CreateParserGenLexer.cpp)
+- [CreateParserGenTypeSyntax](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Syntax/SyntaxSymbol_CreateParserGenTypeSyntax.cpp)
+- [CreateParserGenRuleSyntax](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Syntax/SyntaxSymbol_CreateParserGenRuleSyntax.cpp)
+
 ## 尾声
+
+我在GacUI里面引入vibe coding也有一段时间了，前期虽然各种方法论、文档什么的都准备好了，但是一直失败，每天阅读AI产生的狗屎一样的代码不知所措。直到codex + gpt 5.1横空出世，这个问题突然得到了解决。
+
+在这之前我尝试过vscode + sonnet 4.0，简直就是一泡污。后来升级到了sonnet 4.5，稍微好了一点点。我就在外面抱怨，有人指出来是vscode自己的coding agent太烂让我试试cursor。结果两者的产出完全没有区别不说，cursor的$20试用budget光速耗尽，我甚至都没把一个函数的unit test写完，一看居然已经花了这么多token。此时我才发现github copilot的定价简直是做慈善，必须感谢satya，$390年付给你每个月1500的premium query，完全不看你用了多少token。后面我看opus 4.5的价格竟然是gpt 5.2的三倍，但是实际体验下来效果也就比sonnet 4.5好一点，只能给gpt 5.2打打下手。
+
+vscode在前一段时间允许大家用github copilot来登录openai的codex coding agent，我用它写GacUI用了很长一段时间，效果还不错。后来我又尝试让vscode coding agent自己去驱动gpt 5.2，发现竟然没有任何区别。现在我懂了，写C++就得靠模型，coding agent这些边角料你靠prompt就能解决了。gpt 5.2之所以能成功，不仅在于模型本身的思考非常的严谨，而且他愿意阅读超多资料后才开始动手。Claude系的模型行动过于仓促，所以什么都做不好。
+
+于是经过了不断的迭代，现在得到了一些结构：首先是喜闻乐见的[copilot-instruction.md](https://github.com/vczh-libraries/GacUI/blob/master/.github/copilot-instructions.md)，写了一些基本的内容用于快速启动。然后按照本科学习的《软件工程文档写作》弄出了[一些固定流程](https://github.com/vczh-libraries/GacUI/tree/master/.github/prompts)。于是我就可以从非常简短的语言开始，指导AI一步一步把事情做完。有这些还不够，项目必须要有[源码导读](https://github.com/vczh-libraries/GacUI/tree/master/.github/KnowledgeBase)，大幅缩短AI做判断消耗的token数量。
+
+可惜这一套在对付VlppParser2的时候依然失败了，可见对于这种整个项目就是一个函数的C++代码，跑一次单元测试能出来1G log的C++工程，目前LLM还是显得无能为力。于是最终花了一个多月的时间，手动把这个超大重构给完成了。有感而发，写下了这篇博客。
 
 <!--
 copilot翻译成英语
