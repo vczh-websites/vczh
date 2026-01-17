@@ -670,7 +670,7 @@ graph TD
   BINARY -- WriteSyntaxFile() --> SYNTAX_GEN_FILE[["Syntax.cpp"]]
 ```
 
-## Parser_Executte.png
+## Parser_Execute.png
 
 ```mermaid
 graph TD
