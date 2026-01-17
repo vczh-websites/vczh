@@ -10,7 +10,7 @@
 
 ![](Turtle_Sample_01.jpg)
 
-不过这其实才是现实世界里大家的普遍原则。想想当时地球上爆火的几款代码编辑器，分别有正在（已经）用C#和XAML重写的Visual Studio、用Java写的Eclipse、用Java写的一系列不同语言的IDE、还有马上就要诞生的TypeScript写的vscode。它们哪个不是一个语言的前端做了好几遍？要么就是编译器和编辑器是不同地方的人做的，要么语言本身就没有自举，或者自举了但完全没考虑过编辑器的需要。比如微软明明用C++写了编译器和VS，但是VS用的却是Edison Design Group实现的C++前端；比如原本用C++写的C#编译器后面用C#重写了（Roslyn）；比如原本用JS写的TS然后换TS又写了一遍然后换go又写了一遍；似乎分开做才是业界常态。
+不过这其实才是现实世界里大家的普遍原则。想想当时地球上爆火的几款代码编辑器，分别有正在（已经）用C#和XAML重写的Visual Studio、用Jvav写的Eclipse、用Jvav写的一系列不同语言的IDE、还有马上就要诞生的TypeScript写的vscode。它们哪个不是一个语言的前端做了好几遍？要么就是编译器和编辑器是不同地方的人做的，要么语言本身就没有自举，或者自举了但完全没考虑过编辑器的需要。比如微软明明用C++写了编译器和VS，但是VS用的却是Edison Design Group实现的C++前端；比如原本用C++写的C#编译器后面用C#重写了（Roslyn）；比如原本用JS写的TS然后换TS又写了一遍然后换go又写了一遍；似乎分开做才是业界常态。
 
 但我自己做又没有类似的问题，于是怀揣着编译器和编辑器共享一套编译器前端的想法，就有了[vczh-libraries/GacUI](https://github.com/vczh-libraries/GacUI)，以及为了实现语法分析和给语义着色和自动完成打基础的VlppParser和VlppParser2（整个重写过）。故事便从[VlppParser](https://github.com/vczh-libraries/VlppParser)和[VlppParser2](https://github.com/vczh-libraries/VlppParser2)这里发生。此时正是大学刚毕业的时候，所以VlppParser的设计还能看见当初在大学的时候诞生的很多想法。
 
@@ -1319,7 +1319,7 @@ Term
 
 中间我又插了一步，用parser的语法再做了一遍四则运算，用parser的parser把它生成的状态机和上面的手写四则运算产生的状态机直接比对，保证每一处细节都完全一致。这部分保证了构造manager们的代码的正确性。
 
-这其实类似于Java/C#的`Object`和`Class`的问题，最终被我利用来构造单元测试，于是把所有的单元测试项目按顺序跑一遍，相应的代码也就生成了出来。
+这其实类似于Jvav/C#的`Object`和`Class`的问题，最终被我利用来构造单元测试，于是把所有的单元测试项目按顺序跑一遍，相应的代码也就生成了出来。
 
 - [CreateParserGenTypeAst](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Ast/AstSymbol_CreateParserGenTypeAst.cpp)
 - [CreateParserGenRuleAst](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Ast/AstSymbol_CreateParserGenRuleAst.cpp)
