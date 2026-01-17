@@ -678,10 +678,11 @@ graph LR
     TRACE_MGR3 -- CheckMergeTraces() --> TRACE_MGR4[w/ TraceAmbiguity]
     TRACE_MGR4 -- BuildExecutionOrder() --> STEPS[ExecutionStep]
     TRACE_MGR2 -. (if not ambiguity involved) --> STEPS
+    AST_GEN_FILE_2[[ ]] & TOKENS & STEPS --> AST(((Parsed AST)))
   end
 
   AUTOMATON -- Executable::Serialize --> BINARY[[Compressed Automaton]]
-  AST_MGR -- WriteAstFiles() --> AST_GEN_FILE[[Ast.cpp + Assembler.cpp]]
+  AST_MGR -- WriteAstFiles() --> AST_GEN_FILE[[ ]]
   LEXER_MGR -- WriteLexerFiles() --> LEXER_GEN_FILE[[Lexer.cpp]]
   BINARY -- WriteSyntaxFile() --> SYNTAX_GEN_FILE[[Syntax.cpp]]
 ```
