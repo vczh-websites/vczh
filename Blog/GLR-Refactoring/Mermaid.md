@@ -652,13 +652,13 @@ graph LR
 graph TD
   AST_FILE_1[[Ast1.txt]] -- TypeParser::ParseFile() --> AST_1[Ptr#lt;GlrAstFile#gt;]
   AST_FILE_2[[Ast2.txt]] -- TypeParser::ParseFile() --> AST_2[Ptr#lt;GlrAstFile#gt;]
-  AST_1 & AST_2 -- CompileAst --> AST_MGR[AstSymbolManager]
+  AST_1 & AST_2 --> UNION_1((( ))) -- CompileAst --> AST_MGR[AstSymbolManager]
 
   LEXER_FILE[[Lexer.txt]] -- CompileLexer() --> LEXER_MGR[LexerSymbolManager]
   
   SYNTAX_FILE_1[[Syntax1.txt]] -- RuleParser::ParseFile() --> SYNTAX_1[Ptr#lt;GlrSyntaxFile#gt;]
   SYNTAX_FILE_2[[Syntax2.txt]] -- RuleParser::ParseFile() --> SYNTAX_2[Ptr#lt;GlrSyntaxFile#gt;]
-  AST_MGR & LEXER_MGR & SYNTAX_1 & SYNTAX_2 -- CompileSyntax() --> AST_MGR_1[SyntaxSymbolManager]
+  AST_MGR & LEXER_MGR & SYNTAX_1 & SYNTAX_2 --> UNION_2((( ))) -- CompileSyntax() --> AST_MGR_1[SyntaxSymbolManager]
 
   AST_MGR_1 -- BuildCompactNFA() --> AST_MGR_2[w/ prefix merging]
   AST_MGR_2 -- BuildCrossReferencedNFA() --> AST_MGR_3[w/ only token transition ]
@@ -675,14 +675,14 @@ graph TD
 ```mermaid
 graph TD
   LEXER_GEN_FILE_2[["Lexer.cpp"]] --> LEXER[RegexLexer]
-  INPUT[[Input.txt]] & LEXER -- Tokenize() --> TOKENS[List#lt;RegexToken#gt;]
+  INPUT[[Input.txt]] & LEXER --> UNION_3((( ))) -- Tokenize() --> TOKENS[List#lt;RegexToken#gt;]
   SYNTAX_GEN_FILE_2[["Syntax.cpp"]] -- Executable::Executable() --> EXECUTABLE[Executable]
   EXECUTABLE -- CreateExecutor() --> TRACE_MGR[TraceManager]
-  TOKENS & TRACE_MGR -- Input/EndOfInput --> TRACE_MGR2[w/ Traces]
+  TOKENS & TRACE_MGR --> UNION_4((( ))) -- Input/EndOfInput --> TRACE_MGR2[w/ Traces]
   TRACE_MGR2 -- PrepareTraceRoute() --> TRACE_MGR3[w/ Partial Execution]
   TRACE_MGR3 -- CheckMergeTraces() --> TRACE_MGR4[w/ TraceAmbiguity]
   TRACE_MGR4 -- BuildExecutionOrder() --> STEPS[ExecutionStep]
   TRACE_MGR2 -. (if no ambiguity involved) .-> STEPS
   AST_GEN_FILE_2[["Assembler.cpp"]] --> RECEIVER[IAstInsReceiver]
-  RECEIVER & TOKENS & STEPS --> AST(((Parsed AST)))
+  RECEIVER & TOKENS & STEPS --> UNION_5((( ))) --> AST(((Parsed AST)))
 ```
