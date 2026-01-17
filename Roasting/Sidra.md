@@ -6,6 +6,14 @@ Zerno Z1 775; 20g; 92C;
 60-140-220-300;
 don't put kettle back
 
+## Next
+
+Begins from `180C/92C; 160C 4:30; 185C 6:55; 198C 9:00;`:
+- Current YP and longer YP (+10s)
+- longer FC (+10s)
+- higher charge temperature 185C
+- try different development 40s/60s
+
 ## 2025-12-30, 5C humidity 77%
 
 **IMPORTANT** Record the discharge time, keep the same interval to the next charging. When the machine temperature reaches the target, wait for 90s before changing.
