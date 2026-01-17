@@ -683,5 +683,6 @@ graph TD
   TRACE_MGR3 -- CheckMergeTraces() --> TRACE_MGR4[w/ TraceAmbiguity]
   TRACE_MGR4 -- BuildExecutionOrder() --> STEPS[ExecutionStep]
   TRACE_MGR2 -. (if not ambiguity involved) .-> STEPS
-  AST_GEN_FILE_2[["Assembler.cpp"]] & TOKENS & STEPS --> AST(((Parsed AST)))
+  AST_GEN_FILE_2[["Assembler.cpp"]] --> RECEIVER[IAstInsReceiver]
+  RECEIVER & TOKENS & STEPS --> AST(((Parsed AST)))
 ```
