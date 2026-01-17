@@ -1307,6 +1307,22 @@ Term
 
 ![](Images/Parser_Execute.png)
 
+输入的AST.txt、Lexer.txt和Syntax.txt的结构也很复杂，除了Lexer.txt是手写的parser以外，其他两种文件的parser也是用VlppParser2生成的。这里就有一个鸡生蛋的问题，解决起来其实也很有意思。
+
+整个项目的测试有很多，那么当一个测试用的parser出问题的时候，我如何判断到底是parser自己出了错，还是生成parser这一步出了错呢？所以只能尽可能地降低AST.txt和Syntax.txt的复杂程度，比如说不要引入任何能造成歧义的语法。于是我就可以对这部分先进行测试。
+
+刚开始我做了一个四则运算的test case，直接写代码`AstSymbolManager`、`LexerSymbolManager`和`SyntaxSymbolManager`，跳过了编译部分第一层的内容。然后吭哧吭哧地把所有的bug消灭掉。然后再写几个函数直接生成parser的三个manager。这个时候就可以开始写C++代码生成了。到此为止我们就有了完整的parser的parser。
+
+中间我又插了一步，用parser的语法再做了一遍四则运算，用parser的parser把它生成的状态机和上面的手写四则运算产生的状态机直接比对，保证每一处细节都完全一致。这部分保证了构造manager们的代码的正确性。
+
+这其实类似于Java的`Object`和`Class`的问题，最终被我利用来构造单元测试，于是把所有的单元测试项目按顺序跑一遍，相应的代码也就生成了出来。
+
+- [CreateParserGenTypeAst](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Ast/AstSymbol_CreateParserGenTypeAst.cpp)
+- [CreateParserGenRuleAst](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Ast/AstSymbol_CreateParserGenRuleAst.cpp)
+- [CreateParserGenLexer](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Lexer/LexerSymbol_CreateParserGenLexer.cpp)
+- [CreateParserGenTypeSyntax](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Syntax/SyntaxSymbol_CreateParserGenTypeSyntax.cpp)
+- [CreateParserGenRuleSyntax](https://github.com/vczh-libraries/VlppParser2/blob/master/Source/Syntax/SyntaxSymbol_CreateParserGenRuleSyntax.cpp)
+
 ## 尾声
 
 <!--
