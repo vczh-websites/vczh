@@ -646,43 +646,44 @@ graph LR
   R_2-->R[[RESOLVE]]-->i4(((i4)))
 ```
 
-## Parser.png
+## Parser_Compile.png
 
 ```mermaid
 graph LR
-  subgraph Compile
-    direction TB
-    AST_FILE_1[[Ast1.txt]] -- TypeParser::ParseFile() --> AST_1[GlrAstFile]
-    AST_FILE_2[[Ast2.txt]] -- TypeParser::ParseFile() --> AST_2[GlrAstFile]
-    AST_1 & AST_2 -- CompileAst --> AST_MGR[AstSymbolManager]
-  
-    LEXER_FILE[[Lexer.txt]] -- CompileLexer() --> LEXER_MGR[LexerSymbolManager]
-    
-    SYNTAX_FILE_1[[Syntax1.txt]] -- RuleParser::ParseFile() --> SYNTAX_1[GlrSyntaxFile]
-    SYNTAX_FILE_2[[Syntax2.txt]] -- RuleParser::ParseFile() --> SYNTAX_2[GlrSyntaxFile]
-    AST_MGR & LEXER_MGR & SYNTAX_1 & SYNTAX_2 -- CompileSyntax() --> AST_MGR_1[SyntaxSymbolManager]
-  
-    AST_MGR_1 -- SyntaxSymbolManager::BuildCompactNFA() --> AST_MGR_2[w/ prefix merging]
-    AST_MGR_2 -- SyntaxSymbolManager::BuildCrossReferencedNFA() --> AST_MGR_3[w/ only token transition ]
-    AST_MGR_3 -- SyntaxSymbolManager::BuildAutomaton() --> AUTOMATON[Executable + Metadata]
-  end
+  direction TB
+  AST_FILE_1[[Ast1.txt]] -- TypeParser::ParseFile() --> AST_1[GlrAstFile]
+  AST_FILE_2[[Ast2.txt]] -- TypeParser::ParseFile() --> AST_2[GlrAstFile]
+  AST_1 & AST_2 -- CompileAst --> AST_MGR[AstSymbolManager]
 
-  subgraph Execute
-    direction TB
-    LEXER_GEN_FILE_2[["Lexer.cpp"]] --> LEXER[RegexLexer]
-    INPUT[[Input.txt]] & LEXER -- Tokenize() --> TOKENS[List#lt;RegexToken#gt;]
-    SYNTAX_GEN_FILE_2[["Syntax.cpp"]] -- Executable::Executable() --> EXECUTABLE[[Executable]]
-    EXECUTABLE -- CreateExecutor() --> TRACE_MGR[TraceManager]
-    TOKENS & TRACE_MGR -- Input/EndOfInput --> TRACE_MGR2[w/ Traces]
-    TRACE_MGR2 -- PrepareTraceRoute() --> TRACE_MGR3[w/ Partial Execution]
-    TRACE_MGR3 -- CheckMergeTraces() --> TRACE_MGR4[w/ TraceAmbiguity]
-    TRACE_MGR4 -- BuildExecutionOrder() --> STEPS[ExecutionStep]
-    TRACE_MGR2 -. (if not ambiguity involved) --> STEPS
-    AST_GEN_FILE_2[["Assembler.cpp"]] & TOKENS & STEPS --> AST(((Parsed AST)))
-  end
+  LEXER_FILE[[Lexer.txt]] -- CompileLexer() --> LEXER_MGR[LexerSymbolManager]
+  
+  SYNTAX_FILE_1[[Syntax1.txt]] -- RuleParser::ParseFile() --> SYNTAX_1[GlrSyntaxFile]
+  SYNTAX_FILE_2[[Syntax2.txt]] -- RuleParser::ParseFile() --> SYNTAX_2[GlrSyntaxFile]
+  AST_MGR & LEXER_MGR & SYNTAX_1 & SYNTAX_2 -- CompileSyntax() --> AST_MGR_1[SyntaxSymbolManager]
+
+  AST_MGR_1 -- SyntaxSymbolManager::BuildCompactNFA() --> AST_MGR_2[w/ prefix merging]
+  AST_MGR_2 -- SyntaxSymbolManager::BuildCrossReferencedNFA() --> AST_MGR_3[w/ only token transition ]
+  AST_MGR_3 -- SyntaxSymbolManager::BuildAutomaton() --> AUTOMATON[Executable + Metadata]
 
   AUTOMATON -- Executable::Serialize --> BINARY[[Compressed Automaton]]
   AST_MGR -- WriteAstFiles() --> AST_GEN_FILE[["Ast.cpp + Assembler.cpp"]]
   LEXER_MGR -- WriteLexerFiles() --> LEXER_GEN_FILE[["Lexer.cpp"]]
   BINARY -- WriteSyntaxFile() --> SYNTAX_GEN_FILE[["Syntax.cpp"]]
+```
+
+## Parser_Executte.png
+
+```mermaid
+graph LR
+  direction TB
+  LEXER_GEN_FILE_2[["Lexer.cpp"]] --> LEXER[RegexLexer]
+  INPUT[[Input.txt]] & LEXER -- Tokenize() --> TOKENS[List#lt;RegexToken#gt;]
+  SYNTAX_GEN_FILE_2[["Syntax.cpp"]] -- Executable::Executable() --> EXECUTABLE[[Executable]]
+  EXECUTABLE -- CreateExecutor() --> TRACE_MGR[TraceManager]
+  TOKENS & TRACE_MGR -- Input/EndOfInput --> TRACE_MGR2[w/ Traces]
+  TRACE_MGR2 -- PrepareTraceRoute() --> TRACE_MGR3[w/ Partial Execution]
+  TRACE_MGR3 -- CheckMergeTraces() --> TRACE_MGR4[w/ TraceAmbiguity]
+  TRACE_MGR4 -- BuildExecutionOrder() --> STEPS[ExecutionStep]
+  TRACE_MGR2 -. (if not ambiguity involved) --> STEPS
+  AST_GEN_FILE_2[["Assembler.cpp"]] & TOKENS & STEPS --> AST(((Parsed AST)))
 ```
