@@ -9,7 +9,7 @@ VS自带的只是WDK的库，第二个就是WDK的所有UI工具了。
 
 我们用CDB还是想要传统的按代码行的方式来调试。默认情况下VS会帮你把exe和pdb都生成在一起，那你什么都不需要做就可以加载符号。一般来说我们可以：
 ```
-cdb -c ".lines; l+t; l+s" -o "你的exe 你的参数"
+cdb -c ".lines; l+t; l+s" -o 你的exe 你的参数
 ```
 启动CDB。这个时候程序时处于暂停状态的，你可以趁这个机会打断点，然后按`g`运行。如果你想直接运行，可以在-c的命令最后加上`; g`。
 
@@ -49,5 +49,55 @@ CDB牛逼的地方是他可以和VS用相同的[.natvis](https://github.com/vczh
 最后用`q`就可以退出了，顺便把被调试的程序杀了。
 
 ## 实战演示
+
+在这里我简单的演示一遍。首先我们要启动`UnitTest.exe`然后在这里下断点：
+
+![](Image_1.png)
+
+```
+& cdb -c ".lines; l+t; l+s" -o "UnitTest.exe"
+```
+
+进去之后依次输入
+```
+bp `TestApplication_Dialog_File.cpp:90`
+g
+```
+
+我们就可以看程序开始跑，跑到我们的断点就会停下来：
+
+![](Image_2.png)
+
+我们跳3行到`TEST_ASSERT`，这个时候他还不会运行，所以还没炸。然后看看现在的堆栈，跳进去，打印z
+
+```
+p
+p
+p
+kn 5
+.frame 0
+dv
+dx z
+```
+
+![](Image_3.png)
+
+这个时候我们可以看到`dx z`显示的是`Variant<vint, WString>`的裸成员。我们都知道C++的`Variant`实现是比较扭曲的，如果要我们在`dx`里面自己做casting也是麻烦的一笔。当然我们还是可以做：
+
+```
+dx ((vl::ObjectString<wchar_t>*)z.buffer)
+as str (((vl::ObjectString<wchar_t>*)z.buffer))
+dx (${str}->buffer+${str}->start),[${str}->length]
+```
+
+![](Image_4.png)
+
+在这里`as`和`${str}`就是宏了，用的时候记得加上括号，道理和C语言的宏一样。
+
+这个时候就是[.natvis](https://github.com/vczh-libraries/Vlpp/blob/master/Release/vlpp.natvis)发挥作用的时候了。我们直接`.nvload vlpp.natvix`然后再`dx z`一下：
+
+![](Image_5.png)
+
+爽！
 
 ## 让LLM也能用CDB
