@@ -113,3 +113,35 @@ dx z
 最后一个`q`优雅退出。
 
 ## 让LLM也能用CDB
+
+VSCode里面跑copilot还要让LLM在命令行里面交互那是不可能的，所以我们只能把CDB包装成一个一个的命令，执行完退出看结果。所幸CDB是支持远程调试功能的，那么我们可以把server起起来。需要注意的是CDB server一样会等待我们的输入，所以不能占用当前的窗口。单机调试不用管任何安全或者是防火墙问题，简单直接：
+```
+cdb -server npipe:pipe=随便给个名字 ...
+```
+
+如果你只是想简单的连接他然后正常使用：
+```
+cdb -remote npipe:pipe=上面那个名字
+```
+
+不过让LLM来就得让`cdb -remote`跑完一个命令直接闪退。我们要做的事情就比较扭曲。比如说我们要跑`kn 5`命令。首先要创建一个文件，比如说input.txt
+
+```
+".cls`r`nkn 5`r`n.remote_exit" | Out-File -Encoding ASCII -FilePath input.txt
+```
+
+这个时候会得到：
+```
+.cls
+kn 5
+.remote_exit
+```
+
+然后一口气连接执行跑路：
+```
+cdb -remote npipe:pipe=上面那个名字 -cf input.txt | Tee-Object -FilePath output.txt
+```
+
+于是你就可以打开input.txt，找到最后的一行`xxx> .cls`，前面的全部删掉，就得到这个命令的运行结果了。这样做的原因是`cdb -remote`每次都会把所有的历史记录全部扒下来，用这个方法可以打个标记，就知道我们现在给的命令是从哪里开始输出的。
+
+这一节的内容可以封装成脚本，这样就可以让LLM调试你的程序的同时不会被调试器打断命令行窗口了。
