@@ -100,4 +100,16 @@ dx (${str}->buffer+${str}->start),[${str}->length]
 
 爽！
 
+到了结束的时候了，我们`g`让他把`TEST_ASSERT`执行，然后就炸了。炸完我们还是可以看变量，看完就走：
+
+```
+g
+kn 5
+.frame 2
+dv
+dx z
+```
+
+最后一个`q`优雅退出。
+
 ## 让LLM也能用CDB
