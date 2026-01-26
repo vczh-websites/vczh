@@ -23,6 +23,8 @@ don't put kettle back
 - 180C/85C; 160C 4:30; 189C 6:45; 202C 9:00; FC ROR 9.1
   - Note: Pressed charge a few seconds after actual charging
 
+- Testing against first crack ROR
+
 ## 2026-1-17, 10C Humidity 73%
 
 |杯测|No.1|No.2|No.3|No.4|No.5|No.6|
