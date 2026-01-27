@@ -151,3 +151,5 @@ cdb -remote npipe:pipe=上面那个名字 -cf input.txt | Tee-Object -FilePath o
 ## 更新
 
 我发现cdb还有`-clines 0`可以用，不用做这个`.cls`了。
+
+Powershell 5.0有个问题，就是`echo ".remote_exit" | cdb ...`会带BOM，这就是为什么需要有个`input.txt`来装`.remote_exit`命令用于退出客户端。如果是更高版本的Powershell或者是CMD就没有这个问题。
