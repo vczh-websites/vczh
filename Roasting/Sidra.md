@@ -8,7 +8,15 @@ don't put kettle back
 
 ## Next
 
-- 185C charge 4:30/4:40 YP, 189C +2:35/2:45 FC, FC ROR <7 (try 6.5)
+- 185C/92C; 160C 4:40; 188C 7:15; Try to lower down FC ROR
+  - 40s
+  - 40s
+  - 45s
+  - 45s
+  - 50s
+  - 50s
+
+Try to promote floral and sweetness, if each pair of actual FC times are close, merge them together.
 
 ## 2026-1-25
 
