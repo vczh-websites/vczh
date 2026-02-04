@@ -6,6 +6,10 @@ Zerno Z1 775; 20g; 92C;
 60-140-220-300;
 don't put kettle back
 
+## Next
+
+- 185C charge 4:30/4:40 YP, 189C +2:35/2:45 FC, FC ROR <7 (try 6.5)
+
 ## 2026-1-25
 
 |杯测|No.1|No.2|No.3|No.4|No.5|
