@@ -8,7 +8,7 @@ don't put kettle back
 
 ## Next
 
-- 185C/92C; 160C 4:40; 188C 7:15; Try to lower down FC ROR
+- 180C/80C;160C 4:40; 188C 7:15; Try to lower down FC ROR
   - 40s
   - 45s
   - 50s
