@@ -10,13 +10,13 @@ don't put kettle back
 
 - 185C/92C; 160C 4:40; 188C 7:15; Try to lower down FC ROR
   - 40s
-  - 40s
-  - 45s
   - 45s
   - 50s
-  - 50s
+  - 55s
+  - 60s
+  - 65s
 
-Try to promote floral and sweetness, if each pair of actual FC times are close, merge them together.
+Try to promote floral and sweetness.
 
 ## 2026-1-25
 
