@@ -6,7 +6,7 @@ Zerno Z1 775; 20g; 92C;
 60-140-220-300;
 don't put kettle back
 
-## Next
+## 2026-2-10, 12C Humidity 68%
 
 - 185C/80C;160C 4:40; 189C 7:15; Try to lower down FC ROR
   - 40s x2
