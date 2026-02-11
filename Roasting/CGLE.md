@@ -2,17 +2,17 @@
 
 ## Geisha Andean Lapwing
 
-- 182C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-2-11)
+- 180C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-2-11)
   - 40s, actual FC:
 
 ## Geisha Green Jay
 
-- 182C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-2-11)
+- 180C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-2-11)
   - 40s, actual FC:
 
 ## Geisha Gauca Guan
 
-- 182C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-2-11)
+- 180C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-2-11)
   - 40s, actual FC:
 
 ## CGLE-17 Andean Pygmy-OWL (Natural)
