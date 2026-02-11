@@ -10,4 +10,4 @@ don't put kettle back
 
 - 185C/80C;160C 4:25; 189C 7:00;
   - drum: 80; damper: 70, 3:30 80, 6:00 90;
-  - 45s, actual FC:
+  - 45s, actual FC: 185.9C 6:42
