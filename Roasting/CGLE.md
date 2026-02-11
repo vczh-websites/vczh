@@ -8,7 +8,7 @@
 ## Geisha Green Jay
 
 - 180C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-2-11)
-  - 40s, actual FC:
+  - 40s, actual FC: 182.5C 5:45
 
 ## Geisha Gauca Guan
 
