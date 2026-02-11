@@ -9,6 +9,7 @@ don't put kettle back
 ## 2026-2-10, 12C Humidity 68%
 
 - 185C/80C;160C 4:40; 189C 7:15; Try to lower down FC ROR
+  - drum: 80; damper: 70, 4:00 80, 6:00 90;
   - 40s x2
   - 45s
   - 50s
