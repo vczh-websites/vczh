@@ -13,7 +13,7 @@
 ## Geisha Gauca Guan
 
 - 180C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-2-11)
-  - 40s, actual FC:
+  - 40s, actual FC: 187.5C 6:25
 
 ## CGLE-17 Andean Pygmy-OWL (Natural)
 
