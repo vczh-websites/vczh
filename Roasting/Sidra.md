@@ -2,12 +2,11 @@
 
 # Test Brewing
 
-Zerno Z1 775; 20g; 92C;
+Zerno Z1 775; 20g; 92C/93C;
 60-140-220-300;
-don't put kettle back
+70-200-300;
 
 ## 2026-2-10, 12C Humidity 68%
-
 
 |杯测|No.1|No.2|No.3|No.4|No.5|No.6|
 |-|-|-|-|-|-|-|
@@ -22,7 +21,8 @@ don't put kettle back
   - 55s
   - 60s
 
-Try to promote floral and sweetness.
+柑橘苦随着发展变大可能是一种受热不均匀的表现。
+风门可能太小，可以尝试 4:00 80; 5:30 90; 6:30 100;
 
 ## 2026-1-25
 
