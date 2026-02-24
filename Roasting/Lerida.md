@@ -12,3 +12,4 @@ don't put kettle back
   - drum: 80; damper: 70, 3:30 80, 6:00 90;
   - 45s, actual FC: 185.9C 6:42
   - 9天：不够甜（参考cozy monster）
+  - 10天：略有谷味，可能不均匀
