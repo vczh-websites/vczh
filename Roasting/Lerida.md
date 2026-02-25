@@ -13,3 +13,4 @@ don't put kettle back
   - 45s, actual FC: 185.9C 6:42
   - 9天：不够甜（参考cozy monster）
   - 10天：略有谷味，可能不均匀
+  - 14天@cozy：略淡，可能需要多发展，或者多养豆
