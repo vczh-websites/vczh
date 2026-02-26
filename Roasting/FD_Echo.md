@@ -1,10 +1,11 @@
 # Finca Deborah Echo
 
-# Test Brewing
+## Next
 
-Zerno Z1 775; 20g; 92C;
-60-140-220-300;
-don't put kettle back
+- 185C/85C;160C 4:35; 189C 7:10;
+  - drum: 80; damper: 70, 3:30 80, 6:00 90;
+  - expected FC: 189.0C 7:10
+  - 45s drop 7:55
 
 ## 2026-2-11, 9C Humidity 67%
 

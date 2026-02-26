@@ -1,10 +1,11 @@
 # Pepe Jijon Sidra
 
-# Test Brewing
+## Next
 
-Zerno Z1 775; 20g; 92C/93C;
-60-140-220-300;
-70-200-300;
+- 185C/80C;160C 4:10; 189C 6:35
+  - drum: 80; damper: 70, 3:30 80, 5:30 90, 6:30 100
+  - expected FC 189C 6:35
+  - 40s drop 7:15
 
 ## 2026-2-10, 12C Humidity 68%
 
