@@ -6,7 +6,7 @@
   - drum: 80; damper: 70, 3:30 80, 5:30 90, 6:30 100
   - expected FC 189C 6:35
   - 40s drop 7:15, actual FC 189.3C 6:40
-    - 杯测：酸度较高，风味较足，有点葡萄柚。温后略涩，可能醋酸。
+    - 杯测：酸度较高，风味较足，有点葡萄柚。温后略涩，小可能醋酸。
   - 40s drop 7:15, forgot PID for the first 90s
 
 ## 2026-2-10, 12C Humidity 68%
