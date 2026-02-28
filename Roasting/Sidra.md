@@ -1,6 +1,6 @@
 # Pepe Jijon Sidra
 
-## Next
+## 2026-2-27, 10C Humidity 71%
 
 - 185C/80C;160C 4:10; 189C 6:35
   - drum: 80; damper: 70, 3:30 80, 5:30 90, 6:30 100
