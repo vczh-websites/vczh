@@ -6,6 +6,7 @@
   - drum: 80; damper: 70, 3:30 80, 6:00 90;
   - expected FC 185.9C 6:42
   - 45+5s drop 7:32
+  - 杯测：甜
 
 ## 2026-2-11, 9C Humidity 67%
 
