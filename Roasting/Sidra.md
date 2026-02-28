@@ -5,9 +5,8 @@
 - 185C/80C;160C 4:10; 189C 6:35
   - drum: 80; damper: 70, 3:30 80, 5:30 90, 6:30 100
   - expected FC 189C 6:35
-  - actual FC 189.3C 6:40
-  - 40s drop 7:15
-  - 50s drop 7:25
+  - 40s drop 7:15, actual FC 189.3C 6:40
+  - 40s drop 7:15, forgot PID for the first 90s
 
 ## 2026-2-10, 12C Humidity 68%
 
