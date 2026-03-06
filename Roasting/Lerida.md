@@ -1,5 +1,9 @@
 # Lerida
 
+## Next
+
+- Add the 8s time before FC instead of after FC
+
 ## 2026-2-27, 10C Humidity 71%
 
 - 185C/85C;160C 4:25; 189C 7:00;
