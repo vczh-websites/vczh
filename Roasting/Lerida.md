@@ -2,7 +2,7 @@
 
 ## Next
 
-- Add the 8s time before FC instead of after FC
+- Add the 5+s time before FC instead of after FC
 
 ## 2026-2-27, 10C Humidity 71%
 
