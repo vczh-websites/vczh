@@ -1,19 +1,19 @@
 # CGLE 2024 Auction
 
-## Geisha Andean Lapwing
+## Geisha Andean Lapwing (honey)
 
 - 180C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-2-11)
   - 40s, actual FC: 183.6C 5:53
   - 23天：半木
 
-## Geisha Green Jay
+## Geisha Green Jay (washed)
 
 - 180C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-2-11)
   - 40s, actual FC: 182.5C 5:45
   - 11天：过于平淡
   - 23天：木头味，怀疑没熟。一爆温度有点低，可能转黄不均匀
 
-## Geisha Gauca Guan
+## Geisha Gauca Guan (natural)
 
 - 175C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (Next)
   - drum: 80; damper: 70, 3:00 80, 5:00 90;
