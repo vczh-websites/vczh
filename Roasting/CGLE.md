@@ -2,11 +2,19 @@
 
 ## Geisha Andean Lapwing (honey)
 
+- 175C/92C; 160C 3:50; 183.5C 6:10 ROR 6.87/min; 193C 8:00 (Next)
+  - expected FC: 183.5C 6:10
+  - 40s drop 6:50
+
 - 180C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-2-11)
   - 40s, actual FC: 183.6C 5:53
   - 23天：半木
 
 ## Geisha Green Jay (washed)
+
+- 175C/92C; 160C 3:55; 183C 6:10 ROR 6.8C/min; 192C 8:00 (Next)
+  - expected FC: 183C 6:10
+  - 40s drop 6:50
 
 - 180C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-2-11)
   - 40s, actual FC: 182.5C 5:45
