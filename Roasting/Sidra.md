@@ -7,6 +7,7 @@
   - expected FC 189C 6:35
   - 40s drop 7:15, actual FC 189.3C 6:40
     - 杯测：酸度较高，风味较足，有点葡萄柚。温后略涩，小可能醋酸。
+    - 8天：咽下后有一点点涩，湿香足够，稍微偏酸，甜感十足
   - 40s drop 7:15, forgot PID for the first 90s
 
 ## 2026-2-10, 12C Humidity 68%
