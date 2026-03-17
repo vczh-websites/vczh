@@ -1,5 +1,8 @@
 # Decent for Drop Coffee
 
+- Advanced profile
+- cannot do 15g as ground would be too low
+
 ## Pour
 
 - {TEMPERATURE}
