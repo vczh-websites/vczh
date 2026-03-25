@@ -1,5 +1,15 @@
 # Finca Deborah Echo
 
+## Next
+
+- 185C/85C;160C 4:35; 189C 7:15;
+  - drum: 80; damper: 70, 3:30 80, 6:00 90, 7:00 100;
+  - expected FC: 189.0C 7:15
+  - 45s drop 8:00
+  - 45+5s drop 8:05
+
+- Add the 5+s time before FC instead of after FC
+
 ## 2026-2-27, 10C Humidity 71%
 
 - 185C/85C;160C 4:35; 189C 7:10;
