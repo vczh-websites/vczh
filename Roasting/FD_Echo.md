@@ -1,6 +1,6 @@
 # Finca Deborah Echo
 
-## Next
+## 2026-3-28, 12C Humidity 68%
 
 - 185C/85C;160C 4:35; 189C 7:15;
   - drum: 80; damper: 70, 3:30 80, 6:00 90, 7:00 100;
