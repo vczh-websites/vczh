@@ -23,7 +23,7 @@
 
 ## Geisha Gauca Guan (natural)
 
-- 175C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (Next)
+- 175C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-3-28)
   - drum: 80; damper: 70, 3:00 80, 5:00 90;
   - expected FC: 187.5C 6:25
   - 30s drop 6:55
