@@ -6,7 +6,7 @@
   - drum: 80; damper: 70, 3:30 80, 6:00 90;
   - expected FC 186C 6:50
   - 42s drop 7:32
-  - 42+5s drop 7:37 更甜
+  - 42+5s drop 7:37 更甜，一点奶味
 
 - Add the 5+s time before FC instead of after FC
 
