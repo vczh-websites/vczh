@@ -1,6 +1,6 @@
 # Roasting with Sniper M2 Pro
 
-- [CGLE](./CGLE.md)
+- [CGLE 2024](./CGLE.md)
 - [Pepe Jijon Sidra](./Sidra.md)
 - [Lerida Geisha](./Lerida.md)
 - [Finca Deborah Echo](./FD_Echo.md)
