@@ -2,6 +2,10 @@
 
 - [CGLE](./CGLE.md)
 - [Pepe Jijon Sidra](./Sidra.md)
+- [Lerida Geisha](./Lerida.md)
+- [Finca Deborah Echo](./FD_Echo.md)
+- Finca Deborah Nirvana
+- Finca Deborah Horizon
 
 ## Artisan
 
