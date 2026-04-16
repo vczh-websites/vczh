@@ -1,7 +1,7 @@
 # 微软命令行调试器CDB光速入门（LLM适用版）
 
 这里假设读者都是用Visual Studio和msbuild的用户，为了安装这个调试器，你需要打开VS的安装程序，切换到`Individual Components`，勾上`Windows Driver Kit`，然后把他装上去。
-接着就是到[Download the Windows Driver Kit (WDK)]([Download the Windows Driver Kit (WDK)](https://learn.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk))把WDK再装一遍。
+接着就是到[Download the Windows Driver Kit (WDK)](https://learn.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk)把WDK再装一遍。
 VS自带的只是WDK的库，第二个就是WDK的所有UI工具了。
 装完后就可以在`C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\cdb.exe`找到，命令行就可以用起来了。
 
