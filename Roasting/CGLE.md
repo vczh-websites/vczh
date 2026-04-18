@@ -2,7 +2,7 @@
 
 ## Geisha Andean Lapwing (honey)
 
-- 175C/92C; 160C 3:50; 183.5C 6:10 ROR 6.87/min; 193C 8:00 (2026-4-18)
+- 175C/92C; 160C 3:50; 183.5C 6:10 ROR 6.87/min; 193C 8:00 (2026-4-18 20C Humidity 37%)
   - expected FC: 183.5C 6:10
   - 40s drop 6:50
 
@@ -12,7 +12,7 @@
 
 ## Geisha Green Jay (washed)
 
-- 175C/92C; 160C 3:55; 183C 6:10 ROR 6.8C/min; 192C 8:00 (2026-4-18)
+- 175C/92C; 160C 3:55; 183C 6:10 ROR 6.8C/min; 192C 8:00 (2026-4-18 20C Humidity 37%)
   - expected FC: 183C 6:10
   - 40s drop 6:50
 
@@ -23,7 +23,8 @@
 
 ## Geisha Gauca Guan (natural)
 
-- Same (2026-4-18)
+- Same (2026-4-18 20C Humidity 37%)
+  - actual FC: 6:20
   - 30s drop 6:45
 
 - 175C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-3-28)
