@@ -25,6 +25,7 @@
 - 175C/85C; 160C 4:10; 183C 6:30 ROR 6.6C/min; 194C 9:00 (2026-5-3 26C Humidity 42%)
   - drum: 80; damper: 70, 3:30 80, 5:30 90, 6:30 100;
   - expected FC: 183C 6:30
+  - actual FC: 183C 6:30
   - 50s drop 7:20
 
 - 175C/92C; 160C 3:55; 183C 6:10 ROR 6.8C/min; 192C 8:00 (2026-4-18 20C Humidity 37%)
