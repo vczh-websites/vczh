@@ -6,13 +6,13 @@
 - 下豆时间延长一点
 - 一爆前+10s，一爆后+5s
 
-## 2026-5-3 26C Humidity 42%
+## 2026-5-3, 26C Humidity 42%
 
 - 165C/70C; 160C 4:20; 189C 6:50 ROR 7.0C/min; 196C 8:10
   - drum: 80; damper: 70, 3:30 80, 5:50 90, 6:50 100
   - expected FC 189C 6:50
-  - actual FC 
-  - 45s drop 7:35
+  - actual FC 188.5C 6:45
+  - 45s drop 7:30
 
 ## 2026-3-21, 9C Humidty 58%
 
