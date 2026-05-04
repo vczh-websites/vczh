@@ -7,9 +7,9 @@
 ## 2026-5-3, 26C Humidity 42%
 
 - 165C/75C;160C 4:45; 189C 7:30 ROR 7.0C/min; 198C 9:00
-  - drum: 80; damper: 70, 3:45 80, 6:40 90, 7:40 100;
+  - drum: 80; damper: 70, 3:45 80, 6:30 90, 7:30 100;
   - expected FC: 189C 7:30
-  - actual FC
+  - actual FC 189C 7:30
   - 50s drop 8:20
 
 ## 2026-3-28, 12C Humidity 68%
