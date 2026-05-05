@@ -7,6 +7,7 @@
   - expected FC: 183.5C 6:30
   - actual FC: 184C 6:35
   - 50s drop 7:20
+  - 杯测：有发酵味，有点单薄
 
 - 175C/92C; 160C 3:50; 183.5C 6:10 ROR 6.87C/min; 193C 8:00 (2026-4-18 20C Humidity 37%)
   - expected FC: 183.5C 6:10
@@ -27,6 +28,7 @@
   - expected FC: 183C 6:30
   - actual FC: 183C 6:30
   - 50s drop 7:20
+  - 杯测:怀疑一点夹生
 
 - 175C/92C; 160C 3:55; 183C 6:10 ROR 6.8C/min; 192C 8:00 (2026-4-18 20C Humidity 37%)
   - expected FC: 183C 6:10
