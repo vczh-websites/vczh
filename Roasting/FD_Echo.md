@@ -11,6 +11,7 @@
   - expected FC: 189C 7:30
   - actual FC 189C 7:30
   - 50s drop 8:20
+  - 杯测：湿香果味足
 
 ## 2026-3-28, 12C Humidity 68%
 
