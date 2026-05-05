@@ -13,6 +13,7 @@
   - expected FC 189C 6:50
   - actual FC 188.5C 6:45
   - 45s drop 7:30
+  - 杯测：有一点点淡
 
 ## 2026-3-21, 9C Humidty 58%
 
