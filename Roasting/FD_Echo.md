@@ -1,4 +1,6 @@
-# Finca Deborah Echo## Next
+# Finca Deborah Echo
+
+## Next
 
 目标：前期soak更久，转黄后慢慢收火，可能意味着
 - 曲线的起始点要往下拉
