@@ -2,12 +2,18 @@
 
 ## Geisha Andean Lapwing (honey)
 
+- 170C/80C; 160C 4:10; 183.5C 6:40; ROR 6.2C/min; 197C 9:30 (Next)
+  - drum: 80; damper: 70, 3:40 80, 5:40 90, 6:40 100;
+  - expected FC: 183.5C 6:40
+  - 50s drop 7:30
+
 - 175C/85C; 160C 4:05; 183.5C 6:30 ROR 6.5C/min; 195C 9:00 (2026-5-3 26C Humidity 42%)
   - drum: 80; damper: 70, 3:30 80, 5:30 90, 6:30 100;
   - expected FC: 183.5C 6:30
   - actual FC: 184C 6:35
   - 50s drop 7:20
   - 杯测：有发酵味，有点单薄，凉后略甜
+  - 10天：风味出现，但是伴随轻微夹生味道
 
 - 175C/92C; 160C 3:50; 183.5C 6:10 ROR 6.87C/min; 193C 8:00 (2026-4-18 20C Humidity 37%)
   - expected FC: 183.5C 6:10
@@ -23,12 +29,18 @@
 
 ## Geisha Green Jay (washed)
 
+- 170C/80C; 160C 4:15; 183C 6:45 ROR 6.1C/min; 197C 9:40 (Next)
+  - drum: 80; damper: 70, 3:45 80, 5:45 90, 6:45 100;
+  - expected FC: 183C 6:45
+  - 50s drop 7:35
+
 - 175C/85C; 160C 4:10; 183C 6:30 ROR 6.6C/min; 194C 9:00 (2026-5-3 26C Humidity 42%)
   - drum: 80; damper: 70, 3:30 80, 5:30 90, 6:30 100;
   - expected FC: 183C 6:30
   - actual FC: 183C 6:30
   - 50s drop 7:20
   - 杯测:怀疑一点夹生
+  - 10天：风味出现，但是伴随轻微夹生味道
 
 - 175C/92C; 160C 3:55; 183C 6:10 ROR 6.8C/min; 192C 8:00 (2026-4-18 20C Humidity 37%)
   - expected FC: 183C 6:10
