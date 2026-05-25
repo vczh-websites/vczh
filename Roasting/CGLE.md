@@ -62,17 +62,17 @@
 
 - Same (2026-5-24, 22C Humidity 45%)
   - Charge 165C
-  - actual FC: 
-  - 30s drop 6:45
+  - actual FC: 6:20
+  - 40s drop 6:45
 
 - Same (2026-4-18 20C Humidity 37%)
   - actual FC: 6:20
-  - 30s drop 6:45 **采纳**
+  - 50s drop 6:45 **采纳**
 
 - 175C/92C; 160C 3:40; 185C 6:00; 195C 7:53 (2026-3-28)
   - drum: 80; damper: 70, 3:00 80, 5:00 90;
   - actual FC: 6:05
-  - 30s drop 6:45 (planned 6:55)
+  - 40s drop 6:45 (planned 6:55)
     - 4天：干香辣肠，湿香果香炸裂
     - 35/100/165/225 bypass 20
 
