@@ -9,7 +9,7 @@
 - 170C/75C;160C 4:40; 189C 7:25 ROR 6.9C/min; 198C 9:00
   - drum: 80; damper: 70, 3:45 80, 6:25 90, 7:25 100;
   - expected FC: 189C 7:25
-  - actual FC: 
+  - actual FC: 189C 7:25
   - 50s drop 8:15
 
 ## 2026-5-3, 26C Humidity 42%
