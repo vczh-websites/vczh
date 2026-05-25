@@ -60,6 +60,11 @@
 
 ## Geisha Gauca Guan (natural)
 
+- Same (2026-5-24, 22C Humidity 45%)
+  - Charge 165C
+  - actual FC: 
+  - 30s drop 6:45
+
 - Same (2026-4-18 20C Humidity 37%)
   - actual FC: 6:20
   - 30s drop 6:45 **采纳**
