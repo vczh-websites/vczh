@@ -1,10 +1,11 @@
 # Pepe Jijon Sidra
 
-## Next
+## 2026-5-24, 22C Humidity 45%
 
-- 165C/70C; 160C 4:15; 189C 6:45 ROR 6.8C/min; 196C 8:10
+- 170C/70C; 160C 4:15; 189C 6:45 ROR 6.8C/min; 196C 8:10
   - drum: 80; damper: 70, 3:30 80, 5:45 90, 6:45 100
   - expected FC 189C 6:45
+  - actual FC 
   - 40s drop 7:25
 
 ## 2026-5-3, 26C Humidity 42%
