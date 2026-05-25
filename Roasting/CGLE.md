@@ -29,7 +29,7 @@
 
 ## Geisha Green Jay (washed)
 
-- 170C/80C; 160C 4:15; 183C 6:45 ROR 6.1C/min; 197C 9:40 (2026-5-24, 22C Humidity 45%)
+- 165C/80C; 160C 4:15; 183C 6:45 ROR 6.1C/min; 197C 9:40 (2026-5-24, 22C Humidity 45%)
   - drum: 80; damper: 70, 3:45 80, 5:45 90, 6:45 100;
   - expected FC: 183C 6:45
   - 50s drop 7:35
