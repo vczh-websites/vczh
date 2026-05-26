@@ -7,6 +7,7 @@
   - expected FC: 183.5C 6:40
   - actual FC: 183.5C 6:45
   - 50s drop 7:30
+  - 杯测：风味盖过夹生
 
 - 175C/85C; 160C 4:05; 183.5C 6:30 ROR 6.5C/min; 195C 9:00 (2026-5-3 26C Humidity 42%)
   - drum: 80; damper: 70, 3:30 80, 5:30 90, 6:30 100;
@@ -36,6 +37,7 @@
   - actual FC: 182.5 6:42
   - Forgot to press charge for ~5s
   - 50s drop 7:35
+  - 杯测：风味盖过夹生
 
 - 175C/85C; 160C 4:10; 183C 6:30 ROR 6.6C/min; 194C 9:00 (2026-5-3 26C Humidity 42%)
   - drum: 80; damper: 70, 3:30 80, 5:30 90, 6:30 100;
