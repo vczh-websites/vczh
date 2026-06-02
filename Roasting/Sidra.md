@@ -1,5 +1,9 @@
 # Pepe Jijon Sidra
 
+## Next
+
+一爆和下豆同时提前5秒
+
 ## 2026-5-24, 22C Humidity 45%
 
 - 170C/70C; 160C 4:15; 189C 6:45 ROR 6.8C/min; 196C 8:10
