@@ -6,6 +6,8 @@
 - [Finca Deborah Echo](./FD_Echo.md)
 - Finca Deborah Nirvana
 - Finca Deborah Horizon
+- Lamastus Elida Plano
+  - 一爆收火力，ROR降低
 
 ## Artisan
 
