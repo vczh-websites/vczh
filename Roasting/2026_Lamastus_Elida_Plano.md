@@ -1,8 +1,8 @@
 # Lamastus Elida Plano
 
-## Next
+## 2026-6-12, 22C Humidity 49%
 
-- 175C/80C;160C 4:15; 192C 6:45 ROR 6.4C/min; 194C 7:20; 196C 8:10;
+- 175C/80C;160C 4:15; 192C 6:45 ROR 6.4C/min; 196C 8:10;
   - drum: 80; damper: 70, 3:30 80, 5:45 90, 6:45 100
   - expected FC 190.5C 6:45
   - actual FC
