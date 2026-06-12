@@ -2,6 +2,12 @@
 
 ## Next
 
+- 170C/70C; 160C 4:15; 190C 6:40 ROR 6.3C/min; 192C 7:20; 194C 8:10
+  - drum: 80; damper: 70, 3:30 80, 5:30 90, 6:30 100
+  - expected FC 190C 6:40
+  - actual FC
+  - 40s drop 7:20
+
 一爆和下豆同时提前5秒
 
 ## 2026-5-24, 22C Humidity 45%
