@@ -1,8 +1,8 @@
 # Finca Deborah Horizon
 
-## Next
+## 2026-6-12, 22C Humidity 49%
 
-- 175C/80C;160C 4:15; 191.5C 6:45 ROR 6.6C/min; 193.5C 7:20; 196C 8:10;
+- 175C/80C;160C 4:15; 191C 6:45 ROR 6.6C/min; 195.5C 8:10;
   - drum: 80; damper: 70, 3:30 80, 5:45 90, 6:45 100
   - expected FC 190.5C 6:45
   - actual FC
