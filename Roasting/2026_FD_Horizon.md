@@ -1,5 +1,9 @@
 # Finca Deborah Horizon
 
+## Next
+
+插入下豆节点，排豆label设置在很远的高温，避免artisan可能因为读数不准导致强制散热
+
 ## 2026-6-12, 22C Humidity 49%
 
 - 175C/80C;160C 4:15; 191C 6:45 ROR 6.6C/min; 195.5C 8:10;
