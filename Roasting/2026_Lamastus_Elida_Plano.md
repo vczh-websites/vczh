@@ -1,5 +1,9 @@
 # Lamastus Elida Plano
 
+## Next
+
+插入下豆节点，排豆label设置在很远的高温，避免artisan可能因为读数不准导致强制散热
+
 ## 2026-6-12, 22C Humidity 49%
 
 - 175C/70C;160C 4:15; 192C 6:45 ROR 6.4C/min; 196C 8:10;
