@@ -12,6 +12,7 @@
 ## Artisan
 
 “开始”会锁定预热温度。
+- 连接：`打开`
 - 设置参数：`Heater 100%`，`Drum 80rpm`，`Damp off`
 - 预热：`开始`
 - 投豆：`投豆`，`Damp 70%`，`PID ON`
@@ -19,6 +20,8 @@
 - 听到约5声：`一爆开始`
 - 排豆：`排豆`，`Damp 100%`
 - 关机：`Cooling OFF`
+
+温度曲线插入下豆节点，排豆label设置在很远的高温，避免artisan可能因为读数不准导致强制散热
 
 ## Kaleido Sniper M2 Pro
 
