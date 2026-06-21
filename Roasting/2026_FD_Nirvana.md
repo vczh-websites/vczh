@@ -13,7 +13,7 @@
 - 175C/85C; 160C 4:15; 191C 7:00 ROR 7.2C/min; 201C 9:30
   - drum: 80; damper: 70, 3:30 80, 6:00 90
   - expected FC 191C 7:00
-  - actual FC 191.3C 7:03
+  - actual FC 191C 7:03
   - 45s drop 7:48
   - 60s drop 8:03
   - 回温点比曲线低
