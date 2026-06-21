@@ -1,12 +1,12 @@
 # Roasting with Sniper M2 Pro
 
 - [CGLE 2024](./2025_CGLE.md)
-- [Pepe Jijon Sidra](./2025_Sidra.md)
 - [Lerida Geisha](./2025_Lerida.md)
 - [Finca Deborah Echo](./2025_FD_Echo.md)
+- [Pepe Jijon Sidra](./2025_Sidra.md)
 - [Finca Deborah Nirvana](./2026_FD_Nirvana.md)
 - [Finca Deborah Horizon](./2026_FD_Horizon.md)
-- [Lamastus Elida Plano](./2026_Lamastus_Elida_Plano.md)
+- [Lamastus Elida Plano](./2026_Elida_Plano.md)
   - 一爆收火力，ROR降低
 
 ## Artisan
