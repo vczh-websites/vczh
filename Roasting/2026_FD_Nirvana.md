@@ -3,7 +3,7 @@
 ## 2026-6-21, 24C Humidity 44%
 
 - 175C/85C; 160C 4:00; 191C 6:45 ROR 7.2C/min; 202C 9:30
-  - drum: 80; damper: 70, 3:15 80, 5:45 90, 6:45 100
+  - drum: 80; damper: 70, 3:15 80, 5:45 90
   - expected FC 191C 6:45
   - actual FC 191.5C 6:50, 192.6C 7:00
   - 45s drop 7:35
@@ -11,11 +11,12 @@
   - 回温点比曲线低
 
 - 175C/85C; 160C 4:15; 191C 7:00 ROR 7.2C/min; 201C 9:30
-  - drum: 80; damper: 70, 3:30 80, 6:00 90, 7:00 100
+  - drum: 80; damper: 70, 3:30 80, 6:00 90
   - expected FC 191C 7:00
-  - actual FC
-  - 45s drop 7:45
-  - 60s drop 8:00
+  - actual FC 191.3C 7:03
+  - 45s drop 7:48
+  - 60s drop 8:03
+  - 回温点比曲线低
 
 ## 2026-6-12, 22C Humidity 49%
 
