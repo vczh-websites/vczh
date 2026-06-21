@@ -3,14 +3,15 @@
 ## 2026-6-21, 24C Humidity 44%
 
 - 175C/80C;160C 4:05; 191.5C 6:50 ROR 7.2C/min; 202C 9:30;
-  - drum: 80; damper: 70, 3:30 80, 5:50 90, 6:50 100
+  - drum: 80; damper: 70, 3:30 80, 5:50 90
   - expected FC 191.5C 6:50
-  - actual FC
+  - actual FC 192C 7:00
   - 40s drop 7:30
   - 45s drop 7:35
+  - 实际温度比曲线低了0.5C左右，可能这就是每次都慢一点一爆的原因
 
 - 175C/80C;160C 4:10; 191.5C 6:55 ROR 7.3C/min; 202C 9:30;
-  - drum: 80; damper: 70, 3:30 80, 5:55 90, 6:55 100
+  - drum: 80; damper: 70, 3:30 80, 5:55 90
   - expected FC 191.5C 6:55
   - actual FC
   - 40s drop 7:35
