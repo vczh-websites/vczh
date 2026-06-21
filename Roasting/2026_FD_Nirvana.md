@@ -1,6 +1,6 @@
 # Finca Deborah Nirvana
 
-## Next
+## 2026-6-21, 24C Humidity 44%
 
 - 175C/85C; 160C 4:00; 191C 6:45 ROR 7.2C/min; 202C 9:30
   - drum: 80; damper: 70, 3:15 80, 5:45 90, 6:45 100
