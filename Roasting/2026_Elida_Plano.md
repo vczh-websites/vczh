@@ -7,7 +7,7 @@
   - expected FC 191.5C 6:50
   - actual FC 192C 7:00
   - 40s drop 7:30
-  - 45s drop 7:35
+  - 50s drop 7:40
   - 实际温度比曲线低了0.5C左右，可能这就是每次都慢一点一爆的原因
 
 - 175C/80C;160C 4:10; 191.5C 6:55 ROR 7.3C/min; 202C 9:30;
@@ -15,7 +15,7 @@
   - expected FC 191.5C 6:55
   - actual FC
   - 40s drop 7:35
-  - 45s drop 7:40
+  - 50s drop 7:45
 
 ## 2026-6-12, 22C Humidity 49%
 
