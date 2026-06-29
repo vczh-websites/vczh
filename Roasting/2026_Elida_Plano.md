@@ -1,5 +1,10 @@
 # Lamastus Elida Plano
 
+## Next
+
+曲线1做发展array，目的是消除过多茶感，让更少的bypass得到酸甜
+曲线2做发展array，目的是消除醋酸，看看甜peak在哪里
+
 ## 2026-6-21, 24C Humidity 44%
 
 - 175C/80C;160C 4:05; 191.5C 6:50 ROR 7.2C/min; 202C 9:30;
