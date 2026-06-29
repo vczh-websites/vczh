@@ -1,5 +1,9 @@
 # Finca Deborah Nirvana
 
+AI必读：[烘焙工具和倾向](./Background.md)
+
+## Next
+
 ## 2026-6-21, 24C Humidity 44%
 
 - 175C/85C; 160C 4:00; 191C 6:45 ROR 7.2C/min; 202C 9:30

@@ -1,5 +1,7 @@
 # Finca Deborah Horizon
 
+AI必读：[烘焙工具和倾向](./Background.md)
+
 ## Next
 
 - 175C/80C;160C 4:10; 191.5C 6:50 ROR 7.4C/min; 201C 09:30;

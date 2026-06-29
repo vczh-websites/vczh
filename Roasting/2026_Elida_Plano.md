@@ -1,5 +1,7 @@
 # Lamastus Elida Plano
 
+AI必读：[烘焙工具和倾向](./Background.md)
+
 ## Next
 
 - 曲线1做发展array，目的是消除过多茶感，让更少的bypass得到酸甜
