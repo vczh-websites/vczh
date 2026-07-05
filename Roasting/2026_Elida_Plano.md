@@ -5,8 +5,16 @@ AI必读：[烘焙工具和倾向](./Background.md)
 ## Next
 
 - 曲线1做发展array，目的是消除过多茶感，让更少的bypass得到酸甜
+  - 40/45/50
   - +40s bypass 40g，大口闷会出现柑橘苦，可能是烘焙问题，猜测甜点可能会在中间，比如+45s
-- 曲线2做发展array，目的是消除醋酸，看看甜peak在哪里
+
+- 175C/80C;160C 4:05; 191.5C 6:50 ROR 7.2C/min; 202C 9:30;
+  - drum: 80; damper: 70, 3:30 80, 5:50 90
+  - expected FC 192C 7:00
+  - actual FC
+  - 30s drop 7:30
+  - 35s drop 7:35
+  - 40s drop 7:40
 
 ## 2026-6-21, 24C Humidity 44%
 
