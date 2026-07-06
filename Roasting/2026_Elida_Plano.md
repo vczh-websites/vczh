@@ -10,7 +10,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - actual FC 193.5C 7:10, 192.5C 7:02
   - 40s drop 7:30
   - 45s drop 7:35
-  - 50s drop 7:40
+  - ~~50s drop 7:40~~
 
 ## 2026-6-21, 24C Humidity 44%
 
