@@ -8,9 +8,9 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - drum: 80; damper: 70, 3:30 80, 5:50 90
   - expected FC 192C 7:00
   - actual FC
-  - 30s drop 7:30
-  - 35s drop 7:35
-  - 40s drop 7:40
+  - 40s drop 7:30
+  - 45s drop 7:35
+  - 50s drop 7:40
 
 ## 2026-6-21, 24C Humidity 44%
 
