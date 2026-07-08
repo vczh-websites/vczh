@@ -9,7 +9,9 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - expected FC 192C 7:00
   - actual FC 193.5C 7:10, 192.5C 7:02
   - 40s drop 7:30
+    - 杯测 2d 75.5/94.1: 
   - 45s drop 7:35
+    - 杯测 2d 76.9/92.7: 
   - ~~50s drop 7:40~~
 
 ## 2026-6-21, 24C Humidity 44%
