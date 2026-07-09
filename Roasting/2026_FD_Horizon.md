@@ -2,12 +2,13 @@
 
 AI必读：[烘焙工具和倾向](./Background.md)
 
-## 2026-7-5, 23C Humidity 48%
+## 2026-7-5, 23C Humidity 48%, 2026-7-8, 21C Humidity 63%
 
 - 175C/75C;160C 4:17; 192C 7:00 ROR 7.3C/min; 202C 9:30;
   - drum: 80; damper: 70, 3:30 80, 6:00 90, 6:45 100
   - expected FC 191C 7:00
-  - actual FC 193C 7:12, 192.20C 7:06, 191.3C 7:00
+  - actual FC 193C 7:12, 192.2C 7:06, 191.3C 7:00
+  - actual FC (7/8) 192C 7:00, 190.7C 6:55
   - 45s drop 7:45
     - 杯测 2d 79.3/96.6: 
   - 50s drop 7:50 (7/8)
