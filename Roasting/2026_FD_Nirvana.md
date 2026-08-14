@@ -2,6 +2,10 @@
 
 AI必读：[烘焙工具和倾向](./Background.md)
 
+## Next
+
+重新尝试60s 7:45，使用V60/Kalita新配方
+
 ## 2026-7-5, 23C Humidity 48%
 
 - 175C/85C; 160C 4:00; 191C 6:45 ROR 7.2C/min; 202C 9:30

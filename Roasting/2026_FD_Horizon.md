@@ -4,7 +4,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
 
 ## Next
 
-脱水不够充分？尝试延长转黄。
+重新尝试60s 8:00，使用V60/Kalita新配方
 
 ## 2026-7-5, 23C Humidity 48%, 2026-7-8, 21C Humidity 63%
 
