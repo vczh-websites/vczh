@@ -1,5 +1,7 @@
 # Pepe Jijon Sidra
 
+AI必读：[烘焙工具和倾向](./Background.md)
+
 ## Next
 
 - 175C/80C; 105C 4:15; 192C 7:00 ROR 7.3C/min; 202C 9:30
