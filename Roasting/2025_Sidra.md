@@ -7,7 +7,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
 - 175C/80C; 105C 4:15; 192C 7:00 ROR 7.3C/min; 202C 9:30
   - drum: 80; damper: 70, 3:30 80, 6:00 90, 7:00 100
   - expected FC 190.5C 7:00
-  - actual FC 190.7C 6:58, 192C 7:05
+  - actual FC 190.7C 6:58, 192C 7:05, 191C 6:58
   - 40s drop 7:40
   - 50s drop 7:50
   - 60s drop 8:00
