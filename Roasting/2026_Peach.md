@@ -8,5 +8,5 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - drum: 80; damper: 70, 3:00 80, 5:30 90, 6:30 100;
   - expected FC: 190C 6:30
   - actual FC: 186C 6:02
-  - 60s drop 7:05
+  - 60s drop 7:05 68.5/88.7
     - 吸热略快
