@@ -6,7 +6,7 @@
 - [Finca Deborah Nirvana](./2026_FD_Nirvana.md)
 - [Finca Deborah Horizon](./2026_FD_Horizon.md)
 - [Lamastus Elida Plano](./2026_Elida_Plano.md)
-  - 一爆收火力，ROR降低
+- [Esmeralda Trapiche 3NB](./2026_Esmeralda_Trapiche.md)
 - Archived
   - [Lerida Geisha](./Archived/2025_Lerida.md)
   - [Finca Deborah Echo](./Archived/2025_FD_Echo.md)
@@ -108,6 +108,7 @@
 - 如果调整后不好和好都没了，则是明显的烘焙缺陷。
 - 不同的萃取强度可以用来测试柑橘苦、醋酸和甜感。
 - 需要注意的是风味甜感淡有可能是因为过萃，酸有可能是因为萃取不足。
+- 生豆存放超过一年可能会有纸板/木质，需要调整曲线进行测试以便甄别。
 
 ## 测试参数
 
@@ -120,7 +121,7 @@
 - Kalita: 92C 20g/300g
   - Zerno Z1: 575, 100/200/300
 - 浓度太高可以10g为单位bypass
-- 冰手冲两段浸泡
+- 冰手冲两段浸泡 20g
   - Zerno Z1: 525
   - 20g: 60g 92C 60s + 140g (92C 40s | 70C 60s)
     - 从注水开始算
