@@ -10,10 +10,10 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - drum: 80; damper: 70, 3:00 80, 5:30 90, 6:30 100;
   - expected FC: 189C 6:30
   - 40s drop 7:10
-  - 60s drop 7:30
+  - 70s drop 7:40
 
 - 170C/85C; 160C 4:15; 189C 7:00; ROR 6.6C/min; 198C 9:00
   - drum: 80; damper: 70, 3:30 80, 6:00 90, 7:00 100;
   - expected FC: 189C 7:00
   - 40s drop 7:40
-  - 60s drop 8:00
+  - 70s drop 8:10
