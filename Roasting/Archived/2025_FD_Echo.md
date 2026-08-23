@@ -6,12 +6,12 @@
 
 ## 2026-8-22, 23C Humidity 58%
 
-- Last 95g of FD echo
+- Last 95.3g of FD echo
 - 170C/90C; 160C 3:45; 189C 6:30; ROR 6.5C/min; 198C 8:30
   - drum: 80; damper: 70, 3:00 80, 5:30 90, FC 100;
   - expected FC: 189C 6:30
   - actual FC: 186C 6:08
-  - 40s drop 6:48
+  - 40s drop 6:48 84.4g
 
 ## 2026-5-24, 22C Humidity 45%
 
