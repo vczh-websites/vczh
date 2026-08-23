@@ -26,4 +26,5 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - actual FC: 186C 6:40
   - 40s drop 7:20
     - soak until 2:30, why
+    - 口萃前期苦味比较尖锐，接着迅速转化为果香
   - 70s drop 8:10
