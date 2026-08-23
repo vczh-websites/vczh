@@ -12,17 +12,17 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - drum: 80; damper: 70, 3:00 80, 5:30 90, FC 100;
   - expected FC: 189C 6:30
   - actual FC: 186C 6:08, 185.3C 6:07
-  - 40s drop 6:48
-  - 70s drop 7:17
+  - 40s drop 6:48 88.6g
+  - 70s drop 7:17 87.9g 
     - 一爆密大概在 7:10左右停止
 
 - 170C/85C; 160C 4:15; 189C 7:00; ROR 6.6C/min; 198C 9:00
   - drum: 80; damper: 70, 3:30 80, 6:00 90, FC 100;
   - expected FC: 189C 7:00
   - actual FC: 186C 6:40, 185.7C 6:38
-  - 40s drop 7:20
+  - 40s drop 7:20 89.1g
     - 口萃前期苦味比较尖锐，接着迅速转化为果香
-  - 70s drop 7:48
+  - 70s drop 7:48 87.6g
     - 一爆密大概在 7:32左右停止
     - 口萃没有尖锐的苦味，trivial
 
