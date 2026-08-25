@@ -11,7 +11,7 @@
   - drum: 80; damper: 70, 3:00 80, 5:30 90, FC 100;
   - expected FC: 189C 6:30
   - actual FC: 186C 6:08
-  - 40s drop 6:48 84.4g
+  - 40s drop 6:48 84.4g 76.6/88.4 (zerno 575)
 
 ## 2026-5-24, 22C Humidity 45%
 
