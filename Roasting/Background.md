@@ -33,3 +33,5 @@
   - expected FC: 186.5C 6:40
   - actual FC:
   - 45s drop 7:25
+
+需要增加一条7:00 FC的曲线，旧的豆就快点结束。
