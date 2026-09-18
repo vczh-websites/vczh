@@ -116,7 +116,7 @@ dx z
 
 ## 让LLM也能用CDB
 
-**注意** as of 2026-9，copilot调用可交互CLI程序的问题，在这篇文章写作完成大半年后依然没有得到修复。codex和claude不需要使用server-client模式调用cdb，直接启动即可。
+> as of 2026-9，copilot调用可交互CLI程序的问题，在这篇文章写作完成大半年后依然没有得到修复。codex和claude不需要使用server-client模式调用cdb，直接启动即可。
 
 VSCode里面跑copilot还要让LLM在命令行里面交互那是不可能的，所以我们只能把CDB包装成一个一个的命令，执行完退出看结果。所幸CDB是支持远程调试功能的，那么我们可以把server起起来。需要注意的是CDB server一样会等待我们的输入，所以不能占用当前的窗口。单机调试不用管任何安全或者是防火墙问题，简单直接：
 ```
