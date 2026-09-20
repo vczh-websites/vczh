@@ -6,6 +6,12 @@ AI必读：[烘焙工具和倾向](./Background.md)
 
 ## Next
 
+- 165C/85C; 160C 3:45; 190C 6:30; ROR 6.5C/min; 198C 8:30
+  - drum: 80; damper: 70, 3:00 80, 5:30 90, 6:30 100;
+  - expected FC: 186C 6:00
+  - actual FC: 
+  - 45s drop 6:45
+
 - 发展 45s
 
 ## 2026-8-16, 24C Humidity 59%
