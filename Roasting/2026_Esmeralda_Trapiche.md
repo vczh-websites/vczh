@@ -8,6 +8,8 @@ AI必读：[烘焙工具和倾向](./Background.md)
 
 ## 2026-9-20, 20C Humidity 62%
 
+第一锅做的是 2026_Peach.md，以保证后续烘焙稳定性
+
 - 170C/85C; 160C 4:15; 186.5C 6:40; ROR 7.4C/min; 198C 9:00
   - drum: 80; damper: 70, 3:30 80, 5:40 90, FC 100;
   - expected FC: 186C 6:40
@@ -18,9 +20,10 @@ AI必读：[烘焙工具和倾向](./Background.md)
 - 170C/85C; 160C 4:15; 186.5C 6:55; ROR 6.3C/min; 195.5C 9:00
   - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
   - expected FC: 186C 6:55
-  - actual FC: 
-  - soak: 
+  - actual FC: 185.5C 6:52, 
+  - soak: 2:13, 
   - 45s drop 7:40 x2
+  - 大概在7:38左右一爆结束
 
 ## 2026-9-5, 21C Humidity 59%
 
