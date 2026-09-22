@@ -1,10 +1,16 @@
-# Finca Deborah Nirvana
+# Finca Deborah Nirvana (natural)
 
 AI必读：[烘焙工具和倾向](./Background.md)
+2026-07-05是最后一次做150g，以后都是100g
 
 ## Next
 
-用100g曲线从头开始做
+- 170C/87.5C; 160C 4:00; 187C 6:25; ROR 6.9C/min; 194.5C 8:15
+  - drum: 80; damper: 70, 3:15 80, 5:25 90, FC 100;
+  - expected FC: 186.5C 6:25
+  - actual FC:
+  - 35s drop 7:00
+  - 50s drop 7:15
 
 ## 2026-7-5, 23C Humidity 48%
 

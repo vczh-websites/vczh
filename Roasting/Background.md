@@ -13,7 +13,7 @@
 ### Default 100g YP345 (washed).alog
 
 - 170C/90C; 160C 3:45; 187C 6:10; ROR 7.0C/min; 195C 8:00
-  - drum: 80; damper: 70, 3:00 80, 5:00 90, 6:00 100;
+  - drum: 80; damper: 70, 3:00 80, 5:10 90, FC 100;
   - expected FC: 186.5C 6:10
   - actual FC:
   - 45s drop 6:55
@@ -21,17 +21,23 @@
 ### Default 100g YP400 (honey).alog
 
 - 170C/87.5C; 160C 4:00; 187C 6:25; ROR 6.9C/min; 194.5C 8:15
-  - drum: 80; damper: 70, 3:00 80, 5:00 90, 6:00 100;
+  - drum: 80; damper: 70, 3:15 80, 5:25 90, FC 100;
   - expected FC: 186.5C 6:25
   - actual FC:
   - 45s drop 7:10
 
-### Default 100g YP415 (natural).alog
+### Default 100g YP415 FC640 (natural).alog
 
-- 170C/90C; 160C 4:15; 187C 6:40; ROR 6.8C/min; 194C 8:30
-  - drum: 80; damper: 70, 3:00 80, 5:00 90, 6:00 100;
+- 170C/90C; 160C 4:15; 187C 6:40; ROR 7.0C/min; 195C 8:30
+  - drum: 80; damper: 70, 3:30 80, 5:40 90, FC 100;
   - expected FC: 186.5C 6:40
   - actual FC:
   - 45s drop 7:25
 
-需要增加一条7:00 FC的曲线，旧的豆就快点结束。
+### Default 100g YP415 FC655 (natural).alog
+
+- 170C/90C; 160C 4:15; 187C 6:40; ROR 6.4C/min; 195C 8:40
+  - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
+  - expected FC: 186.5C 6:40
+  - actual FC:
+  - 45s drop 7:40

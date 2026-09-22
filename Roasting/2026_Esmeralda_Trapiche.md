@@ -1,10 +1,14 @@
-# Esmeralda Trapiche (100g)
+# Esmeralda Trapiche (natural 100g)
 
 strawberry, peach, mango, cherry blossom
 
 AI必读：[烘焙工具和倾向](./Background.md)
 
 一爆时间记录靠听声音，一开始会零星爆裂，中间会有一段间隔，再接下来接连爆裂开始发生的时候记录
+
+## Next
+
+第一曲线可以尝试9:00 195.5C稍微降低一爆ROR 7.1
 
 ## 2026-9-20, 20C Humidity 62%
 

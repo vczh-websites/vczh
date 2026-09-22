@@ -1,12 +1,16 @@
-# Pepe Jijon Sidra
+# Pepe Jijon Sidra (honey)
 
 AI必读：[烘焙工具和倾向](./Background.md)
-
-2025-12-30前没标注的是100g一锅，后没标注的是150g一锅。
+2025-12-30前没标注的是100g一锅，一直到2026-08-16是150g，再以后都是100g
 
 ## Next
 
-用100g曲线从头开始做
+- 170C/87.5C; 160C 4:00; 187C 6:25; ROR 6.9C/min; 194.5C 8:15
+  - drum: 80; damper: 70, 3:15 80, 5:25 90, FC 100;
+  - expected FC: 186.5C 6:25
+  - actual FC:
+  - 35s drop 7:00
+  - 50s drop 7:15
 
 ## 2026-8-16, 24C Humidity 59%
 
