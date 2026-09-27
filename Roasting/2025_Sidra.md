@@ -5,6 +5,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
 
 ## Next
 
+- `Default 100g YP400 (honey).alog`
 - 170C/87.5C; 160C 4:00; 187C 6:25; ROR 6.9C/min; 194.5C 8:15
   - drum: 80; damper: 70, 3:15 80, 5:25 90, FC 100;
   - expected FC: 186.5C 6:25

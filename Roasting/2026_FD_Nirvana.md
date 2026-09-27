@@ -5,12 +5,19 @@ AI必读：[烘焙工具和倾向](./Background.md)
 
 ## Next
 
-- 170C/87.5C; 160C 4:00; 187C 6:25; ROR 6.9C/min; 194.5C 8:15
-  - drum: 80; damper: 70, 3:15 80, 5:25 90, FC 100;
-  - expected FC: 186.5C 6:25
+- `Default 100g YP415 FC640 (natural).alog`
+- 170C/90C; 160C 4:15; 187C 6:40; ROR 7.0C/min; 195C 8:30
+  - drum: 80; damper: 70, 3:30 80, 5:40 90, FC 100;
+  - expected FC: 186.5C 6:40
   - actual FC:
-  - 35s drop 7:00
-  - 50s drop 7:15
+  - 40s drop 7:20
+
+- `Default 100g YP415 FC655 (natural).alog`
+- 170C/90C; 160C 4:15; 187C 6:40; ROR 6.4C/min; 195C 8:40
+  - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
+  - expected FC: 186.5C 6:40
+  - actual FC:
+  - 40s drop 7:35
 
 ## 2026-7-5, 23C Humidity 48%
 
