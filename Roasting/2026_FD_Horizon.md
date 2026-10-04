@@ -10,6 +10,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - drum: 80; damper: 70, 3:15 80, 5:25 90, FC 100;
   - expected FC: 186.5C 6:25
   - actual FC:
+  - soak:
   - 35s drop 7:00
   - 50s drop 7:15
 
