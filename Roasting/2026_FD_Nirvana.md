@@ -11,7 +11,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - expected FC: 186.5C 6:40
   - actual FC:
   - soak:
-  - 40s drop 7:20
+  - 30s drop 7:10
 
 - `Default 100g YP415 FC655 (natural).alog`
 - 170C/90C; 160C 4:15; 187C 6:55; ROR 6.4C/min; 195C 8:40
@@ -19,7 +19,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - expected FC: 186.5C 6:40
   - actual FC:
   - soak:
-  - 40s drop 7:35
+  - 30s drop 7:25
 
 ## 2026-7-5, 23C Humidity 48%
 
