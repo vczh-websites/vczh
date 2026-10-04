@@ -3,7 +3,7 @@
 AI必读：[烘焙工具和倾向](./Background.md)
 2026-07-05是最后一次做150g，以后都是100g
 
-## Next
+## 2026-10-04, 22C Humidity 66%
 
 - `Default 100g YP415 FC640 (natural).alog`
 - 170C/90C; 160C 4:15; 187C 6:40; ROR 7.0C/min; 195C 8:30
@@ -13,7 +13,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - 40s drop 7:20
 
 - `Default 100g YP415 FC655 (natural).alog`
-- 170C/90C; 160C 4:15; 187C 6:40; ROR 6.4C/min; 195C 8:40
+- 170C/90C; 160C 4:15; 187C 6:55; ROR 6.4C/min; 195C 8:40
   - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
   - expected FC: 186.5C 6:40
   - actual FC:
