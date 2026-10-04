@@ -16,6 +16,7 @@
   - drum: 80; damper: 70, 3:00 80, 5:10 90, FC 100;
   - expected FC: 186.5C 6:10
   - actual FC:
+  - soak:
   - 45s drop 6:55
 
 ### Default 100g YP400 (honey).alog
@@ -24,6 +25,7 @@
   - drum: 80; damper: 70, 3:15 80, 5:25 90, FC 100;
   - expected FC: 186.5C 6:25
   - actual FC:
+  - soak:
   - 45s drop 7:10
 
 ### Default 100g YP415 FC640 (natural).alog
@@ -32,6 +34,7 @@
   - drum: 80; damper: 70, 3:30 80, 5:40 90, FC 100;
   - expected FC: 186.5C 6:40
   - actual FC:
+  - soak:
   - 45s drop 7:25
 
 ### Default 100g YP415 FC655 (natural).alog
@@ -40,4 +43,5 @@
   - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
   - expected FC: 186.5C 6:40
   - actual FC:
+  - soak:
   - 45s drop 7:40
