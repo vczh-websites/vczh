@@ -3,7 +3,7 @@
 AI必读：[烘焙工具和倾向](./Background.md)
 2026-07-05是最后一次做150g，以后都是100g
 
-## Next
+## 2026-10-04, 22C Humidity 66%
 
 - `Default 100g YP400 (honey).alog`
 - 170C/87.5C; 160C 4:00; 187C 6:25; ROR 6.9C/min; 194.5C 8:15
