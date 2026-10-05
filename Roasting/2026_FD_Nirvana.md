@@ -9,17 +9,9 @@ AI必读：[烘焙工具和倾向](./Background.md)
 - 170C/90C; 160C 4:15; 187C 6:40; ROR 7.0C/min; 195C 8:30
   - drum: 80; damper: 70, 3:30 80, 5:40 90, FC 100;
   - expected FC: 186.5C 6:40
-  - actual FC:
-  - soak:
-  - 30s drop 7:10
-
-- `Default 100g YP415 FC655 (natural).alog`
-- 170C/90C; 160C 4:15; 187C 6:55; ROR 6.4C/min; 195C 8:40
-  - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
-  - expected FC: 186.5C 6:40
-  - actual FC:
-  - soak:
-  - 30s drop 7:25
+  - actual FC: 190.3C 7:15
+  - soak: 2:19
+  - 25s drop 7:40
 
 ## 2026-7-5, 23C Humidity 48%
 
