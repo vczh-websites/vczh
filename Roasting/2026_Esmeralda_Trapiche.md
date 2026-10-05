@@ -18,7 +18,6 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - actual FC:
   - soak:
   - 40s drop 7:35 x2
-  - 45s drop 7:40 x2
 
 ## 2026-9-20, 20C Humidity 62%
 
