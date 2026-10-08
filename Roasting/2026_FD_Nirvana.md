@@ -11,7 +11,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - expected FC: 186.5C 6:40
   - actual FC: 190.3C 7:15
   - soak: 2:19
-  - 25s drop 7:40 88.2/100g
+  - 25s drop 7:40 88.2/100g 80.7/90.2
 
 ## 2026-7-5, 23C Humidity 48%
 
