@@ -5,7 +5,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
 
 ## Next
 
-189C 6:25 FC 45s/60s
+189C 6:25 FC 40s/55s
 
 ## 2026-10-04, 22C Humidity 66%
 
