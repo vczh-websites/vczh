@@ -7,6 +7,8 @@
 - [Finca Deborah Horizon](./2026_FD_Horizon.md)
 - [Lamastus Elida Plano](./2026_Elida_Plano.md)
 - [Esmeralda Trapiche 3NB](./2026_Esmeralda_Trapiche.md)
+- Elida Vuelte
+- Esmeralda Higo 6FB
 - Archived
   - [Lerida Geisha](./Archived/2025_Lerida.md)
   - [Finca Deborah Echo](./Archived/2025_FD_Echo.md)
