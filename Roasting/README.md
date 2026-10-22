@@ -1,7 +1,6 @@
 # Roasting with Sniper M2 Pro
 
 - [CGLE 2024](./2024_CGLE.md)
-- [Pepe Jijon Sidra](./2025_Sidra.md)
 - [Peach](./2026_Peach.md)
 - [Finca Deborah Nirvana](./2026_FD_Nirvana.md)
 - [Finca Deborah Horizon](./2026_FD_Horizon.md)
@@ -10,6 +9,7 @@
 - Elida Vuelte
 - Esmeralda Higo 6FB
 - Archived
+  - [Pepe Jijon Sidra](./2025_Sidra.md)
   - [Lerida Geisha](./Archived/2025_Lerida.md)
   - [Finca Deborah Echo](./Archived/2025_FD_Echo.md)
 
