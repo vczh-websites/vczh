@@ -6,6 +6,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
 - 最佳曲线：+45
 - 最佳手冲：Zerno Z1 600, 92C, 15g, 50/160
   - 烘焙久了以后需要bypass ~15g
+- `100g Peach.alog`
 
 ## 2026-9-20, 20C Humidity 62%
 

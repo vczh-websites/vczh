@@ -7,9 +7,18 @@ AI必读：[烘焙工具和倾向](./Background.md)
 
 189C 6:25 FC 40s/55s
 
+- `100g FD Horizon.alog`
+- 170C/85C; 160C 3:55; 189C 6:25; ROR 7.1C/min; 197C 8:30
+  - drum: 80; damper: 70, 3:15 80, 5:25 90, FC 100;
+  - expected FC: 188.5C 6:25
+  - actual FC:
+  - soak:
+  - 40s drop 7:05
+  - 55s drop 7:20
+
 ## 2026-10-04, 22C Humidity 66%
 
-- `Default 100g YP400 (honey).alog`
+- `100g YP400 (honey).alog`
 - 170C/87.5C; 160C 4:00; 187C 6:25; ROR 6.9C/min; 194.5C 8:15
   - drum: 80; damper: 70, 3:15 80, 5:25 90, FC 100;
   - expected FC: 186.5C 6:25
