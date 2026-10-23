@@ -2,6 +2,7 @@
 
 - [CGLE 2024](./2024_CGLE.md)
 - [Peach](./2026_Peach.md)
+- [2025 V01](./2025_BOP_V01.md)
 - [Finca Deborah Nirvana](./2026_FD_Nirvana.md)
 - [Finca Deborah Horizon](./2026_FD_Horizon.md)
 - [Lamastus Elida Plano](./2026_Elida_Plano.md)
