@@ -5,3 +5,19 @@ AI必读：[烘焙工具和倾向](./Background.md)
 一爆时间记录靠听声音，一开始会零星爆裂，中间会有一段间隔，再接下来接连爆裂开始发生的时候记录
 
 ## Next
+
+- `Natural 187C YP415 FC655.alog`
+- 170C/85C; 160C 4:15; 187C 6:55; ROR 6.5C/min; 196C 8:45
+  - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
+  - expected FC: 186.5C 6:40
+  - actual FC:
+  - soak:
+  - 45s drop 7:40
+
+- `Natural 190C YP415 FC655.alog`
+- 160C/80C; 160C 4:15; 190C 6:55; ROR 7.0C/min; 199C 9:00
+  - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
+  - expected FC: 189.5C 6:40
+  - actual FC:
+  - soak:
+  - 45s drop 7:40

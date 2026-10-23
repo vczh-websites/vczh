@@ -8,18 +8,27 @@
 - 具体的一爆时间因为本来也不具备精确的测量手段，所以每次记录都会有误差。因此到了复制曲线的阶段我会直接按照下豆时间为准。
   - 目前大概设置在连续爆裂的开始时间。
 
-## 100g 首轮烘焙的预定义曲线模板
+## 100g 首轮烘焙的预定义曲线模板 (Templates 100g)
 
-### Default 100g YP345 (washed).alog
+### Washed 187C YP345 FC610.alog
 
-- 170C/90C; 160C 3:45; 187C 6:10; ROR 7.0C/min; 195C 8:00
+- 170C/90C; 160C 3:45; 187C 6:10; ROR 6.9C/min; 195C 8:00
   - drum: 80; damper: 70, 3:00 80, 5:10 90, FC 100;
   - expected FC: 186.5C 6:10
   - actual FC:
   - soak:
   - 45s drop 6:55
 
-### Default 100g YP400 (honey).alog
+### Washed 190C YP340 FC610.alog
+
+- 160C/82C; 160C 3:40; 190C 6:10; ROR 7.1C/min; 198C 8:30
+  - drum: 80; damper: 70, 3:00 80, 5:10 90, FC 100;
+  - expected FC: 189.5C 6:10
+  - actual FC:
+  - soak:
+  - 45s drop 6:55
+
+### Honey 187C YP400 FC625.alog
 
 - 170C/87.5C; 160C 4:00; 187C 6:25; ROR 6.9C/min; 194.5C 8:15
   - drum: 80; damper: 70, 3:15 80, 5:25 90, FC 100;
@@ -28,20 +37,29 @@
   - soak:
   - 45s drop 7:10
 
-### Default 100g YP415 FC640 (natural).alog
+### Honey 190C YP355 FC625.alog
 
-- 170C/90C; 160C 4:15; 187C 6:40; ROR 7.0C/min; 195C 8:30
-  - drum: 80; damper: 70, 3:30 80, 5:40 90, FC 100;
+- 160C/82C; 160C 3:55; 190C 6:25; ROR 7.3C/min; 198C 8:15
+  - drum: 80; damper: 70, 3:15 80, 5:25 90, FC 100;
+  - expected FC: 189.5C 6:25
+  - actual FC:
+  - soak:
+  - 45s drop 7:10
+
+### Natural 187C YP415 FC655.alog
+
+- 170C/85C; 160C 4:15; 187C 6:55; ROR 6.5C/min; 196C 8:45
+  - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
   - expected FC: 186.5C 6:40
   - actual FC:
   - soak:
-  - 45s drop 7:25
+  - 45s drop 7:40
 
-### Default 100g YP415 FC655 (natural).alog
+### Natural 190C YP415 FC655.alog
 
-- 170C/90C; 160C 4:15; 187C 6:40; ROR 6.4C/min; 195C 8:40
+- 160C/80C; 160C 4:15; 190C 6:55; ROR 7.0C/min; 199C 9:00
   - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
-  - expected FC: 186.5C 6:40
+  - expected FC: 189.5C 6:40
   - actual FC:
   - soak:
   - 45s drop 7:40
