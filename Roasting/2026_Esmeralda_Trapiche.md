@@ -1,4 +1,4 @@
-# Esmeralda Trapiche (natural 100g)
+# Esmeralda Trapiche (2026, natural 100g)
 
 strawberry, peach, mango, cherry blossom
 

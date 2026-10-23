@@ -1,4 +1,4 @@
-# Lamastus Elida Plano (natural)
+# Lamastus Elida Plano (2025, natural)
 
 AI必读：[烘焙工具和倾向](./Background.md)
 2026-07-05是最后一次做150g，以后都是100g
