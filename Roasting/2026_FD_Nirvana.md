@@ -3,7 +3,7 @@
 AI必读：[烘焙工具和倾向](./Background.md)
 2026-07-05是最后一次做150g，以后都是100g
 
-## Next
+## 2026-10-24, 12C Humidity 68%
 
 - `100g FD Nirvana.alog`
 - 160C/80C; 160C 4:10; 190.5C 6:45; ROR 7.3C/min; 199C 8:45
