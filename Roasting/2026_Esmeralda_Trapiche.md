@@ -16,9 +16,9 @@ AI必读：[烘焙工具和倾向](./Background.md)
 - 170C/85C; 160C 4:15; 186.5C 6:55; ROR 6.3C/min; 195.5C 9:00
   - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
   - expected FC: 186C 6:55
-  - actual FC:
-  - soak:
-  - 35s drop 7:25
+  - actual FC: 185.4C 6:50, 185.6C 6:52
+  - soak: 1:32, 1:41
+  - 35s drop 7:30
   - 40s drop 7:35
 
 ## 2026-10-04, 22C Humidity 66%
