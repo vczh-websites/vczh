@@ -15,6 +15,8 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - expected FC: 186C 6:00
   - actual FC: 185.6C 6:03
   - 45s drop 6:45 88.5g 74/93
+    - 手冲34d：Zerno Z1 600, 92C, 15.5g 40/140
+      - 黄桃罐头
 
 - 发展 45s
 
