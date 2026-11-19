@@ -9,7 +9,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
 - `Natural 187C YP415 FC655.alog`
 - 170C/85C; 160C 4:15; 187C 6:55; ROR 6.5C/min; 196C 8:45
   - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
-  - expected FC:
+  - expected FC: 186.5C 6:55
   - actual FC:
   - soak:
   - 30s drop 7:25
