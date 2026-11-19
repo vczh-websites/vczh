@@ -8,7 +8,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - 烘焙久了以后需要bypass ~15g
 - `100g Peach.alog`
 
-## Next
+## 2026-11-9, 9C 72% Humidity
 
 复制曲线
 
