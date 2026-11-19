@@ -8,6 +8,15 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - 烘焙久了以后需要bypass ~15g
 - `100g Peach.alog`
 
+## Next
+
+复制曲线
+
+- `100g Peach.alog`
+- 165C/85C; 160C 3:45; 190C 6:30; ROR 6.5C/min; 198C 8:30
+  - drum: 80; damper: 70, 3:00 80, 5:00 90, 6:00 100;
+  - 45s drop 6:45
+
 ## 2026-9-20, 20C Humidity 62%
 
 - 165C/85C; 160C 3:45; 190C 6:30; ROR 6.5C/min; 198C 8:30

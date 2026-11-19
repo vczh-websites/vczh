@@ -8,7 +8,13 @@ AI必读：[烘焙工具和倾向](./Background.md)
 
 ## Next
 
-第一曲线可以尝试9:00 195.5C稍微降低一爆ROR 7.1
+复制曲线40s两次
+
+- `(2026) 100g Esmeralda Trapiche.alog`
+- 170C/85C; 160C 4:15; 186.5C 6:55; ROR 6.3C/min; 195.5C 9:00
+  - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
+  - 40s drop 7:35
+  - 40s drop 7:35
 
 ## 2026-10-24, 12C Humidity 68%
 
