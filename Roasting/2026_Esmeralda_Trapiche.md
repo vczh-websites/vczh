@@ -13,6 +13,8 @@ AI必读：[烘焙工具和倾向](./Background.md)
 - `(2026) 100g Esmeralda Trapiche.alog`
 - 170C/85C; 160C 4:15; 186.5C 6:55; ROR 6.3C/min; 195.5C 9:00
   - drum: 80; damper: 70, 3:30 80, 5:55 90, FC 100;
+  - actual FC: 182.7C 6:40, 184.8C 6:45
+  - soak: 1:32, 1:41
   - 40s drop 7:35
   - 40s drop 7:35
 
