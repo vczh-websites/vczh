@@ -12,7 +12,7 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - expected FC: 189.5C 6:10
   - actual FC: 185.5C 05:44
   - soak: 0:42
-  - 45s drop 6:30
+  - 45s drop 6:30 86.8g
     - 下豆的时候已经基本结束一爆
 
 - `Washed 187C YP345 FC610.alog`
@@ -21,5 +21,5 @@ AI必读：[烘焙工具和倾向](./Background.md)
   - expected FC: 186.5C 6:10
   - actual FC: 184.7C 5:57
   - soak: 0:30
-  - 45s drop 6:45
+  - 45s drop 6:45 87.3g
     - 下豆的时候已经基本结束一爆
