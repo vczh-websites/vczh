@@ -10,9 +10,10 @@ AI必读：[烘焙工具和倾向](./Background.md)
 - 160C/82C; 160C 3:40; 190C 6:10; ROR 7.1C/min; 198C 8:30
   - drum: 80; damper: 70, 3:00 80, 5:10 90, FC 100;
   - expected FC: 189.5C 6:10
-  - actual FC:
-  - soak:
-  - 45s drop 6:55
+  - actual FC: 185.5C 05:44
+  - soak: 0:42
+  - 45s drop 6:30
+    - 下豆的时候已经基本结束一爆
 
 - `Washed 187C YP345 FC610.alog`
 - 170C/90C; 160C 3:45; 187C 6:10; ROR 6.9C/min; 195C 8:00
